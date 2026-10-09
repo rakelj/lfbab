@@ -9,7 +9,8 @@
 import { readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 
-const SHEET_ID = process.env.STRINGS_SHEET_ID || '' // TODO: set once the sheet exists
+// "LFB rettighetsapp – tekster og oversettelser" (rakeljohnsen@gmail.com)
+const SHEET_ID = process.env.STRINGS_SHEET_ID || '1YL6YE2vxaf4tSNnA4dg8dXuTSsXmy4kmo6S4vktWA5Y'
 const JSON_PATH = fileURLToPath(new URL('../src/i18n/strings.json', import.meta.url))
 const CSV_PATH = fileURLToPath(new URL('../strings.csv', import.meta.url))
 const LANGS = ['no', 'en', 'ar', 'prs', 'fa', 'ps', 'ru', 'so', 'es', 'ti', 'tr', 'uk']
@@ -52,7 +53,7 @@ if (!SHEET_ID) {
   process.exit(1)
 }
 
-const res = await fetch(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=0`)
+const res = await fetch(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv`)
 if (!res.ok || !res.headers.get('content-type')?.includes('text/csv')) {
   console.error(`Could not download the sheet (HTTP ${res.status}). Is it shared as "Anyone with the link can view"?`)
   process.exit(1)
