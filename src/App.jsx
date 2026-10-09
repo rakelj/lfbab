@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { I18nProvider } from './i18n/I18n.jsx'
 import { DEFAULT_LANG } from './i18n/languages.js'
 import { useProgress } from './progress.js'
-import { CHAPTERS, img } from './content.js'
+import { findChapter, img } from './content.js'
+import { FeaturesProvider, useFeatures } from './features.jsx'
 import HelpButton from './components/Help.jsx'
 import LanguageScreen from './screens/LanguageScreen.jsx'
 import Intro from './screens/Intro.jsx'
@@ -15,10 +16,11 @@ import Helpers from './screens/Helpers.jsx'
 import About from './screens/About.jsx'
 import Footer from './components/Footer.jsx'
 import LanguageButton from './components/LanguageButton.jsx'
+import DemoSettings from './components/DemoSettings.jsx'
 import { SoundProvider, SoundToggle } from './components/Sound.jsx'
 
-// Demo mode: open the app with ?demo to get a restart button on every screen.
-// Remembered for the browser tab, so it survives moving around in the app.
+// Demo mode: open the app with ?demo to get a restart button, demo settings
+// and a version stamp. Remembered for the browser tab.
 function isDemo() {
   const asked = new URLSearchParams(window.location.search).has('demo')
   try {
@@ -43,10 +45,19 @@ function firstScreen(p) {
 }
 
 export default function App() {
+  const [demo] = useState(isDemo)
+  return (
+    <FeaturesProvider demo={demo}>
+      <Screens demo={demo} />
+    </FeaturesProvider>
+  )
+}
+
+function Screens({ demo }) {
   const { progress, update, completeChapter, reset } = useProgress()
+  const { on } = useFeatures()
   const [screen, setScreen] = useState(() => firstScreen(progress))
   const [chapterId, setChapterId] = useState(null)
-  const [demo] = useState(isDemo)
   // Screen to return to from "Om appen".
   const [aboutFrom, setAboutFrom] = useState('hub')
 
@@ -72,7 +83,7 @@ export default function App() {
         <Intro
           onDone={() => {
             update({ introDone: true })
-            go('checkin')
+            go(on('checkin') ? 'checkin' : 'hub')
           }}
         />
       )
@@ -90,13 +101,7 @@ export default function App() {
       )
       break
     case 'chapter':
-      content = (
-        <Chapter
-          chapter={CHAPTERS.find((c) => c.id === chapterId)}
-          onComplete={completeChapter}
-          onExit={() => go('hub')}
-        />
-      )
+      content = <Chapter chapter={findChapter(chapterId)} onComplete={completeChapter} onExit={() => go('hub')} />
       break
     case 'cards':
       content = <Cards cards={progress.cards} onBack={() => go('hub')} />
@@ -132,7 +137,7 @@ export default function App() {
           }}
           onCards={() => go('cards')}
           onHelpers={() => go('helpers')}
-          onFinish={() => go('checkout')}
+          onFinish={() => go(on('checkout') ? 'checkout' : 'closing')}
           onRestart={() => {
             reset()
             go('lang')
@@ -144,44 +149,47 @@ export default function App() {
   return (
     <I18nProvider lang={progress.lang ?? DEFAULT_LANG}>
       <SoundProvider>
-      <div className="app">
-        {/* The language screen has no top bar, except the restart button in demo mode. */}
-        {(screen !== 'lang' || demo) && (
-          <header className="topbar">
-            {demo ? (
-              <button
-                className="demo-restart"
-                onClick={() => {
-                  reset()
-                  setChapterId(null)
-                  go('lang')
-                }}
-              >
-                ↺ Demo
-              </button>
-            ) : (
-              <img className="topbar-logo" src={img('logo.png')} alt="LFB" />
-            )}
-            {screen !== 'lang' && (
-              <div className="topbar-actions">
-                <SoundToggle />
-                <LanguageButton onClick={() => go('lang')} />
-                <HelpButton />
-              </div>
-            )}
-          </header>
-        )}
-        <main>{content}</main>
-        {screen !== 'chapter' && screen !== 'about' && (
-          <Footer
-            onAbout={() => {
-              setAboutFrom(screen)
-              go('about')
-            }}
-          />
-        )}
-        {demo && <footer className="build-stamp">{buildStamp()}</footer>}
-      </div>
+        <div className="app">
+          {/* The language screen has no top bar, except the demo buttons in demo mode. */}
+          {(screen !== 'lang' || demo) && (
+            <header className="topbar">
+              {demo ? (
+                <div className="demo-tools">
+                  <button
+                    className="demo-restart"
+                    onClick={() => {
+                      reset()
+                      setChapterId(null)
+                      go('lang')
+                    }}
+                  >
+                    ↺ Demo
+                  </button>
+                  <DemoSettings />
+                </div>
+              ) : (
+                <img className="topbar-logo" src={img('logo.png')} alt="LFB" />
+              )}
+              {screen !== 'lang' && (
+                <div className="topbar-actions">
+                  {on('readAloud') && <SoundToggle />}
+                  <LanguageButton onClick={() => go('lang')} />
+                  <HelpButton />
+                </div>
+              )}
+            </header>
+          )}
+          <main>{content}</main>
+          {screen !== 'chapter' && screen !== 'about' && (
+            <Footer
+              onAbout={() => {
+                setAboutFrom(screen)
+                go('about')
+              }}
+            />
+          )}
+          {demo && <footer className="build-stamp">{buildStamp()}</footer>}
+        </div>
       </SoundProvider>
     </I18nProvider>
   )

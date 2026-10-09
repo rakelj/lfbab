@@ -4,7 +4,7 @@ import { recordAnswer } from '../answers.js'
 import Dots from '../components/Dots.jsx'
 import {
   InfoStep, SelfStep, MythStep, ChainStep, StoryChoiceStep, StoryStep, EmotionsStep, HelpersStep,
-  ActivitiesStep, ActivitySummaryStep, SummaryStep, CardStep,
+  ActivitiesStep, ActivitySummaryStep, RoutesStep, SummaryStep, CardStep,
 } from '../steps/Steps.jsx'
 
 const STEPS = {
@@ -15,6 +15,7 @@ const STEPS = {
   storyChoice: StoryChoiceStep,
   activities: ActivitiesStep,
   activitySummary: ActivitySummaryStep,
+  routes: RoutesStep,
   story: StoryStep,
   emotions: EmotionsStep,
   helpers: HelpersStep,

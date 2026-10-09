@@ -334,6 +334,36 @@ export function ActivitySummaryStep({ step, answers, onNext, onBack }) {
   )
 }
 
+// A list of situations; tapping one shows where to go for help.
+export function RoutesStep({ step, onNext, onBack }) {
+  const { t } = useI18n()
+  const [open, setOpen] = useState(null)
+  return (
+    <>
+      <h1>
+        {t(step.title)} <Speak text={[t(step.title), ...step.routes.map((r) => t(`${r}.q`))].join('. ')} />
+      </h1>
+      <p className="lead">{t('step.routes.hint')}</p>
+      <ul className="routes">
+        {step.routes.map((r) => (
+          <li key={r} className={open === r ? 'open' : ''}>
+            <button className="route-question" aria-expanded={open === r} onClick={() => setOpen(open === r ? null : r)}>
+              <span>{t(`${r}.q`)}</span>
+              <span aria-hidden="true">{open === r ? '−' : '+'}</span>
+            </button>
+            {open === r && (
+              <p className="route-answer">
+                {t(`${r}.a`)} <Speak text={t(`${r}.a`)} />
+              </p>
+            )}
+          </li>
+        ))}
+      </ul>
+      <StepNav onBack={onBack} onNext={onNext} />
+    </>
+  )
+}
+
 export function SummaryStep({ step, onNext, onBack }) {
   const { t } = useI18n()
   return (

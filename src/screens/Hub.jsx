@@ -1,12 +1,17 @@
 import { useI18n } from '../i18n/I18n.jsx'
-import { CHAPTERS, RIGHTS_CARDS } from '../content.js'
+import { RIGHTS_CARDS, cardOf, chaptersFor } from '../content.js'
+import { useFeatures } from '../features.jsx'
 
 // The overview as a path: one station per chapter, with the next suggested
 // one gently highlighted, and a row of card slots that fill up as you go.
 export default function Hub({ progress, onOpen, onCards, onHelpers, onFinish, onRestart }) {
   const { t } = useI18n()
-  const nextId = CHAPTERS.find((ch) => !ch.comingSoon && !progress.done.includes(ch.id))?.id
-  const cardIds = Object.keys(RIGHTS_CARDS)
+  const { on, demo } = useFeatures()
+  const chapters = chaptersFor(on)
+  const nextId = chapters.find((ch) => !ch.comingSoon && !progress.done.includes(ch.id))?.id
+  // One slot per visible chapter; collected cards count only if their chapter is shown.
+  const cardIds = chapters.map(cardOf).filter(Boolean)
+  const collected = progress.cards.filter((id) => cardIds.includes(id))
 
   const restart = () => {
     if (window.confirm(t('hub.restartConfirm'))) onRestart()
@@ -18,13 +23,13 @@ export default function Hub({ progress, onOpen, onCards, onHelpers, onFinish, on
       <p className="lead">{t('hub.text')}</p>
 
       <ol className="path">
-        {CHAPTERS.map((ch, i) => {
+        {chapters.map((ch, i) => {
           const done = progress.done.includes(ch.id)
           const state = ch.comingSoon ? 'soon' : done ? 'done' : ch.id === nextId ? 'next' : ''
           return (
             <li key={ch.id} className={`station ${state}`}>
               <button className="station-button" disabled={ch.comingSoon} onClick={() => onOpen(ch.id)}>
-                <span className="station-dot">
+                <span className={`station-dot ${ch.imgContain ? 'contain' : ''}`}>
                   <img src={ch.img} alt="" />
                   {done && <span className="station-check" aria-hidden="true">✓</span>}
                 </span>
@@ -34,6 +39,7 @@ export default function Hub({ progress, onOpen, onCards, onHelpers, onFinish, on
                   <span>{t(ch.subtitle)}</span>
                   {done && <span className="badge badge-done">{t('hub.done')}</span>}
                   {ch.comingSoon && <span className="badge">{t('hub.soon')}</span>}
+                  {demo && ch.extra && <span className="badge badge-extra">{t('x.badge')}</span>}
                 </span>
               </button>
             </li>
@@ -41,14 +47,14 @@ export default function Hub({ progress, onOpen, onCards, onHelpers, onFinish, on
         })}
       </ol>
 
-      <button className="card-slots" onClick={onCards} aria-label={`${t('hub.cards')} (${progress.cards.length}/${cardIds.length})`}>
+      <button className="card-slots" onClick={onCards} aria-label={`${t('hub.cards')} (${collected.length}/${cardIds.length})`}>
         <span className="card-slots-title">
-          {t('hub.cards')} <span className="muted">{progress.cards.length}/{cardIds.length}</span>
+          {t('hub.cards')} <span className="muted">{collected.length}/{cardIds.length}</span>
         </span>
         <span className="card-slots-row">
           {cardIds.map((id) =>
             progress.cards.includes(id) ? (
-              <span key={id} className="slot filled">
+              <span key={id} className={`slot filled ${RIGHTS_CARDS[id].cutout ? 'cutout' : ''}`}>
                 <img src={RIGHTS_CARDS[id].img} alt="" />
               </span>
             ) : (

@@ -1,3 +1,5 @@
+import { EXTRA_CARDS, EXTRA_CHAPTERS } from './content/extra.js'
+
 // Structure of the app. All visible text is referenced by key from
 // src/i18n/strings.json (synced from the translation sheet).
 
@@ -36,6 +38,7 @@ export const RIGHTS_CARDS = {
   representative: { text: 'card.representative', img: img('actor-representative.jpg') },
   health: { text: 'card.health', img: img('actor-doctor.jpg') },
   activities: { text: 'card.activities', img: img('activity-sport.jpg') },
+  ...EXTRA_CARDS,
 }
 
 export const ACTIVITIES = [
@@ -129,3 +132,18 @@ export const CHAPTERS = [
     ],
   },
 ]
+
+// Chapters shown with the current feature switches: the workshop chapters plus
+// any extra chapters that are switched on.
+export function chaptersFor(on) {
+  return [...CHAPTERS, ...EXTRA_CHAPTERS.filter((ch) => on(ch.id))]
+}
+
+export function findChapter(id) {
+  return [...CHAPTERS, ...EXTRA_CHAPTERS].find((ch) => ch.id === id)
+}
+
+// The rights card each chapter gives (from its last "card" step).
+export function cardOf(chapter) {
+  return chapter.steps?.find((s) => s.type === 'card')?.card
+}

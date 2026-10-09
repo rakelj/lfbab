@@ -819,25 +819,74 @@
     "context": "Rights card text",
     "no": "Jeg har rett til fritidsaktiviteter"
   },
-  "sound.on": { "context": "Top bar button: turn read-aloud on (screen reader label)", "no": "Slå på opplesning" },
-  "sound.off": { "context": "Top bar button: turn read-aloud off (screen reader label)", "no": "Slå av opplesning" },
-  "sound.read": { "context": "Small speaker button next to a text (screen reader label)", "no": "Les opp" },
-  "sound.hint": { "context": "Shown once when read-aloud is turned on", "no": "Opplesning er på. Trykk på høyttaleren ved en tekst for å høre den. Bruk gjerne hodetelefoner, så andre ikke hører." },
-
-  "footer.madeBy": { "context": "Footer on every screen", "no": "Utviklet av LFB" },
-  "footer.about": { "context": "Footer link to the about screen", "no": "Om appen" },
-  "about.title": { "context": "About screen heading", "no": "Om appen" },
-  "about.madeBy": { "context": "", "no": "Utviklet av Landsforeningen for barnevernsbarn (LFB)" },
-  "about.text": { "context": "PLACEHOLDER, LFB to write", "no": "[Plassholder] Denne appen er laget for barn og unge som bor på mottak i Norge. Den bygger på LFBs workshop «Dine rettigheter på mottaket», og skal hjelpe deg å vite hvilke rettigheter du har og hvordan du kan be om hjelp." },
-  "about.lfb": { "context": "PLACEHOLDER, LFB to write. Short description of LFB", "no": "[Plassholder] LFB er en medlems- og interesseorganisasjon som jobber for å bedre barn og unges rettigheter i møte med barnevernet." },
-  "about.privacy": { "context": "", "no": "Appen er anonym. Vi spør aldri om navnet ditt, og vi lagrer ikke hvem du er." },
-  "about.contact": { "context": "Heading above contact links", "no": "Kontakt oss" },
-  "about.website": { "context": "Link label", "no": "Nettside" },
-  "about.email": { "context": "Link label", "no": "E-post" },
-  "about.credits": { "context": "Heading above credits", "no": "Takk til" },
-  "about.illustrations": { "context": "PLACEHOLDER, name of the illustrator", "no": "Illustrasjoner: [navn på illustratør]" },
-  "about.development": { "context": "PLACEHOLDER", "no": "Utvikling: [navn]" },
-
+  "sound.on": {
+    "context": "Top bar button: turn read-aloud on (screen reader label)",
+    "no": "Slå på opplesning"
+  },
+  "sound.off": {
+    "context": "Top bar button: turn read-aloud off (screen reader label)",
+    "no": "Slå av opplesning"
+  },
+  "sound.read": {
+    "context": "Small speaker button next to a text (screen reader label)",
+    "no": "Les opp"
+  },
+  "sound.hint": {
+    "context": "Shown once when read-aloud is turned on",
+    "no": "Opplesning er på. Trykk på høyttaleren ved en tekst for å høre den. Bruk gjerne hodetelefoner, så andre ikke hører."
+  },
+  "footer.madeBy": {
+    "context": "Footer on every screen",
+    "no": "Utviklet av LFB"
+  },
+  "footer.about": {
+    "context": "Footer link to the about screen",
+    "no": "Om appen"
+  },
+  "about.title": {
+    "context": "About screen heading",
+    "no": "Om appen"
+  },
+  "about.madeBy": {
+    "context": "",
+    "no": "Utviklet av Landsforeningen for barnevernsbarn (LFB)"
+  },
+  "about.text": {
+    "context": "PLACEHOLDER, LFB to write",
+    "no": "[PLACEHOLDER] Denne appen er laget for barn og unge som bor på mottak i Norge. Den bygger på LFBs workshop «Dine rettigheter på mottaket», og skal hjelpe deg å vite hvilke rettigheter du har og hvordan du kan be om hjelp."
+  },
+  "about.lfb": {
+    "context": "PLACEHOLDER, LFB to write. Short description of LFB",
+    "no": "[PLACEHOLDER] LFB er en medlems- og interesseorganisasjon som jobber for å bedre barn og unges rettigheter i møte med barnevernet."
+  },
+  "about.privacy": {
+    "context": "",
+    "no": "Appen er anonym. Vi spør aldri om navnet ditt, og vi lagrer ikke hvem du er."
+  },
+  "about.contact": {
+    "context": "Heading above contact links",
+    "no": "Kontakt oss"
+  },
+  "about.website": {
+    "context": "Link label",
+    "no": "Nettside"
+  },
+  "about.email": {
+    "context": "Link label",
+    "no": "E-post"
+  },
+  "about.credits": {
+    "context": "Heading above credits",
+    "no": "Takk til"
+  },
+  "about.illustrations": {
+    "context": "PLACEHOLDER, name of the illustrator",
+    "no": "Illustrasjoner: [PLACEHOLDER navn på illustratør]"
+  },
+  "about.development": {
+    "context": "PLACEHOLDER",
+    "no": "Utvikling: [PLACEHOLDER navn]"
+  },
   "card.label": {
     "context": "Shown when a rights card is collected",
     "no": "Du fikk et nytt rettighetskort!"
@@ -893,5 +942,361 @@
   "closing.thanks": {
     "context": "Last line of the app",
     "no": "Takk for at du var med!"
+  },
+  "x.badge": {
+    "context": "Badge on extra chapters in demo mode: not from the workshop",
+    "no": "Ekstra"
+  },
+  "step.routes.hint": {
+    "context": "Hint above a list of situations to tap",
+    "no": "Trykk på det som passer."
+  },
+  "x.safety.title": {
+    "context": "EXTRA chapter title (from LFB's rights information)",
+    "no": "Trygghet"
+  },
+  "x.safety.subtitle": {
+    "context": "",
+    "no": "Du har rett til å være trygg"
+  },
+  "x.safety.intro.title": {
+    "context": "",
+    "no": "Du har rett til å være trygg"
+  },
+  "x.safety.intro.text": {
+    "context": "From LFB's rights information",
+    "no": "Ingen kan utsette deg for press, kontroll, trusler, negativ sosial kontroll, seksuell utnytting eller press til kriminalitet eller annen skadelig handling."
+  },
+  "x.safety.nsc.title": {
+    "context": "",
+    "no": "Hva er negativ sosial kontroll?"
+  },
+  "x.safety.nsc.text": {
+    "context": "From LFB's rights information",
+    "no": "Negativ sosial kontroll er press, oppsyn, trusler eller tvang som kan begrense din rett til å bestemme over egen kropp, venner, fritidsaktiviteter, påkledning og kjæreste."
+  },
+  "x.safety.hit.q": {
+    "context": "Myth statement (correct answer: not true)",
+    "no": "En voksen jeg kjenner har lov til å slå meg hvis jeg har gjort noe galt."
+  },
+  "x.safety.hit.right": {
+    "context": "From LFB's rights information",
+    "no": "Ingen har lov til å slå deg, true deg, skade deg eller gjøre noe annet med kroppen din som du ikke vil selv. Det gjelder alle."
+  },
+  "x.safety.summary.title": {
+    "context": "",
+    "no": "Hvis noe skjer:"
+  },
+  "x.safety.summary.1": {
+    "context": "From LFB's rights information",
+    "no": "Si fra til de ansatte på mottaket."
+  },
+  "x.safety.summary.2": {
+    "context": "",
+    "no": "Hvis det er en ansatt som gjør det, si fra til lederen på mottaket eller til representanten din."
+  },
+  "x.safety.summary.3": {
+    "context": "",
+    "no": "Vil du ikke si fra til noen av dem? Ring Alarmtelefonen 116 111. Den er gratis, åpen hele døgnet og anonym."
+  },
+  "x.safety.staff": {
+    "context": "Shown to staff in NORWEGIAN only. Do not translate.",
+    "no": "Jeg trenger å snakke med noen om noe som har skjedd. Kan vi snakke et sted der andre ikke hører?"
+  },
+  "x.safety.card": {
+    "context": "Rights card text",
+    "no": "Jeg har rett til å være trygg"
+  },
+  "x.centre.title": {
+    "context": "EXTRA chapter title (from LFB's rights information)",
+    "no": "Rettighetene dine på mottaket"
+  },
+  "x.centre.subtitle": {
+    "context": "",
+    "no": "Hva mottaket skal hjelpe deg med"
+  },
+  "x.centre.intro.title": {
+    "context": "",
+    "no": "Mottaket skal ta vare på deg"
+  },
+  "x.centre.intro.text": {
+    "context": "From LFB's rights information",
+    "no": "De voksne som jobber på mottaket skal alltid tenke på hva som er best for deg. De skal snakke med deg alene for å finne ut hva du trenger, og lage en plan sammen med deg for hvordan de kan hjelpe deg."
+  },
+  "x.centre.plan.q": {
+    "context": "Statement about own situation",
+    "no": "De ansatte har laget en plan sammen med meg."
+  },
+  "x.centre.plan.right": {
+    "context": "From LFB's rights information",
+    "no": "Planen skal lages så snart som mulig etter at du kommer til mottaket, og brukes hele tiden du bor der. Du og representanten din skal få si hva dere mener om den."
+  },
+  "x.centre.plan.staff": {
+    "context": "Shown to staff in NORWEGIAN only. Do not translate.",
+    "no": "Jeg vet ikke om jeg har en plan. Kan vi snakke om den sammen?"
+  },
+  "x.centre.plan.validate.yes": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Så bra! Planen er din, og du kan be om å endre den hvis behovene dine endrer seg."
+  },
+  "x.centre.plan.validate.no": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Det er ikke din feil. Du har rett til en plan, og det er lov å spørre de ansatte om den."
+  },
+  "x.centre.plan.validate.dontKnow": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Det er helt vanlig å ikke vite det. Spør en ansatt du stoler på, så kan dere se på planen sammen."
+  },
+  "x.centre.info.q": {
+    "context": "Statement about own situation",
+    "no": "Jeg får informasjon på et språk jeg forstår."
+  },
+  "x.centre.info.right": {
+    "context": "From LFB's rights information",
+    "no": "Du har rett til klar og forståelig informasjon om rettighetene og pliktene dine, tilpasset alderen din og på et språk du forstår."
+  },
+  "x.centre.info.staff": {
+    "context": "Shown to staff in NORWEGIAN only. Do not translate.",
+    "no": "Jeg forstår ikke all informasjonen jeg får. Kan jeg få den på mitt språk, eller med tolk?"
+  },
+  "x.centre.info.validate.yes": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Så bra! Si fra hvis det er noe du likevel ikke forstår."
+  },
+  "x.centre.info.validate.no": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Det er ikke din feil at du ikke forstår. Du har rett til informasjon på et språk du forstår, og det er lov å be om det."
+  },
+  "x.centre.info.validate.dontKnow": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Det er mye ny informasjon å forstå. Det er lov å spørre igjen, og å be om tolk."
+  },
+  "x.centre.phone.q": {
+    "context": "Myth statement (correct answer: not true)",
+    "no": "De ansatte har lov til å sjekke mobilen min når de vil."
+  },
+  "x.centre.phone.right": {
+    "context": "From LFB's rights information",
+    "no": "Du har rett til privatliv. De ansatte har vanligvis ikke lov til å lese dagboken din, åpne e-posten din, sjekke mobilen din eller gå gjennom tingene dine uten grunn."
+  },
+  "x.centre.summary.title": {
+    "context": "",
+    "no": "Du har rett til:"
+  },
+  "x.centre.summary.1": {
+    "context": "From LFB's rights information",
+    "no": "En plan, og voksne som følger deg opp"
+  },
+  "x.centre.summary.2": {
+    "context": "",
+    "no": "Å bli hørt og være med og bestemme i hverdagen din"
+  },
+  "x.centre.summary.3": {
+    "context": "",
+    "no": "Å bli behandlet på en god og respektfull måte"
+  },
+  "x.centre.summary.4": {
+    "context": "",
+    "no": "Å være den du er. Ingen skal prøve å fjerne kulturen din."
+  },
+  "x.centre.summary.5": {
+    "context": "",
+    "no": "Privatliv. Tingene dine er dine."
+  },
+  "x.centre.card": {
+    "context": "Rights card text",
+    "no": "Jeg har rett til å bli hørt og respektert"
+  },
+  "x.cws.title": {
+    "context": "EXTRA chapter title (from LFB's rights information)",
+    "no": "Barnevernet"
+  },
+  "x.cws.subtitle": {
+    "context": "",
+    "no": "Hjelp hvis du ikke er trygg"
+  },
+  "x.cws.intro.title": {
+    "context": "",
+    "no": "Hva er barnevernet?"
+  },
+  "x.cws.intro.text": {
+    "context": "From LFB's rights information",
+    "no": "Barnevernet er en offentlig tjeneste. De hjelper barn som ikke har det trygt, og hjelper barn og familier til å ha det bra. Barnevernet jobber ikke for UDI, og bestemmer ikke noe i asylsaken din."
+  },
+  "x.cws.asylum.q": {
+    "context": "Myth statement (correct answer: not true)",
+    "no": "Hvis jeg får hjelp av barnevernet, kan det skade asylsaken min."
+  },
+  "x.cws.asylum.right": {
+    "context": "From LFB's rights information",
+    "no": "Hjelp du får av barnevernet påvirker ikke asylsaken din."
+  },
+  "x.cws.when.title": {
+    "context": "",
+    "no": "Når kan barnevernet hjelpe?"
+  },
+  "x.cws.when.text": {
+    "context": "From LFB's rights information",
+    "no": "Hvis du ikke er trygg, ikke får nødvendig omsorg, eller blir utsatt for vold, overgrep eller alvorlig press. Det gjelder også deg som bor på mottak. Barnevernet kan da undersøke situasjonen og tilby deg hjelp."
+  },
+  "x.cws.summary.title": {
+    "context": "",
+    "no": "Slik kan du kontakte barnevernet:"
+  },
+  "x.cws.summary.1": {
+    "context": "From LFB's rights information",
+    "no": "Be en ansatt du stoler på om hjelp"
+  },
+  "x.cws.summary.2": {
+    "context": "",
+    "no": "Be representanten din kontakte barnevernet for deg"
+  },
+  "x.cws.summary.3": {
+    "context": "",
+    "no": "Ring barnevernet i kommunen der du bor"
+  },
+  "x.cws.staff": {
+    "context": "Shown to staff in NORWEGIAN only. Do not translate.",
+    "no": "Jeg vil gjerne snakke med barnevernet. Kan du hjelpe meg å kontakte dem?"
+  },
+  "x.cws.card": {
+    "context": "Rights card text",
+    "no": "Barnevernet kan hjelpe meg hvis jeg ikke er trygg"
+  },
+  "x.money.title": {
+    "context": "EXTRA chapter title (from LFB's rights information)",
+    "no": "Penger og skole"
+  },
+  "x.money.subtitle": {
+    "context": "",
+    "no": "Hva du har rett til i hverdagen"
+  },
+  "x.money.intro.title": {
+    "context": "",
+    "no": "Penger til hverdagen"
+  },
+  "x.money.intro.text": {
+    "context": "From LFB's rights information",
+    "no": "Du har rett til penger til livsopphold. Mottaket betaler dem direkte til deg. Pengene skal dekke mat, reiser, lege, telefon, klær og fritid."
+  },
+  "x.money.rent.q": {
+    "context": "Myth statement (correct answer: not true)",
+    "no": "Jeg må betale for å bo på mottaket."
+  },
+  "x.money.rent.right": {
+    "context": "From LFB's rights information",
+    "no": "Du betaler ikke for å bo. Du skal også få tilbud om en aktivitet du ikke betaler for selv, for eksempel trening eller fotball."
+  },
+  "x.money.school.title": {
+    "context": "",
+    "no": "Du har rett til skole"
+  },
+  "x.money.school.text": {
+    "context": "From LFB's rights information",
+    "no": "Du har rett til opplæring, og opplæringen er gratis. Trenger du det, har du rett til ekstra språkopplæring og annen tilrettelegging. Er du under 18 år, kan du ha rett til videregående skole."
+  },
+  "x.money.inschool.q": {
+    "context": "Statement about own situation",
+    "no": "Jeg går på skole eller får opplæring."
+  },
+  "x.money.inschool.right": {
+    "context": "From LFB's rights information",
+    "no": "Du har rett til opplæring, og mottaket skal sørge for at du får oppfølging på skolen."
+  },
+  "x.money.inschool.staff": {
+    "context": "Shown to staff in NORWEGIAN only. Do not translate.",
+    "no": "Jeg går ikke på skole. Kan du hjelpe meg å finne ut hvordan jeg kan begynne?"
+  },
+  "x.money.inschool.validate.yes": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Så bra! Si fra hvis du trenger mer hjelp på skolen."
+  },
+  "x.money.inschool.validate.no": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Det er ikke din feil. Du har rett til opplæring, og mottaket skal hjelpe deg å komme i gang."
+  },
+  "x.money.inschool.validate.dontKnow": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Det kan være vanskelig å vite hva som teller som opplæring. Spør en ansatt, så finner dere ut av det sammen."
+  },
+  "x.money.card": {
+    "context": "Rights card text",
+    "no": "Jeg har rett til skole og penger til hverdagen"
+  },
+  "x.complain.title": {
+    "context": "EXTRA chapter title (from LFB's rights information)",
+    "no": "Hvordan klage"
+  },
+  "x.complain.subtitle": {
+    "context": "",
+    "no": "Det er lov å si fra"
+  },
+  "x.complain.intro.title": {
+    "context": "",
+    "no": "Det er lov å klage"
+  },
+  "x.complain.intro.text": {
+    "context": "",
+    "no": "Hvis noe er feil, eller du ikke får det du har rett til, er det lov å si fra og å klage. Hvem du skal gå til, kommer an på hva det gjelder."
+  },
+  "x.complain.routes.title": {
+    "context": "Question above a list of situations",
+    "no": "Hva gjelder det?"
+  },
+  "x.complain.r1.q": {
+    "context": "Situation",
+    "no": "Noe er feil der jeg bor"
+  },
+  "x.complain.r1.a": {
+    "context": "From LFB's rights information",
+    "no": "Si fra til en ansatt du stoler på, eller til lederen. Hvis du ikke stoler på dem, si fra til representanten din."
+  },
+  "x.complain.r2.q": {
+    "context": "Situation",
+    "no": "Det gjelder helsen min"
+  },
+  "x.complain.r2.a": {
+    "context": "From LFB's rights information",
+    "no": "Klag til stedet som sa nei eller ikke hjalp deg. Pasient- og brukerombudet kan hjelpe deg. Be mottaket eller representanten din om hjelp til å gjøre det."
+  },
+  "x.complain.r3.q": {
+    "context": "Situation",
+    "no": "Det gjelder representanten min"
+  },
+  "x.complain.r3.a": {
+    "context": "From LFB's rights information",
+    "no": "Be mottaket om hjelp til å kontakte Statsforvalteren. Å klage på representanten påvirker ikke asylsaken din."
+  },
+  "x.complain.r4.q": {
+    "context": "Situation",
+    "no": "Jeg er ikke trygg, eller trenger hjelp med én gang"
+  },
+  "x.complain.r4.a": {
+    "context": "From LFB's rights information",
+    "no": "Ring Alarmtelefonen 116 111. Den er gratis, åpen hele døgnet og anonym. Hvis det haster: ring 113 for ambulanse eller 112 for politi."
+  },
+  "x.complain.card": {
+    "context": "Rights card text",
+    "no": "Det er lov å klage"
+  },
+  "settings.title": {
+    "context": "Demo settings panel (demo mode only)",
+    "no": "Demo-innstillinger"
+  },
+  "settings.flow": {
+    "context": "Demo settings group",
+    "no": "Flyt (diskusjonspunkter)"
+  },
+  "settings.extra": {
+    "context": "Demo settings group",
+    "no": "Ekstra innhold (ikke fra workshopen)"
+  },
+  "settings.reset": {
+    "context": "Demo settings button",
+    "no": "Tilbakestill"
+  },
+  "settings.note": {
+    "context": "",
+    "no": "Gjelder bare denne enheten. Barn som bruker vanlig lenke ser standardoppsettet."
   }
 }

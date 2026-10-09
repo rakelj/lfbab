@@ -421,6 +421,36 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
 .actor-back dt { font-weight: 700; margin-top: 8px; font-size: 0.95rem; }
 .actor-back dd { margin: 2px 0 0; font-size: 0.95rem; line-height: 1.4; }
 
+/* Extra (non-workshop) content */
+.badge-extra { background: var(--charcoal); color: #fff; }
+.station-dot.contain img { object-fit: contain; padding: 8px; background: var(--pink-light); }
+.card-slots-row { flex-wrap: wrap; }
+.slot.cutout img { object-fit: contain; background: var(--pink-light); }
+.routes { list-style: none; padding: 0; display: grid; gap: 8px; }
+.routes li { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.routes li.open { box-shadow: 0 0 0 2px var(--purple), var(--shadow); }
+.route-question {
+  font: inherit; font-weight: 700; color: var(--ink); width: 100%; text-align: start; cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  background: none; border: 0; padding: 14px 16px; min-height: 52px;
+}
+.route-question span:last-child { font-size: 1.4rem; color: var(--purple); }
+.route-answer { margin: 0; padding: 0 16px 16px; font-size: 1.05rem; animation: fade-in 0.3s ease; }
+
+/* Demo settings (demo mode only) */
+.demo-tools { display: flex; gap: 6px; align-items: center; }
+.demo-settings-button {
+  width: 44px; height: 44px; border-radius: 50%; cursor: pointer; font-size: 1.2rem;
+  background: var(--charcoal); color: #fff; border: 0;
+}
+.settings-group { border: 0; padding: 0; margin: 8px 0; }
+.settings-group legend { font-weight: 700; margin-bottom: 6px; }
+.settings-row {
+  display: flex; align-items: center; gap: 12px; padding: 10px 12px; margin-bottom: 6px;
+  background: var(--card); border-radius: 12px; cursor: pointer; min-height: 48px;
+}
+.settings-row input { width: 22px; height: 22px; accent-color: var(--purple); }
+
 /* Demo mode only (?demo): replaces the logo in the top bar */
 .demo-restart {
   font: inherit; font-size: 0.9rem; font-weight: 700;

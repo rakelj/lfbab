@@ -2,13 +2,13 @@ import { useI18n } from '../i18n/I18n.jsx'
 import { img } from '../content.js'
 import { Speak } from '../components/Sound.jsx'
 
-// TODO: LFB to confirm the social media handles. "@lfb" comes from the
+// PLACEHOLDER: LFB to confirm the social media handles. "@lfb" comes from the
 // workshop deck and may be a placeholder.
 const LINKS = [
   { label: 'about.website', text: 'barnevernsbarna.no', href: 'https://barnevernsbarna.no' },
   { label: 'about.email', text: 'post@barnevernsbarna.no', href: 'mailto:post@barnevernsbarna.no' },
-  { label: null, name: 'Instagram', text: '@lfb', href: 'https://www.instagram.com/lfb/' },
-  { label: null, name: 'TikTok', text: '@lfb', href: 'https://www.tiktok.com/@lfb' },
+  { label: null, name: 'Instagram', text: '@lfb [PLACEHOLDER]', href: 'https://www.instagram.com/lfb/' },
+  { label: null, name: 'TikTok', text: '@lfb [PLACEHOLDER]', href: 'https://www.tiktok.com/@lfb' },
 ]
 
 export default function About({ onBack }) {
