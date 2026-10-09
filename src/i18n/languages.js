@@ -6,11 +6,13 @@
 // languages on top. Options: most-spoken among residents first, alphabetical
 // by own name, or the device's language (navigator.languages) first.
 export const LANGUAGES = [
-  { code: 'no', name: 'Norsk', choose: 'Velg språk', soon: 'Kommer snart', dir: 'ltr', speech: 'nb-NO', available: true },
-  { code: 'en', name: 'English', choose: 'Choose language', soon: 'Coming soon', dir: 'ltr', speech: 'en-GB', available: false },
-  { code: 'uk', name: 'Українська', choose: 'Оберіть мову', soon: 'Незабаром', dir: 'ltr', speech: 'uk-UA', available: false },
-  { code: 'ru', name: 'Русский', choose: 'Выберите язык', soon: 'Скоро', dir: 'ltr', speech: 'ru-RU', available: false },
-  { code: 'so', name: 'Soomaali', choose: 'Dooro luqadda', soon: 'Dhowaan', dir: 'ltr', speech: 'so-SO', available: false },
+// No flags on purpose: flags stand for countries, not languages, and can be
+// painful or political for young people who have fled (see the plan doc).
+  { code: 'no', name: 'Norsk', hello: 'Hei!', choose: 'Velg språk', soon: 'Kommer snart', dir: 'ltr', speech: 'nb-NO', available: true },
+  { code: 'en', name: 'English', hello: 'Hello!', choose: 'Choose language', soon: 'Coming soon', dir: 'ltr', speech: 'en-GB', available: false },
+  { code: 'uk', name: 'Українська', hello: 'Привіт!', choose: 'Оберіть мову', soon: 'Незабаром', dir: 'ltr', speech: 'uk-UA', available: false },
+  { code: 'ru', name: 'Русский', hello: 'Привет!', choose: 'Выберите язык', soon: 'Скоро', dir: 'ltr', speech: 'ru-RU', available: false },
+  { code: 'so', name: 'Soomaali', hello: 'Salaan!', choose: 'Dooro luqadda', soon: 'Dhowaan', dir: 'ltr', speech: 'so-SO', available: false },
 ]
 
 export const DEFAULT_LANG = 'no'

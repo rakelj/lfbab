@@ -131,9 +131,27 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
 }
 .badge-done { background: var(--green-light); color: var(--sage-dark); }
 
-/* Language screen */
-.lang-title { display: flex; flex-direction: column; gap: 2px; font-size: 1.15rem; color: var(--purple); }
-.lang-title span:first-child { font-size: 1.6rem; color: var(--ink); }
+/* Language screen: greeting bubble cycling through the languages */
+.logo-small { width: 72px; margin: 8px auto 0; }
+.greeting { display: grid; place-items: center; min-height: 150px; margin: 8px 0 4px; }
+.greeting-bubble {
+  position: relative; display: flex; flex-direction: column; align-items: center; gap: 2px;
+  background: var(--purple); color: #fff; border-radius: 28px; padding: 18px 32px 16px; min-width: 220px;
+  box-shadow: 0 6px 18px rgba(91, 78, 124, 0.3);
+  animation: greet 0.6s ease;
+}
+.greeting-bubble::after {
+  content: ''; position: absolute; bottom: -14px; left: 50%; margin-left: -12px;
+  border: 14px solid transparent; border-top-color: var(--purple); border-bottom: 0;
+}
+.greeting-hello { font-size: 2.4rem; font-weight: 700; line-height: 1.15; }
+.greeting-choose { font-size: 1.05rem; color: var(--green-light); font-weight: 600; }
+/* Fade in only, so the bubble is visible even if animations don't run */
+@keyframes greet { from { opacity: 0; transform: translateY(10px) scale(0.92); } to { opacity: 1; transform: none; } }
+.visually-hidden {
+  position: absolute !important; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
 .lang-list { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 10px; }
 .lang-option {
   font: inherit; width: 100%; min-height: 60px;
