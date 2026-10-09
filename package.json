@@ -7,13 +7,15 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "sync-strings": "node scripts/sync-strings.mjs"
+    "sync-strings": "node scripts/sync-strings.mjs",
+    "flowchart": "node scripts/flowchart.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "@vitejs/plugin-react": "^4.3.4",
     "vite": "^5.4.11"
   }
