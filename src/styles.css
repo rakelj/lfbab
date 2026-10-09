@@ -154,7 +154,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
 .answer-no, .answer-false { background: var(--pink); }
 .answer-dontKnow { background: var(--lavender-light); }
 .answer.selected { border-color: var(--purple); }
-.answer:disabled:not(.selected) { opacity: 0.35; cursor: default; }
+.answers.answered .answer:not(.selected) { opacity: 0.55; }
+.answers.answered .answer:not(.selected):hover { opacity: 0.85; }
 .feedback { margin-top: 16px; animation: fade-in 0.3s ease; }
 .reassure { font-weight: 600; color: var(--purple); font-size: 1.05rem; }
 .right-box { background: var(--card); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); margin-top: 8px; }

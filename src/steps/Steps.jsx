@@ -1,32 +1,32 @@
 import { useEffect, useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
-import { recordAnswer } from '../answers.js'
 import { ACTORS, EMOTIONS, RIGHTS_CARDS, img } from '../content.js'
 import StaffCard from '../components/StaffCard.jsx'
 
-function NextButton({ onNext, disabled, label }) {
+// Back (when there is somewhere to go back to) and Next.
+function StepNav({ onBack, onNext, nextLabel, nextDisabled }) {
   const { t } = useI18n()
   return (
     <div className="actions">
-      <button className="btn btn-primary" disabled={disabled} onClick={onNext}>
-        {label ?? t('common.next')}
+      {onBack && (
+        <button className="btn btn-secondary" onClick={onBack}>
+          {t('common.back')}
+        </button>
+      )}
+      <button className="btn btn-primary" disabled={nextDisabled} onClick={onNext}>
+        {nextLabel ?? t('common.next')}
       </button>
     </div>
   )
 }
 
+// Answers can be changed at any time: tapping another option just moves the selection.
 function AnswerButtons({ options, value, onAnswer }) {
   const { t } = useI18n()
   return (
-    <div className="answers">
+    <div className={`answers ${value ? 'answered' : ''}`}>
       {options.map((o) => (
-        <button
-          key={o}
-          className={`answer answer-${o} ${value === o ? 'selected' : ''}`}
-          disabled={value !== null && value !== o}
-          aria-pressed={value === o}
-          onClick={() => onAnswer(o)}
-        >
+        <button key={o} className={`answer answer-${o} ${value === o ? 'selected' : ''}`} aria-pressed={value === o} onClick={() => onAnswer(o)}>
           {t(`q.${o}`)}
         </button>
       ))}
@@ -44,78 +44,64 @@ function RightBox({ text }) {
   )
 }
 
-export function InfoStep({ step, onNext }) {
+export function InfoStep({ step, onNext, onBack }) {
   const { t } = useI18n()
   return (
     <>
       {step.img && <img className="illustration" src={step.img} alt="" />}
       <h1>{t(step.title)}</h1>
       <p className="lead">{t(step.text)}</p>
-      <NextButton onNext={onNext} />
+      <StepNav onBack={onBack} onNext={onNext} />
     </>
   )
 }
 
 // "True for you?": no right answer. Yes gets a nod; No / Don't know gets
 // reassurance and a card to show staff.
-export function SelfStep({ step, onNext }) {
-  const { t, lang } = useI18n()
-  const [answer, setAnswer] = useState(null)
-
-  const pick = (a) => {
-    setAnswer(a)
-    recordAnswer(step.id, a, lang)
-  }
-
+export function SelfStep({ step, value, onChange, onNext, onBack }) {
+  const { t } = useI18n()
   return (
     <>
       {step.img && <img className="illustration illustration-small" src={step.img} alt="" />}
       <span className="label">{t('q.selfLabel')}</span>
       <h1 className="statement">«{t(`${step.id}.q`)}»</h1>
-      <AnswerButtons options={['yes', 'no', 'dontKnow']} value={answer} onAnswer={pick} />
-      {answer && (
-        <div className="feedback">
-          <p className="reassure">{answer === 'yes' ? t('q.thanks') : t('q.notAlone')}</p>
+      <AnswerButtons options={['yes', 'no', 'dontKnow']} value={value} onAnswer={onChange} />
+      {value && (
+        <div className="feedback" key={value}>
+          <p className="reassure">{value === 'yes' ? t('q.thanks') : t('q.notAlone')}</p>
           <RightBox text={`${step.id}.right`} />
-          {answer !== 'yes' && <StaffCard textKey={`${step.id}.staff`} />}
+          {value !== 'yes' && <StaffCard textKey={`${step.id}.staff`} />}
         </div>
       )}
-      <NextButton onNext={onNext} label={answer ? undefined : t('common.skip')} />
+      <StepNav onBack={onBack} onNext={onNext} nextLabel={value ? undefined : t('common.skip')} />
     </>
   )
 }
 
 // "Did you know?": has a correct answer, but the feedback never says "wrong".
-export function MythStep({ step, onNext }) {
-  const { t, lang } = useI18n()
-  const [answer, setAnswer] = useState(null)
-
-  const pick = (a) => {
-    setAnswer(a)
-    recordAnswer(step.id, a, lang)
-  }
-
+export function MythStep({ step, value, onChange, onNext, onBack }) {
+  const { t } = useI18n()
   return (
     <>
       <span className="label">{t('q.mythLabel')}</span>
       <h1 className="statement">«{t(`${step.id}.q`)}»</h1>
-      <AnswerButtons options={['true', 'false', 'dontKnow']} value={answer} onAnswer={pick} />
-      {answer && (
-        <div className="feedback">
-          <p className="reassure">{answer === step.correct ? t('q.mythGotIt') : t('q.mythCommon')}</p>
+      <AnswerButtons options={['true', 'false', 'dontKnow']} value={value} onAnswer={onChange} />
+      {value && (
+        <div className="feedback" key={value}>
+          <p className="reassure">{value === step.correct ? t('q.mythGotIt') : t('q.mythCommon')}</p>
           <RightBox text={`${step.id}.right`} />
         </div>
       )}
-      <NextButton onNext={onNext} label={answer ? undefined : t('common.skip')} />
+      <StepNav onBack={onBack} onNext={onNext} nextLabel={value ? undefined : t('common.skip')} />
     </>
   )
 }
 
-// Body and mind: reveal the chain one link at a time.
-export function ChainStep({ onNext }) {
+// Body and mind: reveal the chain one link at a time. Back steps back through the links.
+export function ChainStep({ onNext, onBack, cameBack }) {
   const { t } = useI18n()
-  const [shown, setShown] = useState(1)
   const links = ['ch2.chain.1', 'ch2.chain.2', 'ch2.chain.3']
+  const [shown, setShown] = useState(cameBack ? links.length + 1 : 1)
   const complete = shown > links.length
 
   return (
@@ -133,12 +119,12 @@ export function ChainStep({ onNext }) {
           <p className="lead">{t('ch2.chain.text')}</p>
         </>
       )}
-      <NextButton onNext={complete ? onNext : () => setShown(shown + 1)} />
+      <StepNav onBack={shown > 1 ? () => setShown(shown - 1) : onBack} onNext={complete ? onNext : () => setShown(shown + 1)} />
     </>
   )
 }
 
-export function StoryIntroStep({ step, onNext, onSkipTo }) {
+export function StoryIntroStep({ step, onNext, onBack, onSkipTo }) {
   const { t } = useI18n()
   return (
     <>
@@ -151,13 +137,18 @@ export function StoryIntroStep({ step, onNext, onSkipTo }) {
           {t('ch2.story.read')}
         </button>
       </div>
+      {onBack && (
+        <button className="btn btn-link" onClick={onBack}>
+          ← {t('common.back')}
+        </button>
+      )}
     </>
   )
 }
 
-export function StoryStep({ step, onNext }) {
+export function StoryStep({ step, onNext, onBack, cameBack }) {
   const { t } = useI18n()
-  const [i, setI] = useState(0)
+  const [i, setI] = useState(cameBack ? step.panels.length - 1 : 0)
   const panel = step.panels[i]
   const last = i === step.panels.length - 1
 
@@ -166,28 +157,17 @@ export function StoryStep({ step, onNext }) {
       <h1>{t(step.title)}</h1>
       <img className="story-panel" src={panel.img} alt="" />
       <p className="story-text">{t(panel.text)}</p>
-      <div className="actions">
-        {i > 0 && (
-          <button className="btn btn-secondary" onClick={() => setI(i - 1)}>
-            {t('common.back')}
-          </button>
-        )}
-        <button className="btn btn-primary" onClick={last ? onNext : () => setI(i + 1)}>
-          {t('common.next')}
-        </button>
-      </div>
+      <StepNav onBack={i > 0 ? () => setI(i - 1) : onBack} onNext={last ? onNext : () => setI(i + 1)} />
     </div>
   )
 }
 
-export function EmotionsStep({ step, onNext }) {
-  const { t, lang } = useI18n()
-  const [picked, setPicked] = useState([])
-
-  const toggle = (id) => setPicked((p) => (p.includes(id) ? p.filter((x) => x !== id) : [...p, id]))
-  const done = () => {
-    if (picked.length) recordAnswer(step.id, picked.join(','), lang)
-    onNext()
+export function EmotionsStep({ step, value, onChange, onNext, onBack }) {
+  const { t } = useI18n()
+  const picked = value ? value.split(',') : []
+  const toggle = (id) => {
+    const nextPicked = picked.includes(id) ? picked.filter((x) => x !== id) : [...picked, id]
+    onChange(nextPicked.join(','))
   }
 
   return (
@@ -202,20 +182,18 @@ export function EmotionsStep({ step, onNext }) {
         ))}
       </div>
       {picked.length > 0 && <p className="reassure">{t(`${step.id}.after`)}</p>}
-      <NextButton onNext={done} label={picked.length ? undefined : t('common.skip')} />
+      <StepNav onBack={onBack} onNext={onNext} nextLabel={picked.length ? undefined : t('common.skip')} />
     </>
   )
 }
 
 // Tap actors in the order you'd ask them; tap again to remove.
-export function HelpersStep({ step, onNext }) {
-  const { t, lang } = useI18n()
-  const [order, setOrder] = useState([])
-
-  const toggle = (id) => setOrder((o) => (o.includes(id) ? o.filter((x) => x !== id) : [...o, id]))
-  const done = () => {
-    if (order.length) recordAnswer(step.id, order.join('>'), lang)
-    onNext()
+export function HelpersStep({ step, value, onChange, onNext, onBack }) {
+  const { t } = useI18n()
+  const order = value ? value.split('>') : []
+  const toggle = (id) => {
+    const nextOrder = order.includes(id) ? order.filter((x) => x !== id) : [...order, id]
+    onChange(nextOrder.join('>'))
   }
 
   return (
@@ -234,12 +212,12 @@ export function HelpersStep({ step, onNext }) {
         })}
       </div>
       {order.length > 0 && <p className="reassure">{t(`${step.id}.after`)}</p>}
-      <NextButton onNext={done} label={order.length ? undefined : t('common.skip')} />
+      <StepNav onBack={onBack} onNext={onNext} nextLabel={order.length ? undefined : t('common.skip')} />
     </>
   )
 }
 
-export function SummaryStep({ step, onNext }) {
+export function SummaryStep({ step, onNext, onBack }) {
   const { t } = useI18n()
   return (
     <>
@@ -251,7 +229,7 @@ export function SummaryStep({ step, onNext }) {
       </ul>
       {step.note && <p className="reassure">{t(step.note)}</p>}
       {step.staff && <StaffCard textKey={step.staff} />}
-      <NextButton onNext={onNext} />
+      <StepNav onBack={onBack} onNext={onNext} />
     </>
   )
 }
@@ -271,7 +249,7 @@ export function CardStep({ step, onComplete, onExit }) {
         <img src={card.img} alt="" />
         <p>{t(card.text)}</p>
       </div>
-      <NextButton onNext={onExit} label={t('common.toHub')} />
+      <StepNav onNext={onExit} nextLabel={t('common.toHub')} />
     </div>
   )
 }
