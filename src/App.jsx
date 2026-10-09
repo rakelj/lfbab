@@ -175,7 +175,7 @@ function Screens({ demo }) {
                       go('lang')
                     }}
                   >
-                    ↺ Demo
+                    ↺ <span className="demo-label">Demo</span>
                   </button>
                   <DemoSettings />
                 </div>

@@ -66,13 +66,15 @@ export function InfoStep({ step, onNext, onBack }) {
 
 // Validation after a "true for you?" answer: says it's not their fault and that
 // others feel the same. Each question has its own text per answer.
-function Validation({ id, value }) {
+// `ok` = the answer needs no comfort (Yes on a "true for you?", or the correct
+// answer on a myth): green box, no picture. Otherwise pink box with the friends.
+function Validation({ id, value, ok, fallback }) {
   const { t, has } = useI18n()
   const key = `${id}.validate.${value}`
-  const text = has(key) ? t(key) : value === 'yes' ? t('q.thanks') : t('q.notAlone')
+  const text = has(key) ? t(key) : t(fallback)
   return (
-    <div className={`validation validation-${value}`}>
-      {value !== 'yes' && <img src={img('friends.png')} alt="" />}
+    <div className={`validation ${ok ? 'validation-ok' : ''}`}>
+      {!ok && <img src={img('friends.png')} alt="" />}
       <p>
         {text} <Speak text={text} />
       </p>
@@ -94,7 +96,7 @@ export function SelfStep({ step, value, onChange, onNext, onBack }) {
       <AnswerButtons options={['yes', 'no', 'dontKnow']} value={value} onAnswer={onChange} />
       {value && (
         <div className="feedback" key={value}>
-          <Validation id={step.id} value={value} />
+          <Validation id={step.id} value={value} ok={value === 'yes'} fallback={value === 'yes' ? 'q.thanks' : 'q.notAlone'} />
           <RightBox text={`${step.id}.right`} />
           {value !== 'yes' && <StaffCard textKey={`${step.id}.staff`} />}
         </div>
@@ -116,10 +118,7 @@ export function MythStep({ step, value, onChange, onNext, onBack }) {
       <AnswerButtons options={['true', 'false', 'dontKnow']} value={value} onAnswer={onChange} />
       {value && (
         <div className="feedback" key={value}>
-          <p className="reassure">
-            {value === step.correct ? t('q.mythGotIt') : t('q.mythCommon')}{' '}
-            <Speak text={value === step.correct ? t('q.mythGotIt') : t('q.mythCommon')} />
-          </p>
+          <Validation id={step.id} value={value} ok={value === step.correct} fallback={value === step.correct ? 'q.mythGotIt' : 'q.mythCommon'} />
           <RightBox text={`${step.id}.right`} />
         </div>
       )}

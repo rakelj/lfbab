@@ -56,7 +56,9 @@ main { flex: 1; }
   .lang-button span { display: none; }
   .lang-button { padding: 8px 10px; }
   .help-button { font-size: 0.88rem; padding: 10px 12px; }
-  .demo-restart { padding: 8px 10px; }
+  .demo-restart { padding: 8px 10px; min-width: 44px; }
+  .demo-label { display: none; }
+  .demo-settings-button { width: 40px; }
 }
 @media (max-width: 340px) {
   .help-button { font-size: 0.8rem; padding: 8px 9px; }
@@ -419,7 +421,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
 }
 .validation img { width: 76px; flex: none; }
 .validation p { margin: 0; font-size: 1.08rem; font-weight: 600; color: var(--ink); }
-.validation-yes { background: var(--green-light); }
+.validation-ok { background: var(--green-light); }
 
 
 /* Actor card that turns over */

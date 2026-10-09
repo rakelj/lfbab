@@ -1843,5 +1843,110 @@
     "context": "Game situation",
     "no": "Du synes det er vanskelig å følge med i timene på skolen.",
     "ar": "تجد صعوبة في متابعة الدروس في المدرسة."
+  },
+  "ch1.complain.validate.true": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Det er helt forståelig å være redd for det. Mange tror det samme, og mange tør derfor ikke klage. Men det stemmer ikke.",
+    "ar": "من المفهوم تمامًا أن تخاف من ذلك. كثيرون يظنون الشيء نفسه، ولذلك لا يجرؤ كثيرون على الشكوى. لكن هذا غير صحيح."
+  },
+  "ch1.complain.validate.false": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Helt riktig! Det er lov å klage, og det skader ikke asylsaken din.",
+    "ar": "صحيح تمامًا! من المسموح أن تشتكي، وهذا لا يضر بقضية لجوئك."
+  },
+  "ch1.complain.validate.dontKnow": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Det er lurt å spørre når man er usikker. Mange lurer på akkurat dette.",
+    "ar": "من الجيد أن تسأل عندما تكون غير متأكد. كثيرون يتساءلون عن هذا بالضبط."
+  },
+  "ch2.doctor.validate.true": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Det er helt forståelig å være bekymret for det. Mange tror det samme, og venter derfor med å be om hjelp. Men det stemmer ikke.",
+    "ar": "من المفهوم تمامًا أن تقلق من ذلك. كثيرون يظنون الشيء نفسه، ولذلك يؤجلون طلب المساعدة. لكن هذا غير صحيح."
+  },
+  "ch2.doctor.validate.false": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Helt riktig! Du kan be om helsehjelp uten å være redd for asylsaken.",
+    "ar": "صحيح تمامًا! يمكنك طلب الرعاية الصحية دون أن تخاف على قضية لجوئك."
+  },
+  "ch2.doctor.validate.dontKnow": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Det er helt vanlig å være usikker på dette. Mange lurer på det samme.",
+    "ar": "من الطبيعي تمامًا أن تكون غير متأكد من هذا. كثيرون يتساءلون عن الشيء نفسه."
+  },
+  "ch3.cost.validate.true": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Mange tror det, og lar derfor være å spørre. Det er forståelig, men det stemmer ikke.",
+    "ar": "كثيرون يظنون ذلك، ولذلك لا يسألون. هذا مفهوم، لكنه غير صحيح."
+  },
+  "ch3.cost.validate.false": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Helt riktig! Penger skal ikke stoppe deg fra å ha en fritidsaktivitet.",
+    "ar": "صحيح تمامًا! لا ينبغي أن يمنعك المال من ممارسة نشاط ترفيهي."
+  },
+  "ch3.cost.validate.dontKnow": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Det er helt vanlig å ikke vite. Nå får du vite det.",
+    "ar": "من الطبيعي تمامًا ألا تعرف. الآن ستعرف."
+  },
+  "x.safety.hit.validate.true": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Noen har lært at det er greit. Det er ikke din feil hvis du har opplevd det. Men ingen har lov til å slå deg.",
+    "ar": "تعلّم البعض أن هذا مقبول. ليس ذنبك إذا كنت قد تعرضت لذلك. لكن لا يُسمح لأحد بضربك."
+  },
+  "x.safety.hit.validate.false": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Helt riktig! Ingen har lov til å slå deg, uansett hva du har gjort.",
+    "ar": "صحيح تمامًا! لا يُسمح لأحد بضربك، مهما فعلت."
+  },
+  "x.safety.hit.validate.dontKnow": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Regler kan være forskjellige fra sted til sted, så det er lurt å spørre. Her er svaret.",
+    "ar": "قد تختلف القواعد من مكان إلى آخر، لذا من الجيد أن تسأل. هذه هي الإجابة."
+  },
+  "x.centre.phone.validate.true": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Mange tror at de ansatte kan bestemme alt. Det er forståelig, men du har rett til privatliv.",
+    "ar": "كثيرون يظنون أن الموظفين يستطيعون أن يقرروا كل شيء. هذا مفهوم، لكن لديك الحق في الخصوصية."
+  },
+  "x.centre.phone.validate.false": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Helt riktig! Tingene og mobilen din er dine.",
+    "ar": "صحيح تمامًا! أشياؤك وهاتفك ملكك."
+  },
+  "x.centre.phone.validate.dontKnow": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Det er helt vanlig å være usikker på hvilke regler som gjelder. Nå vet du det.",
+    "ar": "من الطبيعي تمامًا ألا تكون متأكدًا من القواعد. الآن أصبحت تعرف."
+  },
+  "x.cws.asylum.validate.true": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Mange er redde for barnevernet, og det er forståelig. Men barnevernet bestemmer ikke noe i asylsaken din.",
+    "ar": "كثيرون يخافون من مؤسسة حماية الأطفال، وهذا مفهوم. لكنها لا تقرر أي شيء في قضية لجوئك."
+  },
+  "x.cws.asylum.validate.false": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Helt riktig! Du kan få hjelp av barnevernet uten å være redd for asylsaken.",
+    "ar": "صحيح تمامًا! يمكنك الحصول على مساعدة مؤسسة حماية الأطفال دون أن تخاف على قضية لجوئك."
+  },
+  "x.cws.asylum.validate.dontKnow": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Mange vet ikke hva barnevernet gjør. Det er helt vanlig å lure på dette.",
+    "ar": "كثيرون لا يعرفون ماذا تفعل مؤسسة حماية الأطفال. من الطبيعي تمامًا أن تتساءل عن ذلك."
+  },
+  "x.money.rent.validate.true": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Mange tror det. Det er forståelig å være usikker på penger, men du betaler ikke for å bo.",
+    "ar": "كثيرون يظنون ذلك. من المفهوم أن تكون غير متأكد بشأن المال، لكنك لا تدفع مقابل السكن."
+  },
+  "x.money.rent.validate.false": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Helt riktig! Du betaler ikke for å bo på mottaket.",
+    "ar": "صحيح تمامًا! لا تدفع مقابل السكن في مركز الاستقبال."
+  },
+  "x.money.rent.validate.dontKnow": {
+    "context": "DRAFT, needs LFB review. Validation after answering a myth question",
+    "no": "Det er helt vanlig å ikke vite. Nå vet du det.",
+    "ar": "من الطبيعي تمامًا ألا تعرف. الآن أصبحت تعرف."
   }
 }
