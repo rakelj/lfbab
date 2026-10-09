@@ -1774,6 +1774,11 @@
     "no": "Hvem kan hjelpe?",
     "ar": "من يمكنه المساعدة؟"
   },
+  "game.exit": {
+    "context": "Button at the top of the game: leave the game",
+    "no": "Avslutt spillet",
+    "ar": "إنهاء اللعبة"
+  },
   "game.intro": {
     "context": "",
     "no": "Les situasjonen, og trykk på den eller de du tror kan hjelpe.",

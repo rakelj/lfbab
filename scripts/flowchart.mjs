@@ -57,25 +57,28 @@ function column(x, y, w, steps) {
 // Title
 parts.push(`<text x="40" y="44" font-family="${FONT}" font-size="24" font-weight="700" fill="${C.ink}">User flow, prototype v0.2</text>`)
 parts.push(`<text x="40" y="68" font-family="${FONT}" font-size="14" fill="${C.muted}">Every screen has help, language and read-aloud buttons. Every chapter step has Back. Pink numbers = points to discuss.</text>`)
+parts.push(`<text x="40" y="88" font-family="${FONT}" font-size="14" fill="${C.muted}">Dashed boxes can be switched on and off in the demo settings (⚙).</text>`)
 
 // Row 1: first visit
-const r1y = 100
-const lang = box(40, r1y, 210, ['Choose language', 'Norwegian · Arabic demo'], { fill: C.lavender })
-const intro = box(300, r1y, 210, ['Intro', '4 short screens'], { fill: C.lavender })
-const checkin = box(560, r1y, 230, ['Mood check-in', 'Pick a weather picture'], { fill: C.lavender })
+const r1y = 110
+const lang = box(40, r1y, 210, ['Choose language', 'Norwegian · Arabic demo'], { fill: C.lavender, h: 56 })
+const film = box(290, r1y, 210, ['Intro film', '6 scenes · skippable'], { fill: C.lavender, dashed: true, h: 56 })
+const intro = box(540, r1y, 210, ['Intro', '4 short screens'], { fill: C.lavender, h: 56 })
+const checkin = box(790, r1y, 230, ['Mood check-in', 'Pick a weather picture'], { fill: C.lavender, dashed: true, h: 56 })
 marker(checkin.right - 4, checkin.y + 4, 1)
-arrow(lang.right, lang.cy, intro.x - 2, intro.cy)
+arrow(lang.right, lang.cy, film.x - 2, film.cy)
+arrow(film.right, film.cy, intro.x - 2, intro.cy)
 arrow(intro.right, intro.cy, checkin.x - 2, checkin.cy)
-parts.push(`<text x="840" y="${r1y + 20}" font-family="${FONT}" font-size="13" fill="${C.muted}">First visit only. Returning visitors</text>`)
-parts.push(`<text x="840" y="${r1y + 38}" font-family="${FONT}" font-size="13" fill="${C.muted}">go straight to the overview.</text>`)
+parts.push(`<text x="1060" y="${r1y + 22}" font-family="${FONT}" font-size="13" fill="${C.muted}">First visit only. Returning visitors</text>`)
+parts.push(`<text x="1060" y="${r1y + 40}" font-family="${FONT}" font-size="13" fill="${C.muted}">go straight to the overview.</text>`)
 
 // Row 2: overview
-const hub = box(420, 210, 480, ['Chapter overview', 'Chapters in any order · progress saved on this device'], { fill: C.purple, stroke: C.purple, color: '#fff', h: 56 })
+const hub = box(380, 220, 460, ['Chapter overview', 'Chapters in any order · progress saved on this device'], { fill: C.purple, stroke: C.purple, color: '#fff', h: 56 })
 marker(hub.right - 4, hub.y + 4, 7)
-path(`M ${checkin.cx} ${checkin.bottom} L ${checkin.cx} ${hub.y - 2}`)
+path(`M ${checkin.cx} ${checkin.bottom} L ${checkin.cx} ${hub.cy} L ${hub.right + 2} ${hub.cy}`)
 
 // Row 3: branches
-const top = 330
+const top = 340
 const colW = 228
 const xs = [40, 290, 540, 790, 1060]
 const busY = top - 26
@@ -126,21 +129,38 @@ const ch3 = column(xs[2], top, colW, [
   { text: ['Summary + "Show to staff"', 'card naming your activities'], ...ch },
   { text: 'Rights card', fill: C.purple, stroke: C.purple, color: '#fff', bold: true },
 ])
-// Two separate screens from the overview, so no arrow between them.
-box(xs[3], top, colW, ['My rights cards', 'Slots fill up on the overview'], { fill: C.lavender })
-box(xs[3], top + BOX_H + GAP, colW, ['Who can help me?', 'Cards that turn over + game'], { fill: C.lavender })
+// Extra chapters (not from the workshop) are listed on the overview after chapter 3.
+const extraY = ch3.at(-1).bottom + 56
+parts.push(`<text x="${xs[2] + colW / 2}" y="${extraY - 12}" text-anchor="middle" font-family="${FONT}" font-size="12" fill="${C.muted}">also on the overview:</text>`)
+const extra = column(xs[2], extraY, colW, [
+  { text: ['Extra chapters', 'Not from the workshop'], fill: C.sageLight, stroke: C.sage, dashed: true, h: 52 },
+  { text: ['Safety · Your rights at the', 'centre · Child welfare ·', 'Money and school · Complaints'], fill: '#fff', stroke: C.sage, dashed: true, h: 70, bold: false },
+  { text: ['Same steps as chapters:', 'info, myths, "True for you?",', 'summary, rights card'], fill: '#fff', stroke: C.sage, dashed: true, h: 70 },
+])
+
+// Two separate screens from the overview: rights cards, and "Who can help me?" with the game.
+box(xs[3], top, colW, ['My rights cards', 'Slots fill up on the overview'], { fill: C.lavender, h: 52 })
+const gallery = box(xs[3], top + 52 + GAP, colW, ['Who can help me?', 'Cards that turn over'], { fill: C.lavender, h: 52 })
+const game = column(xs[3], gallery.bottom + GAP + 4, colW, [
+  { text: ['Game: Who can help?', 'Also from chapter 2 card'], fill: C.lavender, h: 52 },
+  { text: ['6 situations: pick cards,', '"See the answer", ★ best help'], ...ch, h: 52 },
+  { text: ['Back: change picks or go to', 'the previous situation'], ...ch, h: 52 },
+  { text: ['"Well done!"', 'Back · Play again · Done'], ...ch, h: 52 },
+])
+arrow(gallery.cx, gallery.bottom, game[0].cx, game[0].y - 2)
+parts.push(`<text x="${game.at(-1).cx}" y="${game.at(-1).bottom + 22}" text-anchor="middle" font-family="${FONT}" font-size="12" fill="${C.muted}">"Exit the game" at the top, any time</text>`)
 const end = column(xs[4], top, colW, [
   { text: ['"Finish for today"', 'button'], fill: C.lavender, marker: 2 },
-  { text: ['Mood check-in again', 'Weather picture'], fill: C.lavender, marker: 2 },
+  { text: ['Mood check-in again', 'Weather picture'], fill: C.lavender, dashed: true, marker: 2 },
   { text: ['Closing', 'Before/after weather, key', 'messages, cards, contact'], fill: C.lavender, h: 64 },
 ])
 
 // Back to overview notes
-const backY = Math.max(ch1.at(-1).bottom, ch2.at(-1).bottom) + 30
-for (const b of [ch1.at(-1), ch2.at(-1), ch3.at(-1), end.at(-1)]) {
+const backY = Math.max(ch2.at(-1).bottom, extra.at(-1).bottom, game.at(-1).bottom) + 30
+for (const b of [ch1.at(-1), ch2.at(-1), ch3.at(-1), extra.at(-1), end.at(-1)]) {
   parts.push(`<text x="${b.cx}" y="${b.bottom + 22}" text-anchor="middle" font-family="${FONT}" font-size="12" fill="${C.muted}">→ back to overview</text>`)
 }
-const startOver = box(xs[3], top + 2 * (BOX_H + GAP) + 30, colW, ['"Start over"', 'Clears progress → language'], { fill: '#fff', stroke: C.line, color: C.muted, h: 54 })
+const startOver = box(xs[4], end.at(-1).bottom + 70, colW, ['"Start over"', 'Clears progress → language'], { fill: '#fff', stroke: C.line, color: C.muted, h: 54 })
 parts.push(`<text x="${startOver.cx}" y="${startOver.y - 10}" text-anchor="middle" font-family="${FONT}" font-size="12" fill="${C.muted}">from the overview</text>`)
 
 // Legend
@@ -148,14 +168,15 @@ const ly = backY + 30
 const legend = [
   [C.lavender, C.line, false, 'Shared screens'],
   [C.sageLight, C.sage, false, 'Chapter steps'],
+  ['#fff', C.line, true, 'Can be switched off'],
 ]
 legend.forEach(([fill, stroke, dashed, label], i) => {
   const x = 40 + i * 200
   parts.push(`<rect x="${x}" y="${ly}" width="28" height="18" rx="5" fill="${fill}" stroke="${stroke}" stroke-width="2"${dashed ? ' stroke-dasharray="5 4"' : ''}/>`)
   parts.push(`<text x="${x + 38}" y="${ly + 14}" font-family="${FONT}" font-size="13" fill="${C.ink}">${label}</text>`)
 })
-marker(40 + 2 * 200 + 14, ly + 9, 'n')
-parts.push(`<text x="${40 + 2 * 200 + 36}" y="${ly + 14}" font-family="${FONT}" font-size="13" fill="${C.ink}">Point to discuss</text>`)
+marker(40 + 3 * 200 + 14, ly + 9, 'n')
+parts.push(`<text x="${40 + 3 * 200 + 36}" y="${ly + 14}" font-family="${FONT}" font-size="13" fill="${C.ink}">Point to discuss</text>`)
 
 const H = ly + 50
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
@@ -169,6 +190,10 @@ const pubDir = fileURLToPath(new URL('../public/docs/', import.meta.url))
 mkdirSync(docsDir, { recursive: true })
 mkdirSync(pubDir, { recursive: true })
 writeFileSync(docsDir + 'flowchart.svg', svg)
+writeFileSync(pubDir + 'flowchart.svg', svg)
 const png = new Resvg(svg, { fitTo: { mode: 'width', value: W * 2 }, font: { loadSystemFonts: true } }).render().asPng()
 writeFileSync(pubDir + 'flowchart.png', png)
+// High-resolution copy for the "open in full size" link in the plan doc.
+const large = new Resvg(svg, { fitTo: { mode: 'width', value: W * 4 }, font: { loadSystemFonts: true } }).render().asPng()
+writeFileSync(pubDir + 'flowchart-large.png', large)
 console.log(`flowchart: ${W}x${H} → docs/flowchart.svg, public/docs/flowchart.png (${Math.round(png.length / 1024)} KB)`)
