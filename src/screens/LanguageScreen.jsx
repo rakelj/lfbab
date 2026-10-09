@@ -10,9 +10,10 @@ const reducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce
 function GreetingBubble() {
   const [i, setI] = useState(0)
 
+  // Always cycle: the languages are content, not decoration. With "Reduce motion"
+  // on (common on iPhones), the CSS drops the bounce and the text just swaps, a bit slower.
   useEffect(() => {
-    if (reducedMotion()) return
-    const id = setInterval(() => setI((n) => (n + 1) % LANGUAGES.length), 2200)
+    const id = setInterval(() => setI((n) => (n + 1) % LANGUAGES.length), reducedMotion() ? 3000 : 2200)
     return () => clearInterval(id)
   }, [])
 

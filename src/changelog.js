@@ -9,6 +9,7 @@ export const CHANGELOG = [
       'Opplesning på all tekst: oversikten, «Hvem kan hjelpe meg?», rettighetskortene, avslutningen, spillet og Om appen har fått høyttalerknapp.',
       'Tilbakemeldingene som dukker opp etter at du har svart (for eksempel «Takk for at du delte»), kan også leses opp.',
       'Overskriftene over spørsmålene («Stemmer dette for deg?», «Dette har du rett på») leses opp sammen med spørsmålet.',
+      'Språkskjermen: snakkebobla bytter språk også når «Reduser bevegelse» er slått på (vanlig på iPhone).',
       'Kortet «Vis til en ansatt» kan leses opp. Selve setningen til de ansatte leses bare opp når appen er på norsk.',
     ],
   },
