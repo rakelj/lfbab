@@ -428,6 +428,19 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
   border: 0; border-radius: 999px; padding: 8px 14px; min-height: 44px; cursor: pointer;
 }
 .demo-restart:hover { background: #000; }
+/* Footer and about screen */
+.site-footer {
+  display: flex; justify-content: center; align-items: center; gap: 8px; flex-wrap: wrap;
+  padding: 16px; border-top: 1px solid var(--lavender-light); color: var(--muted); font-size: 0.9rem;
+}
+.footer-link { font: inherit; font-weight: 600; background: none; border: 0; color: var(--purple); text-decoration: underline; cursor: pointer; padding: 8px 4px; }
+.logo-about { width: 96px; margin: 8px 0; }
+.about-links { list-style: none; padding: 0; display: grid; gap: 8px; }
+.about-links a {
+  display: flex; flex-direction: column; padding: 12px 16px; border-radius: var(--radius);
+  background: var(--card); box-shadow: var(--shadow); color: var(--purple); text-decoration: none; font-weight: 600;
+}
+.about-link-label { color: var(--muted); font-size: 0.85rem; font-weight: 700; }
 .build-stamp { text-align: center; font-size: 0.8rem; color: var(--muted); padding: 8px 16px 20px; font-variant-numeric: tabular-nums; }
 
 @keyframes drift { from { transform: scale(1.04) translate(-1.5%, 0); } to { transform: scale(1.12) translate(1.5%, -2%); } }

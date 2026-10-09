@@ -12,6 +12,8 @@ import Chapter from './screens/Chapter.jsx'
 import Cards from './screens/Cards.jsx'
 import Closing from './screens/Closing.jsx'
 import Helpers from './screens/Helpers.jsx'
+import About from './screens/About.jsx'
+import Footer from './components/Footer.jsx'
 import LanguageButton from './components/LanguageButton.jsx'
 import { SoundProvider, SoundToggle } from './components/Sound.jsx'
 
@@ -45,6 +47,8 @@ export default function App() {
   const [screen, setScreen] = useState(() => firstScreen(progress))
   const [chapterId, setChapterId] = useState(null)
   const [demo] = useState(isDemo)
+  // Screen to return to from "Om appen".
+  const [aboutFrom, setAboutFrom] = useState('hub')
 
   const go = (s) => {
     setScreen(s)
@@ -96,6 +100,9 @@ export default function App() {
       break
     case 'cards':
       content = <Cards cards={progress.cards} onBack={() => go('hub')} />
+      break
+    case 'about':
+      content = <About onBack={() => go(aboutFrom)} />
       break
     case 'helpers':
       content = <Helpers onBack={() => go('hub')} />
@@ -165,6 +172,14 @@ export default function App() {
           </header>
         )}
         <main>{content}</main>
+        {screen !== 'chapter' && screen !== 'about' && (
+          <Footer
+            onAbout={() => {
+              setAboutFrom(screen)
+              go('about')
+            }}
+          />
+        )}
         {demo && <footer className="build-stamp">{buildStamp()}</footer>}
       </div>
       </SoundProvider>

@@ -824,6 +824,20 @@
   "sound.read": { "context": "Small speaker button next to a text (screen reader label)", "no": "Les opp" },
   "sound.hint": { "context": "Shown once when read-aloud is turned on", "no": "Opplesning er på. Trykk på høyttaleren ved en tekst for å høre den. Bruk gjerne hodetelefoner, så andre ikke hører." },
 
+  "footer.madeBy": { "context": "Footer on every screen", "no": "Utviklet av LFB" },
+  "footer.about": { "context": "Footer link to the about screen", "no": "Om appen" },
+  "about.title": { "context": "About screen heading", "no": "Om appen" },
+  "about.madeBy": { "context": "", "no": "Utviklet av Landsforeningen for barnevernsbarn (LFB)" },
+  "about.text": { "context": "PLACEHOLDER, LFB to write", "no": "[Plassholder] Denne appen er laget for barn og unge som bor på mottak i Norge. Den bygger på LFBs workshop «Dine rettigheter på mottaket», og skal hjelpe deg å vite hvilke rettigheter du har og hvordan du kan be om hjelp." },
+  "about.lfb": { "context": "PLACEHOLDER, LFB to write. Short description of LFB", "no": "[Plassholder] LFB er en medlems- og interesseorganisasjon som jobber for å bedre barn og unges rettigheter i møte med barnevernet." },
+  "about.privacy": { "context": "", "no": "Appen er anonym. Vi spør aldri om navnet ditt, og vi lagrer ikke hvem du er." },
+  "about.contact": { "context": "Heading above contact links", "no": "Kontakt oss" },
+  "about.website": { "context": "Link label", "no": "Nettside" },
+  "about.email": { "context": "Link label", "no": "E-post" },
+  "about.credits": { "context": "Heading above credits", "no": "Takk til" },
+  "about.illustrations": { "context": "PLACEHOLDER, name of the illustrator", "no": "Illustrasjoner: [navn på illustratør]" },
+  "about.development": { "context": "PLACEHOLDER", "no": "Utvikling: [navn]" },
+
   "card.label": {
     "context": "Shown when a rights card is collected",
     "no": "Du fikk et nytt rettighetskort!"
