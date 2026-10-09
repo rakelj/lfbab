@@ -4,7 +4,7 @@ import { recordAnswer } from '../answers.js'
 import Dots from '../components/Dots.jsx'
 import {
   InfoStep, SelfStep, MythStep, ChainStep, StoryChoiceStep, StoryStep, EmotionsStep, HelpersStep,
-  ActivitiesStep, ActivitySummaryStep, RoutesStep, SummaryStep, CardStep,
+  ActivitiesStep, ActivitySummaryStep, RoutesStep, SummaryStep, CardStep, StoryAgainStep, FirstStep,
 } from '../steps/Steps.jsx'
 
 const STEPS = {
@@ -16,6 +16,8 @@ const STEPS = {
   activities: ActivitiesStep,
   activitySummary: ActivitySummaryStep,
   routes: RoutesStep,
+  storyAgain: StoryAgainStep,
+  first: FirstStep,
   story: StoryStep,
   emotions: EmotionsStep,
   helpers: HelpersStep,
@@ -23,7 +25,7 @@ const STEPS = {
   card: CardStep,
 }
 
-export default function Chapter({ chapter, onComplete, onExit }) {
+export default function Chapter({ chapter, onComplete, onExit, onGame }) {
   const { t, lang } = useI18n()
   // Visited step indexes, so Back returns to where you came from (also after a skip).
   const [history, setHistory] = useState([0])
@@ -31,6 +33,7 @@ export default function Chapter({ chapter, onComplete, onExit }) {
   const [cameBack, setCameBack] = useState(false)
   // Answers live in memory only while the chapter is open, so they can be
   // changed when going back. Only the final answers are sent, when leaving.
+  // Keys starting with "_" are the chapter's own bookkeeping and are not sent.
   const [answers, setAnswers] = useState({})
   const answersRef = useRef(answers)
   answersRef.current = answers
@@ -38,7 +41,7 @@ export default function Chapter({ chapter, onComplete, onExit }) {
   useEffect(() => {
     const flush = () => {
       for (const [question, answer] of Object.entries(answersRef.current)) {
-        if (answer !== null && answer !== '') recordAnswer(question, answer, lang)
+        if (!question.startsWith('_') && answer !== null && answer !== '') recordAnswer(question, answer, lang)
       }
       answersRef.current = {}
     }
@@ -69,6 +72,11 @@ export default function Chapter({ chapter, onComplete, onExit }) {
         }
       : null
   const skipTo = (type) => goTo(chapter.steps.findIndex((s, j) => j > i && s.type === type))
+  // Jump to the first step of a type, e.g. back to the story to read the other one.
+  const jumpTo = (type) => goTo(chapter.steps.findIndex((s) => s.type === type))
+  const setAnswer = (key, value) => setAnswers((a) => ({ ...a, [key]: value }))
+  // Steps after a story keep one answer per story ("ch2.emotions.shut").
+  const answerKey = step.id && step.storyFrom ? `${step.id}.${answers[step.storyFrom] ?? 'quiet'}` : step.id
 
   return (
     <section className="screen">
@@ -84,8 +92,11 @@ export default function Chapter({ chapter, onComplete, onExit }) {
         key={i}
         step={step}
         answers={answers}
-        value={step.id ? answers[step.id] ?? null : null}
-        onChange={(value) => setAnswers((a) => ({ ...a, [step.id]: value }))}
+        value={answerKey ? answers[answerKey] ?? null : null}
+        onChange={(value) => setAnswer(answerKey, value)}
+        setAnswer={setAnswer}
+        onJumpTo={jumpTo}
+        onGame={onGame}
         onNext={next}
         onBack={back}
         cameBack={cameBack}

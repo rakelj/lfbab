@@ -13,6 +13,7 @@ import Chapter from './screens/Chapter.jsx'
 import Cards from './screens/Cards.jsx'
 import Closing from './screens/Closing.jsx'
 import Helpers from './screens/Helpers.jsx'
+import HelperGame from './screens/HelperGame.jsx'
 import About from './screens/About.jsx'
 import Footer from './components/Footer.jsx'
 import LanguageButton from './components/LanguageButton.jsx'
@@ -62,6 +63,12 @@ function Screens({ demo }) {
   const [chapterId, setChapterId] = useState(null)
   // Screen to return to from "Om appen".
   const [aboutFrom, setAboutFrom] = useState('hub')
+  // Screen to return to from the "Who can help?" game.
+  const [gameFrom, setGameFrom] = useState('helpers')
+  const openGame = (from) => {
+    setGameFrom(from)
+    go('game')
+  }
 
   const go = (s) => {
     setScreen(s)
@@ -103,7 +110,7 @@ function Screens({ demo }) {
       )
       break
     case 'chapter':
-      content = <Chapter chapter={findChapter(chapterId)} onComplete={completeChapter} onExit={() => go('hub')} />
+      content = <Chapter chapter={findChapter(chapterId)} onComplete={completeChapter} onExit={() => go('hub')} onGame={() => openGame('hub')} />
       break
     case 'cards':
       content = <Cards cards={progress.cards} onBack={() => go('hub')} />
@@ -112,7 +119,10 @@ function Screens({ demo }) {
       content = <About onBack={() => go(aboutFrom)} />
       break
     case 'helpers':
-      content = <Helpers onBack={() => go('hub')} />
+      content = <Helpers onBack={() => go('hub')} onGame={() => openGame('helpers')} />
+      break
+    case 'game':
+      content = <HelperGame onBack={() => go(gameFrom)} />
       break
     case 'checkout':
       content = (

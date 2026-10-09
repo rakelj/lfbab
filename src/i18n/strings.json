@@ -491,11 +491,6 @@
     "no": "Du kan velge flere.",
     "ar": "يمكنك اختيار أكثر من شعور."
   },
-  "ch2.helpers.text": {
-    "context": "",
-    "no": "Trykk på dem i den rekkefølgen du ville spurt.",
-    "ar": "اضغط عليهم بالترتيب الذي كنت ستسألهم به."
-  },
   "ch2.helpers.after": {
     "context": "After choosing helpers",
     "no": "Det finnes mange veier til hjelp. En ansatt på mottaket eller representanten er et godt sted å starte. De kan hjelpe deg videre til lege eller psykolog.",
@@ -1562,7 +1557,7 @@
   },
   "settings.note": {
     "context": "",
-    "no": "Gjelder bare denne enheten. Barn som bruker vanlig lenke ser standardoppsettet."
+    "no": "Gjelder bare denne enheten. Brukere som bruker vanlig lenke ser standardoppsettet."
   },
   "story.quiet.name": {
     "context": "Main character's name, used in questions",
@@ -1638,5 +1633,215 @@
     "context": "Story page 5 (LFB's text, verbatim)",
     "no": "Han prøver å holde seg for ørene for å dekke til tankene sine. De vil ikke ta slutt.",
     "ar": "ويحاول الإمساك بأذنيه لتغطية خواطره. وهي لا تنتهي."
+  },
+  "story.helpers.text": {
+    "context": "Under 'Who can {name} talk to?'",
+    "no": "Velg så mange du vil. Da ser du hvordan de kan hjelpe.",
+    "ar": "اختر ما تشاء. سترى كيف يمكنهم المساعدة."
+  },
+  "story.helpers.why": {
+    "context": "Heading above the reasons for the chosen cards",
+    "no": "Slik kan de hjelpe:",
+    "ar": "هكذا يمكنهم المساعدة:"
+  },
+  "story.quiet.why.centreStaff": {
+    "context": "DRAFT, needs LFB review. Why this helper fits Hamlin's story",
+    "no": "Kan snakke med Hamlin igjen, med tolk, og spørre hvordan han egentlig har det.",
+    "ar": "يمكنه التحدث مع هاملين مرة أخرى، بوجود مترجم، وسؤاله عن حاله فعلاً."
+  },
+  "story.quiet.why.representative": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Kan forklare hva samtalene betyr for asylsaken, og passe på at Hamlin får tolk.",
+    "ar": "يمكنه أن يشرح ما تعنيه المحادثات بالنسبة لقضية اللجوء، وأن يتأكد من حصول هاملين على مترجم."
+  },
+  "story.quiet.why.friends": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Kan gjøre at Hamlin føler seg mindre alene, og få ham til å le igjen.",
+    "ar": "يمكنهم أن يجعلوا هاملين يشعر بوحدة أقل، وأن يجعلوه يضحك من جديد."
+  },
+  "story.quiet.why.resident": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Kan invitere Hamlin med ved middagsbordet.",
+    "ar": "يمكنه أن يدعو هاملين للانضمام إليهم على مائدة العشاء."
+  },
+  "story.quiet.why.schoolStaff": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Kan se hvordan Hamlin har det på skolen, og hjelpe ham å bli kjent med andre.",
+    "ar": "يمكنه ملاحظة حال هاملين في المدرسة، ومساعدته على التعرّف على الآخرين."
+  },
+  "story.quiet.why.psychologist": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Kan hjelpe Hamlin å snakke om savnet og ensomheten.",
+    "ar": "يمكنه مساعدة هاملين على الحديث عن الشوق والوحدة."
+  },
+  "story.quiet.why.family": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Hvis Hamlin kan ha kontakt med dem, kan det gi trøst og trygghet.",
+    "ar": "إذا استطاع هاملين التواصل معهم، فقد يمنحه ذلك المواساة والأمان."
+  },
+  "story.quiet.why.doctor": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Kan sende Hamlin videre til en psykolog hvis han trenger det.",
+    "ar": "يمكنه إحالة هاملين إلى أخصائي نفسي إذا احتاج إلى ذلك."
+  },
+  "story.shut.why.centreStaff": {
+    "context": "DRAFT, needs LFB review. Why this helper fits Elias's story",
+    "no": "Er der om kvelden, og kan hjelpe Elias å få kontakt med lege eller psykolog.",
+    "ar": "موجودون في المساء، ويمكنهم مساعدة إلياس في التواصل مع طبيب أو أخصائي نفسي."
+  },
+  "story.shut.why.representative": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Kan forklare hva som skjer i asylintervjuet, så Elias blir mindre redd for å si feil ting.",
+    "ar": "يمكنه أن يشرح ما يحدث في مقابلة اللجوء، فيقلّ خوف إلياس من أن يقول شيئًا خاطئًا."
+  },
+  "story.shut.why.friends": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Kan være noen å snakke med når tankene blir tunge.",
+    "ar": "يمكنهم أن يكونوا من يتحدث معهم عندما تصبح الأفكار ثقيلة."
+  },
+  "story.shut.why.resident": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Kan være selskap om kvelden, så Elias ikke er alene med tankene.",
+    "ar": "يمكنه أن يكون رفيقًا في المساء، كي لا يبقى إلياس وحده مع أفكاره."
+  },
+  "story.shut.why.schoolStaff": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Kan merke at Elias er sliten, og hjelpe ham videre.",
+    "ar": "يمكنه أن يلاحظ أن إلياس متعب، وأن يساعده في الحصول على المساعدة."
+  },
+  "story.shut.why.psychologist": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Kan hjelpe Elias med tankene som ikke vil stoppe, og med søvnen.",
+    "ar": "يمكنه مساعدة إلياس في الأفكار التي لا تتوقف، وفي النوم."
+  },
+  "story.shut.why.family": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Å snakke med de hjemme, hvis det er mulig, kan gi trøst.",
+    "ar": "التحدث مع أهله في الوطن، إن أمكن، قد يمنحه المواساة."
+  },
+  "story.shut.why.doctor": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Kan hjelpe med søvnproblemer og når det blir tungt å puste, og sende Elias videre til psykolog.",
+    "ar": "يمكنه المساعدة في مشكلات النوم وصعوبة التنفس، وإحالة إلياس إلى أخصائي نفسي."
+  },
+  "ch2.again.title": {
+    "context": "Offer after a story",
+    "no": "Vil du lese den andre historien også?",
+    "ar": "هل تريد أن تقرأ القصة الأخرى أيضًا؟"
+  },
+  "ch2.again.text": {
+    "context": "{title} is the other story's title",
+    "no": "Du kan også lese «{title}», eller gå videre.",
+    "ar": "يمكنك أيضًا قراءة «{title}»، أو المتابعة."
+  },
+  "ch2.again.yes": {
+    "context": "Button",
+    "no": "Ja, les den",
+    "ar": "نعم، اقرأها"
+  },
+  "ch2.again.no": {
+    "context": "Button",
+    "no": "Nei, gå videre",
+    "ar": "لا، تابع"
+  },
+  "ch2.first.title": {
+    "context": "Personal question after the stories",
+    "no": "Hvem ville du snakket med først?",
+    "ar": "مع من كنت ستتحدث أولاً؟"
+  },
+  "ch2.first.text": {
+    "context": "",
+    "no": "Tenk på deg selv. Velg én.",
+    "ar": "فكّر في نفسك. اختر واحدًا."
+  },
+  "ch2.first.after": {
+    "context": "After choosing",
+    "no": "Godt valg. Det viktigste er at du snakker med noen. Du trenger ikke klare alt alene.",
+    "ar": "اختيار جيد. الأهم أن تتحدث مع أحد. لست مضطرًا إلى تحمّل كل شيء وحدك."
+  },
+  "ch2.game.offer": {
+    "context": "On the rights card at the end of chapter 2",
+    "no": "Vil du øve mer på hvem som kan hjelpe?",
+    "ar": "هل تريد أن تتدرب أكثر على من يمكنه المساعدة؟"
+  },
+  "game.start": {
+    "context": "Button that opens the game",
+    "no": "Spill: Hvem kan hjelpe?",
+    "ar": "لعبة: من يمكنه المساعدة؟"
+  },
+  "game.title": {
+    "context": "Game heading",
+    "no": "Hvem kan hjelpe?",
+    "ar": "من يمكنه المساعدة؟"
+  },
+  "game.intro": {
+    "context": "",
+    "no": "Les situasjonen, og trykk på den eller de du tror kan hjelpe.",
+    "ar": "اقرأ الموقف، واضغط على من تظن أنه يستطيع المساعدة."
+  },
+  "game.counter": {
+    "context": "{n} of {total}",
+    "no": "Situasjon {n} av {total}",
+    "ar": "الموقف {n} من {total}"
+  },
+  "game.check": {
+    "context": "Button: show the answer",
+    "no": "Se svaret",
+    "ar": "اعرض الإجابة"
+  },
+  "game.best": {
+    "context": "Label above the best helpers",
+    "no": "Kan hjelpe mest her:",
+    "ar": "يمكنهم المساعدة أكثر هنا:"
+  },
+  "game.also": {
+    "context": "Label for a chosen card that is not among the best. Must not sound like 'wrong'.",
+    "no": "Kan også være god å snakke med:",
+    "ar": "من الجيد التحدث معهم أيضًا:"
+  },
+  "game.done.title": {
+    "context": "End of game",
+    "no": "Bra jobbet!",
+    "ar": "أحسنت!"
+  },
+  "game.done.text": {
+    "context": "",
+    "no": "Nå vet du mer om hvem som kan hjelpe med hva. I «Hvem kan hjelpe meg?» kan du snu kortene og lese mer.",
+    "ar": "الآن تعرف أكثر عن من يستطيع المساعدة في ماذا. في «من يمكنه مساعدتي؟» يمكنك قلب البطاقات وقراءة المزيد."
+  },
+  "game.again": {
+    "context": "Button",
+    "no": "Spill igjen",
+    "ar": "العب مرة أخرى"
+  },
+  "game.s.sleep": {
+    "context": "Game situation",
+    "no": "Du får ikke sove, fordi hodet er fullt av tanker.",
+    "ar": "لا تستطيع النوم، لأن رأسك مليء بالأفكار."
+  },
+  "game.s.letter": {
+    "context": "Game situation",
+    "no": "Du forstår ikke et brev du har fått, fordi det er skrevet på norsk.",
+    "ar": "لا تفهم رسالة وصلتك، لأنها مكتوبة باللغة النرويجية."
+  },
+  "game.s.lonely": {
+    "context": "Game situation",
+    "no": "Du har ingen å spise middag med, og føler deg alene.",
+    "ar": "ليس لديك من تتناول معه العشاء، وتشعر بالوحدة."
+  },
+  "game.s.stomach": {
+    "context": "Game situation",
+    "no": "Du har hatt vondt i magen i flere dager.",
+    "ar": "تشعر بألم في بطنك منذ عدة أيام."
+  },
+  "game.s.interview": {
+    "context": "Game situation",
+    "no": "Du lurer på når asylintervjuet ditt skal være.",
+    "ar": "تتساءل متى سيكون موعد مقابلة لجوئك."
+  },
+  "game.s.school": {
+    "context": "Game situation",
+    "no": "Du synes det er vanskelig å følge med i timene på skolen.",
+    "ar": "تجد صعوبة في متابعة الدروس في المدرسة."
   }
 }

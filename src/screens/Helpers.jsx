@@ -4,7 +4,7 @@ import { ACTORS } from '../content.js'
 import { ActorInfoModal } from '../components/ActorCard.jsx'
 
 // Gallery of LFB's actor cards. Tapping one opens it large and turns it over.
-export default function Helpers({ onBack }) {
+export default function Helpers({ onBack, onGame }) {
   const { t } = useI18n()
   const [open, setOpen] = useState(null)
 
@@ -12,6 +12,9 @@ export default function Helpers({ onBack }) {
     <section className="screen">
       <h1>{t('helpers.title')}</h1>
       <p className="lead">{t('helpers.text')}</p>
+      <button className="btn btn-staff game-button" onClick={onGame}>
+        {t('game.start')}
+      </button>
       <div className="card-grid">
         {ACTORS.map((a) => (
           <button key={a.id} className="pick-card" onClick={() => setOpen(a)}>

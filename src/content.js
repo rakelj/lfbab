@@ -73,6 +73,18 @@ export const STORIES = {
   },
 }
 
+// "Who can help?" game: situations with 3–4 cards to choose from. `best`
+// get highlighted with the reason from their card back; other picks are
+// shown as "also good to talk to", never as wrong.
+export const SITUATIONS = [
+  { id: 'sleep', options: ['psychologist', 'doctor', 'centreStaff', 'schoolStaff'], best: ['psychologist', 'doctor'] },
+  { id: 'letter', options: ['representative', 'centreStaff', 'doctor', 'friends'], best: ['representative', 'centreStaff'] },
+  { id: 'lonely', options: ['friends', 'resident', 'doctor', 'representative'], best: ['friends', 'resident'] },
+  { id: 'stomach', options: ['doctor', 'schoolStaff', 'family', 'representative'], best: ['doctor'] },
+  { id: 'interview', options: ['representative', 'friends', 'psychologist', 'resident'], best: ['representative'] },
+  { id: 'school', options: ['schoolStaff', 'family', 'doctor', 'resident'], best: ['schoolStaff'] },
+]
+
 // Step types: info, self (true for you?), myth (did you know?), chain,
 // storyChoice, story, emotions, helpers, summary, activities, activitySummary, card.
 // Steps with an `id` keep their answer while the chapter is open; later steps
@@ -107,17 +119,20 @@ export const CHAPTERS = [
       { type: 'info', title: 'ch2.intro.title', text: 'ch2.intro.text', img: img('icon-health.png') },
       { type: 'myth', id: 'ch2.doctor', correct: 'false' },
       { type: 'chain' },
-      { type: 'storyChoice', id: 'ch2.story', text: 'ch2.story.choose', skipTo: 'summary' },
+      { type: 'storyChoice', id: 'ch2.story', text: 'ch2.story.choose', skipTo: 'first' },
       { type: 'story', storyFrom: 'ch2.story' },
+      // Answers to these two are kept per story (e.g. "ch2.emotions.shut").
       { type: 'emotions', id: 'ch2.emotions', storyFrom: 'ch2.story' },
       { type: 'helpers', id: 'ch2.helpers', storyFrom: 'ch2.story' },
+      { type: 'storyAgain', storyFrom: 'ch2.story' },
+      { type: 'first', id: 'ch2.first' },
       {
         type: 'summary',
         title: 'ch2.summary.title',
         items: ['ch2.summary.1', 'ch2.summary.2', 'ch2.summary.3', 'ch2.summary.4'],
         staff: 'ch2.staff',
       },
-      { type: 'card', card: 'health' },
+      { type: 'card', card: 'health', offerGame: true },
     ],
   },
   {

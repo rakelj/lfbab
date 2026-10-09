@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
 import { ACTIVITIES, ACTORS, EMOTIONS, RIGHTS_CARDS, STORIES, img } from '../content.js'
 import StaffCard from '../components/StaffCard.jsx'
-import { ActorInfoButton } from '../components/ActorCard.jsx'
 import { Speak } from '../components/Sound.jsx'
 
 // Back (when there is somewhere to go back to) and Next.
@@ -142,10 +141,20 @@ export function ChainStep({ onNext, onBack, cameBack }) {
         {t('ch2.chain.title')}{' '}
         <Speak text={[t('ch2.chain.title'), ...links.slice(0, shown).map((k) => t(k)), complete ? t('ch2.chain.text') : ''].join(' ')} />
       </h1>
-      <img className="illustration" src={img('health-figures.png')} alt="" />
+      {/* Each link brings in its own figure (split from LFB's drawing), with an arrow between */}
       <ol className="chain">
-        {links.slice(0, shown).map((k) => (
-          <li key={k}>{t(k)}</li>
+        {links.slice(0, shown).map((k, i) => (
+          <li key={k} className="chain-link">
+            {i > 0 && (
+              <span className="chain-arrow" aria-hidden="true">
+                ↓
+              </span>
+            )}
+            <span className="chain-row">
+              <img src={img(`health-figure-${i + 1}.png`)} alt="" />
+              <span>{t(k)}</span>
+            </span>
+          </li>
         ))}
       </ol>
       {complete && (
@@ -199,9 +208,16 @@ export function StoryChoiceStep({ step, value, onChange, onNext, onBack, onSkipT
   )
 }
 
-export function StoryStep({ step, answers, onNext, onBack, cameBack }) {
+export function StoryStep({ step, answers, setAnswer, onNext, onBack, cameBack }) {
   const { t } = useI18n()
   const story = storyOf(step, answers)
+  // Remember which stories have been read, for the "read the other one?" offer.
+  const storyId = answers[step.storyFrom] ?? 'quiet'
+  const finish = () => {
+    const read = (answers._read ?? '').split(',').filter(Boolean)
+    if (!read.includes(storyId)) setAnswer('_read', [...read, storyId].join(','))
+    onNext()
+  }
   const [i, setI] = useState(cameBack ? story.panels.length - 1 : 0)
   const panel = story.panels[i]
   const last = i === story.panels.length - 1
@@ -218,7 +234,7 @@ export function StoryStep({ step, answers, onNext, onBack, cameBack }) {
       <p key={panel.text} className="story-text">
         {t(panel.text)} <Speak text={t(panel.text)} />
       </p>
-      <StepNav onBack={i > 0 ? () => setI(i - 1) : onBack} onNext={last ? onNext : () => setI(i + 1)} />
+      <StepNav onBack={i > 0 ? () => setI(i - 1) : onBack} onNext={last ? finish : () => setI(i + 1)} />
     </div>
   )
 }
@@ -251,36 +267,128 @@ export function EmotionsStep({ step, answers, value, onChange, onNext, onBack })
   )
 }
 
-// Tap actors in the order you'd ask them; tap again to remove.
-export function HelpersStep({ step, answers, value, onChange, onNext, onBack }) {
+// Grid of actor cards with a check mark on picked ones. The badge sits at the
+// bottom so it never covers the name painted at the top of the card.
+function ActorGrid({ picked, onPick }) {
   const { t } = useI18n()
+  return (
+    <div className="card-grid">
+      {ACTORS.map((a) => (
+        <button key={a.id} className={`pick-card ${picked.includes(a.id) ? 'selected' : ''}`} aria-pressed={picked.includes(a.id)} onClick={() => onPick(a.id)}>
+          <img src={a.img} alt={t(`actor.${a.id}`)} />
+          {picked.includes(a.id) && (
+            <span className="check-badge" aria-hidden="true">
+              ✓
+            </span>
+          )}
+        </button>
+      ))}
+    </div>
+  )
+}
+
+// "Who can {name} talk to?": pick as many as you like. Each pick shows how that
+// helper could help in this story (or the card back's text). No wrong answers.
+export function HelpersStep({ step, answers, value, onChange, onNext, onBack }) {
+  const { t, has } = useI18n()
+  const storyId = answers[step.storyFrom] ?? 'quiet'
   const name = t(storyOf(step, answers).name)
-  const order = value ? value.split('>') : []
-  const toggle = (id) => {
-    const nextOrder = order.includes(id) ? order.filter((x) => x !== id) : [...order, id]
-    onChange(nextOrder.join('>'))
-  }
+  const picked = value ? value.split(',') : []
+  const toggle = (id) => onChange((picked.includes(id) ? picked.filter((x) => x !== id) : [...picked, id]).join(','))
+  const why = (id) => (has(`story.${storyId}.why.${id}`) ? t(`story.${storyId}.why.${id}`) : t(`actor.${id}.what`))
 
   return (
     <>
       <h1>
-        {t('story.helpers.title', { name })} <Speak text={`${t('story.helpers.title', { name })} ${t(`${step.id}.text`)}`} />
+        {t('story.helpers.title', { name })} <Speak text={`${t('story.helpers.title', { name })} ${t('story.helpers.text')}`} />
+      </h1>
+      <p className="lead">{t('story.helpers.text')}</p>
+      <ActorGrid picked={picked} onPick={toggle} />
+      {picked.length > 0 && (
+        <div className="reasons">
+          <h2>{t('story.helpers.why')}</h2>
+          <ul>
+            {picked.map((id) => {
+              const actor = ACTORS.find((a) => a.id === id)
+              return (
+                <li key={id} className="reason">
+                  <img src={actor.img} alt="" />
+                  <span>
+                    <strong>{t(`actor.${id}`)}</strong> {why(id)} <Speak text={`${t(`actor.${id}`)}. ${why(id)}`} />
+                  </span>
+                </li>
+              )
+            })}
+          </ul>
+          <p className="reassure">{t(`${step.id}.after`)}</p>
+        </div>
+      )}
+      <StepNav onBack={onBack} onNext={onNext} nextLabel={picked.length ? undefined : t('common.skip')} />
+    </>
+  )
+}
+
+// After a story: offer to read the other one. Skips itself when both are read.
+export function StoryAgainStep({ step, answers, setAnswer, onNext, onBack, onJumpTo, cameBack }) {
+  const { t } = useI18n()
+  const read = (answers._read ?? '').split(',').filter(Boolean)
+  const other = Object.keys(STORIES).find((id) => !read.includes(id))
+
+  useEffect(() => {
+    if (other) return
+    // Nothing to offer: pass through in the direction the reader is going.
+    if (cameBack && onBack) onBack()
+    else onNext()
+  }, [])
+
+  if (!other) return null
+  const story = STORIES[other]
+  return (
+    <>
+      <h1>
+        {t('ch2.again.title')} <Speak text={`${t('ch2.again.title')} ${t('ch2.again.text', { title: t(story.title) })}`} />
+      </h1>
+      <p className="lead">{t('ch2.again.text', { title: t(story.title) })}</p>
+      <img className="story-cover" src={story.cover} alt="" />
+      <div className="actions">
+        <button className="btn btn-secondary" onClick={onNext}>
+          {t('ch2.again.no')}
+        </button>
+        <button
+          className="btn btn-primary"
+          onClick={() => {
+            setAnswer(step.storyFrom, other)
+            onJumpTo('story')
+          }}
+        >
+          {t('ch2.again.yes')}
+        </button>
+      </div>
+      {onBack && (
+        <button className="btn btn-link" onClick={onBack}>
+          <span className="dir-arrow">←</span> {t('common.back')}
+        </button>
+      )}
+    </>
+  )
+}
+
+// "Who would you talk to first?": one personal choice.
+export function FirstStep({ step, value, onChange, onNext, onBack }) {
+  const { t } = useI18n()
+  return (
+    <>
+      <h1>
+        {t(`${step.id}.title`)} <Speak text={`${t(`${step.id}.title`)} ${t(`${step.id}.text`)}`} />
       </h1>
       <p className="lead">{t(`${step.id}.text`)}</p>
-      <div className="card-grid">
-        {ACTORS.map((a) => {
-          const n = order.indexOf(a.id)
-          return (
-            <button key={a.id} className={`pick-card ${n >= 0 ? 'selected' : ''}`} aria-pressed={n >= 0} onClick={() => toggle(a.id)}>
-              <img src={a.img} alt={t(`actor.${a.id}`)} />
-              {n >= 0 && <span className="order-badge">{n + 1}</span>}
-              <ActorInfoButton actor={a} />
-            </button>
-          )
-        })}
-      </div>
-      {order.length > 0 && <p className="reassure">{t(`${step.id}.after`)}</p>}
-      <StepNav onBack={onBack} onNext={onNext} nextLabel={order.length ? undefined : t('common.skip')} />
+      <ActorGrid picked={value ? [value] : []} onPick={(id) => onChange(value === id ? null : id)} />
+      {value && (
+        <p className="reassure">
+          {t(`${step.id}.after`)} <Speak text={t(`${step.id}.after`)} />
+        </p>
+      )}
+      <StepNav onBack={onBack} onNext={onNext} nextLabel={value ? undefined : t('common.skip')} />
     </>
   )
 }
@@ -385,7 +493,7 @@ export function SummaryStep({ step, onNext, onBack }) {
   )
 }
 
-export function CardStep({ step, onComplete, onExit }) {
+export function CardStep({ step, onComplete, onExit, onGame }) {
   const { t } = useI18n()
   const card = RIGHTS_CARDS[step.card]
 
@@ -412,6 +520,14 @@ export function CardStep({ step, onComplete, onExit }) {
         ))}
       </div>
       <Speak text={t(card.text)} />
+      {step.offerGame && onGame && (
+        <div className="game-offer">
+          <p>{t('ch2.game.offer')}</p>
+          <button className="btn btn-staff" onClick={onGame}>
+            {t('game.start')}
+          </button>
+        </div>
+      )}
       <StepNav onNext={onExit} nextLabel={t('common.toHub')} />
     </div>
   )

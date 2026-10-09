@@ -8,6 +8,8 @@ $out = Join-Path $PSScriptRoot "..\public\img"
 New-Item -ItemType Directory -Force $out | Out-Null
 
 # name = output file (without extension), src = path in source folder, w = max width.
+# split = $true cuts a transparent drawing into its separate figures (found by
+# empty columns between them) and saves them as name-1, name-2, ...
 # Images with transparency are cropped to their content and saved as PNG; the rest as JPG.
 # Keep src paths ASCII: Windows PowerShell 5 reads this file as ANSI, so use * for letters like ø/å
 # (files from a Mac may store "å" as two characters, so ? won't match).
@@ -59,6 +61,7 @@ $assets = @(
   @{ name = "icon-handshake";   src = "slide illustrasjoner\Untitled_Artwork 118.png";        w = 500 },
   @{ name = "health-cycle";     src = "slide illustrasjoner\fysisk og psykisk helse g*r sammen.png"; w = 900 },
   @{ name = "health-figures";   src = "slide illustrasjoner\Untitled_Artwork 146.png";        w = 900 },
+  @{ name = "health-figure";    src = "slide illustrasjoner\Untitled_Artwork 146.png";        w = 320; split = $true },
   @{ name = "friends";          src = "slide illustrasjoner\Untitled_Artwork 542.png";        w = 700 },
   @{ name = "sunny-tree";       src = "slide illustrasjoner\Untitled_Artwork 545.png";        w = 500 },
   @{ name = "thumbs-up";        src = "slide illustrasjoner\Untitled_Artwork 540.png";        w = 400 },
@@ -93,25 +96,66 @@ function Get-ContentBounds([Drawing.Bitmap]$bmp) {
   return New-Object Drawing.Rectangle $x0, $y0, ($x1 - $x0), ($y1 - $y0)
 }
 
-foreach ($a in $assets) {
-  $path = (Get-Item -Path (Join-Path $Source $a.src) -ErrorAction SilentlyContinue | Select-Object -First 1).FullName
-  if (-not $path) { Write-Warning "Missing: $($a.src)"; continue }
-  $src = [Drawing.Bitmap]::FromFile($path)
-  $transparent = ($src.PixelFormat -band [Drawing.Imaging.PixelFormat]::Alpha) -ne 0 -and $src.GetPixel(1, 1).A -lt 255
-  $crop = if ($transparent) { Get-ContentBounds $src } else { New-Object Drawing.Rectangle 0, 0, $src.Width, $src.Height }
-  $scale = [Math]::Min(1.0, $a.w / $crop.Width)
+# Separate figures in a transparent drawing: column ranges with content,
+# split where at least 3% of the width is empty, each trimmed to its own height.
+function Get-Figures([Drawing.Bitmap]$bmp) {
+  $rect = New-Object Drawing.Rectangle 0, 0, $bmp.Width, $bmp.Height
+  $data = $bmp.LockBits($rect, "ReadOnly", "Format32bppArgb")
+  $bytes = New-Object byte[] ($data.Stride * $bmp.Height)
+  [Runtime.InteropServices.Marshal]::Copy($data.Scan0, $bytes, 0, $bytes.Length)
+  $bmp.UnlockBits($data)
+  $filled = New-Object bool[] $bmp.Width
+  for ($x = 0; $x -lt $bmp.Width; $x++) {
+    for ($y = 0; $y -lt $bmp.Height; $y += 3) { if ($bytes[$y * $data.Stride + $x * 4 + 3] -gt 8) { $filled[$x] = $true; break } }
+  }
+  $minGap = [int]($bmp.Width * 0.03); $ranges = @(); $start = -1; $gap = 0; $last = 0
+  for ($x = 0; $x -lt $bmp.Width; $x++) {
+    if ($filled[$x]) { if ($start -lt 0) { $start = $x }; $last = $x; $gap = 0 }
+    elseif ($start -ge 0) { $gap++; if ($gap -ge $minGap) { $ranges += ,@($start, $last); $start = -1 } }
+  }
+  if ($start -ge 0) { $ranges += ,@($start, $last) }
+  $pad = 12
+  foreach ($r in $ranges) {
+    $minY = $bmp.Height; $maxY = -1
+    for ($y = 0; $y -lt $bmp.Height; $y++) {
+      $row = $y * $data.Stride
+      for ($x = $r[0]; $x -le $r[1]; $x += 2) { if ($bytes[$row + $x * 4 + 3] -gt 8) { if ($y -lt $minY) { $minY = $y }; $maxY = $y; break } }
+    }
+    $x0 = [Math]::Max(0, $r[0] - $pad); $y0 = [Math]::Max(0, $minY - $pad)
+    $x1 = [Math]::Min($bmp.Width, $r[1] + $pad); $y1 = [Math]::Min($bmp.Height, $maxY + $pad)
+    New-Object Drawing.Rectangle $x0, $y0, ($x1 - $x0), ($y1 - $y0)
+  }
+}
+
+function Save-Image([Drawing.Bitmap]$src, [Drawing.Rectangle]$crop, [string]$name, [int]$maxW, [bool]$transparent) {
+  $scale = [Math]::Min(1.0, $maxW / $crop.Width)
   $w = [int]($crop.Width * $scale); $h = [int]($crop.Height * $scale)
   $fmt = if ($transparent) { [Drawing.Imaging.PixelFormat]::Format32bppArgb } else { [Drawing.Imaging.PixelFormat]::Format24bppRgb }
   $dst = New-Object Drawing.Bitmap $w, $h, $fmt
   $g = [Drawing.Graphics]::FromImage($dst)
   $g.InterpolationMode = "HighQualityBicubic"; $g.PixelOffsetMode = "HighQuality"; $g.SmoothingMode = "HighQuality"
   $g.DrawImage($src, (New-Object Drawing.Rectangle 0, 0, $w, $h), $crop, "Pixel")
-  $g.Dispose(); $src.Dispose()
+  $g.Dispose()
   if ($transparent) {
-    $file = Join-Path $out "$($a.name).png"; $dst.Save($file, [Drawing.Imaging.ImageFormat]::Png)
+    $file = Join-Path $out "$name.png"; $dst.Save($file, [Drawing.Imaging.ImageFormat]::Png)
   } else {
-    $file = Join-Path $out "$($a.name).jpg"; $dst.Save($file, $jpg, $jpgParams)
+    $file = Join-Path $out "$name.jpg"; $dst.Save($file, $jpg, $jpgParams)
   }
   $dst.Dispose()
   "{0,-28} {1,5}x{2,-5} {3,5} KB" -f (Split-Path $file -Leaf), $w, $h, [int]((Get-Item $file).Length / 1KB)
+}
+
+foreach ($a in $assets) {
+  $path = (Get-Item -Path (Join-Path $Source $a.src) -ErrorAction SilentlyContinue | Select-Object -First 1).FullName
+  if (-not $path) { Write-Warning "Missing: $($a.src)"; continue }
+  $src = [Drawing.Bitmap]::FromFile($path)
+  $transparent = ($src.PixelFormat -band [Drawing.Imaging.PixelFormat]::Alpha) -ne 0 -and $src.GetPixel(1, 1).A -lt 255
+  if ($a.split) {
+    $n = 0
+    foreach ($crop in (Get-Figures $src)) { $n++; Save-Image $src $crop "$($a.name)-$n" $a.w $true }
+  } else {
+    $crop = if ($transparent) { Get-ContentBounds $src } else { New-Object Drawing.Rectangle 0, 0, $src.Width, $src.Height }
+    Save-Image $src $crop $a.name $a.w $transparent
+  }
+  $src.Dispose()
 }

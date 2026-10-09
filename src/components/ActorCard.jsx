@@ -59,33 +59,3 @@ export function ActorInfoModal({ actor, onClose }) {
     </Modal>
   )
 }
-
-// Small "i" button that sits on a pickable card and opens its back.
-export function ActorInfoButton({ actor }) {
-  const { t } = useI18n()
-  const [open, setOpen] = useState(false)
-  return (
-    <>
-      <span
-        role="button"
-        tabIndex={0}
-        className="info-badge"
-        aria-label={`${t('actor.flip')} ${t(`actor.${actor.id}`)}`}
-        onClick={(e) => {
-          e.stopPropagation()
-          setOpen(true)
-        }}
-        onKeyDown={(e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault()
-            e.stopPropagation()
-            setOpen(true)
-          }
-        }}
-      >
-        i
-      </span>
-      {open && <ActorInfoModal actor={actor} onClose={() => setOpen(false)} />}
-    </>
-  )
-}
