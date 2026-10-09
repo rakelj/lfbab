@@ -131,7 +131,8 @@ export default function App() {
     <I18nProvider lang={progress.lang ?? DEFAULT_LANG}>
       <SoundProvider>
       <div className="app">
-        {screen !== 'lang' && (
+        {/* The language screen has no top bar, except the restart button in demo mode. */}
+        {(screen !== 'lang' || demo) && (
           <header className="topbar">
             {demo ? (
               <button
@@ -147,11 +148,13 @@ export default function App() {
             ) : (
               <img className="topbar-logo" src={img('logo.png')} alt="LFB" />
             )}
-            <div className="topbar-actions">
-              <SoundToggle />
-              <LanguageButton onClick={() => go('lang')} />
-              <HelpButton />
-            </div>
+            {screen !== 'lang' && (
+              <div className="topbar-actions">
+                <SoundToggle />
+                <LanguageButton onClick={() => go('lang')} />
+                <HelpButton />
+              </div>
+            )}
           </header>
         )}
         <main>{content}</main>
