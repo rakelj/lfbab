@@ -187,8 +187,13 @@ export function StoryStep({ step, answers, onNext, onBack, cameBack }) {
   return (
     <div className="story">
       <h1>{t(story.title)}</h1>
-      <img className="story-panel" src={panel.img} alt="" />
-      <p className="story-text">{t(panel.text)}</p>
+      {/* keys restart the slow zoom and the text fade for each panel */}
+      <div className="story-frame">
+        <img key={panel.img} className="story-panel" src={panel.img} alt="" />
+      </div>
+      <p key={panel.text} className="story-text">
+        {t(panel.text)}
+      </p>
       <StepNav onBack={i > 0 ? () => setI(i - 1) : onBack} onNext={last ? onNext : () => setI(i + 1)} />
     </div>
   )
@@ -327,9 +332,20 @@ export function CardStep({ step, onComplete, onExit }) {
   return (
     <div className="screen-center">
       <span className="label">{t('card.label')}</span>
-      <div className="rights-card rights-card-new">
-        <img src={card.img} alt="" />
-        <p>{t(card.text)}</p>
+      {/* The card turns over from its back, with a few sparkles around it */}
+      <div className="reward">
+        <div className="reward-card">
+          <div className="rights-card reward-front">
+            <img src={card.img} alt="" />
+            <p>{t(card.text)}</p>
+          </div>
+          <div className="reward-back" aria-hidden="true" />
+        </div>
+        {[1, 2, 3, 4, 5].map((n) => (
+          <span key={n} className={`sparkle sparkle-${n}`} aria-hidden="true">
+            ✦
+          </span>
+        ))}
       </div>
       <StepNav onNext={onExit} nextLabel={t('common.toHub')} />
     </div>
