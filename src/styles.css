@@ -564,3 +564,11 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
 @keyframes slide-up { from { transform: translateY(40px); opacity: 0; } to { transform: none; opacity: 1; } }
 @keyframes pop-in { 0% { transform: scale(0.7); opacity: 0; } 70% { transform: scale(1.05); } 100% { transform: none; opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+/* Demo changelog */
+.build-stamp-link { font-size: inherit; color: inherit; font-weight: 400; min-height: 0; padding: 4px; }
+.new-badge { display: inline-block; margin-inline-start: 6px; padding: 1px 8px; border-radius: 999px; background: var(--pink); color: var(--ink); font-weight: 700; font-size: 0.75rem; }
+.changelog { text-align: start; }
+.changelog-version h3 { margin: 16px 0 4px; }
+.changelog-version ul { margin: 4px 0 8px; padding-inline-start: 20px; }
+.changelog-version li { margin-bottom: 6px; }

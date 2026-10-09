@@ -45,6 +45,13 @@ and re-run it.
   answers only live in memory while a chapter is open.
 - No external fonts, analytics or trackers. `no-referrer` is set in `index.html`.
 
+## Demo mode and changelog
+
+Add `?demo` to the URL for the restart button, the ⚙ settings and a version
+stamp. Tapping the stamp opens "Hva er nytt" (`src/changelog.js`, Norwegian, for
+LFB). For each demo you send: add an entry there and bump `version` in
+`package.json`. The stamp shows "Nytt" until the newest entry has been opened.
+
 ## Deploy
 
 Every push to `main` builds and publishes to GitHub Pages

@@ -15,6 +15,7 @@ import Cards from './screens/Cards.jsx'
 import Closing from './screens/Closing.jsx'
 import Helpers from './screens/Helpers.jsx'
 import HelperGame from './screens/HelperGame.jsx'
+import Changelog from './components/Changelog.jsx'
 import About from './screens/About.jsx'
 import Footer from './components/Footer.jsx'
 import LanguageButton from './components/LanguageButton.jsx'
@@ -209,7 +210,7 @@ function Screens({ demo }) {
               }}
             />
           )}
-          {demo && <footer className="build-stamp">{buildStamp()}</footer>}
+          {demo && <Changelog stamp={buildStamp()} />}
         </div>
       </SoundProvider>
     </I18nProvider>
