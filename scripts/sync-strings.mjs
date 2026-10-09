@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url'
 const SHEET_ID = process.env.STRINGS_SHEET_ID || '' // TODO: set once the sheet exists
 const JSON_PATH = fileURLToPath(new URL('../src/i18n/strings.json', import.meta.url))
 const CSV_PATH = fileURLToPath(new URL('../strings.csv', import.meta.url))
-const LANGS = ['no', 'en', 'uk', 'ru', 'so']
+const LANGS = ['no', 'en', 'ar', 'prs', 'fa', 'ps', 'ru', 'so', 'es', 'ti', 'tr', 'uk']
 
 function parseCsv(text) {
   const rows = []

@@ -421,6 +421,14 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
 .actor-back dt { font-weight: 700; margin-top: 8px; font-size: 0.95rem; }
 .actor-back dd { margin: 2px 0 0; font-size: 0.95rem; line-height: 1.4; }
 
+/* Right-to-left: arrows point the other way */
+[dir='rtl'] .dir-arrow { display: inline-block; transform: scaleX(-1); }
+.draft-banner {
+  margin: 0; padding: 6px 16px; text-align: center; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.03em;
+  background: var(--charcoal); color: var(--green-light);
+}
+.story-sub { display: block; font-size: 1rem; font-weight: 600; color: var(--muted); }
+
 /* Extra (non-workshop) content */
 .badge-extra { background: var(--charcoal); color: #fff; }
 .station-dot.contain img { object-fit: contain; padding: 8px; background: var(--pink-light); }

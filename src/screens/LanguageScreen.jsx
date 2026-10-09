@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { LANGUAGES } from '../i18n/languages.js'
+import { LANGUAGES, isSelectable } from '../i18n/languages.js'
+import { useFeatures } from '../features.jsx'
 import { img } from '../content.js'
 
 const reducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
@@ -27,6 +28,7 @@ function GreetingBubble() {
 }
 
 export default function LanguageScreen({ onPick }) {
+  const { demo } = useFeatures()
   return (
     <section className="screen screen-center">
       <img className="logo-small" src={img('logo.png')} alt="Landsforeningen for barnevernsbarn" />
@@ -42,9 +44,10 @@ export default function LanguageScreen({ onPick }) {
       <ul className="lang-list">
         {LANGUAGES.map((l) => (
           <li key={l.code}>
-            <button className="lang-option" lang={l.code} dir={l.dir} disabled={!l.available} onClick={() => onPick(l.code)}>
+            <button className="lang-option" lang={l.code} dir={l.dir} disabled={!isSelectable(l, demo)} onClick={() => onPick(l.code)}>
               <span className="lang-name">{l.name}</span>
-              {!l.available && <span className="badge">{l.soon}</span>}
+              {!isSelectable(l, demo) && <span className="badge">{l.soon}</span>}
+              {isSelectable(l, demo) && l.draft && <span className="badge badge-extra">DRAFT</span>}
             </button>
           </li>
         ))}

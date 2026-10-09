@@ -50,19 +50,26 @@ export const ACTIVITIES = [
   { id: 'social', img: img('friends.png'), cutout: true },
 ]
 
-// Stories from LFB's workshop. `name` fills {name} in the questions after the story.
+// Stories from LFB's workshop, in LFB's own words (so their translations line
+// up page by page). Each page has text and one of the story's pictures; some
+// pictures are used for two pages. `name` fills {name} in the questions after.
+const storyPages = (id, pictures) =>
+  pictures.map((pic, i) => ({ img: img(`story-${id}-${pic}.jpg`), text: `story.${id}.${i + 1}` }))
+
 export const STORIES = {
   quiet: {
     title: 'story.quiet.title',
-    name: 'Hamlin',
+    sub: 'story.quiet.sub',
+    name: 'story.quiet.name',
     cover: img('story-quiet-2.jpg'),
-    panels: [1, 2, 3, 4].map((n) => ({ img: img(`story-quiet-${n}.jpg`), text: `story.quiet.${n}` })),
+    panels: storyPages('quiet', [1, 2, 2, 3, 3, 4]),
   },
   shut: {
     title: 'story.shut.title',
-    name: 'Elias',
+    sub: 'story.shut.sub',
+    name: 'story.shut.name',
     cover: img('story-shut-2.jpg'),
-    panels: [1, 2, 3].map((n) => ({ img: img(`story-shut-${n}.jpg`), text: `story.shut.${n}` })),
+    panels: storyPages('shut', [1, 1, 2, 2, 3]),
   },
 }
 

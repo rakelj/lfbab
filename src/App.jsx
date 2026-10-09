@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { I18nProvider } from './i18n/I18n.jsx'
-import { DEFAULT_LANG } from './i18n/languages.js'
+import { DEFAULT_LANG, getLanguage, isSelectable } from './i18n/languages.js'
 import { useProgress } from './progress.js'
 import { findChapter, img } from './content.js'
 import { FeaturesProvider, useFeatures } from './features.jsx'
@@ -56,6 +56,8 @@ export default function App() {
 function Screens({ demo }) {
   const { progress, update, completeChapter, reset } = useProgress()
   const { on } = useFeatures()
+  // A language picked in demo mode (e.g. Arabic) isn't used on the normal link.
+  const language = progress.lang && isSelectable(getLanguage(progress.lang), demo) ? getLanguage(progress.lang) : getLanguage(DEFAULT_LANG)
   const [screen, setScreen] = useState(() => firstScreen(progress))
   const [chapterId, setChapterId] = useState(null)
   // Screen to return to from "Om appen".
@@ -147,7 +149,7 @@ function Screens({ demo }) {
   }
 
   return (
-    <I18nProvider lang={progress.lang ?? DEFAULT_LANG}>
+    <I18nProvider lang={language.code}>
       <SoundProvider>
         <div className="app">
           {/* The language screen has no top bar, except the demo buttons in demo mode. */}
@@ -178,6 +180,11 @@ function Screens({ demo }) {
                 </div>
               )}
             </header>
+          )}
+          {language.draft && screen !== 'lang' && (
+            <p className="draft-banner" dir="ltr">
+              DRAFT TRANSLATION (not checked yet)
+            </p>
           )}
           <main>{content}</main>
           {screen !== 'chapter' && screen !== 'about' && (

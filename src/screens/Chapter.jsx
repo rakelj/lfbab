@@ -74,7 +74,7 @@ export default function Chapter({ chapter, onComplete, onExit }) {
     <section className="screen">
       <div className="chapter-bar">
         <button className="btn btn-link" onClick={onExit}>
-          ← {t('common.toHub')}
+          <span className="dir-arrow">←</span> {t('common.toHub')}
         </button>
         <span className="chapter-name">{t(chapter.title)}</span>
       </div>

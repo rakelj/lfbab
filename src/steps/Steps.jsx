@@ -208,7 +208,9 @@ export function StoryStep({ step, answers, onNext, onBack, cameBack }) {
 
   return (
     <div className="story">
-      <h1>{t(story.title)}</h1>
+      <h1>
+        {t(story.title)} <span className="story-sub">{t(story.sub)}</span>
+      </h1>
       {/* keys restart the slow zoom and the text fade for each panel */}
       <div className="story-frame">
         <img key={panel.img} className="story-panel" src={panel.img} alt="" />
@@ -223,7 +225,7 @@ export function StoryStep({ step, answers, onNext, onBack, cameBack }) {
 
 export function EmotionsStep({ step, answers, value, onChange, onNext, onBack }) {
   const { t } = useI18n()
-  const { name } = storyOf(step, answers)
+  const name = t(storyOf(step, answers).name)
   const picked = value ? value.split(',') : []
   const toggle = (id) => {
     const nextPicked = picked.includes(id) ? picked.filter((x) => x !== id) : [...picked, id]
@@ -252,7 +254,7 @@ export function EmotionsStep({ step, answers, value, onChange, onNext, onBack })
 // Tap actors in the order you'd ask them; tap again to remove.
 export function HelpersStep({ step, answers, value, onChange, onNext, onBack }) {
   const { t } = useI18n()
-  const { name } = storyOf(step, answers)
+  const name = t(storyOf(step, answers).name)
   const order = value ? value.split('>') : []
   const toggle = (id) => {
     const nextOrder = order.includes(id) ? order.filter((x) => x !== id) : [...order, id]

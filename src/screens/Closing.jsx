@@ -19,7 +19,7 @@ export default function Closing({ progress, onBack }) {
       {before && after && (
         <div className="weather-compare" aria-hidden="true">
           <img src={before.img} alt="" />
-          <span>→</span>
+          <span className="dir-arrow">→</span>
           <img src={after.img} alt="" />
         </div>
       )}

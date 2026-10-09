@@ -1,287 +1,358 @@
 {
   "common.next": {
     "context": "Button: go to the next screen",
-    "no": "Neste"
+    "no": "Neste",
+    "ar": "التالي"
   },
   "common.back": {
     "context": "Button: go to the previous screen",
-    "no": "Tilbake"
+    "no": "Tilbake",
+    "ar": "رجوع"
   },
   "common.close": {
     "context": "Button: close a popup",
-    "no": "Lukk"
+    "no": "Lukk",
+    "ar": "إغلاق"
   },
   "common.start": {
     "context": "Button: start",
-    "no": "Start"
+    "no": "Start",
+    "ar": "ابدأ"
   },
   "common.done": {
     "context": "Button: finish a chapter",
-    "no": "Ferdig"
+    "no": "Ferdig",
+    "ar": "تم"
   },
   "common.skip": {
     "context": "Button: skip a question",
-    "no": "Hopp over"
+    "no": "Hopp over",
+    "ar": "تخطَّ"
   },
   "common.toHub": {
     "context": "Button: back to the chapter overview",
-    "no": "Til oversikten"
+    "no": "Til oversikten",
+    "ar": "إلى القائمة"
   },
   "lang.title": {
     "context": "Language screen heading. Shown in every language at once.",
-    "no": "Velg språk"
+    "no": "Velg språk",
+    "ar": "اختر اللغة"
   },
   "lang.comingSoon": {
     "context": "Label on languages that are not translated yet",
-    "no": "Kommer snart"
+    "no": "Kommer snart",
+    "ar": "قريبًا"
   },
   "help.button": {
     "context": "Help button, visible on every screen",
-    "no": "Trenger du hjelp?"
+    "no": "Trenger du hjelp?",
+    "ar": "هل تحتاج إلى مساعدة؟"
   },
   "help.title": {
     "context": "Help popup heading",
-    "no": "Trenger du hjelp nå?"
+    "no": "Trenger du hjelp nå?",
+    "ar": "هل تحتاج إلى مساعدة الآن؟"
   },
   "help.intro": {
     "context": "Help popup intro",
-    "no": "Du trenger ikke klare alt alene. Her kan du få hjelp:"
+    "no": "Du trenger ikke klare alt alene. Her kan du få hjelp:",
+    "ar": "لست مضطرًا إلى تحمّل كل شيء وحدك. هنا يمكنك الحصول على المساعدة:"
   },
   "help.staff.title": {
     "context": "Help option: staff where you live",
-    "no": "Ansatte på mottaket"
+    "no": "Ansatte på mottaket",
+    "ar": "الموظفون في مركز الاستقبال"
   },
   "help.staff.text": {
     "context": "",
-    "no": "Snakk med en voksen du stoler på der du bor."
+    "no": "Snakk med en voksen du stoler på der du bor.",
+    "ar": "تحدّث إلى شخص بالغ تثق به في المكان الذي تقيم فيه."
   },
   "help.alarm.title": {
     "context": "Help option: national helpline for children (name of service)",
-    "no": "Alarmtelefonen for barn og unge"
+    "no": "Alarmtelefonen for barn og unge",
+    "ar": "هاتف الطوارئ للأطفال والشباب (Alarmtelefonen)"
   },
   "help.alarm.text": {
     "context": "",
-    "no": "Ring 116 111. Det er gratis og åpent hele døgnet."
+    "no": "Ring 116 111. Det er gratis og åpent hele døgnet.",
+    "ar": "اتصل بالرقم 116 111. الاتصال مجاني ومتاح على مدار الساعة."
   },
   "help.emergency.title": {
     "context": "Help option: emergency",
-    "no": "Hvis det haster"
+    "no": "Hvis det haster",
+    "ar": "في حالة الطوارئ"
   },
   "help.emergency.text": {
     "context": "",
-    "no": "Ring 113 for ambulanse eller 112 for politi."
+    "no": "Ring 113 for ambulanse eller 112 for politi.",
+    "ar": "اتصل بالرقم 113 للإسعاف أو 112 للشرطة."
   },
   "help.lfb.title": {
     "context": "Help option: the organisation behind the app",
-    "no": "Landsforeningen for barnevernsbarn"
+    "no": "Landsforeningen for barnevernsbarn",
+    "ar": "الجمعية الوطنية لأطفال رعاية الطفولة (LFB)"
   },
   "help.lfb.text": {
     "context": "",
-    "no": "Send en e-post til post@barnevernsbarna.no"
+    "no": "Send en e-post til post@barnevernsbarna.no",
+    "ar": "أرسل بريدًا إلكترونيًا إلى post@barnevernsbarna.no"
   },
   "help.note": {
     "context": "Reassurance at the bottom of the help popup",
-    "no": "Å be om hjelp påvirker ikke asylsaken din."
+    "no": "Å be om hjelp påvirker ikke asylsaken din.",
+    "ar": "طلب المساعدة لا يؤثر على قضية لجوئك."
   },
   "intro.1.title": {
     "context": "Welcome screen heading",
-    "no": "Hei!"
+    "no": "Hei!",
+    "ar": "مرحبًا!"
   },
   "intro.1.text": {
     "context": "",
-    "no": "Denne appen handler om rettighetene dine mens du bor på mottak. Den er laget av Landsforeningen for barnevernsbarn (LFB)."
+    "no": "Denne appen handler om rettighetene dine mens du bor på mottak. Den er laget av Landsforeningen for barnevernsbarn (LFB).",
+    "ar": "هذا التطبيق يتحدث عن حقوقك أثناء إقامتك في مركز الاستقبال. أعدّته الجمعية الوطنية لأطفال رعاية الطفولة (LFB)."
   },
   "intro.2.title": {
     "context": "Who we are",
-    "no": "Hvem er vi?"
+    "no": "Hvem er vi?",
+    "ar": "من نحن؟"
   },
   "intro.2.text": {
     "context": "",
-    "no": "LFB jobber for at barn og unge skal få rettighetene sine. Vi jobber ikke for UDI, og vi bestemmer ingenting i asylsaken din."
+    "no": "LFB jobber for at barn og unge skal få rettighetene sine. Vi jobber ikke for UDI, og vi bestemmer ingenting i asylsaken din.",
+    "ar": "تعمل LFB من أجل أن يحصل الأطفال والشباب على حقوقهم. نحن لا نعمل لصالح دائرة الأجانب (UDI)، ولا نقرر أي شيء في قضية لجوئك."
   },
   "intro.3.title": {
     "context": "Privacy screen heading",
-    "no": "Du er anonym"
+    "no": "Du er anonym",
+    "ar": "أنت مجهول الهوية"
   },
   "intro.3.text": {
     "context": "",
-    "no": "Vi spør aldri om navnet ditt. Du kan hoppe over spørsmål og ta pauser når du vil. Appen husker hvor du var, så du kan komme tilbake senere."
+    "no": "Vi spør aldri om navnet ditt. Du kan hoppe over spørsmål og ta pauser når du vil. Appen husker hvor du var, så du kan komme tilbake senere.",
+    "ar": "لن نسألك أبدًا عن اسمك. يمكنك تخطي الأسئلة وأخذ استراحة متى شئت. يتذكر التطبيق أين توقفت، لذا يمكنك العودة لاحقًا."
   },
   "intro.4.title": {
     "context": "Screen explaining the help button",
-    "no": "Hjelp er alltid nær"
+    "no": "Hjelp er alltid nær",
+    "ar": "المساعدة قريبة دائمًا"
   },
   "intro.4.text": {
     "context": "",
-    "no": "Ser du knappen «Trenger du hjelp?» øverst? Trykk på den når som helst, så ser du hvem du kan snakke med."
+    "no": "Ser du knappen «Trenger du hjelp?» øverst? Trykk på den når som helst, så ser du hvem du kan snakke med.",
+    "ar": "هل ترى زر «هل تحتاج إلى مساعدة؟» في الأعلى؟ اضغط عليه في أي وقت لترى مع من يمكنك التحدث."
   },
   "checkin.title": {
     "context": "Mood check-in heading. The kid picks a weather picture.",
-    "no": "Hvordan har du det inni deg nå?"
+    "no": "Hvordan har du det inni deg nå?",
+    "ar": "كيف تشعر في داخلك الآن؟"
   },
   "checkin.text": {
     "context": "",
-    "no": "Ikke hvordan været er ute, men hvordan du har det inni deg. Velg bildet som passer best."
+    "no": "Ikke hvordan været er ute, men hvordan du har det inni deg. Velg bildet som passer best.",
+    "ar": "ليس كيف هو الطقس في الخارج، بل كيف تشعر في داخلك. اختر الصورة الأنسب."
   },
   "checkin.thanks": {
     "context": "After picking a weather picture",
-    "no": "Takk for at du delte. Alle følelser er lov."
+    "no": "Takk for at du delte. Alle følelser er lov.",
+    "ar": "شكرًا لأنك شاركتنا. كل المشاعر مسموح بها."
   },
   "checkout.title": {
     "context": "Closing mood check-in heading",
-    "no": "Hvordan har du det inni deg nå?"
+    "no": "Hvordan har du det inni deg nå?",
+    "ar": "كيف تشعر في داخلك الآن؟"
   },
   "checkout.text": {
     "context": "",
-    "no": "Velg bildet som passer best med hva du sitter igjen med."
+    "no": "Velg bildet som passer best med hva du sitter igjen med.",
+    "ar": "اختر الصورة التي تناسب ما تشعر به بعد هذا."
   },
   "weather.clear": {
     "context": "Image description: clear blue sky with sun",
-    "no": "Klar himmel med sol"
+    "no": "Klar himmel med sol",
+    "ar": "سماء صافية مع شمس"
   },
   "weather.sunset": {
     "context": "Image description: sunset above the clouds",
-    "no": "Solnedgang over skyene"
+    "no": "Solnedgang over skyene",
+    "ar": "غروب الشمس فوق الغيوم"
   },
   "weather.breaking": {
     "context": "Image description: dark clouds with light breaking through",
-    "no": "Mørke skyer med lys som slipper gjennom"
+    "no": "Mørke skyer med lys som slipper gjennom",
+    "ar": "غيوم داكنة يتسلل منها الضوء"
   },
   "weather.storm": {
     "context": "Image description: dark, stormy weather",
-    "no": "Mørkt uvær"
+    "no": "Mørkt uvær",
+    "ar": "عاصفة مظلمة"
   },
   "hub.title": {
     "context": "Chapter overview heading",
-    "no": "Velg et tema"
+    "no": "Velg et tema",
+    "ar": "اختر موضوعًا"
   },
   "hub.text": {
     "context": "",
-    "no": "Du kan ta temaene i den rekkefølgen du vil."
+    "no": "Du kan ta temaene i den rekkefølgen du vil.",
+    "ar": "يمكنك أن تختار المواضيع بالترتيب الذي تريده."
   },
   "hub.done": {
     "context": "Badge on a finished chapter",
-    "no": "Ferdig"
+    "no": "Ferdig",
+    "ar": "تم"
   },
   "hub.soon": {
     "context": "Badge on a chapter that isn't built yet",
-    "no": "Kommer snart"
+    "no": "Kommer snart",
+    "ar": "قريبًا"
   },
   "hub.cards": {
     "context": "Button: see collected rights cards",
-    "no": "Mine rettighetskort"
+    "no": "Mine rettighetskort",
+    "ar": "بطاقات حقوقي"
   },
   "hub.finish": {
     "context": "Button: go to the closing part",
-    "no": "Avslutt for i dag"
+    "no": "Avslutt for i dag",
+    "ar": "إنهاء لليوم"
   },
   "hub.restart": {
     "context": "Button: delete progress and start over",
-    "no": "Start på nytt"
+    "no": "Start på nytt",
+    "ar": "ابدأ من جديد"
   },
   "hub.restartConfirm": {
     "context": "Confirm dialog for starting over",
-    "no": "Vil du slette alt og starte på nytt?"
+    "no": "Vil du slette alt og starte på nytt?",
+    "ar": "هل تريد حذف كل شيء والبدء من جديد؟"
   },
   "ch1.title": {
     "context": "Chapter 1 title",
-    "no": "Representanten din"
+    "no": "Representanten din",
+    "ar": "ممثلك"
   },
   "ch1.subtitle": {
     "context": "",
-    "no": "Hvem hjelper deg med asylsaken?"
+    "no": "Hvem hjelper deg med asylsaken?",
+    "ar": "من يساعدك في قضية لجوئك؟"
   },
   "ch2.title": {
     "context": "Chapter 2 title",
-    "no": "Kropp og hode"
+    "no": "Kropp og hode",
+    "ar": "الجسد والعقل"
   },
   "ch2.subtitle": {
     "context": "",
-    "no": "Du har rett til helsehjelp"
+    "no": "Du har rett til helsehjelp",
+    "ar": "لديك الحق في الرعاية الصحية"
   },
   "ch3.title": {
     "context": "Chapter 3 title",
-    "no": "Hva liker du å gjøre?"
+    "no": "Hva liker du å gjøre?",
+    "ar": "ماذا تحب أن تفعل؟"
   },
   "ch3.subtitle": {
     "context": "",
-    "no": "Du har rett til fritidsaktiviteter"
+    "no": "Du har rett til fritidsaktiviteter",
+    "ar": "لديك الحق في الأنشطة الترفيهية"
   },
   "q.yes": {
     "context": "Answer button",
-    "no": "Ja"
+    "no": "Ja",
+    "ar": "نعم"
   },
   "q.no": {
     "context": "Answer button",
-    "no": "Nei"
+    "no": "Nei",
+    "ar": "لا"
   },
   "q.dontKnow": {
     "context": "Answer button",
-    "no": "Vet ikke"
+    "no": "Vet ikke",
+    "ar": "لا أعرف"
   },
   "q.true": {
     "context": "Answer button for a statement",
-    "no": "Stemmer"
+    "no": "Stemmer",
+    "ar": "صحيح"
   },
   "q.false": {
     "context": "Answer button for a statement",
-    "no": "Stemmer ikke"
+    "no": "Stemmer ikke",
+    "ar": "غير صحيح"
   },
   "q.selfLabel": {
     "context": "Small label above a question about the kid's own situation",
-    "no": "Stemmer dette for deg?"
+    "no": "Stemmer dette for deg?",
+    "ar": "هل ينطبق هذا عليك؟"
   },
   "q.mythLabel": {
     "context": "Small label above a myth question",
-    "no": "Hva tror du?"
+    "no": "Hva tror du?",
+    "ar": "ما رأيك؟"
   },
   "q.rightLabel": {
     "context": "Label above what the kid is entitled to",
-    "no": "Dette har du rett på"
+    "no": "Dette har du rett på",
+    "ar": "هذا من حقك"
   },
   "q.notAlone": {
     "context": "Reassurance after answering No / Don't know",
-    "no": "Du er ikke den eneste. Mange andre har svart det samme."
+    "no": "Du er ikke den eneste. Mange andre har svart det samme.",
+    "ar": "لست الوحيد. كثيرون غيرك أجابوا بالشيء نفسه."
   },
   "q.thanks": {
     "context": "After answering Yes",
-    "no": "Så bra!"
+    "no": "Så bra!",
+    "ar": "رائع!"
   },
   "q.mythGotIt": {
     "context": "After answering a myth question correctly",
-    "no": "Helt riktig!"
+    "no": "Helt riktig!",
+    "ar": "صحيح تمامًا!"
   },
   "q.mythCommon": {
     "context": "After answering a myth question wrong or don't know. Must never sound like 'wrong'.",
-    "no": "Mange tror det. Men sånn er det ikke!"
+    "no": "Mange tror det. Men sånn er det ikke!",
+    "ar": "كثيرون يظنون ذلك. لكن الأمر ليس كذلك!"
   },
   "staff.button": {
     "context": "Button that opens a card to show staff",
-    "no": "Vis til en ansatt"
+    "no": "Vis til en ansatt",
+    "ar": "اعرضه على أحد الموظفين"
   },
   "staff.title": {
     "context": "Heading above the staff card",
-    "no": "Vis dette til en voksen på mottaket"
+    "no": "Vis dette til en voksen på mottaket",
+    "ar": "اعرض هذا على شخص بالغ في مركز الاستقبال"
   },
   "staff.hint": {
     "context": "",
-    "no": "Du kan vise skjermen til en ansatt du stoler på. Teksten står på norsk, så de forstår hva du trenger."
+    "no": "Du kan vise skjermen til en ansatt du stoler på. Teksten står på norsk, så de forstår hva du trenger.",
+    "ar": "يمكنك أن تعرض الشاشة على موظف تثق به. النص مكتوب باللغة النرويجية، لكي يفهموا ما تحتاجه."
   },
   "ch1.intro.title": {
     "context": "",
-    "no": "Hva er en representant?"
+    "no": "Hva er en representant?",
+    "ar": "من هو الممثل؟"
   },
   "ch1.intro.text": {
     "context": "",
-    "no": "Alle under 18 år som er i Norge uten foreldre, skal ha en representant. Statsforvalteren gir deg en representant når du kommer til Norge. Representanten skal passe på at rettighetene dine blir møtt."
+    "no": "Alle under 18 år som er i Norge uten foreldre, skal ha en representant. Statsforvalteren gir deg en representant når du kommer til Norge. Representanten skal passe på at rettighetene dine blir møtt.",
+    "ar": "يجب أن يكون لكل من هو دون 18 عامًا وموجود في النرويج دون والديه ممثلٌ. يعيّن حاكم المقاطعة ممثلاً لك عندما تأتي إلى النرويج. مهمة الممثل هي التأكد من حصولك على حقوقك."
   },
   "ch1.met.q": {
     "context": "Statement about own situation",
-    "no": "Jeg har møtt representanten min."
+    "no": "Jeg har møtt representanten min.",
+    "ar": "لقد التقيت بممثلي."
   },
   "ch1.met.right": {
     "context": "",
-    "no": "Representanten din skal ha kontakt med deg på telefon. Hvis det er mulig, skal representanten også møte deg der du bor."
+    "no": "Representanten din skal ha kontakt med deg på telefon. Hvis det er mulig, skal representanten også møte deg der du bor.",
+    "ar": "يجب أن يتواصل ممثلك معك عبر الهاتف. وإن أمكن، يجب أن يزورك أيضًا في المكان الذي تقيم فيه."
   },
   "ch1.met.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
@@ -289,11 +360,13 @@
   },
   "ch1.interview.q": {
     "context": "Statement about own situation",
-    "no": "Representanten min hjelper meg å forberede meg til asylintervjuet."
+    "no": "Representanten min hjelper meg å forberede meg til asylintervjuet.",
+    "ar": "ممثلي يساعدني على الاستعداد لمقابلة اللجوء."
   },
   "ch1.interview.right": {
     "context": "",
-    "no": "Representanten skal forberede deg på asylintervjuet og være med på samtaler med utlendingsmyndighetene."
+    "no": "Representanten skal forberede deg på asylintervjuet og være med på samtaler med utlendingsmyndighetene.",
+    "ar": "يجب على الممثل أن يساعدك على الاستعداد لمقابلة اللجوء، وأن يحضر المحادثات مع سلطات الأجانب."
   },
   "ch1.interview.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
@@ -301,11 +374,13 @@
   },
   "ch1.interpreter.q": {
     "context": "Statement about own situation",
-    "no": "Representanten min har hjulpet meg med tolk."
+    "no": "Representanten min har hjulpet meg med tolk.",
+    "ar": "ممثلي ساعدني في الحصول على مترجم."
   },
   "ch1.interpreter.right": {
     "context": "",
-    "no": "Representanten skal vurdere om du trenger tolk, og skaffe tolk til viktige samtaler."
+    "no": "Representanten skal vurdere om du trenger tolk, og skaffe tolk til viktige samtaler.",
+    "ar": "يجب على الممثل أن ينظر فيما إذا كنت بحاجة إلى مترجم، وأن يوفّر مترجمًا للمحادثات المهمة."
   },
   "ch1.interpreter.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
@@ -313,131 +388,143 @@
   },
   "ch1.complain.q": {
     "context": "Myth statement (the correct answer is 'not true')",
-    "no": "Hvis jeg klager på representanten min, kan det skade asylsaken min."
+    "no": "Hvis jeg klager på representanten min, kan det skade asylsaken min.",
+    "ar": "إذا اشتكيت من ممثلي، فقد يضر ذلك بقضية لجوئي."
   },
   "ch1.complain.right": {
     "context": "",
-    "no": "Å klage på representanten påvirker ikke asylsaken din. Si ifra til de ansatte på mottaket. De kan hjelpe deg å klage til statsforvalteren."
+    "no": "Å klage på representanten påvirker ikke asylsaken din. Si ifra til de ansatte på mottaket. De kan hjelpe deg å klage til statsforvalteren.",
+    "ar": "الشكوى من الممثل لا تؤثر على قضية لجوئك. أخبر الموظفين في مركز الاستقبال، فهم يستطيعون مساعدتك في تقديم شكوى إلى حاكم المقاطعة."
   },
   "ch1.summary.title": {
     "context": "Chapter 1 summary heading",
-    "no": "Representanten skal:"
+    "no": "Representanten skal:",
+    "ar": "يجب على الممثل:"
   },
   "ch1.summary.1": {
     "context": "",
-    "no": "Forberede deg på asylintervjuet"
+    "no": "Forberede deg på asylintervjuet",
+    "ar": "أن يساعدك على الاستعداد لمقابلة اللجوء"
   },
   "ch1.summary.2": {
     "context": "",
-    "no": "Være med på samtaler med utlendingsmyndighetene"
+    "no": "Være med på samtaler med utlendingsmyndighetene",
+    "ar": "أن يحضر المحادثات مع سلطات الأجانب"
   },
   "ch1.summary.3": {
     "context": "",
-    "no": "Snakke med mottaket og andre som hjelper deg"
+    "no": "Snakke med mottaket og andre som hjelper deg",
+    "ar": "أن يتحدث إلى مركز الاستقبال وإلى الآخرين الذين يساعدونك"
   },
   "ch1.summary.4": {
     "context": "",
-    "no": "Besøke deg eller ha kontakt med deg på telefon"
+    "no": "Besøke deg eller ha kontakt med deg på telefon",
+    "ar": "أن يزورك أو يتواصل معك عبر الهاتف"
   },
   "ch1.summary.5": {
     "context": "",
-    "no": "Skaffe tolk når du trenger det"
+    "no": "Skaffe tolk når du trenger det",
+    "ar": "أن يوفّر مترجمًا عندما تحتاج إليه"
   },
   "ch1.summary.6": {
     "context": "",
-    "no": "Passe på at du har det bra og får rettighetene dine"
+    "no": "Passe på at du har det bra og får rettighetene dine",
+    "ar": "أن يتأكد من أنك بخير وأنك تحصل على حقوقك"
   },
   "ch1.summary.note": {
     "context": "",
-    "no": "Får du ikke kontakt med representanten din? Si ifra til de ansatte på mottaket."
+    "no": "Får du ikke kontakt med representanten din? Si ifra til de ansatte på mottaket.",
+    "ar": "لا تستطيع التواصل مع ممثلك؟ أخبر الموظفين في مركز الاستقبال."
   },
   "ch2.intro.title": {
     "context": "",
-    "no": "Du har rett til helsehjelp"
+    "no": "Du har rett til helsehjelp",
+    "ar": "لديك الحق في الرعاية الصحية"
   },
   "ch2.intro.text": {
     "context": "",
-    "no": "Alle under 18 år har rett til helsehjelp, både for kroppen og for hodet. Det gjelder lege, psykolog, fysioterapeut og sykehus."
+    "no": "Alle under 18 år har rett til helsehjelp, både for kroppen og for hodet. Det gjelder lege, psykolog, fysioterapeut og sykehus.",
+    "ar": "يحق لكل من هو دون 18 عامًا الحصول على الرعاية الصحية، للجسد وللعقل. يشمل ذلك الطبيب والأخصائي النفسي وأخصائي العلاج الطبيعي والمستشفى."
   },
   "ch2.doctor.q": {
     "context": "Myth statement (the correct answer is 'not true')",
-    "no": "Hvis jeg går til lege eller psykolog, kan det påvirke asylsaken min."
+    "no": "Hvis jeg går til lege eller psykolog, kan det påvirke asylsaken min.",
+    "ar": "إذا ذهبت إلى طبيب أو أخصائي نفسي، فقد يؤثر ذلك على قضية لجوئي."
   },
   "ch2.doctor.right": {
     "context": "",
-    "no": "Å gå til lege eller psykolog påvirker ikke asylsaken din. Du har rett til helsehjelp uansett situasjon."
+    "no": "Å gå til lege eller psykolog påvirker ikke asylsaken din. Du har rett til helsehjelp uansett situasjon.",
+    "ar": "الذهاب إلى طبيب أو أخصائي نفسي لا يؤثر على قضية لجوئك. لديك الحق في الرعاية الصحية مهما كان وضعك."
   },
   "ch2.chain.title": {
     "context": "Heading: body and mind are connected",
-    "no": "Kropp og hode henger sammen"
+    "no": "Kropp og hode henger sammen",
+    "ar": "الجسد والعقل مترابطان"
   },
   "ch2.chain.1": {
     "context": "Step 1 of a chain",
-    "no": "Dårlig søvn kan føre til …"
+    "no": "Dårlig søvn kan føre til …",
+    "ar": "قلة النوم قد تؤدي إلى …"
   },
   "ch2.chain.2": {
     "context": "Step 2 of a chain",
-    "no": "… vondt i kroppen, som kan føre til …"
+    "no": "… vondt i kroppen, som kan føre til …",
+    "ar": "… آلام في الجسم، وهذا قد يؤدي إلى …"
   },
   "ch2.chain.3": {
     "context": "Step 3 of a chain",
-    "no": "… at du blir irritert og ute av balanse."
+    "no": "… at du blir irritert og ute av balanse.",
+    "ar": "… أن تصبح متوترًا وغير متوازن."
   },
   "ch2.chain.text": {
     "context": "",
-    "no": "Over lang tid kan det gjøre det vanskelig å konsentrere seg og lære, og gi større risiko for angst og depresjon. Men det finnes hjelp!"
+    "no": "Over lang tid kan det gjøre det vanskelig å konsentrere seg og lære, og gi større risiko for angst og depresjon. Men det finnes hjelp!",
+    "ar": "مع مرور الوقت قد يصعب عليك التركيز والتعلم، ويزيد خطر القلق والاكتئاب. لكن المساعدة متوفرة!"
   },
   "story.quiet.title": {
-    "context": "Story title",
-    "no": "Stille gutt"
-  },
-  "story.quiet.1": {
-    "context": "Story panel 1",
-    "no": "Hamlin er 15 år. Overfor ham sitter en mann som jobber på mottaket."
-  },
-  "story.quiet.2": {
-    "context": "Story panel 2",
-    "no": "Hamlin har ingen venner her, og han kan ikke nok norsk til å snakke godt med de ansatte. I hjemlandet var han en leder blant gutta. Han var klassens klovn og elsket å få folk til å le."
-  },
-  "story.quiet.3": {
-    "context": "Story panel 3",
-    "no": "Mannen spør hvordan Hamlin har det, «sånn egentlig». Men Hamlin vet ikke hva samtalen betyr for asylsøknaden hans. Tenk om de sender ham hjem fordi han savner de hjemme? Han trekker på skuldrene og svarer «bra»."
-  },
-  "story.quiet.4": {
-    "context": "Story panel 4",
-    "no": "Rapporten er skrevet på norsk, så Hamlin får ikke lest den. Der står det: «Hamlin, 15 år. Lite sosial og svært stille gutt. Han har det bra.»"
+    "context": "Story title (LFB's text)",
+    "no": "Stille gutt",
+    "ar": "صبيّ هادِئ"
   },
   "ch2.emotions.text": {
     "context": "",
-    "no": "Du kan velge flere."
+    "no": "Du kan velge flere.",
+    "ar": "يمكنك اختيار أكثر من شعور."
   },
   "ch2.helpers.text": {
     "context": "",
-    "no": "Trykk på dem i den rekkefølgen du ville spurt."
+    "no": "Trykk på dem i den rekkefølgen du ville spurt.",
+    "ar": "اضغط عليهم بالترتيب الذي كنت ستسألهم به."
   },
   "ch2.helpers.after": {
     "context": "After choosing helpers",
-    "no": "Det finnes mange veier til hjelp. En ansatt på mottaket eller representanten er et godt sted å starte. De kan hjelpe deg videre til lege eller psykolog."
+    "no": "Det finnes mange veier til hjelp. En ansatt på mottaket eller representanten er et godt sted å starte. De kan hjelpe deg videre til lege eller psykolog.",
+    "ar": "هناك طرق كثيرة للحصول على المساعدة. الموظف في مركز الاستقبال أو الممثل مكان جيد للبدء، ويمكنهم أن يوصلوك إلى طبيب أو أخصائي نفسي."
   },
   "ch2.summary.title": {
     "context": "Chapter 2 summary heading",
-    "no": "Husk:"
+    "no": "Husk:",
+    "ar": "تذكّر:"
   },
   "ch2.summary.1": {
     "context": "",
-    "no": "Be om hjelp! Det påvirker ikke asylsaken din."
+    "no": "Be om hjelp! Det påvirker ikke asylsaken din.",
+    "ar": "اطلب المساعدة! هذا لا يؤثر على قضية لجوئك."
   },
   "ch2.summary.2": {
     "context": "",
-    "no": "Du har rett til helsehjelp uansett situasjon."
+    "no": "Du har rett til helsehjelp uansett situasjon.",
+    "ar": "لديك الحق في الرعاية الصحية مهما كان وضعك."
   },
   "ch2.summary.3": {
     "context": "",
-    "no": "Å snakke om følelser kan gjøre at du får det bedre."
+    "no": "Å snakke om følelser kan gjøre at du får det bedre.",
+    "ar": "الحديث عن المشاعر قد يجعلك تشعر بتحسن."
   },
   "ch2.summary.4": {
     "context": "",
-    "no": "Du er ikke alene om hvordan du har det."
+    "no": "Du er ikke alene om hvordan du har det.",
+    "ar": "لست وحدك في ما تشعر به."
   },
   "ch2.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
@@ -445,307 +532,368 @@
   },
   "emotion.glad": {
     "context": "Emotion card",
-    "no": "Glad"
+    "no": "Glad",
+    "ar": "سعيد"
   },
   "emotion.hopeful": {
     "context": "Emotion card",
-    "no": "Håpefull"
+    "no": "Håpefull",
+    "ar": "متفائل"
   },
   "emotion.proud": {
     "context": "Emotion card",
-    "no": "Stolt"
+    "no": "Stolt",
+    "ar": "فخور"
   },
   "emotion.relieved": {
     "context": "Emotion card",
-    "no": "Lettet"
+    "no": "Lettet",
+    "ar": "مرتاح"
   },
   "emotion.sad": {
     "context": "Emotion card",
-    "no": "Trist"
+    "no": "Trist",
+    "ar": "حزين"
   },
   "emotion.scared": {
     "context": "Emotion card",
-    "no": "Redd"
+    "no": "Redd",
+    "ar": "خائف"
   },
   "emotion.angry": {
     "context": "Emotion card",
-    "no": "Sint"
+    "no": "Sint",
+    "ar": "غاضب"
   },
   "emotion.lonely": {
     "context": "Emotion card",
-    "no": "Ensom"
+    "no": "Ensom",
+    "ar": "وحيد"
   },
   "actor.resident": {
     "context": "Actor card: another person living at the centre",
-    "no": "Medbeboer"
+    "no": "Medbeboer",
+    "ar": "زميل في السكن"
   },
   "actor.family": {
     "context": "Actor card",
-    "no": "Familie"
+    "no": "Familie",
+    "ar": "العائلة"
   },
   "actor.friends": {
     "context": "Actor card",
-    "no": "Venner"
+    "no": "Venner",
+    "ar": "الأصدقاء"
   },
   "actor.schoolStaff": {
     "context": "Actor card",
-    "no": "Ansatt på skolen"
+    "no": "Ansatt på skolen",
+    "ar": "موظف في المدرسة"
   },
   "actor.centreStaff": {
     "context": "Actor card",
-    "no": "Ansatt på mottaket"
+    "no": "Ansatt på mottaket",
+    "ar": "موظف في مركز الاستقبال"
   },
   "actor.doctor": {
     "context": "Actor card",
-    "no": "Lege"
+    "no": "Lege",
+    "ar": "الطبيب"
   },
   "actor.psychologist": {
     "context": "Actor card",
-    "no": "Psykolog"
+    "no": "Psykolog",
+    "ar": "الأخصائي النفسي"
   },
   "actor.representative": {
     "context": "Actor card",
-    "no": "Representant"
+    "no": "Representant",
+    "ar": "الممثل"
   },
   "actor.who": {
     "context": "Card back label (from LFB's printed actor cards)",
-    "no": "Hvem"
+    "no": "Hvem",
+    "ar": "من هم"
   },
   "actor.what": {
     "context": "Card back label",
-    "no": "Hva kan de hjelpe med?"
+    "no": "Hva kan de hjelpe med?",
+    "ar": "بماذا يمكنهم المساعدة؟"
   },
   "actor.when": {
     "context": "Card back label",
-    "no": "Når kan du kontakte dem?"
+    "no": "Når kan du kontakte dem?",
+    "ar": "متى يمكنك التواصل معهم؟"
   },
   "actor.flip": {
     "context": "Button on an actor card: show the back with more info",
-    "no": "Les mer om"
+    "no": "Les mer om",
+    "ar": "اقرأ المزيد عن"
   },
   "actor.resident.who": {
     "context": "Actor card back, from LFB print file",
-    "no": "Andre ungdommer eller personer du bor sammen med på mottaket eller i bofellesskapet."
+    "no": "Andre ungdommer eller personer du bor sammen med på mottaket eller i bofellesskapet.",
+    "ar": "شباب آخرون أو أشخاص تسكن معهم في مركز الاستقبال أو في السكن المشترك."
   },
   "actor.resident.what": {
     "context": "",
-    "no": "Hverdagslige ting, som å dele erfaringer om livet på mottaket og hjelpe med praktiske ting i boligen."
+    "no": "Hverdagslige ting, som å dele erfaringer om livet på mottaket og hjelpe med praktiske ting i boligen.",
+    "ar": "أمور الحياة اليومية، مثل تبادل التجارب عن الحياة في مركز الاستقبال، والمساعدة في الأمور العملية في السكن."
   },
   "actor.resident.when": {
     "context": "",
-    "no": "Når du ønsker selskap i hverdagen eller trenger praktisk hjelp fra noen som bor nær deg."
+    "no": "Når du ønsker selskap i hverdagen eller trenger praktisk hjelp fra noen som bor nær deg.",
+    "ar": "عندما تريد رفقة في حياتك اليومية، أو تحتاج إلى مساعدة عملية من شخص يسكن بقربك."
   },
   "actor.family.who": {
     "context": "Actor card back, from LFB print file",
-    "no": "Foreldre, søsken eller andre slektninger."
+    "no": "Foreldre, søsken eller andre slektninger.",
+    "ar": "الوالدان أو الإخوة أو أقارب آخرون."
   },
   "actor.family.what": {
     "context": "",
-    "no": "Trygghet, tilhørighet og støtte. De kan gi deg råd og trøst, og hjelpe deg å holde kontakt med hvem du er og hvor du kommer fra."
+    "no": "Trygghet, tilhørighet og støtte. De kan gi deg råd og trøst, og hjelpe deg å holde kontakt med hvem du er og hvor du kommer fra.",
+    "ar": "الأمان والانتماء والدعم. يمكنهم أن يقدّموا لك النصيحة والمواساة، وأن يساعدوك على البقاء على صلة بمن أنت ومن أين أتيت."
   },
   "actor.family.when": {
     "context": "",
-    "no": "Når du savner noen som kjenner deg godt og ønsker å dele noe viktig som skjer i livet ditt."
+    "no": "Når du savner noen som kjenner deg godt og ønsker å dele noe viktig som skjer i livet ditt.",
+    "ar": "عندما تشتاق إلى شخص يعرفك جيدًا، وتريد أن تشاركه شيئًا مهمًا يحدث في حياتك."
   },
   "actor.friends.who": {
     "context": "Actor card back, from LFB print file",
-    "no": "Jevnaldrende du kjenner fra mottaket, skolen, fritidsaktiviteter eller nabolaget."
+    "no": "Jevnaldrende du kjenner fra mottaket, skolen, fritidsaktiviteter eller nabolaget.",
+    "ar": "أشخاص في مثل عمرك تعرفهم من مركز الاستقبال أو المدرسة أو الأنشطة الترفيهية أو الحي."
   },
   "actor.friends.what": {
     "context": "",
-    "no": "Å ha noen å snakke med, gjøre ting sammen med, føle seg inkludert og mindre alene."
+    "no": "Å ha noen å snakke med, gjøre ting sammen med, føle seg inkludert og mindre alene.",
+    "ar": "أن يكون لديك من تتحدث معه وتفعل معه الأشياء، وأن تشعر بأنك مقبول وأقل وحدة."
   },
   "actor.friends.when": {
     "context": "",
-    "no": "Når du trenger noen å være sammen med, snakke med om ting som opptar deg, eller ønsker å gjøre noe sosialt."
+    "no": "Når du trenger noen å være sammen med, snakke med om ting som opptar deg, eller ønsker å gjøre noe sosialt.",
+    "ar": "عندما تحتاج إلى من تقضي الوقت معه، أو تتحدث معه عن أمور تشغلك، أو تريد أن تفعل شيئًا اجتماعيًا."
   },
   "actor.schoolStaff.who": {
     "context": "Actor card back, from LFB print file",
-    "no": "Lærere, miljøarbeidere, sosialrådgiver eller helsesykepleier på skolen."
+    "no": "Lærere, miljøarbeidere, sosialrådgiver eller helsesykepleier på skolen.",
+    "ar": "المعلمون، والعاملون الاجتماعيون، والمرشد الاجتماعي أو الممرضة الصحية في المدرسة."
   },
   "actor.schoolStaff.what": {
     "context": "",
-    "no": "Skolearbeid, norsk og å bli kjent med andre elever. De kan også se hvordan du har det i løpet av skoledagen."
+    "no": "Skolearbeid, norsk og å bli kjent med andre elever. De kan også se hvordan du har det i løpet av skoledagen.",
+    "ar": "الواجبات المدرسية، واللغة النرويجية، والتعرّف على طلاب آخرين. ويمكنهم أيضًا ملاحظة حالك خلال اليوم الدراسي."
   },
   "actor.schoolStaff.when": {
     "context": "",
-    "no": "Når du har spørsmål om skolen, trenger faglig hjelp, eller har det vanskelig på skolen."
+    "no": "Når du har spørsmål om skolen, trenger faglig hjelp, eller har det vanskelig på skolen.",
+    "ar": "عندما تكون لديك أسئلة عن المدرسة، أو تحتاج إلى مساعدة في الدراسة، أو تمرّ بوقت صعب في المدرسة."
   },
   "actor.centreStaff.who": {
     "context": "Actor card back, from LFB print file",
-    "no": "De som jobber der du bor, på mottaket eller i bofellesskapet."
+    "no": "De som jobber der du bor, på mottaket eller i bofellesskapet.",
+    "ar": "الذين يعملون في المكان الذي تقيم فيه، في مركز الاستقبال أو في السكن المشترك."
   },
   "actor.centreStaff.what": {
     "context": "",
-    "no": "Dagliglivet, mat, bosted, praktiske ting og aktiviteter. De er der i hverdagen."
+    "no": "Dagliglivet, mat, bosted, praktiske ting og aktiviteter. De er der i hverdagen.",
+    "ar": "الحياة اليومية، والطعام، والسكن، والأمور العملية، والأنشطة. هم موجودون في حياتك اليومية."
   },
   "actor.centreStaff.when": {
     "context": "",
-    "no": "Når du trenger praktisk hjelp, eller har spørsmål om hverdagen."
+    "no": "Når du trenger praktisk hjelp, eller har spørsmål om hverdagen.",
+    "ar": "عندما تحتاج إلى مساعدة عملية، أو تكون لديك أسئلة عن الحياة اليومية."
   },
   "actor.doctor.who": {
     "context": "Actor card back, from LFB print file",
-    "no": "En fastlege eller sykepleier du møter på helsestasjonen eller legekontoret."
+    "no": "En fastlege eller sykepleier du møter på helsestasjonen eller legekontoret.",
+    "ar": "طبيب ثابت أو ممرضة تقابلهم في المركز الصحي أو عيادة الطبيب."
   },
   "actor.doctor.what": {
     "context": "",
-    "no": "Fysisk helse, sykdom, skader og vaksiner. De kan også sende deg videre til en spesialist eller til psykisk helsehjelp."
+    "no": "Fysisk helse, sykdom, skader og vaksiner. De kan også sende deg videre til en spesialist eller til psykisk helsehjelp.",
+    "ar": "الصحة الجسدية، والأمراض، والإصابات، والتطعيمات. ويمكنهم أيضًا إحالتك إلى أخصائي أو إلى مساعدة في الصحة النفسية."
   },
   "actor.doctor.when": {
     "context": "",
-    "no": "Når du er syk eller skadet, trenger vaksiner, eller er bekymret for kroppen din."
+    "no": "Når du er syk eller skadet, trenger vaksiner, eller er bekymret for kroppen din.",
+    "ar": "عندما تكون مريضًا أو مصابًا، أو تحتاج إلى تطعيم، أو تكون قلقًا على جسمك."
   },
   "actor.psychologist.who": {
     "context": "Actor card back, from LFB print file",
-    "no": "En person som er utdannet til å hjelpe med tanker, følelser og psykisk helse."
+    "no": "En person som er utdannet til å hjelpe med tanker, følelser og psykisk helse.",
+    "ar": "شخص مدرّب على المساعدة في الأفكار والمشاعر والصحة النفسية."
   },
   "actor.psychologist.what": {
     "context": "",
-    "no": "Å snakke om vonde minner, stress, mareritt, søvnproblemer, sorg eller vanskelige følelser."
+    "no": "Å snakke om vonde minner, stress, mareritt, søvnproblemer, sorg eller vanskelige følelser.",
+    "ar": "الحديث عن الذكريات المؤلمة، والتوتر، والكوابيس، ومشكلات النوم، والحزن، أو المشاعر الصعبة."
   },
   "actor.psychologist.when": {
     "context": "",
-    "no": "Når du har det tungt over tid, eller har vanskelig for å sove eller konsentrere deg."
+    "no": "Når du har det tungt over tid, eller har vanskelig for å sove eller konsentrere deg.",
+    "ar": "عندما تمرّ بوقت صعب لفترة طويلة، أو تجد صعوبة في النوم أو التركيز."
   },
   "actor.representative.who": {
     "context": "Actor card back, from LFB print file",
-    "no": "En voksen som skal passe på rettighetene dine, fordi du er under 18 år og i Norge uten foreldre."
+    "no": "En voksen som skal passe på rettighetene dine, fordi du er under 18 år og i Norge uten foreldre.",
+    "ar": "شخص بالغ مهمته حماية حقوقك، لأنك دون 18 عامًا وفي النرويج دون والديك."
   },
   "actor.representative.what": {
     "context": "",
-    "no": "Følger deg, tar viktige avgjørelser på dine vegne og sørger for at rettighetene dine blir fulgt."
+    "no": "Følger deg, tar viktige avgjørelser på dine vegne og sørger for at rettighetene dine blir fulgt.",
+    "ar": "يتابعك، ويتخذ قرارات مهمة نيابة عنك، ويتأكد من احترام حقوقك."
   },
   "actor.representative.when": {
     "context": "",
-    "no": "Når du har spørsmål om asylsaken din, eller trenger hjelp med papirer."
+    "no": "Når du har spørsmål om asylsaken din, eller trenger hjelp med papirer.",
+    "ar": "عندما تكون لديك أسئلة عن قضية لجوئك، أو تحتاج إلى مساعدة في الأوراق."
   },
   "helpers.title": {
     "context": "Gallery of actor cards",
-    "no": "Hvem kan hjelpe meg?"
+    "no": "Hvem kan hjelpe meg?",
+    "ar": "من يمكنه مساعدتي؟"
   },
   "helpers.text": {
     "context": "",
-    "no": "Trykk på et kort for å snu det og lese mer."
+    "no": "Trykk på et kort for å snu det og lese mer.",
+    "ar": "اضغط على بطاقة لتقلبها وتقرأ المزيد."
   },
   "hub.helpers": {
     "context": "Button on the overview: open the actor card gallery",
-    "no": "Hvem kan hjelpe meg?"
+    "no": "Hvem kan hjelpe meg?",
+    "ar": "من يمكنه مساعدتي؟"
   },
   "lang.button": {
     "context": "Top bar button to change language (screen reader label)",
-    "no": "Bytt språk"
+    "no": "Bytt språk",
+    "ar": "تغيير اللغة"
   },
   "ch1.met.validate.yes": {
     "context": "DRAFT, needs LFB review. Validation after answering Yes",
-    "no": "Så bra at du har møtt representanten din! Husk at du kan ta kontakt når du har spørsmål."
+    "no": "Så bra at du har møtt representanten din! Husk at du kan ta kontakt når du har spørsmål.",
+    "ar": "رائع أنك التقيت بممثلك! تذكّر أنه يمكنك التواصل معه عندما تكون لديك أسئلة."
   },
   "ch1.met.validate.no": {
     "context": "DRAFT, needs LFB review. Validation after answering No",
-    "no": "Det er ikke din feil. Mange som bor på mottak har ikke møtt representanten sin ennå. Du har rett til å bli kjent med representanten din, og de voksne på mottaket kan hjelpe deg å få kontakt."
+    "no": "Det er ikke din feil. Mange som bor på mottak har ikke møtt representanten sin ennå. Du har rett til å bli kjent med representanten din, og de voksne på mottaket kan hjelpe deg å få kontakt.",
+    "ar": "هذا ليس ذنبك. كثيرون ممن يقيمون في مراكز الاستقبال لم يلتقوا بممثلهم بعد. من حقك أن تتعرّف على ممثلك، ويمكن للبالغين في مركز الاستقبال مساعدتك في التواصل معه."
   },
   "ch1.met.validate.dontKnow": {
     "context": "DRAFT, needs LFB review. Validation after answering Don't know",
-    "no": "Det er helt vanlig å ikke vite det. Det er mye nytt å holde styr på når man kommer til Norge. Spør en ansatt på mottaket, så finner dere ut av det sammen."
+    "no": "Det er helt vanlig å ikke vite det. Det er mye nytt å holde styr på når man kommer til Norge. Spør en ansatt på mottaket, så finner dere ut av det sammen.",
+    "ar": "من الطبيعي تمامًا ألا تعرف. هناك أشياء جديدة كثيرة عليك متابعتها عندما تصل إلى النرويج. اسأل أحد الموظفين في مركز الاستقبال، وستعرفان الجواب معًا."
   },
   "ch1.interview.validate.yes": {
     "context": "DRAFT, needs LFB review",
-    "no": "Så bra! Det er representantens jobb å hjelpe deg å være forberedt."
+    "no": "Så bra! Det er representantens jobb å hjelpe deg å være forberedt.",
+    "ar": "رائع! مهمة الممثل هي أن يساعدك على أن تكون مستعدًا."
   },
   "ch1.interview.validate.no": {
     "context": "DRAFT, needs LFB review",
-    "no": "Det er ikke din feil, og du er ikke alene om å oppleve det. Du har rett til å bli forberedt før asylintervjuet, og det er lov å si ifra."
+    "no": "Det er ikke din feil, og du er ikke alene om å oppleve det. Du har rett til å bli forberedt før asylintervjuet, og det er lov å si ifra.",
+    "ar": "هذا ليس ذنبك، ولست الوحيد الذي يمرّ بذلك. من حقك أن يتم تحضيرك قبل مقابلة اللجوء، ومن المسموح أن تتحدث عن ذلك."
   },
   "ch1.interview.validate.dontKnow": {
     "context": "DRAFT, needs LFB review",
-    "no": "Mange er usikre på hva som skal skje i asylintervjuet. Du trenger ikke finne ut av det alene. Representanten din skal forklare det for deg."
+    "no": "Mange er usikre på hva som skal skje i asylintervjuet. Du trenger ikke finne ut av det alene. Representanten din skal forklare det for deg.",
+    "ar": "كثيرون لا يعرفون ماذا سيحدث في مقابلة اللجوء. لست مضطرًا إلى معرفة ذلك وحدك. يجب أن يشرح لك ممثلك الأمر."
   },
   "ch1.interpreter.validate.yes": {
     "context": "DRAFT, needs LFB review",
-    "no": "Så bra! Du har rett til tolk i viktige samtaler, også senere."
+    "no": "Så bra! Du har rett til tolk i viktige samtaler, også senere.",
+    "ar": "رائع! من حقك الحصول على مترجم في المحادثات المهمة، في المستقبل أيضًا."
   },
   "ch1.interpreter.validate.no": {
     "context": "DRAFT, needs LFB review",
-    "no": "Det kan være vanskelig å forstå og bli forstått uten tolk. Det er ikke din feil. Du har rett til tolk i viktige samtaler."
+    "no": "Det kan være vanskelig å forstå og bli forstått uten tolk. Det er ikke din feil. Du har rett til tolk i viktige samtaler.",
+    "ar": "قد يكون من الصعب أن تفهم وأن يفهمك الآخرون بدون مترجم. هذا ليس ذنبك. من حقك الحصول على مترجم في المحادثات المهمة."
   },
   "ch1.interpreter.validate.dontKnow": {
     "context": "DRAFT, needs LFB review",
-    "no": "Mange vet ikke at de kan be om tolk. Nå vet du det: du har rett til tolk i viktige samtaler."
+    "no": "Mange vet ikke at de kan be om tolk. Nå vet du det: du har rett til tolk i viktige samtaler.",
+    "ar": "كثيرون لا يعرفون أنهم يستطيعون طلب مترجم. الآن أصبحت تعرف: من حقك الحصول على مترجم في المحادثات المهمة."
   },
   "ch2.story.choose": {
     "context": "Before the stories. Gentle content note.",
-    "no": "Nå kan du lese en kort historie om en gutt som bor på mottak. Historiene handler om å ha det vanskelig. Velg en historie, eller hopp over hvis du vil."
+    "no": "Nå kan du lese en kort historie om en gutt som bor på mottak. Historiene handler om å ha det vanskelig. Velg en historie, eller hopp over hvis du vil.",
+    "ar": "يمكنك الآن أن تقرأ قصة قصيرة عن شاب يعيش في مركز استقبال. القصص تتحدث عن المرور بأوقات صعبة. اختر قصة، أو تخطَّ إن أردت."
   },
   "story.shut.title": {
-    "context": "Story title",
-    "no": "Innestengt"
-  },
-  "story.shut.1": {
-    "context": "Story panel 1 (from LFB's story text)",
-    "no": "Elias er 15 år. Han ligger på senga og stirrer i taket. Klokka er 22, og nå skal det være stille på mottaket. Men Elias får ikke sove. Hodet er fullt av tanker."
-  },
-  "story.shut.2": {
-    "context": "Story panel 2",
-    "no": "Han tenker på de der hjemme. Han tenker på asylsøknaden og på intervjuet, som han ikke vet når blir. Tenk om han sier feil ting? Tenk om han får avslag, etter alt han har vært gjennom?"
-  },
-  "story.shut.3": {
-    "context": "Story panel 3",
-    "no": "Det begynner å bli tungt å puste. Elias holder seg for ørene for å stenge tankene ute. Men de vil ikke ta slutt."
+    "context": "Story title (LFB's text)",
+    "no": "Innestengt",
+    "ar": "محبوس"
   },
   "story.emotions.title": {
     "context": "Question after a story. {name} is the main character.",
-    "no": "Hva tror du {name} føler?"
+    "no": "Hva tror du {name} føler?",
+    "ar": "بماذا تظن أن {name} يشعر؟"
   },
   "story.emotions.after": {
     "context": "After choosing emotions. {name} is the main character.",
-    "no": "Det finnes ingen feil svar. Mange som bor på mottak kjenner på det samme som {name}."
+    "no": "Det finnes ingen feil svar. Mange som bor på mottak kjenner på det samme som {name}.",
+    "ar": "لا توجد إجابات خاطئة. كثيرون ممن يقيمون في مراكز الاستقبال يشعرون بما يشعر به {name}."
   },
   "story.helpers.title": {
     "context": "Question: who can help. {name} is the main character.",
-    "no": "Hvem kan {name} snakke med?"
+    "no": "Hvem kan {name} snakke med?",
+    "ar": "مع من يمكن أن يتحدث {name}؟"
   },
   "ch3.intro.title": {
     "context": "",
-    "no": "Du har rett til fritid"
+    "no": "Du har rett til fritid",
+    "ar": "لديك الحق في وقت الفراغ"
   },
   "ch3.intro.text": {
     "context": "",
-    "no": "Alle barn har rett til lek, fritid og aktiviteter. Det gjelder også deg som bor på mottak. Du har rett til hjelp til en fritidsaktivitet, både praktisk hjelp og hjelp med penger."
+    "no": "Alle barn har rett til lek, fritid og aktiviteter. Det gjelder også deg som bor på mottak. Du har rett til hjelp til en fritidsaktivitet, både praktisk hjelp og hjelp med penger.",
+    "ar": "لكل الأطفال الحق في اللعب ووقت الفراغ والأنشطة. وهذا ينطبق عليك أيضًا وأنت تقيم في مركز الاستقبال. من حقك الحصول على مساعدة في نشاط ترفيهي، مساعدة عملية ومساعدة مالية."
   },
   "ch3.activities.title": {
     "context": "Question: what do you like doing",
-    "no": "Hva liker du å gjøre?"
+    "no": "Hva liker du å gjøre?",
+    "ar": "ماذا تحب أن تفعل؟"
   },
   "ch3.activities.text": {
     "context": "",
-    "no": "Velg så mange du vil."
+    "no": "Velg så mange du vil.",
+    "ar": "اختر ما تشاء."
   },
   "ch3.activities.after": {
     "context": "After choosing activities",
-    "no": "Det du liker å gjøre er viktig. Aktiviteter kan gjøre det lettere å sove, få venner og ha det bedre."
+    "no": "Det du liker å gjøre er viktig. Aktiviteter kan gjøre det lettere å sove, få venner og ha det bedre.",
+    "ar": "ما تحب أن تفعله مهم. الأنشطة قد تجعل النوم أسهل، وتساعدك على تكوين صداقات والشعور بتحسن."
   },
   "activity.sport": {
     "context": "Activity card label",
-    "no": "Sport og trening"
+    "no": "Sport og trening",
+    "ar": "الرياضة والتمارين"
   },
   "activity.skate": {
     "context": "Activity card label",
-    "no": "Skate og være ute"
+    "no": "Skate og være ute",
+    "ar": "التزلج والخروج إلى الهواء الطلق"
   },
   "activity.food": {
     "context": "Activity card label",
-    "no": "Lage mat"
+    "no": "Lage mat",
+    "ar": "الطبخ"
   },
   "activity.games": {
     "context": "Activity card label",
-    "no": "Spill og TV"
+    "no": "Spill og TV",
+    "ar": "الألعاب والتلفاز"
   },
   "activity.learn": {
     "context": "Activity card label",
-    "no": "Lære noe nytt"
+    "no": "Lære noe nytt",
+    "ar": "تعلّم شيء جديد"
   },
   "activity.social": {
     "context": "Activity card label",
-    "no": "Være sammen med andre"
+    "no": "Være sammen med andre",
+    "ar": "قضاء الوقت مع الآخرين"
   },
   "activity.sport.staff": {
     "context": "Shown to staff in NORWEGIAN only. Completes 'Jeg har lyst til å ...'",
@@ -789,159 +937,198 @@
   },
   "ch3.cost.q": {
     "context": "Myth statement (the correct answer is 'not true')",
-    "no": "Hvis en aktivitet koster penger, kan jeg ikke være med."
+    "no": "Hvis en aktivitet koster penger, kan jeg ikke være med.",
+    "ar": "إذا كان النشاط يكلّف مالاً، فلا يمكنني المشاركة فيه."
   },
   "ch3.cost.right": {
     "context": "",
-    "no": "Du har rett til støtte til en fritidsaktivitet, også hvis den koster penger. Mottaket skal hjelpe deg å finne ut hva som finnes der du bor."
+    "no": "Du har rett til støtte til en fritidsaktivitet, også hvis den koster penger. Mottaket skal hjelpe deg å finne ut hva som finnes der du bor.",
+    "ar": "من حقك الحصول على دعم لنشاط ترفيهي، حتى لو كان يكلّف مالاً. يجب أن يساعدك مركز الاستقبال على معرفة ما هو متاح في المكان الذي تقيم فيه."
   },
   "ch3.summary.title": {
     "context": "Chapter 3 summary heading",
-    "no": "Husk:"
+    "no": "Husk:",
+    "ar": "تذكّر:"
   },
   "ch3.summary.1": {
     "context": "",
-    "no": "Du har rett til støtte til en fritidsaktivitet."
+    "no": "Du har rett til støtte til en fritidsaktivitet.",
+    "ar": "من حقك الحصول على دعم لنشاط ترفيهي."
   },
   "ch3.summary.2": {
     "context": "",
-    "no": "En aktivitet kan være bra for både kropp og hode."
+    "no": "En aktivitet kan være bra for både kropp og hode.",
+    "ar": "النشاط قد يكون مفيدًا للجسد وللعقل."
   },
   "ch3.summary.3": {
     "context": "",
-    "no": "Å gjøre ting sammen med andre kan gi nye venner."
+    "no": "Å gjøre ting sammen med andre kan gi nye venner.",
+    "ar": "القيام بأشياء مع الآخرين قد يمنحك أصدقاء جددًا."
   },
   "ch3.summary.4": {
     "context": "",
-    "no": "Mottaket kan hjelpe deg å få det til."
+    "no": "Mottaket kan hjelpe deg å få det til.",
+    "ar": "يمكن لمركز الاستقبال أن يساعدك على تحقيق ذلك."
   },
   "card.activities": {
     "context": "Rights card text",
-    "no": "Jeg har rett til fritidsaktiviteter"
+    "no": "Jeg har rett til fritidsaktiviteter",
+    "ar": "لديّ الحق في الأنشطة الترفيهية"
   },
   "sound.on": {
     "context": "Top bar button: turn read-aloud on (screen reader label)",
-    "no": "Slå på opplesning"
+    "no": "Slå på opplesning",
+    "ar": "تشغيل القراءة بصوت عالٍ"
   },
   "sound.off": {
     "context": "Top bar button: turn read-aloud off (screen reader label)",
-    "no": "Slå av opplesning"
+    "no": "Slå av opplesning",
+    "ar": "إيقاف القراءة بصوت عالٍ"
   },
   "sound.read": {
     "context": "Small speaker button next to a text (screen reader label)",
-    "no": "Les opp"
+    "no": "Les opp",
+    "ar": "اقرأ بصوت عالٍ"
   },
   "sound.hint": {
     "context": "Shown once when read-aloud is turned on",
-    "no": "Opplesning er på. Trykk på høyttaleren ved en tekst for å høre den. Bruk gjerne hodetelefoner, så andre ikke hører."
+    "no": "Opplesning er på. Trykk på høyttaleren ved en tekst for å høre den. Bruk gjerne hodetelefoner, så andre ikke hører.",
+    "ar": "القراءة بصوت عالٍ مفعّلة. اضغط على مكبّر الصوت بجانب النص لتسمعه. يُفضّل استخدام سماعات الأذن حتى لا يسمع الآخرون."
   },
   "footer.madeBy": {
     "context": "Footer on every screen",
-    "no": "Utviklet av LFB"
+    "no": "Utviklet av LFB",
+    "ar": "من تطوير LFB"
   },
   "footer.about": {
     "context": "Footer link to the about screen",
-    "no": "Om appen"
+    "no": "Om appen",
+    "ar": "عن التطبيق"
   },
   "about.title": {
     "context": "About screen heading",
-    "no": "Om appen"
+    "no": "Om appen",
+    "ar": "عن التطبيق"
   },
   "about.madeBy": {
     "context": "",
-    "no": "Utviklet av Landsforeningen for barnevernsbarn (LFB)"
+    "no": "Utviklet av Landsforeningen for barnevernsbarn (LFB)",
+    "ar": "من تطوير الجمعية الوطنية لأطفال رعاية الطفولة (LFB)"
   },
   "about.text": {
     "context": "PLACEHOLDER, LFB to write",
-    "no": "[PLACEHOLDER] Denne appen er laget for barn og unge som bor på mottak i Norge. Den bygger på LFBs workshop «Dine rettigheter på mottaket», og skal hjelpe deg å vite hvilke rettigheter du har og hvordan du kan be om hjelp."
+    "no": "[PLACEHOLDER] Denne appen er laget for barn og unge som bor på mottak i Norge. Den bygger på LFBs workshop «Dine rettigheter på mottaket», og skal hjelpe deg å vite hvilke rettigheter du har og hvordan du kan be om hjelp.",
+    "ar": "[PLACEHOLDER] هذا التطبيق مخصص للأطفال والشباب الذين يقيمون في مراكز الاستقبال في النرويج."
   },
   "about.lfb": {
     "context": "PLACEHOLDER, LFB to write. Short description of LFB",
-    "no": "[PLACEHOLDER] LFB er en medlems- og interesseorganisasjon som jobber for å bedre barn og unges rettigheter i møte med barnevernet."
+    "no": "[PLACEHOLDER] LFB er en medlems- og interesseorganisasjon som jobber for å bedre barn og unges rettigheter i møte med barnevernet.",
+    "ar": "[PLACEHOLDER] LFB جمعية للأعضاء ومنظمة مصالح تعمل على تحسين حقوق الأطفال والشباب في تعاملهم مع مؤسسة حماية الأطفال."
   },
   "about.privacy": {
     "context": "",
-    "no": "Appen er anonym. Vi spør aldri om navnet ditt, og vi lagrer ikke hvem du er."
+    "no": "Appen er anonym. Vi spør aldri om navnet ditt, og vi lagrer ikke hvem du er.",
+    "ar": "التطبيق مجهول الهوية. لا نسألك أبدًا عن اسمك، ولا نحفظ من أنت."
   },
   "about.contact": {
     "context": "Heading above contact links",
-    "no": "Kontakt oss"
+    "no": "Kontakt oss",
+    "ar": "تواصل معنا"
   },
   "about.website": {
     "context": "Link label",
-    "no": "Nettside"
+    "no": "Nettside",
+    "ar": "الموقع الإلكتروني"
   },
   "about.email": {
     "context": "Link label",
-    "no": "E-post"
+    "no": "E-post",
+    "ar": "البريد الإلكتروني"
   },
   "about.credits": {
     "context": "Heading above credits",
-    "no": "Takk til"
+    "no": "Takk til",
+    "ar": "شكر إلى"
   },
   "about.illustrations": {
     "context": "PLACEHOLDER, name of the illustrator",
-    "no": "Illustrasjoner: [PLACEHOLDER navn på illustratør]"
+    "no": "Illustrasjoner: [PLACEHOLDER navn på illustratør]",
+    "ar": "الرسوم: [PLACEHOLDER]"
   },
   "about.development": {
     "context": "PLACEHOLDER",
-    "no": "Utvikling: [PLACEHOLDER navn]"
+    "no": "Utvikling: [PLACEHOLDER navn]",
+    "ar": "التطوير: [PLACEHOLDER]"
   },
   "card.label": {
     "context": "Shown when a rights card is collected",
-    "no": "Du fikk et nytt rettighetskort!"
+    "no": "Du fikk et nytt rettighetskort!",
+    "ar": "حصلت على بطاقة حقوق جديدة!"
   },
   "card.representative": {
     "context": "Rights card text",
-    "no": "Jeg har rett til en representant"
+    "no": "Jeg har rett til en representant",
+    "ar": "لديّ الحق في ممثل"
   },
   "card.health": {
     "context": "Rights card text",
-    "no": "Jeg har rett til helsehjelp, for kropp og hode"
+    "no": "Jeg har rett til helsehjelp, for kropp og hode",
+    "ar": "لديّ الحق في الرعاية الصحية، للجسد وللعقل"
   },
   "cards.title": {
     "context": "Collected rights cards heading",
-    "no": "Mine rettighetskort"
+    "no": "Mine rettighetskort",
+    "ar": "بطاقات حقوقي"
   },
   "cards.empty": {
     "context": "",
-    "no": "Du har ingen kort ennå. Du får et kort for hvert tema du blir ferdig med."
+    "no": "Du har ingen kort ennå. Du får et kort for hvert tema du blir ferdig med.",
+    "ar": "ليست لديك بطاقات بعد. ستحصل على بطاقة عن كل موضوع تُنهيه."
   },
   "closing.title": {
     "context": "Closing screen heading",
-    "no": "Dette er viktig å huske"
+    "no": "Dette er viktig å huske",
+    "ar": "من المهم أن تتذكّر هذا"
   },
   "closing.1": {
     "context": "",
-    "no": "Du har rettigheter"
+    "no": "Du har rettigheter",
+    "ar": "أنت تتمتع بحقوق"
   },
   "closing.2": {
     "context": "",
-    "no": "Du kan få hjelp"
+    "no": "Du kan få hjelp",
+    "ar": "يمكنك الحصول على المساعدة"
   },
   "closing.3": {
     "context": "",
-    "no": "Du er ikke alene"
+    "no": "Du er ikke alene",
+    "ar": "أنت لست وحيدًا"
   },
   "closing.4": {
     "context": "",
-    "no": "Det er lov å si ifra"
+    "no": "Det er lov å si ifra",
+    "ar": "من المسموح أن تتحدث عن ذلك"
   },
   "closing.5": {
     "context": "",
-    "no": "Det er lov å klage"
+    "no": "Det er lov å klage",
+    "ar": "من المسموح أن تشتكي"
   },
   "closing.6": {
     "context": "",
-    "no": "Det er lov å be om hjelp"
+    "no": "Det er lov å be om hjelp",
+    "ar": "من المسموح أن تطلب المساعدة"
   },
   "closing.contact": {
     "context": "",
-    "no": "Har du spørsmål? Ta kontakt med oss på post@barnevernsbarna.no, eller finn oss på barnevernsbarna.no."
+    "no": "Har du spørsmål? Ta kontakt med oss på post@barnevernsbarna.no, eller finn oss på barnevernsbarna.no.",
+    "ar": "هل لديك أسئلة؟ تواصل معنا على post@barnevernsbarna.no، أو زُر موقعنا barnevernsbarna.no."
   },
   "closing.thanks": {
     "context": "Last line of the app",
-    "no": "Takk for at du var med!"
+    "no": "Takk for at du var med!",
+    "ar": "شكرًا لمشاركتك!"
   },
   "x.badge": {
     "context": "Badge on extra chapters in demo mode: not from the workshop",
@@ -949,55 +1136,68 @@
   },
   "step.routes.hint": {
     "context": "Hint above a list of situations to tap",
-    "no": "Trykk på det som passer."
+    "no": "Trykk på det som passer.",
+    "ar": "اضغط على ما ينطبق عليك."
   },
   "x.safety.title": {
     "context": "EXTRA chapter title (from LFB's rights information)",
-    "no": "Trygghet"
+    "no": "Trygghet",
+    "ar": "الأمان"
   },
   "x.safety.subtitle": {
     "context": "",
-    "no": "Du har rett til å være trygg"
+    "no": "Du har rett til å være trygg",
+    "ar": "يحق لك أن تكون آمنًا"
   },
   "x.safety.intro.title": {
     "context": "",
-    "no": "Du har rett til å være trygg"
+    "no": "Du har rett til å være trygg",
+    "ar": "يحق لك أن تكون آمنًا"
   },
   "x.safety.intro.text": {
     "context": "From LFB's rights information",
-    "no": "Ingen kan utsette deg for press, kontroll, trusler, negativ sosial kontroll, seksuell utnytting eller press til kriminalitet eller annen skadelig handling."
+    "no": "Ingen kan utsette deg for press, kontroll, trusler, negativ sosial kontroll, seksuell utnytting eller press til kriminalitet eller annen skadelig handling.",
+    "ar": "لا يمكن لأحد أن يعرضك للضغط، أو السيطرة، أو التهديدات، أو الرقابة الاجتماعية السلبية، أو الاستغلال الجنسي، أو الإجبار على الجريمة أو أي عمل آخر فيه أذى."
   },
   "x.safety.nsc.title": {
     "context": "",
-    "no": "Hva er negativ sosial kontroll?"
+    "no": "Hva er negativ sosial kontroll?",
+    "ar": "ما هي الرقابة الاجتماعية السلبية؟"
   },
   "x.safety.nsc.text": {
     "context": "From LFB's rights information",
-    "no": "Negativ sosial kontroll er press, oppsyn, trusler eller tvang som kan begrense din rett til å bestemme over egen kropp, venner, fritidsaktiviteter, påkledning og kjæreste."
+    "no": "Negativ sosial kontroll er press, oppsyn, trusler eller tvang som kan begrense din rett til å bestemme over egen kropp, venner, fritidsaktiviteter, påkledning og kjæreste.",
+    "ar": "الرقابة الاجتماعية السلبية هي الضغط أو المراقبة أو التهديدات أو الإكراه الذي قد يحدّ من حقك في أن تقرر بنفسك بشأن جسمك وأصدقائك وأنشطتك الترفيهية وملابسك وشريك حياتك."
   },
   "x.safety.hit.q": {
     "context": "Myth statement (correct answer: not true)",
-    "no": "En voksen jeg kjenner har lov til å slå meg hvis jeg har gjort noe galt."
+    "no": "En voksen jeg kjenner har lov til å slå meg hvis jeg har gjort noe galt.",
+    "ar": "يحق لشخص بالغ أعرفه أن يضربني إذا فعلت شيئًا خاطئًا."
   },
   "x.safety.hit.right": {
     "context": "From LFB's rights information",
-    "no": "Ingen har lov til å slå deg, true deg, skade deg eller gjøre noe annet med kroppen din som du ikke vil selv. Det gjelder alle."
+    "no": "Ingen har lov til å slå deg, true deg, skade deg eller gjøre noe annet med kroppen din som du ikke vil selv. Det gjelder alle.",
+    "ar": "لا يُسمح لأحد بضربك، أو تهديدك، أو إيذائك، أو القيام بشيء آخر بجسمك لا تريده. وهذا ينطبق على الجميع."
   },
   "x.safety.summary.title": {
     "context": "",
-    "no": "Hvis noe skjer:"
+    "no": "Hvis noe skjer:",
+    "ar": "إذا حدث شيء ما:"
   },
   "x.safety.summary.1": {
     "context": "From LFB's rights information",
-    "no": "Si fra til de ansatte på mottaket."
+    "no": "Si fra til de ansatte på mottaket.",
+    "ar": "أخبر الموظفين في مركز الاستقبال."
   },
   "x.safety.summary.2": {
     "context": "",
-    "no": "Hvis det er en ansatt som gjør det, si fra til lederen på mottaket eller til representanten din."
+    "no": "Hvis det er en ansatt som gjør det, si fra til lederen på mottaket eller til representanten din.",
+    "ar": "إذا كان أحد الموظفين هو من يفعل ذلك، فأخبر مدير مركز الاستقبال أو ممثلك."
   },
   "x.safety.summary.3": {
     "context": "",
-    "no": "Vil du ikke si fra til noen av dem? Ring Alarmtelefonen 116 111. Den er gratis, åpen hele døgnet og anonym."
+    "no": "Vil du ikke si fra til noen av dem? Ring Alarmtelefonen 116 111. Den er gratis, åpen hele døgnet og anonym.",
+    "ar": "لا تريد إخبار أيٍّ منهم؟ اتصل بهاتف الطوارئ للأطفال والشباب 116 111. الخدمة مجانية ومتاحة على مدار الساعة ومجهولة الهوية."
   },
   "x.safety.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
@@ -1005,31 +1205,38 @@
   },
   "x.safety.card": {
     "context": "Rights card text",
-    "no": "Jeg har rett til å være trygg"
+    "no": "Jeg har rett til å være trygg",
+    "ar": "لديّ الحق في أن أكون آمنًا"
   },
   "x.centre.title": {
     "context": "EXTRA chapter title (from LFB's rights information)",
-    "no": "Rettighetene dine på mottaket"
+    "no": "Rettighetene dine på mottaket",
+    "ar": "حقوقك في مركز الاستقبال"
   },
   "x.centre.subtitle": {
     "context": "",
-    "no": "Hva mottaket skal hjelpe deg med"
+    "no": "Hva mottaket skal hjelpe deg med",
+    "ar": "ما يجب أن يساعدك فيه مركز الاستقبال"
   },
   "x.centre.intro.title": {
     "context": "",
-    "no": "Mottaket skal ta vare på deg"
+    "no": "Mottaket skal ta vare på deg",
+    "ar": "يجب أن يعتني بك مركز الاستقبال"
   },
   "x.centre.intro.text": {
     "context": "From LFB's rights information",
-    "no": "De voksne som jobber på mottaket skal alltid tenke på hva som er best for deg. De skal snakke med deg alene for å finne ut hva du trenger, og lage en plan sammen med deg for hvordan de kan hjelpe deg."
+    "no": "De voksne som jobber på mottaket skal alltid tenke på hva som er best for deg. De skal snakke med deg alene for å finne ut hva du trenger, og lage en plan sammen med deg for hvordan de kan hjelpe deg.",
+    "ar": "يجب على البالغين الذين يعملون في مركز الاستقبال التفكير دائمًا فيما هو الأفضل بالنسبة لك. يجب أن يتحدثوا معك على انفراد لمعرفة ما تحتاجه، وأن يضعوا معك خطة لكيفية مساعدتك."
   },
   "x.centre.plan.q": {
     "context": "Statement about own situation",
-    "no": "De ansatte har laget en plan sammen med meg."
+    "no": "De ansatte har laget en plan sammen med meg.",
+    "ar": "وضع الموظفون خطة معي."
   },
   "x.centre.plan.right": {
     "context": "From LFB's rights information",
-    "no": "Planen skal lages så snart som mulig etter at du kommer til mottaket, og brukes hele tiden du bor der. Du og representanten din skal få si hva dere mener om den."
+    "no": "Planen skal lages så snart som mulig etter at du kommer til mottaket, og brukes hele tiden du bor der. Du og representanten din skal få si hva dere mener om den.",
+    "ar": "يجب وضع الخطة في أقرب وقت ممكن بعد وصولك إلى مركز الاستقبال، واستخدامها طوال فترة إقامتك فيه. يجب أن تُتاح لك ولممثلك الفرصة لقول رأيكما فيها."
   },
   "x.centre.plan.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
@@ -1037,23 +1244,28 @@
   },
   "x.centre.plan.validate.yes": {
     "context": "DRAFT, needs LFB review",
-    "no": "Så bra! Planen er din, og du kan be om å endre den hvis behovene dine endrer seg."
+    "no": "Så bra! Planen er din, og du kan be om å endre den hvis behovene dine endrer seg.",
+    "ar": "رائع! الخطة خاصة بك، ويمكنك أن تطلب تعديلها إذا تغيرت احتياجاتك."
   },
   "x.centre.plan.validate.no": {
     "context": "DRAFT, needs LFB review",
-    "no": "Det er ikke din feil. Du har rett til en plan, og det er lov å spørre de ansatte om den."
+    "no": "Det er ikke din feil. Du har rett til en plan, og det er lov å spørre de ansatte om den.",
+    "ar": "هذا ليس ذنبك. من حقك أن تكون لديك خطة، ومن المسموح أن تسأل الموظفين عنها."
   },
   "x.centre.plan.validate.dontKnow": {
     "context": "DRAFT, needs LFB review",
-    "no": "Det er helt vanlig å ikke vite det. Spør en ansatt du stoler på, så kan dere se på planen sammen."
+    "no": "Det er helt vanlig å ikke vite det. Spør en ansatt du stoler på, så kan dere se på planen sammen.",
+    "ar": "من الطبيعي تمامًا ألا تعرف. اسأل موظفًا تثق به، ويمكنكما الاطلاع على الخطة معًا."
   },
   "x.centre.info.q": {
     "context": "Statement about own situation",
-    "no": "Jeg får informasjon på et språk jeg forstår."
+    "no": "Jeg får informasjon på et språk jeg forstår.",
+    "ar": "أحصل على المعلومات بلغة أفهمها."
   },
   "x.centre.info.right": {
     "context": "From LFB's rights information",
-    "no": "Du har rett til klar og forståelig informasjon om rettighetene og pliktene dine, tilpasset alderen din og på et språk du forstår."
+    "no": "Du har rett til klar og forståelig informasjon om rettighetene og pliktene dine, tilpasset alderen din og på et språk du forstår.",
+    "ar": "لديك الحق في الحصول على معلومات واضحة ومفهومة عن حقوقك والتزاماتك، تتلاءم مع عمرك وبلغة تفهمها."
   },
   "x.centre.info.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
@@ -1061,99 +1273,123 @@
   },
   "x.centre.info.validate.yes": {
     "context": "DRAFT, needs LFB review",
-    "no": "Så bra! Si fra hvis det er noe du likevel ikke forstår."
+    "no": "Så bra! Si fra hvis det er noe du likevel ikke forstår.",
+    "ar": "رائع! أخبرهم إذا كان هناك شيء ما زلت لا تفهمه."
   },
   "x.centre.info.validate.no": {
     "context": "DRAFT, needs LFB review",
-    "no": "Det er ikke din feil at du ikke forstår. Du har rett til informasjon på et språk du forstår, og det er lov å be om det."
+    "no": "Det er ikke din feil at du ikke forstår. Du har rett til informasjon på et språk du forstår, og det er lov å be om det.",
+    "ar": "ليس ذنبك أنك لا تفهم. لديك الحق في الحصول على المعلومات بلغة تفهمها، ومن المسموح أن تطلب ذلك."
   },
   "x.centre.info.validate.dontKnow": {
     "context": "DRAFT, needs LFB review",
-    "no": "Det er mye ny informasjon å forstå. Det er lov å spørre igjen, og å be om tolk."
+    "no": "Det er mye ny informasjon å forstå. Det er lov å spørre igjen, og å be om tolk.",
+    "ar": "هناك معلومات جديدة كثيرة يجب فهمها. من المسموح أن تسأل مرة أخرى، وأن تطلب مترجمًا."
   },
   "x.centre.phone.q": {
     "context": "Myth statement (correct answer: not true)",
-    "no": "De ansatte har lov til å sjekke mobilen min når de vil."
+    "no": "De ansatte har lov til å sjekke mobilen min når de vil.",
+    "ar": "يحق للموظفين تفتيش هاتفي المحمول متى شاؤوا."
   },
   "x.centre.phone.right": {
     "context": "From LFB's rights information",
-    "no": "Du har rett til privatliv. De ansatte har vanligvis ikke lov til å lese dagboken din, åpne e-posten din, sjekke mobilen din eller gå gjennom tingene dine uten grunn."
+    "no": "Du har rett til privatliv. De ansatte har vanligvis ikke lov til å lese dagboken din, åpne e-posten din, sjekke mobilen din eller gå gjennom tingene dine uten grunn.",
+    "ar": "لديك الحق في الخصوصية. لا يُسمح للموظفين عادةً بقراءة مفكرتك، أو فتح بريدك الإلكتروني، أو تفتيش هاتفك المحمول، أو تصفح أشيائك دون سبب."
   },
   "x.centre.summary.title": {
     "context": "",
-    "no": "Du har rett til:"
+    "no": "Du har rett til:",
+    "ar": "لديك الحق في:"
   },
   "x.centre.summary.1": {
     "context": "From LFB's rights information",
-    "no": "En plan, og voksne som følger deg opp"
+    "no": "En plan, og voksne som følger deg opp",
+    "ar": "خطة، وأشخاص بالغين يتابعونك"
   },
   "x.centre.summary.2": {
     "context": "",
-    "no": "Å bli hørt og være med og bestemme i hverdagen din"
+    "no": "Å bli hørt og være med og bestemme i hverdagen din",
+    "ar": "أن يُستمع إليك وأن تشارك في القرارات في حياتك اليومية"
   },
   "x.centre.summary.3": {
     "context": "",
-    "no": "Å bli behandlet på en god og respektfull måte"
+    "no": "Å bli behandlet på en god og respektfull måte",
+    "ar": "أن تُعامل بطريقة جيدة ومحترمة"
   },
   "x.centre.summary.4": {
     "context": "",
-    "no": "Å være den du er. Ingen skal prøve å fjerne kulturen din."
+    "no": "Å være den du er. Ingen skal prøve å fjerne kulturen din.",
+    "ar": "أن تكون على طبيعتك. لا ينبغي لأحد أن يحاول إزالة ثقافتك."
   },
   "x.centre.summary.5": {
     "context": "",
-    "no": "Privatliv. Tingene dine er dine."
+    "no": "Privatliv. Tingene dine er dine.",
+    "ar": "الخصوصية. أشياؤك ملكك."
   },
   "x.centre.card": {
     "context": "Rights card text",
-    "no": "Jeg har rett til å bli hørt og respektert"
+    "no": "Jeg har rett til å bli hørt og respektert",
+    "ar": "لديّ الحق في أن يُستمع إليّ وأن أُحترم"
   },
   "x.cws.title": {
     "context": "EXTRA chapter title (from LFB's rights information)",
-    "no": "Barnevernet"
+    "no": "Barnevernet",
+    "ar": "مؤسسة حماية الأطفال"
   },
   "x.cws.subtitle": {
     "context": "",
-    "no": "Hjelp hvis du ikke er trygg"
+    "no": "Hjelp hvis du ikke er trygg",
+    "ar": "مساعدة إذا لم تكن آمنًا"
   },
   "x.cws.intro.title": {
     "context": "",
-    "no": "Hva er barnevernet?"
+    "no": "Hva er barnevernet?",
+    "ar": "ما هي مؤسسة حماية الأطفال؟"
   },
   "x.cws.intro.text": {
     "context": "From LFB's rights information",
-    "no": "Barnevernet er en offentlig tjeneste. De hjelper barn som ikke har det trygt, og hjelper barn og familier til å ha det bra. Barnevernet jobber ikke for UDI, og bestemmer ikke noe i asylsaken din."
+    "no": "Barnevernet er en offentlig tjeneste. De hjelper barn som ikke har det trygt, og hjelper barn og familier til å ha det bra. Barnevernet jobber ikke for UDI, og bestemmer ikke noe i asylsaken din.",
+    "ar": "مؤسسة حماية الأطفال (Barnevernet) خدمة حكومية. تساعد الأطفال الذين لا يشعرون بالأمان، وتساعد الأطفال والأسر على الشعور بالرضا معًا. لا تعمل لصالح دائرة الأجانب (UDI)، ولا تقرر أي شيء في قضية لجوئك."
   },
   "x.cws.asylum.q": {
     "context": "Myth statement (correct answer: not true)",
-    "no": "Hvis jeg får hjelp av barnevernet, kan det skade asylsaken min."
+    "no": "Hvis jeg får hjelp av barnevernet, kan det skade asylsaken min.",
+    "ar": "إذا حصلت على مساعدة من مؤسسة حماية الأطفال، فقد يضر ذلك بقضية لجوئي."
   },
   "x.cws.asylum.right": {
     "context": "From LFB's rights information",
-    "no": "Hjelp du får av barnevernet påvirker ikke asylsaken din."
+    "no": "Hjelp du får av barnevernet påvirker ikke asylsaken din.",
+    "ar": "لا يؤثر حصولك على مساعدة من مؤسسة حماية الأطفال على قضية لجوئك."
   },
   "x.cws.when.title": {
     "context": "",
-    "no": "Når kan barnevernet hjelpe?"
+    "no": "Når kan barnevernet hjelpe?",
+    "ar": "متى يمكن أن تساعد مؤسسة حماية الأطفال؟"
   },
   "x.cws.when.text": {
     "context": "From LFB's rights information",
-    "no": "Hvis du ikke er trygg, ikke får nødvendig omsorg, eller blir utsatt for vold, overgrep eller alvorlig press. Det gjelder også deg som bor på mottak. Barnevernet kan da undersøke situasjonen og tilby deg hjelp."
+    "no": "Hvis du ikke er trygg, ikke får nødvendig omsorg, eller blir utsatt for vold, overgrep eller alvorlig press. Det gjelder også deg som bor på mottak. Barnevernet kan da undersøke situasjonen og tilby deg hjelp.",
+    "ar": "إذا لم تكن آمنًا، أو لم تحصل على الرعاية اللازمة، أو تعرضت للعنف أو الإساءة أو الضغط الشديد. وينطبق هذا أيضًا عليك وأنت تقيم في مركز الاستقبال. يمكن لمؤسسة حماية الأطفال عندئذٍ التحقيق في الوضع وتقديم المساعدة لك."
   },
   "x.cws.summary.title": {
     "context": "",
-    "no": "Slik kan du kontakte barnevernet:"
+    "no": "Slik kan du kontakte barnevernet:",
+    "ar": "هكذا يمكنك التواصل مع مؤسسة حماية الأطفال:"
   },
   "x.cws.summary.1": {
     "context": "From LFB's rights information",
-    "no": "Be en ansatt du stoler på om hjelp"
+    "no": "Be en ansatt du stoler på om hjelp",
+    "ar": "اطلب المساعدة من موظف تثق به"
   },
   "x.cws.summary.2": {
     "context": "",
-    "no": "Be representanten din kontakte barnevernet for deg"
+    "no": "Be representanten din kontakte barnevernet for deg",
+    "ar": "اطلب من ممثلك الاتصال بمؤسسة حماية الأطفال نيابة عنك"
   },
   "x.cws.summary.3": {
     "context": "",
-    "no": "Ring barnevernet i kommunen der du bor"
+    "no": "Ring barnevernet i kommunen der du bor",
+    "ar": "اتصل بمؤسسة حماية الأطفال في البلدية التي تقيم فيها"
   },
   "x.cws.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
@@ -1161,47 +1397,58 @@
   },
   "x.cws.card": {
     "context": "Rights card text",
-    "no": "Barnevernet kan hjelpe meg hvis jeg ikke er trygg"
+    "no": "Barnevernet kan hjelpe meg hvis jeg ikke er trygg",
+    "ar": "يمكن لمؤسسة حماية الأطفال مساعدتي إذا لم أكن آمنًا"
   },
   "x.money.title": {
     "context": "EXTRA chapter title (from LFB's rights information)",
-    "no": "Penger og skole"
+    "no": "Penger og skole",
+    "ar": "المال والمدرسة"
   },
   "x.money.subtitle": {
     "context": "",
-    "no": "Hva du har rett til i hverdagen"
+    "no": "Hva du har rett til i hverdagen",
+    "ar": "ما يحق لك في حياتك اليومية"
   },
   "x.money.intro.title": {
     "context": "",
-    "no": "Penger til hverdagen"
+    "no": "Penger til hverdagen",
+    "ar": "مال للحياة اليومية"
   },
   "x.money.intro.text": {
     "context": "From LFB's rights information",
-    "no": "Du har rett til penger til livsopphold. Mottaket betaler dem direkte til deg. Pengene skal dekke mat, reiser, lege, telefon, klær og fritid."
+    "no": "Du har rett til penger til livsopphold. Mottaket betaler dem direkte til deg. Pengene skal dekke mat, reiser, lege, telefon, klær og fritid.",
+    "ar": "لديك الحق في الحصول على نفقات للمعيشة، ويدفعها لك مركز الاستقبال مباشرة. يجب أن تغطي النفقة تكاليف الطعام والسفر والطبيب والهاتف والملابس والأنشطة الترفيهية."
   },
   "x.money.rent.q": {
     "context": "Myth statement (correct answer: not true)",
-    "no": "Jeg må betale for å bo på mottaket."
+    "no": "Jeg må betale for å bo på mottaket.",
+    "ar": "يجب أن أدفع مقابل السكن في مركز الاستقبال."
   },
   "x.money.rent.right": {
     "context": "From LFB's rights information",
-    "no": "Du betaler ikke for å bo. Du skal også få tilbud om en aktivitet du ikke betaler for selv, for eksempel trening eller fotball."
+    "no": "Du betaler ikke for å bo. Du skal også få tilbud om en aktivitet du ikke betaler for selv, for eksempel trening eller fotball.",
+    "ar": "لا يتعين عليك دفع تكاليف السكن. ويجب أيضًا أن يُعرض عليك نشاط لا تدفع تكاليفه بنفسك، مثل صالة الألعاب الرياضية أو كرة القدم."
   },
   "x.money.school.title": {
     "context": "",
-    "no": "Du har rett til skole"
+    "no": "Du har rett til skole",
+    "ar": "لديك الحق في المدرسة"
   },
   "x.money.school.text": {
     "context": "From LFB's rights information",
-    "no": "Du har rett til opplæring, og opplæringen er gratis. Trenger du det, har du rett til ekstra språkopplæring og annen tilrettelegging. Er du under 18 år, kan du ha rett til videregående skole."
+    "no": "Du har rett til opplæring, og opplæringen er gratis. Trenger du det, har du rett til ekstra språkopplæring og annen tilrettelegging. Er du under 18 år, kan du ha rett til videregående skole.",
+    "ar": "يحق لك الحصول على التعليم، والتعليم مجاني. إذا كنت بحاجة إليه، يحق لك الحصول على تعليم لغوي خاص ودعم آخر. وإذا كان عمرك أقل من 18 عامًا، فقد يحق لك الالتحاق بالمدرسة الثانوية."
   },
   "x.money.inschool.q": {
     "context": "Statement about own situation",
-    "no": "Jeg går på skole eller får opplæring."
+    "no": "Jeg går på skole eller får opplæring.",
+    "ar": "أذهب إلى المدرسة أو أتلقى التعليم."
   },
   "x.money.inschool.right": {
     "context": "From LFB's rights information",
-    "no": "Du har rett til opplæring, og mottaket skal sørge for at du får oppfølging på skolen."
+    "no": "Du har rett til opplæring, og mottaket skal sørge for at du får oppfølging på skolen.",
+    "ar": "يحق لك الحصول على التعليم، ويجب على مركز الاستقبال التأكد من حصولك على متابعة في المدرسة."
   },
   "x.money.inschool.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
@@ -1209,75 +1456,93 @@
   },
   "x.money.inschool.validate.yes": {
     "context": "DRAFT, needs LFB review",
-    "no": "Så bra! Si fra hvis du trenger mer hjelp på skolen."
+    "no": "Så bra! Si fra hvis du trenger mer hjelp på skolen.",
+    "ar": "رائع! أخبرهم إذا كنت بحاجة إلى مزيد من المساعدة في المدرسة."
   },
   "x.money.inschool.validate.no": {
     "context": "DRAFT, needs LFB review",
-    "no": "Det er ikke din feil. Du har rett til opplæring, og mottaket skal hjelpe deg å komme i gang."
+    "no": "Det er ikke din feil. Du har rett til opplæring, og mottaket skal hjelpe deg å komme i gang.",
+    "ar": "هذا ليس ذنبك. يحق لك الحصول على التعليم، ويجب على مركز الاستقبال مساعدتك على البدء."
   },
   "x.money.inschool.validate.dontKnow": {
     "context": "DRAFT, needs LFB review",
-    "no": "Det kan være vanskelig å vite hva som teller som opplæring. Spør en ansatt, så finner dere ut av det sammen."
+    "no": "Det kan være vanskelig å vite hva som teller som opplæring. Spør en ansatt, så finner dere ut av det sammen.",
+    "ar": "قد يكون من الصعب معرفة ما يُعدّ تعليمًا. اسأل أحد الموظفين، وستعرفان الجواب معًا."
   },
   "x.money.card": {
     "context": "Rights card text",
-    "no": "Jeg har rett til skole og penger til hverdagen"
+    "no": "Jeg har rett til skole og penger til hverdagen",
+    "ar": "لديّ الحق في المدرسة وفي مال للحياة اليومية"
   },
   "x.complain.title": {
     "context": "EXTRA chapter title (from LFB's rights information)",
-    "no": "Hvordan klage"
+    "no": "Hvordan klage",
+    "ar": "كيف تشتكي"
   },
   "x.complain.subtitle": {
     "context": "",
-    "no": "Det er lov å si fra"
+    "no": "Det er lov å si fra",
+    "ar": "من المسموح أن تتحدث"
   },
   "x.complain.intro.title": {
     "context": "",
-    "no": "Det er lov å klage"
+    "no": "Det er lov å klage",
+    "ar": "من المسموح أن تشتكي"
   },
   "x.complain.intro.text": {
     "context": "",
-    "no": "Hvis noe er feil, eller du ikke får det du har rett til, er det lov å si fra og å klage. Hvem du skal gå til, kommer an på hva det gjelder."
+    "no": "Hvis noe er feil, eller du ikke får det du har rett til, er det lov å si fra og å klage. Hvem du skal gå til, kommer an på hva det gjelder.",
+    "ar": "إذا كان هناك خطأ ما، أو لم تحصل على ما هو من حقك، فمن المسموح أن تتحدث وأن تشتكي. الجهة التي تتوجه إليها تعتمد على الموضوع."
   },
   "x.complain.routes.title": {
     "context": "Question above a list of situations",
-    "no": "Hva gjelder det?"
+    "no": "Hva gjelder det?",
+    "ar": "بماذا يتعلق الأمر؟"
   },
   "x.complain.r1.q": {
     "context": "Situation",
-    "no": "Noe er feil der jeg bor"
+    "no": "Noe er feil der jeg bor",
+    "ar": "هناك خطأ ما في المكان الذي أعيش فيه"
   },
   "x.complain.r1.a": {
     "context": "From LFB's rights information",
-    "no": "Si fra til en ansatt du stoler på, eller til lederen. Hvis du ikke stoler på dem, si fra til representanten din."
+    "no": "Si fra til en ansatt du stoler på, eller til lederen. Hvis du ikke stoler på dem, si fra til representanten din.",
+    "ar": "أخبر موظفًا تثق به أو المدير. إذا كنت لا تثق بهم، فأخبر ممثلك."
   },
   "x.complain.r2.q": {
     "context": "Situation",
-    "no": "Det gjelder helsen min"
+    "no": "Det gjelder helsen min",
+    "ar": "الأمر يتعلق بصحتي"
   },
   "x.complain.r2.a": {
     "context": "From LFB's rights information",
-    "no": "Klag til stedet som sa nei eller ikke hjalp deg. Pasient- og brukerombudet kan hjelpe deg. Be mottaket eller representanten din om hjelp til å gjøre det."
+    "no": "Klag til stedet som sa nei eller ikke hjalp deg. Pasient- og brukerombudet kan hjelpe deg. Be mottaket eller representanten din om hjelp til å gjøre det.",
+    "ar": "اشتكِ إلى الجهة التي رفضت أو لم تساعدك. يمكن لهيئة شكاوى المرضى والمستخدمين مساعدتك. اطلب المساعدة من مركز الاستقبال أو ممثلك للقيام بذلك."
   },
   "x.complain.r3.q": {
     "context": "Situation",
-    "no": "Det gjelder representanten min"
+    "no": "Det gjelder representanten min",
+    "ar": "الأمر يتعلق بممثلي"
   },
   "x.complain.r3.a": {
     "context": "From LFB's rights information",
-    "no": "Be mottaket om hjelp til å kontakte Statsforvalteren. Å klage på representanten påvirker ikke asylsaken din."
+    "no": "Be mottaket om hjelp til å kontakte Statsforvalteren. Å klage på representanten påvirker ikke asylsaken din.",
+    "ar": "اطلب المساعدة من مركز الاستقبال للاتصال بحاكم المقاطعة. الشكوى من الممثل لا تؤثر على قضية لجوئك."
   },
   "x.complain.r4.q": {
     "context": "Situation",
-    "no": "Jeg er ikke trygg, eller trenger hjelp med én gang"
+    "no": "Jeg er ikke trygg, eller trenger hjelp med én gang",
+    "ar": "لا أشعر بالأمان، أو أحتاج إلى مساعدة فورًا"
   },
   "x.complain.r4.a": {
     "context": "From LFB's rights information",
-    "no": "Ring Alarmtelefonen 116 111. Den er gratis, åpen hele døgnet og anonym. Hvis det haster: ring 113 for ambulanse eller 112 for politi."
+    "no": "Ring Alarmtelefonen 116 111. Den er gratis, åpen hele døgnet og anonym. Hvis det haster: ring 113 for ambulanse eller 112 for politi.",
+    "ar": "اتصل بهاتف الطوارئ للأطفال والشباب 116 111. الخدمة مجانية ومتاحة على مدار الساعة ومجهولة الهوية. في حالة الطوارئ: اتصل بالرقم 113 للإسعاف أو 112 للشرطة."
   },
   "x.complain.card": {
     "context": "Rights card text",
-    "no": "Det er lov å klage"
+    "no": "Det er lov å klage",
+    "ar": "من المسموح أن أشتكي"
   },
   "settings.title": {
     "context": "Demo settings panel (demo mode only)",
@@ -1298,5 +1563,80 @@
   "settings.note": {
     "context": "",
     "no": "Gjelder bare denne enheten. Barn som bruker vanlig lenke ser standardoppsettet."
+  },
+  "story.quiet.name": {
+    "context": "Main character's name, used in questions",
+    "no": "Hamlin",
+    "ar": "هاملين"
+  },
+  "story.quiet.sub": {
+    "context": "Story subtitle (LFB's text)",
+    "no": "Hamlin, 15 år",
+    "ar": "هاملين، 15 عامًا"
+  },
+  "story.quiet.1": {
+    "context": "Story page 1 (LFB's text, verbatim)",
+    "no": "Ovenfor Hamlin sitter en mann som jobber på mottaket. Hamlin har ingen venner her, og kan ikke nok norsk til å snakke godt med de som jobber her. Hamlin holder seg derfor mest for seg selv.",
+    "ar": "يوجد أمام هاملين رجل يجلس في مركز الاستقبال. ليس لدى هاملين أصدقاء هنا، ويتعذّر عليه التحدث جيدًا مع الأشخاص الذين يعملون هنا. ولذلك يبقى هاملين وحيدًا أغلب الأوقات."
+  },
+  "story.quiet.2": {
+    "context": "Story page 2 (LFB's text, verbatim)",
+    "no": "Ved middagsbordet er han ikke med på å lage bråk med de andre guttene, selv om han gjerne skulle ønske de ville inkludere han. Det er andre her fra samme sted som han selv, men de ankom lenge før han, og har blitt en gjeng. Dessuten har de fått kommune og kommer til å flytte snart.",
+    "ar": "وعلى مائدة العشاء، لا يشارك في إحداث الضجيج مع الصبيان الآخرين، مع أنه يرغب في أن يشركوه معهم. هناك أفراد آخرون هنا من نفس المكان الذي قدِم منه، لكنهم وصلوا قبله بفترة طويلة، حيث شكّلوا مجموعة. كما أنهم حصلوا بلدية وسينتقلون قريبًا."
+  },
+  "story.quiet.3": {
+    "context": "Story page 3 (LFB's text, verbatim)",
+    "no": "Hamlin har mistet for mange venner til å orke å bli kjent med de som snart skal dra. I hjemlandet pleide Hamlin å være en leder blant gutta. Han var klassens klovn og glad i få folk til å le.",
+    "ar": "لقد فقد هاملين الكثير من أصدقائه وفقد الرغبة في التعرف على الذين يوشكون على المغادرة. في وطنه الأصلي، كان هاملين قائدًا بين الأولاد. كان يعدّ مهرج الفصل ويحب أن يضحك الناس الآخرين."
+  },
+  "story.quiet.4": {
+    "context": "Story page 4 (LFB's text, verbatim)",
+    "no": "Nå skal mannen ovenfor Hamlin, sammen med tolken kartlegge han. Mannen er nå interessert i å høre om Hamlin har deltatt på mottakets fotballkamper. Det har han ikke. Hamlin liker ikke sport. Mannen spør hvordan Hamlin har det «sånn egentlig».",
+    "ar": "والآن يتعين على الرجل أمام هاملين أن يستجلي وضعه بمساعدة المترجم. الرجل مهتم الآن بمعرفة ما إذا كان هاملين قد حضر مباريات كرة القدم في حفل الاستقبال. لم يقم بذلك. لا يهوى هاملين الرياضة. يسأل الرجل عن أحوال هاملين \"بشكل فعلي\"."
+  },
+  "story.quiet.5": {
+    "context": "Story page 5 (LFB's text, verbatim)",
+    "no": "«Sånn egentlig» har ikke Hamlin lyst til å svare. Fordi han vet ikke hva denne samtalen betyr for hans asylsøknad. Tenk om de sender han hjem fordi han forteller at han savner de hjemme? I stedet trekker han på skuldrene og svarer «bra».",
+    "ar": "\"بشكل فعلي\" هو ما لا يرغب هاملين في الإجابة عنه. فهو لا يعرف ما تعنيه هذه المحادثة بالنسبة إلى طلب لجوئه. ماذا لو أرسلوه إلى بلده لأنه يقول إنه يفتقد أهله في بلده؟ لكنه بدلاً من ذلك يحرّك كتفيه ويجيب \"جيدًا\"."
+  },
+  "story.quiet.6": {
+    "context": "Story page 6 (LFB's text, verbatim)",
+    "no": "Når samtalen er over spør Hamlin om han kan få lese i rapporten. Rapporten er skrevet på norsk, så Hamlin får ikke lest den. Noen måneder senere går en ansatt igjennom rapporten: «Hamlin 15 år. Lite sosial og svært stille gutt. Pliktoppfyllende. Han har det bra».",
+    "ar": "عندما تنتهي المحادثة، يسأل هاملين عما إذا كان يستطيع قراءة التقرير. التقرير مكتوب باللغة النرويجية، لذا لا يستطيع هاملين قراءته. بعد عدة أشهر يراجع الموظف التقرير: \"هاملين 15 عامًا. صبي اجتماعي قليلاً وهادئ جدًا. منضبط. إنه على ما يرام.\""
+  },
+  "story.shut.name": {
+    "context": "Main character's name, used in questions",
+    "no": "Elias",
+    "ar": "إلياس"
+  },
+  "story.shut.sub": {
+    "context": "Story subtitle (LFB's text)",
+    "no": "Elias, 15 år",
+    "ar": "إلياس، 15 عامًا"
+  },
+  "story.shut.1": {
+    "context": "Story page 1 (LFB's text, verbatim)",
+    "no": "Elias ligger på senga og stirrer i taket. Hit gikk han klokka 22, for da skal det være stille på mottaket. Han sliter med å sovne om natten. Det er vanskelig å sove når hodet er fylt med tanker.",
+    "ar": "إلياس يستلقي على السرير ويحدّق في السقف. جاء إلى هنا الساعة 10:00 مساءً، لأن من المفترض أن يكون مركز استقبال هادئًا. وهو يجاهد لكي ينام في الليل. من الصعب أن تنام حين يمتلئ رأسك بالأفكار."
+  },
+  "story.shut.2": {
+    "context": "Story page 2 (LFB's text, verbatim)",
+    "no": "På rommet hans, er det ingen ting han kan distrahere seg med. Hvis han vil se film må han ut på fellesrommet, men det er nå stengt, og han orker uansett ikke å være sosial.",
+    "ar": "لا يوجد شيء في غرفته يمكنه صرف انتباهه إليه. إذا أراد مشاهدة فيلم، فعليه أن يخرج إلى الغرفة المشتركة، لكنها مغلقة الآن، وليس لديه رغبة في أن يكون اجتماعيًا على أي حال."
+  },
+  "story.shut.3": {
+    "context": "Story page 3 (LFB's text, verbatim)",
+    "no": "Tusen tanker svirrer i hodet til Elias, og det begynner å bli tungt å puste. Han tenker på de der hjemme, han tenker på asylsøknaden sin, han tenker på avhøret han skal inn i, men som han ikke vet når skjer. Tenk om han sier feil ting.",
+    "ar": "آلاف الخواطر تدور في رأس إلياس، وقد أصبح التنفس ثقيلاً. إنه يفكر في أهله وفي بلده، ويفكر في طلب لجوئه، ويفكر في الاستجواب الذي سيجريه، لكنه لا يعرف متى سيحصل. ماذا لو أخطأ في أقواله؟"
+  },
+  "story.shut.4": {
+    "context": "Story page 4 (LFB's text, verbatim)",
+    "no": "Tenk om han får avslag på søknaden sin, etter alt det han har vært igjennom. Elias tenker på situasjonen i hjemlandet, og han tenker på reisen han har tatt for å komme hit.",
+    "ar": "ماذا لو رُفضَ طلبه، بعد كل ما مرّ به؟ يفكر إلياس في الوضع في وطنه، ويفكر في الرحلة التي مرّ بها للوصول إلى هنا."
+  },
+  "story.shut.5": {
+    "context": "Story page 5 (LFB's text, verbatim)",
+    "no": "Han prøver å holde seg for ørene for å dekke til tankene sine. De vil ikke ta slutt.",
+    "ar": "ويحاول الإمساك بأذنيه لتغطية خواطره. وهي لا تنتهي."
   }
 }
