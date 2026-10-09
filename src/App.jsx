@@ -27,6 +27,13 @@ function isDemo() {
   }
 }
 
+// e.g. "v0.2.0 · 4946e46 · 09.10.2026 14:32" (build time in Norwegian time)
+function buildStamp() {
+  const { version, commit, time } = __BUILD__
+  const when = new Date(time).toLocaleString('nb-NO', { timeZone: 'Europe/Oslo', dateStyle: 'short', timeStyle: 'short' })
+  return `v${version} · ${commit} · ${when}`
+}
+
 function firstScreen(p) {
   if (!p.lang) return 'lang'
   if (!p.introDone) return 'intro'
@@ -158,6 +165,7 @@ export default function App() {
           </header>
         )}
         <main>{content}</main>
+        {demo && <footer className="build-stamp">{buildStamp()}</footer>}
       </div>
       </SoundProvider>
     </I18nProvider>
