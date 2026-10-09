@@ -18,8 +18,11 @@ npm run dev
 
 ## Text and translations
 
-All visible text lives in `src/i18n/strings.json`, which is generated from the
-translation sheet (one column per language). After editing the sheet:
+All visible text lives in the Google Sheet "LFB rettighetsapp – tekster og
+oversettelser" (first tab "Tekster", one column per language; the "Les meg"
+tab explains it for translators). `src/i18n/strings.json` is generated from
+it. The sheet is the master copy: add new texts there too, or the next sync
+removes them. After editing the sheet:
 
 ```
 npm run sync-strings
