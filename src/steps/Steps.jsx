@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
 import { ACTORS, EMOTIONS, RIGHTS_CARDS, img } from '../content.js'
 import StaffCard from '../components/StaffCard.jsx'
+import { ActorInfoButton } from '../components/ActorCard.jsx'
 
 // Back (when there is somewhere to go back to) and Next.
 function StepNav({ onBack, onNext, nextLabel, nextDisabled }) {
@@ -56,8 +57,22 @@ export function InfoStep({ step, onNext, onBack }) {
   )
 }
 
+// Validation after a "true for you?" answer: says it's not their fault and that
+// others feel the same. Each question has its own text per answer.
+function Validation({ id, value }) {
+  const { t, has } = useI18n()
+  const key = `${id}.validate.${value}`
+  const text = has(key) ? t(key) : value === 'yes' ? t('q.thanks') : t('q.notAlone')
+  return (
+    <div className={`validation validation-${value}`}>
+      {value !== 'yes' && <img src={img('friends.png')} alt="" />}
+      <p>{text}</p>
+    </div>
+  )
+}
+
 // "True for you?": no right answer. Yes gets a nod; No / Don't know gets
-// reassurance and a card to show staff.
+// validation and a card to show staff.
 export function SelfStep({ step, value, onChange, onNext, onBack }) {
   const { t } = useI18n()
   return (
@@ -68,7 +83,7 @@ export function SelfStep({ step, value, onChange, onNext, onBack }) {
       <AnswerButtons options={['yes', 'no', 'dontKnow']} value={value} onAnswer={onChange} />
       {value && (
         <div className="feedback" key={value}>
-          <p className="reassure">{value === 'yes' ? t('q.thanks') : t('q.notAlone')}</p>
+          <Validation id={step.id} value={value} />
           <RightBox text={`${step.id}.right`} />
           {value !== 'yes' && <StaffCard textKey={`${step.id}.staff`} />}
         </div>
@@ -207,6 +222,7 @@ export function HelpersStep({ step, value, onChange, onNext, onBack }) {
             <button key={a.id} className={`pick-card ${n >= 0 ? 'selected' : ''}`} aria-pressed={n >= 0} onClick={() => toggle(a.id)}>
               <img src={a.img} alt={t(`actor.${a.id}`)} />
               {n >= 0 && <span className="order-badge">{n + 1}</span>}
+              <ActorInfoButton actor={a} />
             </button>
           )
         })}

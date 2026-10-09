@@ -27,6 +27,7 @@ export function I18nProvider({ lang, children }) {
     () => ({
       lang: language.code,
       t: (key) => lookup(key, language.code),
+      has: (key) => key in strings,
       // Cards shown to staff stay in Norwegian whatever language the kid uses.
       tStaff: (key) => lookup(key, DEFAULT_LANG),
     }),

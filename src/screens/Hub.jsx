@@ -1,7 +1,7 @@
 import { useI18n } from '../i18n/I18n.jsx'
 import { CHAPTERS } from '../content.js'
 
-export default function Hub({ progress, onOpen, onCards, onFinish, onRestart }) {
+export default function Hub({ progress, onOpen, onCards, onHelpers, onFinish, onRestart }) {
   const { t } = useI18n()
 
   const restart = () => {
@@ -34,6 +34,9 @@ export default function Hub({ progress, onOpen, onCards, onFinish, onRestart }) 
       <div className="actions actions-stack">
         <button className="btn btn-secondary" onClick={onCards}>
           {t('hub.cards')} ({progress.cards.length})
+        </button>
+        <button className="btn btn-secondary" onClick={onHelpers}>
+          {t('hub.helpers')}
         </button>
         <button className="btn btn-primary" onClick={onFinish}>
           {t('hub.finish')}

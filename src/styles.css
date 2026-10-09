@@ -40,8 +40,16 @@ main { flex: 1; }
   padding: 10px 16px; background: var(--bg);
   border-bottom: 1px solid var(--lavender-light);
 }
-.logo-button { background: none; border: 0; padding: 0; cursor: pointer; }
-.logo-button img { height: 40px; width: auto; }
+.topbar-logo { height: 40px; width: auto; }
+.topbar-actions { display: flex; align-items: center; gap: 8px; }
+.lang-button {
+  font: inherit; font-weight: 600; font-size: 0.95rem; color: var(--purple);
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--card); border: 2px solid var(--lavender-light); border-radius: 999px;
+  padding: 8px 12px; min-height: 44px; cursor: pointer;
+}
+.lang-button:hover { border-color: var(--lavender); }
+@media (max-width: 360px) { .lang-button span { display: none; } }
 .help-button {
   font: inherit; font-weight: 700; font-size: 0.95rem;
   background: var(--pink); color: var(--ink);
@@ -228,15 +236,57 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
   border: 3px solid var(--sage);
 }
 
-/* Demo mode only (?demo) */
-.demo-restart {
-  position: fixed; bottom: 12px; inset-inline-start: 12px; z-index: 40;
-  font: inherit; font-size: 0.85rem; font-weight: 700;
-  background: var(--charcoal); color: #fff; opacity: 0.8;
-  border: 0; border-radius: 999px; padding: 8px 14px; min-height: 40px; cursor: pointer;
+/* Validation after a "true for you?" answer */
+.validation {
+  display: flex; align-items: center; gap: 14px;
+  background: var(--pink-light); border-radius: var(--radius); padding: 14px 16px; margin-bottom: 10px;
 }
-.demo-restart:hover { opacity: 1; }
-main { padding-bottom: 56px; }
+.validation img { width: 76px; flex: none; }
+.validation p { margin: 0; font-size: 1.08rem; font-weight: 600; color: var(--ink); }
+.validation-yes { background: var(--green-light); }
+
+/* "i" button on actor cards */
+.info-badge {
+  position: absolute; top: 4px; inset-inline-start: 4px;
+  width: 30px; height: 30px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: #fff; color: var(--purple); font-weight: 700; font-style: italic; font-family: Georgia, serif;
+  border: 2px solid var(--purple); box-shadow: var(--shadow); cursor: pointer;
+}
+
+/* Actor card that turns over */
+.modal-card { align-items: center; }
+.flip-card {
+  font: inherit; color: inherit; text-align: start;
+  background: none; border: 0; padding: 0; cursor: pointer;
+  width: min(320px, 82vw); aspect-ratio: 360 / 511; perspective: 1200px;
+}
+.flip-inner {
+  position: relative; display: block; width: 100%; height: 100%;
+  transform-style: preserve-3d; transition: transform 0.7s cubic-bezier(0.3, 0.7, 0.3, 1);
+}
+.flip-card.flipped .flip-inner { transform: rotateY(180deg); }
+.flip-front, .flip-back {
+  position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  border-radius: 14px; overflow: hidden; box-shadow: 0 6px 20px rgba(46, 42, 56, 0.18);
+}
+.flip-front img { width: 100%; height: 100%; object-fit: cover; }
+.flip-back { transform: rotateY(180deg); background: var(--sage); padding: 10px; }
+.actor-back {
+  height: 100%; overflow: auto; background: var(--green-light); border-radius: 8px; padding: 14px 16px;
+}
+.actor-back h3 { margin: 0 0 6px; font-size: 1.2rem; }
+.actor-back dl { margin: 0; }
+.actor-back dt { font-weight: 700; margin-top: 8px; font-size: 0.95rem; }
+.actor-back dd { margin: 2px 0 0; font-size: 0.95rem; line-height: 1.4; }
+
+/* Demo mode only (?demo): replaces the logo in the top bar */
+.demo-restart {
+  font: inherit; font-size: 0.9rem; font-weight: 700;
+  background: var(--charcoal); color: #fff;
+  border: 0; border-radius: 999px; padding: 8px 14px; min-height: 44px; cursor: pointer;
+}
+.demo-restart:hover { background: #000; }
 
 @keyframes fade-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 @keyframes slide-up { from { transform: translateY(40px); opacity: 0; } to { transform: none; opacity: 1; } }
