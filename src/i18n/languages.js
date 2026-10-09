@@ -1,6 +1,10 @@
 // Languages shown on the first screen. `choose` and `soon` are shown before any
 // language is picked, so they live here instead of in the strings sheet.
 // TODO: have a translator check the uk/ru/so lines.
+// TODO: decide the order with LFB (see "Language order" in the plan doc).
+// Norwegian and English first is fine for testing, but puts the majority
+// languages on top. Options: most-spoken among residents first, alphabetical
+// by own name, or the device's language (navigator.languages) first.
 export const LANGUAGES = [
   { code: 'no', name: 'Norsk', choose: 'Velg språk', soon: 'Kommer snart', dir: 'ltr', speech: 'nb-NO', available: true },
   { code: 'en', name: 'English', choose: 'Choose language', soon: 'Coming soon', dir: 'ltr', speech: 'en-GB', available: false },
