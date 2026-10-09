@@ -60,7 +60,7 @@ parts.push(`<text x="40" y="68" font-family="${FONT}" font-size="14" fill="${C.m
 
 // Row 1: first visit
 const r1y = 100
-const lang = box(40, r1y, 210, ['Choose language', 'Norwegian only for now'], { fill: C.lavender })
+const lang = box(40, r1y, 210, ['Choose language', 'Norwegian · Arabic demo'], { fill: C.lavender })
 const intro = box(300, r1y, 210, ['Intro', '4 short screens'], { fill: C.lavender })
 const checkin = box(560, r1y, 230, ['Mood check-in', 'Pick a weather picture'], { fill: C.lavender })
 marker(checkin.right - 4, checkin.y + 4, 1)
@@ -97,17 +97,24 @@ const ch2 = column(xs[1], top, colW, [
   { text: ['Chapter 2', 'Body and mind'], fill: C.sage, stroke: C.sage, color: '#fff' },
   { text: 'Right to healthcare', ...ch },
   { text: '1 × "Did you know?" myth', ...ch },
-  { text: 'Sleep → body → mind chain', ...ch },
+  { text: ['Sleep → body → mind', 'one figure at a time'], ...ch },
   { text: ['Choose a story', 'Stille gutt / Innestengt / Skip'], ...ch, marker: 5 },
-  { text: ['The story', '3–4 panels'], ...ch },
+  { text: ['The story', '5–6 pages, LFB\'s own text'], ...ch },
   { text: 'What does he feel?', ...ch },
-  { text: ['Who can help?', 'Tap in order · "i" turns a card'], ...ch },
+  { text: ['Who can help?', 'Pick freely, see how they help'], ...ch },
+  { text: ['Read the other story?', 'Yes / No'], ...ch },
+  { text: 'Who would you talk to first?', ...ch },
   { text: ['Summary', '+ "Show to staff" card'], ...ch },
-  { text: 'Rights card', fill: C.purple, stroke: C.purple, color: '#fff', bold: true },
+  { text: ['Rights card', '+ "Try the game"'], fill: C.purple, stroke: C.purple, color: '#fff', bold: true },
 ])
-// Skip path from "Read the story?" to Summary
+// "Yes" loops back from "Read the other story?" to the story
+const loopFrom = ch2[8]
+const loopTo = ch2[5]
+path(`M ${loopFrom.x} ${loopFrom.cy} L ${loopFrom.x - 14} ${loopFrom.cy} L ${loopFrom.x - 14} ${loopTo.cy} L ${loopTo.x - 2} ${loopTo.cy}`, true)
+parts.push(`<text x="${loopFrom.x - 18}" y="${(loopFrom.cy + loopTo.cy) / 2}" text-anchor="end" font-family="${FONT}" font-size="12" fill="${C.muted}">yes</text>`)
+// Skip path from "Choose a story" to "Who would you talk to first?"
 const skipFrom = ch2[4]
-const skipTo = ch2[8]
+const skipTo = ch2[9]
 path(`M ${skipFrom.right} ${skipFrom.cy} L ${skipFrom.right + 18} ${skipFrom.cy} L ${skipFrom.right + 18} ${skipTo.cy} L ${skipTo.right + 2} ${skipTo.cy}`, true)
 parts.push(`<text x="${skipFrom.right + 24}" y="${(skipFrom.cy + skipTo.cy) / 2}" font-family="${FONT}" font-size="12" fill="${C.muted}">skip</text>`)
 
@@ -121,7 +128,7 @@ const ch3 = column(xs[2], top, colW, [
 ])
 // Two separate screens from the overview, so no arrow between them.
 box(xs[3], top, colW, ['My rights cards', 'Slots fill up on the overview'], { fill: C.lavender })
-box(xs[3], top + BOX_H + GAP, colW, ['Who can help me?', 'Cards that turn over'], { fill: C.lavender })
+box(xs[3], top + BOX_H + GAP, colW, ['Who can help me?', 'Cards that turn over + game'], { fill: C.lavender })
 const end = column(xs[4], top, colW, [
   { text: ['"Finish for today"', 'button'], fill: C.lavender, marker: 2 },
   { text: ['Mood check-in again', 'Weather picture'], fill: C.lavender, marker: 2 },
