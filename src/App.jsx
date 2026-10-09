@@ -12,6 +12,18 @@ import Chapter from './screens/Chapter.jsx'
 import Cards from './screens/Cards.jsx'
 import Closing from './screens/Closing.jsx'
 
+// Demo mode: open the app with ?demo to get a restart button on every screen.
+// Remembered for the browser tab, so it survives moving around in the app.
+function isDemo() {
+  const asked = new URLSearchParams(window.location.search).has('demo')
+  try {
+    if (asked) sessionStorage.setItem('lfb-demo', '1')
+    return asked || sessionStorage.getItem('lfb-demo') === '1'
+  } catch {
+    return asked
+  }
+}
+
 function firstScreen(p) {
   if (!p.lang) return 'lang'
   if (!p.introDone) return 'intro'
@@ -22,6 +34,7 @@ export default function App() {
   const { progress, update, completeChapter, reset } = useProgress()
   const [screen, setScreen] = useState(() => firstScreen(progress))
   const [chapterId, setChapterId] = useState(null)
+  const [demo] = useState(isDemo)
 
   const go = (s) => {
     setScreen(s)
@@ -119,6 +132,18 @@ export default function App() {
           </header>
         )}
         <main>{content}</main>
+        {demo && (
+          <button
+            className="demo-restart"
+            onClick={() => {
+              reset()
+              setChapterId(null)
+              go('lang')
+            }}
+          >
+            ↺ Demo: start på nytt
+          </button>
+        )}
       </div>
     </I18nProvider>
   )
