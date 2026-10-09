@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
-import { ACTORS, EMOTIONS, RIGHTS_CARDS, img } from '../content.js'
+import { ACTIVITIES, ACTORS, EMOTIONS, RIGHTS_CARDS, STORIES, img } from '../content.js'
 import StaffCard from '../components/StaffCard.jsx'
 import { ActorInfoButton } from '../components/ActorCard.jsx'
 
@@ -139,37 +139,54 @@ export function ChainStep({ onNext, onBack, cameBack }) {
   )
 }
 
-export function StoryIntroStep({ step, onNext, onBack, onSkipTo }) {
+// The story picked in an earlier step (Hamlin's if none was picked).
+const storyOf = (step, answers) => STORIES[answers[step.storyFrom]] ?? STORIES.quiet
+
+// Content note, then pick one of the stories, or skip them.
+export function StoryChoiceStep({ step, value, onChange, onNext, onBack, onSkipTo }) {
   const { t } = useI18n()
   return (
     <>
       <p className="lead">{t(step.text)}</p>
+      <div className="story-choices">
+        {Object.entries(STORIES).map(([id, s]) => (
+          <button
+            key={id}
+            className={`story-choice ${value === id ? 'selected' : ''}`}
+            onClick={() => {
+              onChange(id)
+              onNext()
+            }}
+          >
+            <img src={s.cover} alt="" />
+            <strong>{t(s.title)}</strong>
+          </button>
+        ))}
+      </div>
       <div className="actions">
+        {onBack && (
+          <button className="btn btn-secondary" onClick={onBack}>
+            {t('common.back')}
+          </button>
+        )}
         <button className="btn btn-secondary" onClick={() => onSkipTo(step.skipTo)}>
           {t('common.skip')}
         </button>
-        <button className="btn btn-primary" onClick={onNext}>
-          {t('ch2.story.read')}
-        </button>
       </div>
-      {onBack && (
-        <button className="btn btn-link" onClick={onBack}>
-          ← {t('common.back')}
-        </button>
-      )}
     </>
   )
 }
 
-export function StoryStep({ step, onNext, onBack, cameBack }) {
+export function StoryStep({ step, answers, onNext, onBack, cameBack }) {
   const { t } = useI18n()
-  const [i, setI] = useState(cameBack ? step.panels.length - 1 : 0)
-  const panel = step.panels[i]
-  const last = i === step.panels.length - 1
+  const story = storyOf(step, answers)
+  const [i, setI] = useState(cameBack ? story.panels.length - 1 : 0)
+  const panel = story.panels[i]
+  const last = i === story.panels.length - 1
 
   return (
     <div className="story">
-      <h1>{t(step.title)}</h1>
+      <h1>{t(story.title)}</h1>
       <img className="story-panel" src={panel.img} alt="" />
       <p className="story-text">{t(panel.text)}</p>
       <StepNav onBack={i > 0 ? () => setI(i - 1) : onBack} onNext={last ? onNext : () => setI(i + 1)} />
@@ -177,8 +194,9 @@ export function StoryStep({ step, onNext, onBack, cameBack }) {
   )
 }
 
-export function EmotionsStep({ step, value, onChange, onNext, onBack }) {
+export function EmotionsStep({ step, answers, value, onChange, onNext, onBack }) {
   const { t } = useI18n()
+  const { name } = storyOf(step, answers)
   const picked = value ? value.split(',') : []
   const toggle = (id) => {
     const nextPicked = picked.includes(id) ? picked.filter((x) => x !== id) : [...picked, id]
@@ -187,7 +205,7 @@ export function EmotionsStep({ step, value, onChange, onNext, onBack }) {
 
   return (
     <>
-      <h1>{t(`${step.id}.title`)}</h1>
+      <h1>{t('story.emotions.title', { name })}</h1>
       <p className="lead">{t(`${step.id}.text`)}</p>
       <div className="card-grid">
         {EMOTIONS.map((e) => (
@@ -196,15 +214,16 @@ export function EmotionsStep({ step, value, onChange, onNext, onBack }) {
           </button>
         ))}
       </div>
-      {picked.length > 0 && <p className="reassure">{t(`${step.id}.after`)}</p>}
+      {picked.length > 0 && <p className="reassure">{t('story.emotions.after', { name })}</p>}
       <StepNav onBack={onBack} onNext={onNext} nextLabel={picked.length ? undefined : t('common.skip')} />
     </>
   )
 }
 
 // Tap actors in the order you'd ask them; tap again to remove.
-export function HelpersStep({ step, value, onChange, onNext, onBack }) {
+export function HelpersStep({ step, answers, value, onChange, onNext, onBack }) {
   const { t } = useI18n()
+  const { name } = storyOf(step, answers)
   const order = value ? value.split('>') : []
   const toggle = (id) => {
     const nextOrder = order.includes(id) ? order.filter((x) => x !== id) : [...order, id]
@@ -213,7 +232,7 @@ export function HelpersStep({ step, value, onChange, onNext, onBack }) {
 
   return (
     <>
-      <h1>{t(`${step.id}.title`)}</h1>
+      <h1>{t('story.helpers.title', { name })}</h1>
       <p className="lead">{t(`${step.id}.text`)}</p>
       <div className="card-grid">
         {ACTORS.map((a) => {
@@ -229,6 +248,53 @@ export function HelpersStep({ step, value, onChange, onNext, onBack }) {
       </div>
       {order.length > 0 && <p className="reassure">{t(`${step.id}.after`)}</p>}
       <StepNav onBack={onBack} onNext={onNext} nextLabel={order.length ? undefined : t('common.skip')} />
+    </>
+  )
+}
+
+export function ActivitiesStep({ step, value, onChange, onNext, onBack }) {
+  const { t } = useI18n()
+  const picked = value ? value.split(',') : []
+  const toggle = (id) => onChange((picked.includes(id) ? picked.filter((x) => x !== id) : [...picked, id]).join(','))
+
+  return (
+    <>
+      <h1>{t(`${step.id}.title`)}</h1>
+      <p className="lead">{t(`${step.id}.text`)}</p>
+      <div className="activity-grid">
+        {ACTIVITIES.map((a) => (
+          <button key={a.id} className={`activity-card ${picked.includes(a.id) ? 'selected' : ''}`} aria-pressed={picked.includes(a.id)} onClick={() => toggle(a.id)}>
+            <span className={`activity-img ${a.cutout ? 'cutout' : ''}`}>
+              <img src={a.img} alt="" />
+            </span>
+            <span className="activity-label">{t(`activity.${a.id}`)}</span>
+          </button>
+        ))}
+      </div>
+      {picked.length > 0 && <p className="reassure">{t(`${step.id}.after`)}</p>}
+      <StepNav onBack={onBack} onNext={onNext} nextLabel={picked.length ? undefined : t('common.skip')} />
+    </>
+  )
+}
+
+// Summary for the activities chapter, with a staff card that names the activities picked.
+export function ActivitySummaryStep({ step, answers, onNext, onBack }) {
+  const { t, tStaff } = useI18n()
+  const picked = answers[step.activitiesFrom] ? answers[step.activitiesFrom].split(',') : []
+  const phrases = picked.map((id) => tStaff(`activity.${id}.staff`))
+  const list = phrases.length > 1 ? `${phrases.slice(0, -1).join(', ')} ${tStaff('ch3.staff.and')} ${phrases.at(-1)}` : phrases[0]
+  const staffText = list ? `${tStaff('ch3.staff.start')} ${list}. ${tStaff('ch3.staff.end')}` : tStaff('ch3.staff.none')
+
+  return (
+    <>
+      <h1>{t(step.title)}</h1>
+      <ul className="summary">
+        {step.items.map((k) => (
+          <li key={k}>{t(k)}</li>
+        ))}
+      </ul>
+      <StaffCard text={staffText} />
+      <StepNav onBack={onBack} onNext={onNext} />
     </>
   )
 }

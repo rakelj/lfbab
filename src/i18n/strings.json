@@ -1,206 +1,878 @@
 {
-  "common.next": { "context": "Button: go to the next screen", "no": "Neste" },
-  "common.back": { "context": "Button: go to the previous screen", "no": "Tilbake" },
-  "common.close": { "context": "Button: close a popup", "no": "Lukk" },
-  "common.start": { "context": "Button: start", "no": "Start" },
-  "common.done": { "context": "Button: finish a chapter", "no": "Ferdig" },
-  "common.skip": { "context": "Button: skip a question", "no": "Hopp over" },
-  "common.toHub": { "context": "Button: back to the chapter overview", "no": "Til oversikten" },
-
-  "lang.title": { "context": "Language screen heading. Shown in every language at once.", "no": "Velg språk" },
-  "lang.comingSoon": { "context": "Label on languages that are not translated yet", "no": "Kommer snart" },
-
-  "help.button": { "context": "Help button, visible on every screen", "no": "Trenger du hjelp?" },
-  "help.title": { "context": "Help popup heading", "no": "Trenger du hjelp nå?" },
-  "help.intro": { "context": "Help popup intro", "no": "Du trenger ikke klare alt alene. Her kan du få hjelp:" },
-  "help.staff.title": { "context": "Help option: staff where you live", "no": "Ansatte på mottaket" },
-  "help.staff.text": { "context": "", "no": "Snakk med en voksen du stoler på der du bor." },
-  "help.alarm.title": { "context": "Help option: national helpline for children (name of service)", "no": "Alarmtelefonen for barn og unge" },
-  "help.alarm.text": { "context": "", "no": "Ring 116 111. Det er gratis og åpent hele døgnet." },
-  "help.emergency.title": { "context": "Help option: emergency", "no": "Hvis det haster" },
-  "help.emergency.text": { "context": "", "no": "Ring 113 for ambulanse eller 112 for politi." },
-  "help.lfb.title": { "context": "Help option: the organisation behind the app", "no": "Landsforeningen for barnevernsbarn" },
-  "help.lfb.text": { "context": "", "no": "Send en e-post til post@barnevernsbarna.no" },
-  "help.note": { "context": "Reassurance at the bottom of the help popup", "no": "Å be om hjelp påvirker ikke asylsaken din." },
-
-  "intro.1.title": { "context": "Welcome screen heading", "no": "Hei!" },
-  "intro.1.text": { "context": "", "no": "Denne appen handler om rettighetene dine mens du bor på mottak. Den er laget av Landsforeningen for barnevernsbarn (LFB)." },
-  "intro.2.title": { "context": "Who we are", "no": "Hvem er vi?" },
-  "intro.2.text": { "context": "", "no": "LFB jobber for at barn og unge skal få rettighetene sine. Vi jobber ikke for UDI, og vi bestemmer ingenting i asylsaken din." },
-  "intro.3.title": { "context": "Privacy screen heading", "no": "Du er anonym" },
-  "intro.3.text": { "context": "", "no": "Vi spør aldri om navnet ditt. Du kan hoppe over spørsmål og ta pauser når du vil. Appen husker hvor du var, så du kan komme tilbake senere." },
-  "intro.4.title": { "context": "Screen explaining the help button", "no": "Hjelp er alltid nær" },
-  "intro.4.text": { "context": "", "no": "Ser du knappen «Trenger du hjelp?» øverst? Trykk på den når som helst, så ser du hvem du kan snakke med." },
-
-  "checkin.title": { "context": "Mood check-in heading. The kid picks a weather picture.", "no": "Hvordan har du det inni deg nå?" },
-  "checkin.text": { "context": "", "no": "Ikke hvordan været er ute, men hvordan du har det inni deg. Velg bildet som passer best." },
-  "checkin.thanks": { "context": "After picking a weather picture", "no": "Takk for at du delte. Alle følelser er lov." },
-  "checkout.title": { "context": "Closing mood check-in heading", "no": "Hvordan har du det inni deg nå?" },
-  "checkout.text": { "context": "", "no": "Velg bildet som passer best med hva du sitter igjen med." },
-  "weather.clear": { "context": "Image description: clear blue sky with sun", "no": "Klar himmel med sol" },
-  "weather.sunset": { "context": "Image description: sunset above the clouds", "no": "Solnedgang over skyene" },
-  "weather.breaking": { "context": "Image description: dark clouds with light breaking through", "no": "Mørke skyer med lys som slipper gjennom" },
-  "weather.storm": { "context": "Image description: dark, stormy weather", "no": "Mørkt uvær" },
-
-  "hub.title": { "context": "Chapter overview heading", "no": "Velg et tema" },
-  "hub.text": { "context": "", "no": "Du kan ta temaene i den rekkefølgen du vil." },
-  "hub.done": { "context": "Badge on a finished chapter", "no": "Ferdig" },
-  "hub.soon": { "context": "Badge on a chapter that isn't built yet", "no": "Kommer snart" },
-  "hub.cards": { "context": "Button: see collected rights cards", "no": "Mine rettighetskort" },
-  "hub.finish": { "context": "Button: go to the closing part", "no": "Avslutt for i dag" },
-  "hub.restart": { "context": "Button: delete progress and start over", "no": "Start på nytt" },
-  "hub.restartConfirm": { "context": "Confirm dialog for starting over", "no": "Vil du slette alt og starte på nytt?" },
-
-  "ch1.title": { "context": "Chapter 1 title", "no": "Representanten din" },
-  "ch1.subtitle": { "context": "", "no": "Hvem hjelper deg med asylsaken?" },
-  "ch2.title": { "context": "Chapter 2 title", "no": "Kropp og hode" },
-  "ch2.subtitle": { "context": "", "no": "Du har rett til helsehjelp" },
-  "ch3.title": { "context": "Chapter 3 title", "no": "Hva liker du å gjøre?" },
-  "ch3.subtitle": { "context": "", "no": "Du har rett til fritidsaktiviteter" },
-
-  "q.yes": { "context": "Answer button", "no": "Ja" },
-  "q.no": { "context": "Answer button", "no": "Nei" },
-  "q.dontKnow": { "context": "Answer button", "no": "Vet ikke" },
-  "q.true": { "context": "Answer button for a statement", "no": "Stemmer" },
-  "q.false": { "context": "Answer button for a statement", "no": "Stemmer ikke" },
-  "q.selfLabel": { "context": "Small label above a question about the kid's own situation", "no": "Stemmer dette for deg?" },
-  "q.mythLabel": { "context": "Small label above a myth question", "no": "Hva tror du?" },
-  "q.rightLabel": { "context": "Label above what the kid is entitled to", "no": "Dette har du rett på" },
-  "q.notAlone": { "context": "Reassurance after answering No / Don't know", "no": "Du er ikke den eneste. Mange andre har svart det samme." },
-  "q.thanks": { "context": "After answering Yes", "no": "Så bra!" },
-  "q.mythGotIt": { "context": "After answering a myth question correctly", "no": "Helt riktig!" },
-  "q.mythCommon": { "context": "After answering a myth question wrong or don't know. Must never sound like 'wrong'.", "no": "Mange tror det. Men sånn er det ikke!" },
-
-  "staff.button": { "context": "Button that opens a card to show staff", "no": "Vis til en ansatt" },
-  "staff.title": { "context": "Heading above the staff card", "no": "Vis dette til en voksen på mottaket" },
-  "staff.hint": { "context": "", "no": "Du kan vise skjermen til en ansatt du stoler på. Teksten står på norsk, så de forstår hva du trenger." },
-
-  "ch1.intro.title": { "context": "", "no": "Hva er en representant?" },
-  "ch1.intro.text": { "context": "", "no": "Alle under 18 år som er i Norge uten foreldre, skal ha en representant. Statsforvalteren gir deg en representant når du kommer til Norge. Representanten skal passe på at rettighetene dine blir møtt." },
-  "ch1.met.q": { "context": "Statement about own situation", "no": "Jeg har møtt representanten min." },
-  "ch1.met.right": { "context": "", "no": "Representanten din skal ha kontakt med deg på telefon. Hvis det er mulig, skal representanten også møte deg der du bor." },
-  "ch1.met.staff": { "context": "Shown to staff in NORWEGIAN only. Do not translate.", "no": "Jeg har ikke møtt representanten min. Kan du hjelpe meg å få kontakt?" },
-  "ch1.interview.q": { "context": "Statement about own situation", "no": "Representanten min hjelper meg å forberede meg til asylintervjuet." },
-  "ch1.interview.right": { "context": "", "no": "Representanten skal forberede deg på asylintervjuet og være med på samtaler med utlendingsmyndighetene." },
-  "ch1.interview.staff": { "context": "Shown to staff in NORWEGIAN only. Do not translate.", "no": "Jeg trenger hjelp til å forberede meg til asylintervjuet. Kan du hjelpe meg å kontakte representanten min?" },
-  "ch1.interpreter.q": { "context": "Statement about own situation", "no": "Representanten min har hjulpet meg med tolk." },
-  "ch1.interpreter.right": { "context": "", "no": "Representanten skal vurdere om du trenger tolk, og skaffe tolk til viktige samtaler." },
-  "ch1.interpreter.staff": { "context": "Shown to staff in NORWEGIAN only. Do not translate.", "no": "Jeg trenger tolk til en viktig samtale. Kan du hjelpe meg?" },
-  "ch1.complain.q": { "context": "Myth statement (the correct answer is 'not true')", "no": "Hvis jeg klager på representanten min, kan det skade asylsaken min." },
-  "ch1.complain.right": { "context": "", "no": "Å klage på representanten påvirker ikke asylsaken din. Si ifra til de ansatte på mottaket. De kan hjelpe deg å klage til statsforvalteren." },
-  "ch1.summary.title": { "context": "Chapter 1 summary heading", "no": "Representanten skal:" },
-  "ch1.summary.1": { "context": "", "no": "Forberede deg på asylintervjuet" },
-  "ch1.summary.2": { "context": "", "no": "Være med på samtaler med utlendingsmyndighetene" },
-  "ch1.summary.3": { "context": "", "no": "Snakke med mottaket og andre som hjelper deg" },
-  "ch1.summary.4": { "context": "", "no": "Besøke deg eller ha kontakt med deg på telefon" },
-  "ch1.summary.5": { "context": "", "no": "Skaffe tolk når du trenger det" },
-  "ch1.summary.6": { "context": "", "no": "Passe på at du har det bra og får rettighetene dine" },
-  "ch1.summary.note": { "context": "", "no": "Får du ikke kontakt med representanten din? Si ifra til de ansatte på mottaket." },
-
-  "ch2.intro.title": { "context": "", "no": "Du har rett til helsehjelp" },
-  "ch2.intro.text": { "context": "", "no": "Alle under 18 år har rett til helsehjelp, både for kroppen og for hodet. Det gjelder lege, psykolog, fysioterapeut og sykehus." },
-  "ch2.doctor.q": { "context": "Myth statement (the correct answer is 'not true')", "no": "Hvis jeg går til lege eller psykolog, kan det påvirke asylsaken min." },
-  "ch2.doctor.right": { "context": "", "no": "Å gå til lege eller psykolog påvirker ikke asylsaken din. Du har rett til helsehjelp uansett situasjon." },
-  "ch2.chain.title": { "context": "Heading: body and mind are connected", "no": "Kropp og hode henger sammen" },
-  "ch2.chain.1": { "context": "Step 1 of a chain", "no": "Dårlig søvn kan føre til …" },
-  "ch2.chain.2": { "context": "Step 2 of a chain", "no": "… vondt i kroppen, som kan føre til …" },
-  "ch2.chain.3": { "context": "Step 3 of a chain", "no": "… at du blir irritert og ute av balanse." },
-  "ch2.chain.text": { "context": "", "no": "Over lang tid kan det gjøre det vanskelig å konsentrere seg og lære, og gi større risiko for angst og depresjon. Men det finnes hjelp!" },
-  "ch2.story.intro": { "context": "Before the story. Gentle content note.", "no": "Nå skal du lese en kort historie om Hamlin. Den handler om å ha det vanskelig. Du kan hoppe over den hvis du vil." },
-  "ch2.story.read": { "context": "Button: read the story", "no": "Les historien" },
-  "story.quiet.title": { "context": "Story title", "no": "Stille gutt" },
-  "story.quiet.1": { "context": "Story panel 1", "no": "Hamlin er 15 år. Overfor ham sitter en mann som jobber på mottaket." },
-  "story.quiet.2": { "context": "Story panel 2", "no": "Hamlin har ingen venner her, og han kan ikke nok norsk til å snakke godt med de ansatte. I hjemlandet var han en leder blant gutta. Han var klassens klovn og elsket å få folk til å le." },
-  "story.quiet.3": { "context": "Story panel 3", "no": "Mannen spør hvordan Hamlin har det, «sånn egentlig». Men Hamlin vet ikke hva samtalen betyr for asylsøknaden hans. Tenk om de sender ham hjem fordi han savner de hjemme? Han trekker på skuldrene og svarer «bra»." },
-  "story.quiet.4": { "context": "Story panel 4", "no": "Rapporten er skrevet på norsk, så Hamlin får ikke lest den. Der står det: «Hamlin, 15 år. Lite sosial og svært stille gutt. Han har det bra.»" },
-  "ch2.emotions.title": { "context": "Question after the story", "no": "Hva tror du Hamlin føler?" },
-  "ch2.emotions.text": { "context": "", "no": "Du kan velge flere." },
-  "ch2.emotions.after": { "context": "After choosing emotions", "no": "Det finnes ingen feil svar. Mange som bor på mottak kjenner på det samme som Hamlin." },
-  "ch2.helpers.title": { "context": "Question: who can help", "no": "Hvem kan Hamlin snakke med?" },
-  "ch2.helpers.text": { "context": "", "no": "Trykk på dem i den rekkefølgen du ville spurt." },
-  "ch2.helpers.after": { "context": "After choosing helpers", "no": "Det finnes mange veier til hjelp. En ansatt på mottaket eller representanten er et godt sted å starte. De kan hjelpe deg videre til lege eller psykolog." },
-  "ch2.summary.title": { "context": "Chapter 2 summary heading", "no": "Husk:" },
-  "ch2.summary.1": { "context": "", "no": "Be om hjelp! Det påvirker ikke asylsaken din." },
-  "ch2.summary.2": { "context": "", "no": "Du har rett til helsehjelp uansett situasjon." },
-  "ch2.summary.3": { "context": "", "no": "Å snakke om følelser kan gjøre at du får det bedre." },
-  "ch2.summary.4": { "context": "", "no": "Du er ikke alene om hvordan du har det." },
-  "ch2.staff": { "context": "Shown to staff in NORWEGIAN only. Do not translate.", "no": "Jeg har det ikke så bra, og jeg vil gjerne snakke med noen. Kan du hjelpe meg?" },
-
-  "emotion.glad": { "context": "Emotion card", "no": "Glad" },
-  "emotion.hopeful": { "context": "Emotion card", "no": "Håpefull" },
-  "emotion.proud": { "context": "Emotion card", "no": "Stolt" },
-  "emotion.relieved": { "context": "Emotion card", "no": "Lettet" },
-  "emotion.sad": { "context": "Emotion card", "no": "Trist" },
-  "emotion.scared": { "context": "Emotion card", "no": "Redd" },
-  "emotion.angry": { "context": "Emotion card", "no": "Sint" },
-  "emotion.lonely": { "context": "Emotion card", "no": "Ensom" },
-
-  "actor.resident": { "context": "Actor card: another person living at the centre", "no": "Medbeboer" },
-  "actor.family": { "context": "Actor card", "no": "Familie" },
-  "actor.friends": { "context": "Actor card", "no": "Venner" },
-  "actor.schoolStaff": { "context": "Actor card", "no": "Ansatt på skolen" },
-  "actor.centreStaff": { "context": "Actor card", "no": "Ansatt på mottaket" },
-  "actor.doctor": { "context": "Actor card", "no": "Lege" },
-  "actor.psychologist": { "context": "Actor card", "no": "Psykolog" },
-  "actor.representative": { "context": "Actor card", "no": "Representant" },
-
-  "actor.who": { "context": "Card back label (from LFB's printed actor cards)", "no": "Hvem" },
-  "actor.what": { "context": "Card back label", "no": "Hva kan de hjelpe med?" },
-  "actor.when": { "context": "Card back label", "no": "Når kan du kontakte dem?" },
-  "actor.flip": { "context": "Button on an actor card: show the back with more info", "no": "Les mer om" },
-  "actor.resident.who": { "context": "Actor card back, from LFB print file", "no": "Andre ungdommer eller personer du bor sammen med på mottaket eller i bofellesskapet." },
-  "actor.resident.what": { "context": "", "no": "Hverdagslige ting, som å dele erfaringer om livet på mottaket og hjelpe med praktiske ting i boligen." },
-  "actor.resident.when": { "context": "", "no": "Når du ønsker selskap i hverdagen eller trenger praktisk hjelp fra noen som bor nær deg." },
-  "actor.family.who": { "context": "Actor card back, from LFB print file", "no": "Foreldre, søsken eller andre slektninger." },
-  "actor.family.what": { "context": "", "no": "Trygghet, tilhørighet og støtte. De kan gi deg råd og trøst, og hjelpe deg å holde kontakt med hvem du er og hvor du kommer fra." },
-  "actor.family.when": { "context": "", "no": "Når du savner noen som kjenner deg godt og ønsker å dele noe viktig som skjer i livet ditt." },
-  "actor.friends.who": { "context": "Actor card back, from LFB print file", "no": "Jevnaldrende du kjenner fra mottaket, skolen, fritidsaktiviteter eller nabolaget." },
-  "actor.friends.what": { "context": "", "no": "Å ha noen å snakke med, gjøre ting sammen med, føle seg inkludert og mindre alene." },
-  "actor.friends.when": { "context": "", "no": "Når du trenger noen å være sammen med, snakke med om ting som opptar deg, eller ønsker å gjøre noe sosialt." },
-  "actor.schoolStaff.who": { "context": "Actor card back, from LFB print file", "no": "Lærere, miljøarbeidere, sosialrådgiver eller helsesykepleier på skolen." },
-  "actor.schoolStaff.what": { "context": "", "no": "Skolearbeid, norsk og å bli kjent med andre elever. De kan også se hvordan du har det i løpet av skoledagen." },
-  "actor.schoolStaff.when": { "context": "", "no": "Når du har spørsmål om skolen, trenger faglig hjelp, eller har det vanskelig på skolen." },
-  "actor.centreStaff.who": { "context": "Actor card back, from LFB print file", "no": "De som jobber der du bor, på mottaket eller i bofellesskapet." },
-  "actor.centreStaff.what": { "context": "", "no": "Dagliglivet, mat, bosted, praktiske ting og aktiviteter. De er der i hverdagen." },
-  "actor.centreStaff.when": { "context": "", "no": "Når du trenger praktisk hjelp, eller har spørsmål om hverdagen." },
-  "actor.doctor.who": { "context": "Actor card back, from LFB print file", "no": "En fastlege eller sykepleier du møter på helsestasjonen eller legekontoret." },
-  "actor.doctor.what": { "context": "", "no": "Fysisk helse, sykdom, skader og vaksiner. De kan også sende deg videre til en spesialist eller til psykisk helsehjelp." },
-  "actor.doctor.when": { "context": "", "no": "Når du er syk eller skadet, trenger vaksiner, eller er bekymret for kroppen din." },
-  "actor.psychologist.who": { "context": "Actor card back, from LFB print file", "no": "En person som er utdannet til å hjelpe med tanker, følelser og psykisk helse." },
-  "actor.psychologist.what": { "context": "", "no": "Å snakke om vonde minner, stress, mareritt, søvnproblemer, sorg eller vanskelige følelser." },
-  "actor.psychologist.when": { "context": "", "no": "Når du har det tungt over tid, eller har vanskelig for å sove eller konsentrere deg." },
-  "actor.representative.who": { "context": "Actor card back, from LFB print file", "no": "En voksen som skal passe på rettighetene dine, fordi du er under 18 år og i Norge uten foreldre." },
-  "actor.representative.what": { "context": "", "no": "Følger deg, tar viktige avgjørelser på dine vegne og sørger for at rettighetene dine blir fulgt." },
-  "actor.representative.when": { "context": "", "no": "Når du har spørsmål om asylsaken din, eller trenger hjelp med papirer." },
-
-  "helpers.title": { "context": "Gallery of actor cards", "no": "Hvem kan hjelpe meg?" },
-  "helpers.text": { "context": "", "no": "Trykk på et kort for å snu det og lese mer." },
-  "hub.helpers": { "context": "Button on the overview: open the actor card gallery", "no": "Hvem kan hjelpe meg?" },
-  "lang.button": { "context": "Top bar button to change language (screen reader label)", "no": "Bytt språk" },
-
-  "ch1.met.validate.yes": { "context": "DRAFT, needs LFB review. Validation after answering Yes", "no": "Så bra at du har møtt representanten din! Husk at du kan ta kontakt når du har spørsmål." },
-  "ch1.met.validate.no": { "context": "DRAFT, needs LFB review. Validation after answering No", "no": "Det er ikke din feil. Mange som bor på mottak har ikke møtt representanten sin ennå. Du har rett til å bli kjent med representanten din, og de voksne på mottaket kan hjelpe deg å få kontakt." },
-  "ch1.met.validate.dontKnow": { "context": "DRAFT, needs LFB review. Validation after answering Don't know", "no": "Det er helt vanlig å ikke vite det. Det er mye nytt å holde styr på når man kommer til Norge. Spør en ansatt på mottaket, så finner dere ut av det sammen." },
-  "ch1.interview.validate.yes": { "context": "DRAFT, needs LFB review", "no": "Så bra! Det er representantens jobb å hjelpe deg å være forberedt." },
-  "ch1.interview.validate.no": { "context": "DRAFT, needs LFB review", "no": "Det er ikke din feil, og du er ikke alene om å oppleve det. Du har rett til å bli forberedt før asylintervjuet, og det er lov å si ifra." },
-  "ch1.interview.validate.dontKnow": { "context": "DRAFT, needs LFB review", "no": "Mange er usikre på hva som skal skje i asylintervjuet. Du trenger ikke finne ut av det alene. Representanten din skal forklare det for deg." },
-  "ch1.interpreter.validate.yes": { "context": "DRAFT, needs LFB review", "no": "Så bra! Du har rett til tolk i viktige samtaler, også senere." },
-  "ch1.interpreter.validate.no": { "context": "DRAFT, needs LFB review", "no": "Det kan være vanskelig å forstå og bli forstått uten tolk. Det er ikke din feil. Du har rett til tolk i viktige samtaler." },
-  "ch1.interpreter.validate.dontKnow": { "context": "DRAFT, needs LFB review", "no": "Mange vet ikke at de kan be om tolk. Nå vet du det: du har rett til tolk i viktige samtaler." },
-
-  "card.label": { "context": "Shown when a rights card is collected", "no": "Du fikk et nytt rettighetskort!" },
-  "card.representative": { "context": "Rights card text", "no": "Jeg har rett til en representant" },
-  "card.health": { "context": "Rights card text", "no": "Jeg har rett til helsehjelp, for kropp og hode" },
-  "cards.title": { "context": "Collected rights cards heading", "no": "Mine rettighetskort" },
-  "cards.empty": { "context": "", "no": "Du har ingen kort ennå. Du får et kort for hvert tema du blir ferdig med." },
-
-  "closing.title": { "context": "Closing screen heading", "no": "Dette er viktig å huske" },
-  "closing.1": { "context": "", "no": "Du har rettigheter" },
-  "closing.2": { "context": "", "no": "Du kan få hjelp" },
-  "closing.3": { "context": "", "no": "Du er ikke alene" },
-  "closing.4": { "context": "", "no": "Det er lov å si ifra" },
-  "closing.5": { "context": "", "no": "Det er lov å klage" },
-  "closing.6": { "context": "", "no": "Det er lov å be om hjelp" },
-  "closing.contact": { "context": "", "no": "Har du spørsmål? Ta kontakt med oss på post@barnevernsbarna.no, eller finn oss på barnevernsbarna.no." },
-  "closing.thanks": { "context": "Last line of the app", "no": "Takk for at du var med!" }
+  "common.next": {
+    "context": "Button: go to the next screen",
+    "no": "Neste"
+  },
+  "common.back": {
+    "context": "Button: go to the previous screen",
+    "no": "Tilbake"
+  },
+  "common.close": {
+    "context": "Button: close a popup",
+    "no": "Lukk"
+  },
+  "common.start": {
+    "context": "Button: start",
+    "no": "Start"
+  },
+  "common.done": {
+    "context": "Button: finish a chapter",
+    "no": "Ferdig"
+  },
+  "common.skip": {
+    "context": "Button: skip a question",
+    "no": "Hopp over"
+  },
+  "common.toHub": {
+    "context": "Button: back to the chapter overview",
+    "no": "Til oversikten"
+  },
+  "lang.title": {
+    "context": "Language screen heading. Shown in every language at once.",
+    "no": "Velg språk"
+  },
+  "lang.comingSoon": {
+    "context": "Label on languages that are not translated yet",
+    "no": "Kommer snart"
+  },
+  "help.button": {
+    "context": "Help button, visible on every screen",
+    "no": "Trenger du hjelp?"
+  },
+  "help.title": {
+    "context": "Help popup heading",
+    "no": "Trenger du hjelp nå?"
+  },
+  "help.intro": {
+    "context": "Help popup intro",
+    "no": "Du trenger ikke klare alt alene. Her kan du få hjelp:"
+  },
+  "help.staff.title": {
+    "context": "Help option: staff where you live",
+    "no": "Ansatte på mottaket"
+  },
+  "help.staff.text": {
+    "context": "",
+    "no": "Snakk med en voksen du stoler på der du bor."
+  },
+  "help.alarm.title": {
+    "context": "Help option: national helpline for children (name of service)",
+    "no": "Alarmtelefonen for barn og unge"
+  },
+  "help.alarm.text": {
+    "context": "",
+    "no": "Ring 116 111. Det er gratis og åpent hele døgnet."
+  },
+  "help.emergency.title": {
+    "context": "Help option: emergency",
+    "no": "Hvis det haster"
+  },
+  "help.emergency.text": {
+    "context": "",
+    "no": "Ring 113 for ambulanse eller 112 for politi."
+  },
+  "help.lfb.title": {
+    "context": "Help option: the organisation behind the app",
+    "no": "Landsforeningen for barnevernsbarn"
+  },
+  "help.lfb.text": {
+    "context": "",
+    "no": "Send en e-post til post@barnevernsbarna.no"
+  },
+  "help.note": {
+    "context": "Reassurance at the bottom of the help popup",
+    "no": "Å be om hjelp påvirker ikke asylsaken din."
+  },
+  "intro.1.title": {
+    "context": "Welcome screen heading",
+    "no": "Hei!"
+  },
+  "intro.1.text": {
+    "context": "",
+    "no": "Denne appen handler om rettighetene dine mens du bor på mottak. Den er laget av Landsforeningen for barnevernsbarn (LFB)."
+  },
+  "intro.2.title": {
+    "context": "Who we are",
+    "no": "Hvem er vi?"
+  },
+  "intro.2.text": {
+    "context": "",
+    "no": "LFB jobber for at barn og unge skal få rettighetene sine. Vi jobber ikke for UDI, og vi bestemmer ingenting i asylsaken din."
+  },
+  "intro.3.title": {
+    "context": "Privacy screen heading",
+    "no": "Du er anonym"
+  },
+  "intro.3.text": {
+    "context": "",
+    "no": "Vi spør aldri om navnet ditt. Du kan hoppe over spørsmål og ta pauser når du vil. Appen husker hvor du var, så du kan komme tilbake senere."
+  },
+  "intro.4.title": {
+    "context": "Screen explaining the help button",
+    "no": "Hjelp er alltid nær"
+  },
+  "intro.4.text": {
+    "context": "",
+    "no": "Ser du knappen «Trenger du hjelp?» øverst? Trykk på den når som helst, så ser du hvem du kan snakke med."
+  },
+  "checkin.title": {
+    "context": "Mood check-in heading. The kid picks a weather picture.",
+    "no": "Hvordan har du det inni deg nå?"
+  },
+  "checkin.text": {
+    "context": "",
+    "no": "Ikke hvordan været er ute, men hvordan du har det inni deg. Velg bildet som passer best."
+  },
+  "checkin.thanks": {
+    "context": "After picking a weather picture",
+    "no": "Takk for at du delte. Alle følelser er lov."
+  },
+  "checkout.title": {
+    "context": "Closing mood check-in heading",
+    "no": "Hvordan har du det inni deg nå?"
+  },
+  "checkout.text": {
+    "context": "",
+    "no": "Velg bildet som passer best med hva du sitter igjen med."
+  },
+  "weather.clear": {
+    "context": "Image description: clear blue sky with sun",
+    "no": "Klar himmel med sol"
+  },
+  "weather.sunset": {
+    "context": "Image description: sunset above the clouds",
+    "no": "Solnedgang over skyene"
+  },
+  "weather.breaking": {
+    "context": "Image description: dark clouds with light breaking through",
+    "no": "Mørke skyer med lys som slipper gjennom"
+  },
+  "weather.storm": {
+    "context": "Image description: dark, stormy weather",
+    "no": "Mørkt uvær"
+  },
+  "hub.title": {
+    "context": "Chapter overview heading",
+    "no": "Velg et tema"
+  },
+  "hub.text": {
+    "context": "",
+    "no": "Du kan ta temaene i den rekkefølgen du vil."
+  },
+  "hub.done": {
+    "context": "Badge on a finished chapter",
+    "no": "Ferdig"
+  },
+  "hub.soon": {
+    "context": "Badge on a chapter that isn't built yet",
+    "no": "Kommer snart"
+  },
+  "hub.cards": {
+    "context": "Button: see collected rights cards",
+    "no": "Mine rettighetskort"
+  },
+  "hub.finish": {
+    "context": "Button: go to the closing part",
+    "no": "Avslutt for i dag"
+  },
+  "hub.restart": {
+    "context": "Button: delete progress and start over",
+    "no": "Start på nytt"
+  },
+  "hub.restartConfirm": {
+    "context": "Confirm dialog for starting over",
+    "no": "Vil du slette alt og starte på nytt?"
+  },
+  "ch1.title": {
+    "context": "Chapter 1 title",
+    "no": "Representanten din"
+  },
+  "ch1.subtitle": {
+    "context": "",
+    "no": "Hvem hjelper deg med asylsaken?"
+  },
+  "ch2.title": {
+    "context": "Chapter 2 title",
+    "no": "Kropp og hode"
+  },
+  "ch2.subtitle": {
+    "context": "",
+    "no": "Du har rett til helsehjelp"
+  },
+  "ch3.title": {
+    "context": "Chapter 3 title",
+    "no": "Hva liker du å gjøre?"
+  },
+  "ch3.subtitle": {
+    "context": "",
+    "no": "Du har rett til fritidsaktiviteter"
+  },
+  "q.yes": {
+    "context": "Answer button",
+    "no": "Ja"
+  },
+  "q.no": {
+    "context": "Answer button",
+    "no": "Nei"
+  },
+  "q.dontKnow": {
+    "context": "Answer button",
+    "no": "Vet ikke"
+  },
+  "q.true": {
+    "context": "Answer button for a statement",
+    "no": "Stemmer"
+  },
+  "q.false": {
+    "context": "Answer button for a statement",
+    "no": "Stemmer ikke"
+  },
+  "q.selfLabel": {
+    "context": "Small label above a question about the kid's own situation",
+    "no": "Stemmer dette for deg?"
+  },
+  "q.mythLabel": {
+    "context": "Small label above a myth question",
+    "no": "Hva tror du?"
+  },
+  "q.rightLabel": {
+    "context": "Label above what the kid is entitled to",
+    "no": "Dette har du rett på"
+  },
+  "q.notAlone": {
+    "context": "Reassurance after answering No / Don't know",
+    "no": "Du er ikke den eneste. Mange andre har svart det samme."
+  },
+  "q.thanks": {
+    "context": "After answering Yes",
+    "no": "Så bra!"
+  },
+  "q.mythGotIt": {
+    "context": "After answering a myth question correctly",
+    "no": "Helt riktig!"
+  },
+  "q.mythCommon": {
+    "context": "After answering a myth question wrong or don't know. Must never sound like 'wrong'.",
+    "no": "Mange tror det. Men sånn er det ikke!"
+  },
+  "staff.button": {
+    "context": "Button that opens a card to show staff",
+    "no": "Vis til en ansatt"
+  },
+  "staff.title": {
+    "context": "Heading above the staff card",
+    "no": "Vis dette til en voksen på mottaket"
+  },
+  "staff.hint": {
+    "context": "",
+    "no": "Du kan vise skjermen til en ansatt du stoler på. Teksten står på norsk, så de forstår hva du trenger."
+  },
+  "ch1.intro.title": {
+    "context": "",
+    "no": "Hva er en representant?"
+  },
+  "ch1.intro.text": {
+    "context": "",
+    "no": "Alle under 18 år som er i Norge uten foreldre, skal ha en representant. Statsforvalteren gir deg en representant når du kommer til Norge. Representanten skal passe på at rettighetene dine blir møtt."
+  },
+  "ch1.met.q": {
+    "context": "Statement about own situation",
+    "no": "Jeg har møtt representanten min."
+  },
+  "ch1.met.right": {
+    "context": "",
+    "no": "Representanten din skal ha kontakt med deg på telefon. Hvis det er mulig, skal representanten også møte deg der du bor."
+  },
+  "ch1.met.staff": {
+    "context": "Shown to staff in NORWEGIAN only. Do not translate.",
+    "no": "Jeg har ikke møtt representanten min. Kan du hjelpe meg å få kontakt?"
+  },
+  "ch1.interview.q": {
+    "context": "Statement about own situation",
+    "no": "Representanten min hjelper meg å forberede meg til asylintervjuet."
+  },
+  "ch1.interview.right": {
+    "context": "",
+    "no": "Representanten skal forberede deg på asylintervjuet og være med på samtaler med utlendingsmyndighetene."
+  },
+  "ch1.interview.staff": {
+    "context": "Shown to staff in NORWEGIAN only. Do not translate.",
+    "no": "Jeg trenger hjelp til å forberede meg til asylintervjuet. Kan du hjelpe meg å kontakte representanten min?"
+  },
+  "ch1.interpreter.q": {
+    "context": "Statement about own situation",
+    "no": "Representanten min har hjulpet meg med tolk."
+  },
+  "ch1.interpreter.right": {
+    "context": "",
+    "no": "Representanten skal vurdere om du trenger tolk, og skaffe tolk til viktige samtaler."
+  },
+  "ch1.interpreter.staff": {
+    "context": "Shown to staff in NORWEGIAN only. Do not translate.",
+    "no": "Jeg trenger tolk til en viktig samtale. Kan du hjelpe meg?"
+  },
+  "ch1.complain.q": {
+    "context": "Myth statement (the correct answer is 'not true')",
+    "no": "Hvis jeg klager på representanten min, kan det skade asylsaken min."
+  },
+  "ch1.complain.right": {
+    "context": "",
+    "no": "Å klage på representanten påvirker ikke asylsaken din. Si ifra til de ansatte på mottaket. De kan hjelpe deg å klage til statsforvalteren."
+  },
+  "ch1.summary.title": {
+    "context": "Chapter 1 summary heading",
+    "no": "Representanten skal:"
+  },
+  "ch1.summary.1": {
+    "context": "",
+    "no": "Forberede deg på asylintervjuet"
+  },
+  "ch1.summary.2": {
+    "context": "",
+    "no": "Være med på samtaler med utlendingsmyndighetene"
+  },
+  "ch1.summary.3": {
+    "context": "",
+    "no": "Snakke med mottaket og andre som hjelper deg"
+  },
+  "ch1.summary.4": {
+    "context": "",
+    "no": "Besøke deg eller ha kontakt med deg på telefon"
+  },
+  "ch1.summary.5": {
+    "context": "",
+    "no": "Skaffe tolk når du trenger det"
+  },
+  "ch1.summary.6": {
+    "context": "",
+    "no": "Passe på at du har det bra og får rettighetene dine"
+  },
+  "ch1.summary.note": {
+    "context": "",
+    "no": "Får du ikke kontakt med representanten din? Si ifra til de ansatte på mottaket."
+  },
+  "ch2.intro.title": {
+    "context": "",
+    "no": "Du har rett til helsehjelp"
+  },
+  "ch2.intro.text": {
+    "context": "",
+    "no": "Alle under 18 år har rett til helsehjelp, både for kroppen og for hodet. Det gjelder lege, psykolog, fysioterapeut og sykehus."
+  },
+  "ch2.doctor.q": {
+    "context": "Myth statement (the correct answer is 'not true')",
+    "no": "Hvis jeg går til lege eller psykolog, kan det påvirke asylsaken min."
+  },
+  "ch2.doctor.right": {
+    "context": "",
+    "no": "Å gå til lege eller psykolog påvirker ikke asylsaken din. Du har rett til helsehjelp uansett situasjon."
+  },
+  "ch2.chain.title": {
+    "context": "Heading: body and mind are connected",
+    "no": "Kropp og hode henger sammen"
+  },
+  "ch2.chain.1": {
+    "context": "Step 1 of a chain",
+    "no": "Dårlig søvn kan føre til …"
+  },
+  "ch2.chain.2": {
+    "context": "Step 2 of a chain",
+    "no": "… vondt i kroppen, som kan føre til …"
+  },
+  "ch2.chain.3": {
+    "context": "Step 3 of a chain",
+    "no": "… at du blir irritert og ute av balanse."
+  },
+  "ch2.chain.text": {
+    "context": "",
+    "no": "Over lang tid kan det gjøre det vanskelig å konsentrere seg og lære, og gi større risiko for angst og depresjon. Men det finnes hjelp!"
+  },
+  "story.quiet.title": {
+    "context": "Story title",
+    "no": "Stille gutt"
+  },
+  "story.quiet.1": {
+    "context": "Story panel 1",
+    "no": "Hamlin er 15 år. Overfor ham sitter en mann som jobber på mottaket."
+  },
+  "story.quiet.2": {
+    "context": "Story panel 2",
+    "no": "Hamlin har ingen venner her, og han kan ikke nok norsk til å snakke godt med de ansatte. I hjemlandet var han en leder blant gutta. Han var klassens klovn og elsket å få folk til å le."
+  },
+  "story.quiet.3": {
+    "context": "Story panel 3",
+    "no": "Mannen spør hvordan Hamlin har det, «sånn egentlig». Men Hamlin vet ikke hva samtalen betyr for asylsøknaden hans. Tenk om de sender ham hjem fordi han savner de hjemme? Han trekker på skuldrene og svarer «bra»."
+  },
+  "story.quiet.4": {
+    "context": "Story panel 4",
+    "no": "Rapporten er skrevet på norsk, så Hamlin får ikke lest den. Der står det: «Hamlin, 15 år. Lite sosial og svært stille gutt. Han har det bra.»"
+  },
+  "ch2.emotions.text": {
+    "context": "",
+    "no": "Du kan velge flere."
+  },
+  "ch2.helpers.text": {
+    "context": "",
+    "no": "Trykk på dem i den rekkefølgen du ville spurt."
+  },
+  "ch2.helpers.after": {
+    "context": "After choosing helpers",
+    "no": "Det finnes mange veier til hjelp. En ansatt på mottaket eller representanten er et godt sted å starte. De kan hjelpe deg videre til lege eller psykolog."
+  },
+  "ch2.summary.title": {
+    "context": "Chapter 2 summary heading",
+    "no": "Husk:"
+  },
+  "ch2.summary.1": {
+    "context": "",
+    "no": "Be om hjelp! Det påvirker ikke asylsaken din."
+  },
+  "ch2.summary.2": {
+    "context": "",
+    "no": "Du har rett til helsehjelp uansett situasjon."
+  },
+  "ch2.summary.3": {
+    "context": "",
+    "no": "Å snakke om følelser kan gjøre at du får det bedre."
+  },
+  "ch2.summary.4": {
+    "context": "",
+    "no": "Du er ikke alene om hvordan du har det."
+  },
+  "ch2.staff": {
+    "context": "Shown to staff in NORWEGIAN only. Do not translate.",
+    "no": "Jeg har det ikke så bra, og jeg vil gjerne snakke med noen. Kan du hjelpe meg?"
+  },
+  "emotion.glad": {
+    "context": "Emotion card",
+    "no": "Glad"
+  },
+  "emotion.hopeful": {
+    "context": "Emotion card",
+    "no": "Håpefull"
+  },
+  "emotion.proud": {
+    "context": "Emotion card",
+    "no": "Stolt"
+  },
+  "emotion.relieved": {
+    "context": "Emotion card",
+    "no": "Lettet"
+  },
+  "emotion.sad": {
+    "context": "Emotion card",
+    "no": "Trist"
+  },
+  "emotion.scared": {
+    "context": "Emotion card",
+    "no": "Redd"
+  },
+  "emotion.angry": {
+    "context": "Emotion card",
+    "no": "Sint"
+  },
+  "emotion.lonely": {
+    "context": "Emotion card",
+    "no": "Ensom"
+  },
+  "actor.resident": {
+    "context": "Actor card: another person living at the centre",
+    "no": "Medbeboer"
+  },
+  "actor.family": {
+    "context": "Actor card",
+    "no": "Familie"
+  },
+  "actor.friends": {
+    "context": "Actor card",
+    "no": "Venner"
+  },
+  "actor.schoolStaff": {
+    "context": "Actor card",
+    "no": "Ansatt på skolen"
+  },
+  "actor.centreStaff": {
+    "context": "Actor card",
+    "no": "Ansatt på mottaket"
+  },
+  "actor.doctor": {
+    "context": "Actor card",
+    "no": "Lege"
+  },
+  "actor.psychologist": {
+    "context": "Actor card",
+    "no": "Psykolog"
+  },
+  "actor.representative": {
+    "context": "Actor card",
+    "no": "Representant"
+  },
+  "actor.who": {
+    "context": "Card back label (from LFB's printed actor cards)",
+    "no": "Hvem"
+  },
+  "actor.what": {
+    "context": "Card back label",
+    "no": "Hva kan de hjelpe med?"
+  },
+  "actor.when": {
+    "context": "Card back label",
+    "no": "Når kan du kontakte dem?"
+  },
+  "actor.flip": {
+    "context": "Button on an actor card: show the back with more info",
+    "no": "Les mer om"
+  },
+  "actor.resident.who": {
+    "context": "Actor card back, from LFB print file",
+    "no": "Andre ungdommer eller personer du bor sammen med på mottaket eller i bofellesskapet."
+  },
+  "actor.resident.what": {
+    "context": "",
+    "no": "Hverdagslige ting, som å dele erfaringer om livet på mottaket og hjelpe med praktiske ting i boligen."
+  },
+  "actor.resident.when": {
+    "context": "",
+    "no": "Når du ønsker selskap i hverdagen eller trenger praktisk hjelp fra noen som bor nær deg."
+  },
+  "actor.family.who": {
+    "context": "Actor card back, from LFB print file",
+    "no": "Foreldre, søsken eller andre slektninger."
+  },
+  "actor.family.what": {
+    "context": "",
+    "no": "Trygghet, tilhørighet og støtte. De kan gi deg råd og trøst, og hjelpe deg å holde kontakt med hvem du er og hvor du kommer fra."
+  },
+  "actor.family.when": {
+    "context": "",
+    "no": "Når du savner noen som kjenner deg godt og ønsker å dele noe viktig som skjer i livet ditt."
+  },
+  "actor.friends.who": {
+    "context": "Actor card back, from LFB print file",
+    "no": "Jevnaldrende du kjenner fra mottaket, skolen, fritidsaktiviteter eller nabolaget."
+  },
+  "actor.friends.what": {
+    "context": "",
+    "no": "Å ha noen å snakke med, gjøre ting sammen med, føle seg inkludert og mindre alene."
+  },
+  "actor.friends.when": {
+    "context": "",
+    "no": "Når du trenger noen å være sammen med, snakke med om ting som opptar deg, eller ønsker å gjøre noe sosialt."
+  },
+  "actor.schoolStaff.who": {
+    "context": "Actor card back, from LFB print file",
+    "no": "Lærere, miljøarbeidere, sosialrådgiver eller helsesykepleier på skolen."
+  },
+  "actor.schoolStaff.what": {
+    "context": "",
+    "no": "Skolearbeid, norsk og å bli kjent med andre elever. De kan også se hvordan du har det i løpet av skoledagen."
+  },
+  "actor.schoolStaff.when": {
+    "context": "",
+    "no": "Når du har spørsmål om skolen, trenger faglig hjelp, eller har det vanskelig på skolen."
+  },
+  "actor.centreStaff.who": {
+    "context": "Actor card back, from LFB print file",
+    "no": "De som jobber der du bor, på mottaket eller i bofellesskapet."
+  },
+  "actor.centreStaff.what": {
+    "context": "",
+    "no": "Dagliglivet, mat, bosted, praktiske ting og aktiviteter. De er der i hverdagen."
+  },
+  "actor.centreStaff.when": {
+    "context": "",
+    "no": "Når du trenger praktisk hjelp, eller har spørsmål om hverdagen."
+  },
+  "actor.doctor.who": {
+    "context": "Actor card back, from LFB print file",
+    "no": "En fastlege eller sykepleier du møter på helsestasjonen eller legekontoret."
+  },
+  "actor.doctor.what": {
+    "context": "",
+    "no": "Fysisk helse, sykdom, skader og vaksiner. De kan også sende deg videre til en spesialist eller til psykisk helsehjelp."
+  },
+  "actor.doctor.when": {
+    "context": "",
+    "no": "Når du er syk eller skadet, trenger vaksiner, eller er bekymret for kroppen din."
+  },
+  "actor.psychologist.who": {
+    "context": "Actor card back, from LFB print file",
+    "no": "En person som er utdannet til å hjelpe med tanker, følelser og psykisk helse."
+  },
+  "actor.psychologist.what": {
+    "context": "",
+    "no": "Å snakke om vonde minner, stress, mareritt, søvnproblemer, sorg eller vanskelige følelser."
+  },
+  "actor.psychologist.when": {
+    "context": "",
+    "no": "Når du har det tungt over tid, eller har vanskelig for å sove eller konsentrere deg."
+  },
+  "actor.representative.who": {
+    "context": "Actor card back, from LFB print file",
+    "no": "En voksen som skal passe på rettighetene dine, fordi du er under 18 år og i Norge uten foreldre."
+  },
+  "actor.representative.what": {
+    "context": "",
+    "no": "Følger deg, tar viktige avgjørelser på dine vegne og sørger for at rettighetene dine blir fulgt."
+  },
+  "actor.representative.when": {
+    "context": "",
+    "no": "Når du har spørsmål om asylsaken din, eller trenger hjelp med papirer."
+  },
+  "helpers.title": {
+    "context": "Gallery of actor cards",
+    "no": "Hvem kan hjelpe meg?"
+  },
+  "helpers.text": {
+    "context": "",
+    "no": "Trykk på et kort for å snu det og lese mer."
+  },
+  "hub.helpers": {
+    "context": "Button on the overview: open the actor card gallery",
+    "no": "Hvem kan hjelpe meg?"
+  },
+  "lang.button": {
+    "context": "Top bar button to change language (screen reader label)",
+    "no": "Bytt språk"
+  },
+  "ch1.met.validate.yes": {
+    "context": "DRAFT, needs LFB review. Validation after answering Yes",
+    "no": "Så bra at du har møtt representanten din! Husk at du kan ta kontakt når du har spørsmål."
+  },
+  "ch1.met.validate.no": {
+    "context": "DRAFT, needs LFB review. Validation after answering No",
+    "no": "Det er ikke din feil. Mange som bor på mottak har ikke møtt representanten sin ennå. Du har rett til å bli kjent med representanten din, og de voksne på mottaket kan hjelpe deg å få kontakt."
+  },
+  "ch1.met.validate.dontKnow": {
+    "context": "DRAFT, needs LFB review. Validation after answering Don't know",
+    "no": "Det er helt vanlig å ikke vite det. Det er mye nytt å holde styr på når man kommer til Norge. Spør en ansatt på mottaket, så finner dere ut av det sammen."
+  },
+  "ch1.interview.validate.yes": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Så bra! Det er representantens jobb å hjelpe deg å være forberedt."
+  },
+  "ch1.interview.validate.no": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Det er ikke din feil, og du er ikke alene om å oppleve det. Du har rett til å bli forberedt før asylintervjuet, og det er lov å si ifra."
+  },
+  "ch1.interview.validate.dontKnow": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Mange er usikre på hva som skal skje i asylintervjuet. Du trenger ikke finne ut av det alene. Representanten din skal forklare det for deg."
+  },
+  "ch1.interpreter.validate.yes": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Så bra! Du har rett til tolk i viktige samtaler, også senere."
+  },
+  "ch1.interpreter.validate.no": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Det kan være vanskelig å forstå og bli forstått uten tolk. Det er ikke din feil. Du har rett til tolk i viktige samtaler."
+  },
+  "ch1.interpreter.validate.dontKnow": {
+    "context": "DRAFT, needs LFB review",
+    "no": "Mange vet ikke at de kan be om tolk. Nå vet du det: du har rett til tolk i viktige samtaler."
+  },
+  "ch2.story.choose": {
+    "context": "Before the stories. Gentle content note.",
+    "no": "Nå kan du lese en kort historie om en gutt som bor på mottak. Historiene handler om å ha det vanskelig. Velg en historie, eller hopp over hvis du vil."
+  },
+  "story.shut.title": {
+    "context": "Story title",
+    "no": "Innestengt"
+  },
+  "story.shut.1": {
+    "context": "Story panel 1 (from LFB's story text)",
+    "no": "Elias er 15 år. Han ligger på senga og stirrer i taket. Klokka er 22, og nå skal det være stille på mottaket. Men Elias får ikke sove. Hodet er fullt av tanker."
+  },
+  "story.shut.2": {
+    "context": "Story panel 2",
+    "no": "Han tenker på de der hjemme. Han tenker på asylsøknaden og på intervjuet, som han ikke vet når blir. Tenk om han sier feil ting? Tenk om han får avslag, etter alt han har vært gjennom?"
+  },
+  "story.shut.3": {
+    "context": "Story panel 3",
+    "no": "Det begynner å bli tungt å puste. Elias holder seg for ørene for å stenge tankene ute. Men de vil ikke ta slutt."
+  },
+  "story.emotions.title": {
+    "context": "Question after a story. {name} is the main character.",
+    "no": "Hva tror du {name} føler?"
+  },
+  "story.emotions.after": {
+    "context": "After choosing emotions. {name} is the main character.",
+    "no": "Det finnes ingen feil svar. Mange som bor på mottak kjenner på det samme som {name}."
+  },
+  "story.helpers.title": {
+    "context": "Question: who can help. {name} is the main character.",
+    "no": "Hvem kan {name} snakke med?"
+  },
+  "ch3.intro.title": {
+    "context": "",
+    "no": "Du har rett til fritid"
+  },
+  "ch3.intro.text": {
+    "context": "",
+    "no": "Alle barn har rett til lek, fritid og aktiviteter. Det gjelder også deg som bor på mottak. Du har rett til hjelp til en fritidsaktivitet, både praktisk hjelp og hjelp med penger."
+  },
+  "ch3.activities.title": {
+    "context": "Question: what do you like doing",
+    "no": "Hva liker du å gjøre?"
+  },
+  "ch3.activities.text": {
+    "context": "",
+    "no": "Velg så mange du vil."
+  },
+  "ch3.activities.after": {
+    "context": "After choosing activities",
+    "no": "Det du liker å gjøre er viktig. Aktiviteter kan gjøre det lettere å sove, få venner og ha det bedre."
+  },
+  "activity.sport": {
+    "context": "Activity card label",
+    "no": "Sport og trening"
+  },
+  "activity.skate": {
+    "context": "Activity card label",
+    "no": "Skate og være ute"
+  },
+  "activity.food": {
+    "context": "Activity card label",
+    "no": "Lage mat"
+  },
+  "activity.games": {
+    "context": "Activity card label",
+    "no": "Spill og TV"
+  },
+  "activity.learn": {
+    "context": "Activity card label",
+    "no": "Lære noe nytt"
+  },
+  "activity.social": {
+    "context": "Activity card label",
+    "no": "Være sammen med andre"
+  },
+  "activity.sport.staff": {
+    "context": "Shown to staff in NORWEGIAN only. Completes 'Jeg har lyst til å ...'",
+    "no": "drive med sport eller trening"
+  },
+  "activity.skate.staff": {
+    "context": "Shown to staff in NORWEGIAN only",
+    "no": "skate eller være mer ute"
+  },
+  "activity.food.staff": {
+    "context": "Shown to staff in NORWEGIAN only",
+    "no": "lage mat"
+  },
+  "activity.games.staff": {
+    "context": "Shown to staff in NORWEGIAN only",
+    "no": "spille spill"
+  },
+  "activity.learn.staff": {
+    "context": "Shown to staff in NORWEGIAN only",
+    "no": "lære noe nytt"
+  },
+  "activity.social.staff": {
+    "context": "Shown to staff in NORWEGIAN only",
+    "no": "være mer sammen med andre"
+  },
+  "ch3.staff.start": {
+    "context": "Shown to staff in NORWEGIAN only. Start of sentence before the activities",
+    "no": "Jeg har lyst til å"
+  },
+  "ch3.staff.and": {
+    "context": "Shown to staff in NORWEGIAN only. Joins the last two activities",
+    "no": "og"
+  },
+  "ch3.staff.end": {
+    "context": "Shown to staff in NORWEGIAN only. End of sentence",
+    "no": "Kan du hjelpe meg å finne ut hva som finnes her?"
+  },
+  "ch3.staff.none": {
+    "context": "Shown to staff in NORWEGIAN only. When no activity was chosen",
+    "no": "Jeg har lyst til å finne en fritidsaktivitet. Kan du hjelpe meg?"
+  },
+  "ch3.cost.q": {
+    "context": "Myth statement (the correct answer is 'not true')",
+    "no": "Hvis en aktivitet koster penger, kan jeg ikke være med."
+  },
+  "ch3.cost.right": {
+    "context": "",
+    "no": "Du har rett til støtte til en fritidsaktivitet, også hvis den koster penger. Mottaket skal hjelpe deg å finne ut hva som finnes der du bor."
+  },
+  "ch3.summary.title": {
+    "context": "Chapter 3 summary heading",
+    "no": "Husk:"
+  },
+  "ch3.summary.1": {
+    "context": "",
+    "no": "Du har rett til støtte til en fritidsaktivitet."
+  },
+  "ch3.summary.2": {
+    "context": "",
+    "no": "En aktivitet kan være bra for både kropp og hode."
+  },
+  "ch3.summary.3": {
+    "context": "",
+    "no": "Å gjøre ting sammen med andre kan gi nye venner."
+  },
+  "ch3.summary.4": {
+    "context": "",
+    "no": "Mottaket kan hjelpe deg å få det til."
+  },
+  "card.activities": {
+    "context": "Rights card text",
+    "no": "Jeg har rett til fritidsaktiviteter"
+  },
+  "card.label": {
+    "context": "Shown when a rights card is collected",
+    "no": "Du fikk et nytt rettighetskort!"
+  },
+  "card.representative": {
+    "context": "Rights card text",
+    "no": "Jeg har rett til en representant"
+  },
+  "card.health": {
+    "context": "Rights card text",
+    "no": "Jeg har rett til helsehjelp, for kropp og hode"
+  },
+  "cards.title": {
+    "context": "Collected rights cards heading",
+    "no": "Mine rettighetskort"
+  },
+  "cards.empty": {
+    "context": "",
+    "no": "Du har ingen kort ennå. Du får et kort for hvert tema du blir ferdig med."
+  },
+  "closing.title": {
+    "context": "Closing screen heading",
+    "no": "Dette er viktig å huske"
+  },
+  "closing.1": {
+    "context": "",
+    "no": "Du har rettigheter"
+  },
+  "closing.2": {
+    "context": "",
+    "no": "Du kan få hjelp"
+  },
+  "closing.3": {
+    "context": "",
+    "no": "Du er ikke alene"
+  },
+  "closing.4": {
+    "context": "",
+    "no": "Det er lov å si ifra"
+  },
+  "closing.5": {
+    "context": "",
+    "no": "Det er lov å klage"
+  },
+  "closing.6": {
+    "context": "",
+    "no": "Det er lov å be om hjelp"
+  },
+  "closing.contact": {
+    "context": "",
+    "no": "Har du spørsmål? Ta kontakt med oss på post@barnevernsbarna.no, eller finn oss på barnevernsbarna.no."
+  },
+  "closing.thanks": {
+    "context": "Last line of the app",
+    "no": "Takk for at du var med!"
+  }
 }

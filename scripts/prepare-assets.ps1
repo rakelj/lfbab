@@ -40,6 +40,16 @@ $assets = @(
   @{ name = "story-quiet-2"; src = "Historier\Slides\stillegutt2.png";  w = 1280 },
   @{ name = "story-quiet-3"; src = "Historier\Slides\stillegutt3.png";  w = 1280 },
   @{ name = "story-quiet-4"; src = "Historier\Slides\stilluegutt4.png"; w = 1280 },
+  # Story: Innestengt
+  @{ name = "story-shut-1"; src = "Historier\Slides\Innestengt1.png"; w = 1280 },
+  @{ name = "story-shut-2"; src = "Historier\Slides\Innestengt2.png"; w = 1280 },
+  @{ name = "story-shut-3"; src = "Historier\Slides\Innestengt3.png"; w = 1280 },
+  # Activities (painted posters)
+  @{ name = "activity-sport";  src = "slide illustrasjoner\Untitled_Artwork 532.png"; w = 360 },
+  @{ name = "activity-skate";  src = "slide illustrasjoner\Untitled_Artwork 150.png"; w = 360 },
+  @{ name = "activity-food";   src = "slide illustrasjoner\Untitled_Artwork 151.png"; w = 360 },
+  @{ name = "activity-games";  src = "slide illustrasjoner\Untitled_Artwork 533.png"; w = 360 },
+  @{ name = "activity-learn";  src = "slide illustrasjoner\Untitled_Artwork 534.png"; w = 360 },
   # Line drawings and small illustrations
   @{ name = "icon-phone";       src = "slide illustrasjoner\Untitled_Artwork 106 copy.png";   w = 400 },
   @{ name = "icon-map";         src = "slide illustrasjoner\Untitled_Artwork 106 copy 3.png"; w = 400 },

@@ -2,14 +2,19 @@ import { useEffect, useRef, useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
 import { recordAnswer } from '../answers.js'
 import Dots from '../components/Dots.jsx'
-import { InfoStep, SelfStep, MythStep, ChainStep, StoryIntroStep, StoryStep, EmotionsStep, HelpersStep, SummaryStep, CardStep } from '../steps/Steps.jsx'
+import {
+  InfoStep, SelfStep, MythStep, ChainStep, StoryChoiceStep, StoryStep, EmotionsStep, HelpersStep,
+  ActivitiesStep, ActivitySummaryStep, SummaryStep, CardStep,
+} from '../steps/Steps.jsx'
 
 const STEPS = {
   info: InfoStep,
   self: SelfStep,
   myth: MythStep,
   chain: ChainStep,
-  storyIntro: StoryIntroStep,
+  storyChoice: StoryChoiceStep,
+  activities: ActivitiesStep,
+  activitySummary: ActivitySummaryStep,
   story: StoryStep,
   emotions: EmotionsStep,
   helpers: HelpersStep,
@@ -77,6 +82,7 @@ export default function Chapter({ chapter, onComplete, onExit }) {
       <Step
         key={i}
         step={step}
+        answers={answers}
         value={step.id ? answers[step.id] ?? null : null}
         onChange={(value) => setAnswers((a) => ({ ...a, [step.id]: value }))}
         onNext={next}

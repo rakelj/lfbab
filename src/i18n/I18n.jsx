@@ -26,7 +26,11 @@ export function I18nProvider({ lang, children }) {
   const value = useMemo(
     () => ({
       lang: language.code,
-      t: (key) => lookup(key, language.code),
+      // Optional vars fill placeholders like {name}.
+      t: (key, vars) => {
+        const s = lookup(key, language.code)
+        return vars ? s.replace(/\{(\w+)\}/g, (m, v) => vars[v] ?? m) : s
+      },
       has: (key) => key in strings,
       // Cards shown to staff stay in Norwegian whatever language the kid uses.
       tStaff: (key) => lookup(key, DEFAULT_LANG),
