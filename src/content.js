@@ -35,8 +35,9 @@ export const ACTORS = [
 ]
 
 export const RIGHTS_CARDS = {
-  representative: { text: 'card.representative', img: img('actor-representative.jpg') },
-  health: { text: 'card.health', img: img('actor-doctor.jpg') },
+  // `actor`: the card shows that person card, so its back text can be read (Snu kortet).
+  representative: { text: 'card.representative', img: img('actor-representative.jpg'), actor: 'representative' },
+  health: { text: 'card.health', img: img('actor-doctor.jpg'), actor: 'doctor' },
   activities: { text: 'card.activities', img: img('activity-sport.jpg') },
   ...EXTRA_CARDS,
 }

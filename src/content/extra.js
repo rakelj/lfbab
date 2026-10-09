@@ -10,7 +10,7 @@ const img = (file) => `${import.meta.env.BASE_URL}img/${file}`
 
 export const EXTRA_CARDS = {
   'x.safety': { text: 'x.safety.card', img: img('friends.png'), cutout: true },
-  'x.centre': { text: 'x.centre.card', img: img('actor-centre-staff.jpg') },
+  'x.centre': { text: 'x.centre.card', img: img('actor-centre-staff.jpg'), actor: 'centreStaff' },
   'x.cws': { text: 'x.cws.card', img: img('actor-family.jpg') },
   'x.money': { text: 'x.money.card', img: img('activity-learn.jpg') },
   'x.complain': { text: 'x.complain.card', img: img('thumbs-up.png'), cutout: true },

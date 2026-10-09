@@ -3,6 +3,13 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.2.3',
+    date: '9.10.2026',
+    items: [
+      'Rettighetskort med en person på (representanten, legen og de ansatte på mottaket): «Snu kortet» viser baksiden med hvem de er, hva de kan hjelpe med og når du kan ta kontakt. Når du får kortet, i «Mine rettighetskort» og på avslutningen.',
+    ],
+  },
+  {
     version: '0.2.2',
     date: '9.10.2026',
     items: [

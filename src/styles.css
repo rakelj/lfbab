@@ -572,3 +572,5 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
 .changelog-version h3 { margin: 16px 0 4px; }
 .changelog-version ul { margin: 4px 0 8px; padding-inline-start: 20px; }
 .changelog-version li { margin-bottom: 6px; }
+.card-back-button { min-height: 44px; font-size: 0.95rem; }
+.rights-card .card-back-button { display: block; margin: 4px auto 0; padding: 4px; color: #fff; }

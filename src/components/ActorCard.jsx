@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
+import { ACTORS } from '../content.js'
 import Modal from './Modal.jsx'
 import { Speak } from './Sound.jsx'
 
@@ -49,6 +50,22 @@ function FlipCard({ actor, startFlipped = false }) {
         </span>
       </span>
     </button>
+  )
+}
+
+// On a rights card that shows a person card: opens it and turns it over.
+export function CardBackButton({ card }) {
+  const { t } = useI18n()
+  const [open, setOpen] = useState(false)
+  const actor = card.actor && ACTORS.find((a) => a.id === card.actor)
+  if (!actor) return null
+  return (
+    <>
+      <button className="btn btn-link card-back-button" onClick={() => setOpen(true)}>
+        <span aria-hidden="true">↻</span> {t('card.back')}
+      </button>
+      {open && <ActorInfoModal actor={actor} onClose={() => setOpen(false)} />}
+    </>
   )
 }
 

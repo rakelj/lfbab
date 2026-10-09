@@ -1060,6 +1060,11 @@
     "no": "Du fikk et nytt rettighetskort!",
     "ar": "حصلت على بطاقة حقوق جديدة!"
   },
+  "card.back": {
+    "context": "Button under a rights card that shows a person card: turn it and read the back",
+    "no": "Snu kortet",
+    "ar": "اقلب البطاقة"
+  },
   "card.representative": {
     "context": "Rights card text",
     "no": "Jeg har rett til en representant",

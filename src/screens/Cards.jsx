@@ -1,6 +1,7 @@
 import { useI18n } from '../i18n/I18n.jsx'
 import { RIGHTS_CARDS } from '../content.js'
 import { Speak } from '../components/Sound.jsx'
+import { CardBackButton } from '../components/ActorCard.jsx'
 
 export function CardList({ cards }) {
   const { t } = useI18n()
@@ -13,6 +14,7 @@ export function CardList({ cards }) {
           <p>
             {t(RIGHTS_CARDS[id].text)} <Speak text={t(RIGHTS_CARDS[id].text)} />
           </p>
+          <CardBackButton card={RIGHTS_CARDS[id]} />
         </div>
       ))}
     </div>

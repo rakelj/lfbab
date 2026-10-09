@@ -3,6 +3,7 @@ import { useI18n } from '../i18n/I18n.jsx'
 import { ACTIVITIES, ACTORS, EMOTIONS, RIGHTS_CARDS, STORIES, img } from '../content.js'
 import StaffCard from '../components/StaffCard.jsx'
 import { Speak } from '../components/Sound.jsx'
+import { CardBackButton } from '../components/ActorCard.jsx'
 
 // Back (when there is somewhere to go back to) and Next.
 function StepNav({ onBack, onNext, nextLabel, nextDisabled }) {
@@ -535,6 +536,7 @@ export function CardStep({ step, onComplete, onExit, onGame }) {
         ))}
       </div>
       <Speak text={`${t('card.label')} ${t(card.text)}`} />
+      <CardBackButton card={card} />
       {step.offerGame && onGame && (
         <div className="game-offer">
           <p>
