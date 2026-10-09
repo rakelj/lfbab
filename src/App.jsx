@@ -13,6 +13,7 @@ import Cards from './screens/Cards.jsx'
 import Closing from './screens/Closing.jsx'
 import Helpers from './screens/Helpers.jsx'
 import LanguageButton from './components/LanguageButton.jsx'
+import { SoundProvider, SoundToggle } from './components/Sound.jsx'
 
 // Demo mode: open the app with ?demo to get a restart button on every screen.
 // Remembered for the browser tab, so it survives moving around in the app.
@@ -128,6 +129,7 @@ export default function App() {
 
   return (
     <I18nProvider lang={progress.lang ?? DEFAULT_LANG}>
+      <SoundProvider>
       <div className="app">
         {screen !== 'lang' && (
           <header className="topbar">
@@ -146,6 +148,7 @@ export default function App() {
               <img className="topbar-logo" src={img('logo.png')} alt="LFB" />
             )}
             <div className="topbar-actions">
+              <SoundToggle />
               <LanguageButton onClick={() => go('lang')} />
               <HelpButton />
             </div>
@@ -153,6 +156,7 @@ export default function App() {
         )}
         <main>{content}</main>
       </div>
+      </SoundProvider>
     </I18nProvider>
   )
 }

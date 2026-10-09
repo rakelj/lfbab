@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
 import Dots from '../components/Dots.jsx'
 import { img } from '../content.js'
+import { Speak } from '../components/Sound.jsx'
 
 const PAGES = [
   { n: 1, img: img('sunny-tree.png') },
@@ -19,7 +20,9 @@ export default function Intro({ onDone }) {
   return (
     <section className="screen">
       <img className="illustration" src={page.img} alt="" />
-      <h1>{t(`intro.${page.n}.title`)}</h1>
+      <h1>
+        {t(`intro.${page.n}.title`)} <Speak text={`${t(`intro.${page.n}.title`)} ${t(`intro.${page.n}.text`)}`} />
+      </h1>
       <p className="lead">{t(`intro.${page.n}.text`)}</p>
       <Dots count={PAGES.length} current={i} />
       <div className="actions">

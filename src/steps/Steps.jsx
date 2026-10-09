@@ -3,6 +3,7 @@ import { useI18n } from '../i18n/I18n.jsx'
 import { ACTIVITIES, ACTORS, EMOTIONS, RIGHTS_CARDS, STORIES, img } from '../content.js'
 import StaffCard from '../components/StaffCard.jsx'
 import { ActorInfoButton } from '../components/ActorCard.jsx'
+import { Speak } from '../components/Sound.jsx'
 
 // Back (when there is somewhere to go back to) and Next.
 function StepNav({ onBack, onNext, nextLabel, nextDisabled }) {
@@ -27,9 +28,12 @@ function AnswerButtons({ options, value, onAnswer }) {
   return (
     <div className={`answers ${value ? 'answered' : ''}`}>
       {options.map((o) => (
-        <button key={o} className={`answer answer-${o} ${value === o ? 'selected' : ''}`} aria-pressed={value === o} onClick={() => onAnswer(o)}>
-          {t(`q.${o}`)}
-        </button>
+        <div key={o} className="answer-cell">
+          <button className={`answer answer-${o} ${value === o ? 'selected' : ''}`} aria-pressed={value === o} onClick={() => onAnswer(o)}>
+            {t(`q.${o}`)}
+          </button>
+          <Speak text={t(`q.${o}`)} className="speak-corner" />
+        </div>
       ))}
     </div>
   )
@@ -40,7 +44,9 @@ function RightBox({ text }) {
   return (
     <div className="right-box">
       <span className="label">{t('q.rightLabel')}</span>
-      <p>{t(text)}</p>
+      <p>
+        {t(text)} <Speak text={t(text)} />
+      </p>
     </div>
   )
 }
@@ -50,7 +56,9 @@ export function InfoStep({ step, onNext, onBack }) {
   return (
     <>
       {step.img && <img className="illustration" src={step.img} alt="" />}
-      <h1>{t(step.title)}</h1>
+      <h1>
+        {t(step.title)} <Speak text={`${t(step.title)}. ${t(step.text)}`} />
+      </h1>
       <p className="lead">{t(step.text)}</p>
       <StepNav onBack={onBack} onNext={onNext} />
     </>
@@ -66,7 +74,9 @@ function Validation({ id, value }) {
   return (
     <div className={`validation validation-${value}`}>
       {value !== 'yes' && <img src={img('friends.png')} alt="" />}
-      <p>{text}</p>
+      <p>
+        {text} <Speak text={text} />
+      </p>
     </div>
   )
 }
@@ -79,7 +89,9 @@ export function SelfStep({ step, value, onChange, onNext, onBack }) {
     <>
       {step.img && <img className="illustration illustration-small" src={step.img} alt="" />}
       <span className="label">{t('q.selfLabel')}</span>
-      <h1 className="statement">«{t(`${step.id}.q`)}»</h1>
+      <h1 className="statement">
+        «{t(`${step.id}.q`)}» <Speak text={t(`${step.id}.q`)} />
+      </h1>
       <AnswerButtons options={['yes', 'no', 'dontKnow']} value={value} onAnswer={onChange} />
       {value && (
         <div className="feedback" key={value}>
@@ -99,11 +111,16 @@ export function MythStep({ step, value, onChange, onNext, onBack }) {
   return (
     <>
       <span className="label">{t('q.mythLabel')}</span>
-      <h1 className="statement">«{t(`${step.id}.q`)}»</h1>
+      <h1 className="statement">
+        «{t(`${step.id}.q`)}» <Speak text={t(`${step.id}.q`)} />
+      </h1>
       <AnswerButtons options={['true', 'false', 'dontKnow']} value={value} onAnswer={onChange} />
       {value && (
         <div className="feedback" key={value}>
-          <p className="reassure">{value === step.correct ? t('q.mythGotIt') : t('q.mythCommon')}</p>
+          <p className="reassure">
+            {value === step.correct ? t('q.mythGotIt') : t('q.mythCommon')}{' '}
+            <Speak text={value === step.correct ? t('q.mythGotIt') : t('q.mythCommon')} />
+          </p>
           <RightBox text={`${step.id}.right`} />
         </div>
       )}
@@ -121,7 +138,10 @@ export function ChainStep({ onNext, onBack, cameBack }) {
 
   return (
     <>
-      <h1>{t('ch2.chain.title')}</h1>
+      <h1>
+        {t('ch2.chain.title')}{' '}
+        <Speak text={[t('ch2.chain.title'), ...links.slice(0, shown).map((k) => t(k)), complete ? t('ch2.chain.text') : ''].join(' ')} />
+      </h1>
       <img className="illustration" src={img('health-figures.png')} alt="" />
       <ol className="chain">
         {links.slice(0, shown).map((k) => (
@@ -147,7 +167,9 @@ export function StoryChoiceStep({ step, value, onChange, onNext, onBack, onSkipT
   const { t } = useI18n()
   return (
     <>
-      <p className="lead">{t(step.text)}</p>
+      <p className="lead">
+        {t(step.text)} <Speak text={t(step.text)} />
+      </p>
       <div className="story-choices">
         {Object.entries(STORIES).map(([id, s]) => (
           <button
@@ -192,7 +214,7 @@ export function StoryStep({ step, answers, onNext, onBack, cameBack }) {
         <img key={panel.img} className="story-panel" src={panel.img} alt="" />
       </div>
       <p key={panel.text} className="story-text">
-        {t(panel.text)}
+        {t(panel.text)} <Speak text={t(panel.text)} />
       </p>
       <StepNav onBack={i > 0 ? () => setI(i - 1) : onBack} onNext={last ? onNext : () => setI(i + 1)} />
     </div>
@@ -210,7 +232,9 @@ export function EmotionsStep({ step, answers, value, onChange, onNext, onBack })
 
   return (
     <>
-      <h1>{t('story.emotions.title', { name })}</h1>
+      <h1>
+        {t('story.emotions.title', { name })} <Speak text={`${t('story.emotions.title', { name })} ${t(`${step.id}.text`)}`} />
+      </h1>
       <p className="lead">{t(`${step.id}.text`)}</p>
       <div className="card-grid">
         {EMOTIONS.map((e) => (
@@ -237,7 +261,9 @@ export function HelpersStep({ step, answers, value, onChange, onNext, onBack }) 
 
   return (
     <>
-      <h1>{t('story.helpers.title', { name })}</h1>
+      <h1>
+        {t('story.helpers.title', { name })} <Speak text={`${t('story.helpers.title', { name })} ${t(`${step.id}.text`)}`} />
+      </h1>
       <p className="lead">{t(`${step.id}.text`)}</p>
       <div className="card-grid">
         {ACTORS.map((a) => {
@@ -264,7 +290,9 @@ export function ActivitiesStep({ step, value, onChange, onNext, onBack }) {
 
   return (
     <>
-      <h1>{t(`${step.id}.title`)}</h1>
+      <h1>
+        {t(`${step.id}.title`)} <Speak text={`${t(`${step.id}.title`)} ${ACTIVITIES.map((a) => t(`activity.${a.id}`)).join(', ')}`} />
+      </h1>
       <p className="lead">{t(`${step.id}.text`)}</p>
       <div className="activity-grid">
         {ACTIVITIES.map((a) => (
@@ -292,7 +320,9 @@ export function ActivitySummaryStep({ step, answers, onNext, onBack }) {
 
   return (
     <>
-      <h1>{t(step.title)}</h1>
+      <h1>
+        {t(step.title)} <Speak text={[t(step.title), ...step.items.map((k) => t(k))].join(' ')} />
+      </h1>
       <ul className="summary">
         {step.items.map((k) => (
           <li key={k}>{t(k)}</li>
@@ -308,7 +338,9 @@ export function SummaryStep({ step, onNext, onBack }) {
   const { t } = useI18n()
   return (
     <>
-      <h1>{t(step.title)}</h1>
+      <h1>
+        {t(step.title)} <Speak text={[t(step.title), ...step.items.map((k) => t(k))].join(' ')} />
+      </h1>
       <ul className="summary">
         {step.items.map((k) => (
           <li key={k}>{t(k)}</li>
@@ -347,6 +379,7 @@ export function CardStep({ step, onComplete, onExit }) {
           </span>
         ))}
       </div>
+      <Speak text={t(card.text)} />
       <StepNav onNext={onExit} nextLabel={t('common.toHub')} />
     </div>
   )

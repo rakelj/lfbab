@@ -2,11 +2,11 @@
 // language is picked, so they live here instead of in the strings sheet.
 // TODO: have a translator check the uk/ru/so lines.
 export const LANGUAGES = [
-  { code: 'no', name: 'Norsk', choose: 'Velg språk', soon: 'Kommer snart', dir: 'ltr', available: true },
-  { code: 'en', name: 'English', choose: 'Choose language', soon: 'Coming soon', dir: 'ltr', available: false },
-  { code: 'uk', name: 'Українська', choose: 'Оберіть мову', soon: 'Незабаром', dir: 'ltr', available: false },
-  { code: 'ru', name: 'Русский', choose: 'Выберите язык', soon: 'Скоро', dir: 'ltr', available: false },
-  { code: 'so', name: 'Soomaali', choose: 'Dooro luqadda', soon: 'Dhowaan', dir: 'ltr', available: false },
+  { code: 'no', name: 'Norsk', choose: 'Velg språk', soon: 'Kommer snart', dir: 'ltr', speech: 'nb-NO', available: true },
+  { code: 'en', name: 'English', choose: 'Choose language', soon: 'Coming soon', dir: 'ltr', speech: 'en-GB', available: false },
+  { code: 'uk', name: 'Українська', choose: 'Оберіть мову', soon: 'Незабаром', dir: 'ltr', speech: 'uk-UA', available: false },
+  { code: 'ru', name: 'Русский', choose: 'Выберите язык', soon: 'Скоро', dir: 'ltr', speech: 'ru-RU', available: false },
+  { code: 'so', name: 'Soomaali', choose: 'Dooro luqadda', soon: 'Dhowaan', dir: 'ltr', speech: 'so-SO', available: false },
 ]
 
 export const DEFAULT_LANG = 'no'

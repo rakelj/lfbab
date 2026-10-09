@@ -1,13 +1,19 @@
 import { useEffect, useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
 import Modal from './Modal.jsx'
+import { Speak } from './Sound.jsx'
 
 // The back of LFB's printed actor cards: who they are, what they help with, when to contact them.
 function CardBack({ actor }) {
   const { t } = useI18n()
   return (
     <div className="actor-back">
-      <h3>{t(`actor.${actor.id}`)}</h3>
+      <h3>
+        {t(`actor.${actor.id}`)}{' '}
+        <Speak
+          text={[t(`actor.${actor.id}`), t('actor.who'), t(`actor.${actor.id}.who`), t('actor.what'), t(`actor.${actor.id}.what`), t('actor.when'), t(`actor.${actor.id}.when`)].join('. ')}
+        />
+      </h3>
       <dl>
         <dt>{t('actor.who')}</dt>
         <dd>{t(`actor.${actor.id}.who`)}</dd>

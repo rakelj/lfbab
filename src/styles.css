@@ -49,7 +49,41 @@ main { flex: 1; }
   padding: 8px 12px; min-height: 44px; cursor: pointer;
 }
 .lang-button:hover { border-color: var(--lavender); }
-@media (max-width: 360px) { .lang-button span { display: none; } }
+.topbar button { white-space: nowrap; }
+@media (max-width: 400px) {
+  .topbar { padding-inline: 12px; gap: 8px; }
+  .topbar-actions { gap: 6px; }
+  .lang-button span { display: none; }
+  .lang-button { padding: 8px 10px; }
+  .help-button { font-size: 0.88rem; padding: 10px 12px; }
+  .demo-restart { padding: 8px 10px; }
+}
+@media (max-width: 340px) {
+  .help-button { font-size: 0.8rem; padding: 8px 9px; }
+  .topbar-logo { height: 34px; }
+}
+
+/* Read-aloud */
+.sound-toggle {
+  display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; cursor: pointer;
+  background: var(--card); color: var(--muted); border: 2px solid var(--lavender-light);
+}
+.sound-toggle.on { background: var(--purple); color: #fff; border-color: var(--purple); }
+.sound-hint {
+  position: fixed; top: 72px; left: 50%; transform: translateX(-50%); z-index: 60;
+  width: min(560px, calc(100% - 32px)); padding: 12px 16px; border-radius: var(--radius);
+  background: var(--charcoal); color: #fff; font-weight: 600; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  animation: fade-in 0.3s ease; cursor: pointer;
+}
+.speak {
+  display: inline-grid; place-items: center; vertical-align: middle;
+  width: 36px; height: 36px; border-radius: 50%; cursor: pointer; padding: 0;
+  background: var(--lavender-light); color: var(--purple); border: 0;
+}
+.speak:hover { background: var(--lavender); color: #fff; }
+.speak.active { background: var(--purple); color: #fff; animation: pulse 1.6s ease-in-out infinite; }
+.answer-cell { position: relative; display: grid; }
+.speak-corner { position: absolute; top: -10px; inset-inline-end: -6px; width: 30px; height: 30px; box-shadow: var(--shadow); }
 .help-button {
   font: inherit; font-weight: 700; font-size: 0.95rem;
   background: var(--pink); color: var(--ink);

@@ -1,6 +1,7 @@
 import { useI18n } from '../i18n/I18n.jsx'
 import { WEATHER, img } from '../content.js'
 import { CardList } from './Cards.jsx'
+import { Speak } from '../components/Sound.jsx'
 
 const weather = (id) => WEATHER.find((w) => w.id === id)
 
@@ -18,7 +19,9 @@ export default function Closing({ progress, onBack }) {
           <img src={after.img} alt="" />
         </div>
       )}
-      <h1>{t('closing.title')}</h1>
+      <h1>
+        {t('closing.title')} <Speak text={[t('closing.title'), ...[1, 2, 3, 4, 5, 6].map((n) => t(`closing.${n}`))].join('. ')} />
+      </h1>
       <ul className="summary">
         {[1, 2, 3, 4, 5, 6].map((n) => (
           <li key={n}>{t(`closing.${n}`)}</li>

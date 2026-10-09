@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
 import Modal from './Modal.jsx'
+import { Speak } from './Sound.jsx'
 
 const OPTIONS = [
   { key: 'staff' },
@@ -20,7 +21,10 @@ export default function HelpButton() {
       </button>
       {open && (
         <Modal title={t('help.title')} onClose={() => setOpen(false)}>
-          <p>{t('help.intro')}</p>
+          <p>
+            {t('help.intro')}{' '}
+            <Speak text={[t('help.intro'), ...OPTIONS.map(({ key }) => `${t(`help.${key}.title`)}. ${t(`help.${key}.text`)}`), t('help.note')].join(' ')} />
+          </p>
           <ul className="help-list">
             {OPTIONS.map(({ key, href }) => {
               const body = (

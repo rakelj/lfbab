@@ -819,6 +819,11 @@
     "context": "Rights card text",
     "no": "Jeg har rett til fritidsaktiviteter"
   },
+  "sound.on": { "context": "Top bar button: turn read-aloud on (screen reader label)", "no": "Slå på opplesning" },
+  "sound.off": { "context": "Top bar button: turn read-aloud off (screen reader label)", "no": "Slå av opplesning" },
+  "sound.read": { "context": "Small speaker button next to a text (screen reader label)", "no": "Les opp" },
+  "sound.hint": { "context": "Shown once when read-aloud is turned on", "no": "Opplesning er på. Trykk på høyttaleren ved en tekst for å høre den. Bruk gjerne hodetelefoner, så andre ikke hører." },
+
   "card.label": {
     "context": "Shown when a rights card is collected",
     "no": "Du fikk et nytt rettighetskort!"
