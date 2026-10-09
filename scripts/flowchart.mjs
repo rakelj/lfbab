@@ -55,13 +55,12 @@ function column(x, y, w, steps) {
 }
 
 // Title
-parts.push(`<text x="40" y="44" font-family="${FONT}" font-size="24" font-weight="700" fill="${C.ink}">User flow, prototype v0.1</text>`)
-parts.push(`<text x="40" y="68" font-family="${FONT}" font-size="14" fill="${C.muted}">Every screen has the help button. Every chapter step has Back. Pink numbers = points to discuss.</text>`)
+parts.push(`<text x="40" y="44" font-family="${FONT}" font-size="24" font-weight="700" fill="${C.ink}">User flow, prototype v0.2</text>`)
+parts.push(`<text x="40" y="68" font-family="${FONT}" font-size="14" fill="${C.muted}">Every screen has help, language and read-aloud buttons. Every chapter step has Back. Pink numbers = points to discuss.</text>`)
 
 // Row 1: first visit
 const r1y = 100
 const lang = box(40, r1y, 210, ['Choose language', 'Norwegian only for now'], { fill: C.lavender })
-marker(lang.right - 4, lang.y + 4, 6)
 const intro = box(300, r1y, 210, ['Intro', '4 short screens'], { fill: C.lavender })
 const checkin = box(560, r1y, 230, ['Mood check-in', 'Pick a weather picture'], { fill: C.lavender })
 marker(checkin.right - 4, checkin.y + 4, 1)
@@ -88,7 +87,7 @@ const ch = { fill: C.sageLight, stroke: C.sage }
 const ch1 = column(xs[0], top, colW, [
   { text: ['Chapter 1', 'Your representative'], fill: C.sage, stroke: C.sage, color: '#fff' },
   { text: 'What is a representative?', ...ch },
-  { text: ['3 × "True for you?"', 'Yes / No / Don\'t know'], ...ch, marker: 3 },
+  { text: ['3 × "True for you?"', 'Validation for each answer'], ...ch, marker: 3 },
   { text: ['If No / Don\'t know:', '"Show to staff" card'], ...ch, marker: 4 },
   { text: '1 × "Did you know?" myth', ...ch },
   { text: 'Summary', ...ch },
@@ -99,10 +98,10 @@ const ch2 = column(xs[1], top, colW, [
   { text: 'Right to healthcare', ...ch },
   { text: '1 × "Did you know?" myth', ...ch },
   { text: 'Sleep → body → mind chain', ...ch },
-  { text: ['Read the story?', 'Read / Skip'], ...ch, marker: 5 },
-  { text: ['Story "Stille gutt"', '4 panels'], ...ch },
-  { text: 'What does Hamlin feel?', ...ch },
-  { text: ['Who can help?', 'Tap in order'], ...ch },
+  { text: ['Choose a story', 'Stille gutt / Innestengt / Skip'], ...ch, marker: 5 },
+  { text: ['The story', '3–4 panels'], ...ch },
+  { text: 'What does he feel?', ...ch },
+  { text: ['Who can help?', 'Tap in order · "i" turns a card'], ...ch },
   { text: ['Summary', '+ "Show to staff" card'], ...ch },
   { text: 'Rights card', fill: C.purple, stroke: C.purple, color: '#fff', bold: true },
 ])
@@ -112,13 +111,17 @@ const skipTo = ch2[8]
 path(`M ${skipFrom.right} ${skipFrom.cy} L ${skipFrom.right + 18} ${skipFrom.cy} L ${skipFrom.right + 18} ${skipTo.cy} L ${skipTo.right + 2} ${skipTo.cy}`, true)
 parts.push(`<text x="${skipFrom.right + 24}" y="${(skipFrom.cy + skipTo.cy) / 2}" font-family="${FONT}" font-size="12" fill="${C.muted}">skip</text>`)
 
-column(xs[2], top, colW, [
-  { text: ['Chapter 3', 'What do you like to do?'], fill: '#fff', stroke: C.sage, color: C.muted, dashed: true },
-  { text: ['Coming soon', '(activities)'], fill: '#fff', stroke: C.line, color: C.muted, dashed: true },
+const ch3 = column(xs[2], top, colW, [
+  { text: ['Chapter 3', 'What do you like to do?'], fill: C.sage, stroke: C.sage, color: '#fff' },
+  { text: 'Right to free time', ...ch },
+  { text: ['Pick activities', '6 painted cards'], ...ch },
+  { text: '1 × "Did you know?" myth', ...ch },
+  { text: ['Summary + "Show to staff"', 'card naming your activities'], ...ch },
+  { text: 'Rights card', fill: C.purple, stroke: C.purple, color: '#fff', bold: true },
 ])
-column(xs[3], top, colW, [
-  { text: 'My rights cards', fill: C.lavender },
-])
+// Two separate screens from the overview, so no arrow between them.
+box(xs[3], top, colW, ['My rights cards', 'Slots fill up on the overview'], { fill: C.lavender })
+box(xs[3], top + BOX_H + GAP, colW, ['Who can help me?', 'Cards that turn over'], { fill: C.lavender })
 const end = column(xs[4], top, colW, [
   { text: ['"Finish for today"', 'button'], fill: C.lavender, marker: 2 },
   { text: ['Mood check-in again', 'Weather picture'], fill: C.lavender, marker: 2 },
@@ -127,10 +130,10 @@ const end = column(xs[4], top, colW, [
 
 // Back to overview notes
 const backY = Math.max(ch1.at(-1).bottom, ch2.at(-1).bottom) + 30
-for (const b of [ch1.at(-1), ch2.at(-1), end.at(-1)]) {
+for (const b of [ch1.at(-1), ch2.at(-1), ch3.at(-1), end.at(-1)]) {
   parts.push(`<text x="${b.cx}" y="${b.bottom + 22}" text-anchor="middle" font-family="${FONT}" font-size="12" fill="${C.muted}">→ back to overview</text>`)
 }
-const startOver = box(xs[2], top + 2 * (BOX_H + GAP) + 30, colW, ['"Start over"', 'Clears progress → language'], { fill: '#fff', stroke: C.line, color: C.muted, h: 54 })
+const startOver = box(xs[3], top + 2 * (BOX_H + GAP) + 30, colW, ['"Start over"', 'Clears progress → language'], { fill: '#fff', stroke: C.line, color: C.muted, h: 54 })
 parts.push(`<text x="${startOver.cx}" y="${startOver.y - 10}" text-anchor="middle" font-family="${FONT}" font-size="12" fill="${C.muted}">from the overview</text>`)
 
 // Legend
@@ -138,15 +141,14 @@ const ly = backY + 30
 const legend = [
   [C.lavender, C.line, false, 'Shared screens'],
   [C.sageLight, C.sage, false, 'Chapter steps'],
-  ['#fff', C.line, true, 'Not built yet'],
 ]
 legend.forEach(([fill, stroke, dashed, label], i) => {
   const x = 40 + i * 200
   parts.push(`<rect x="${x}" y="${ly}" width="28" height="18" rx="5" fill="${fill}" stroke="${stroke}" stroke-width="2"${dashed ? ' stroke-dasharray="5 4"' : ''}/>`)
   parts.push(`<text x="${x + 38}" y="${ly + 14}" font-family="${FONT}" font-size="13" fill="${C.ink}">${label}</text>`)
 })
-marker(40 + 3 * 200 + 14, ly + 9, 'n')
-parts.push(`<text x="${40 + 3 * 200 + 36}" y="${ly + 14}" font-family="${FONT}" font-size="13" fill="${C.ink}">Point to discuss</text>`)
+marker(40 + 2 * 200 + 14, ly + 9, 'n')
+parts.push(`<text x="${40 + 2 * 200 + 36}" y="${ly + 14}" font-family="${FONT}" font-size="13" fill="${C.ink}">Point to discuss</text>`)
 
 const H = ly + 50
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
