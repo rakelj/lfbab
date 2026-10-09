@@ -17,7 +17,7 @@ export default function About({ onBack }) {
     <section className="screen">
       <img className="logo-about" src={img('logo.png')} alt="Landsforeningen for barnevernsbarn" />
       <h1>
-        {t('about.title')} <Speak text={[t('about.madeBy'), t('about.text'), t('about.privacy')].join(' ')} />
+        {t('about.title')} <Speak text={[t('about.title'), t('about.madeBy'), t('about.text'), t('about.lfb'), t('about.privacy')].join(' ')} />
       </h1>
       <p className="lead">
         <strong>{t('about.madeBy')}</strong>
@@ -26,7 +26,9 @@ export default function About({ onBack }) {
       <p>{t('about.lfb')}</p>
       <p className="reassure">{t('about.privacy')}</p>
 
-      <h2>{t('about.contact')}</h2>
+      <h2>
+        {t('about.contact')} <Speak text={[t('about.contact'), ...LINKS.map((l) => `${l.label ? t(l.label) : l.name}: ${l.text}`)].join('. ')} />
+      </h2>
       <ul className="about-links">
         {LINKS.map((l) => (
           <li key={l.href}>
@@ -39,7 +41,9 @@ export default function About({ onBack }) {
         ))}
       </ul>
 
-      <h2>{t('about.credits')}</h2>
+      <h2>
+        {t('about.credits')} <Speak text={`${t('about.credits')}. ${t('about.illustrations')}. ${t('about.development')}`} />
+      </h2>
       <p className="muted">
         {t('about.illustrations')}
         <br />

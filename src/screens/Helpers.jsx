@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
 import { ACTORS } from '../content.js'
 import { ActorInfoModal } from '../components/ActorCard.jsx'
+import { Speak } from '../components/Sound.jsx'
 
 // Gallery of LFB's actor cards. Tapping one opens it large and turns it over.
 export default function Helpers({ onBack, onGame }) {
@@ -10,7 +11,9 @@ export default function Helpers({ onBack, onGame }) {
 
   return (
     <section className="screen">
-      <h1>{t('helpers.title')}</h1>
+      <h1>
+        {t('helpers.title')} <Speak text={`${t('helpers.title')} ${t('helpers.text')}`} />
+      </h1>
       <p className="lead">{t('helpers.text')}</p>
       <button className="btn btn-staff game-button" onClick={onGame}>
         {t('game.start')}

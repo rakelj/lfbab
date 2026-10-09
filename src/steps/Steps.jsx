@@ -44,7 +44,7 @@ function RightBox({ text }) {
     <div className="right-box">
       <span className="label">{t('q.rightLabel')}</span>
       <p>
-        {t(text)} <Speak text={t(text)} />
+        {t(text)} <Speak text={`${t('q.rightLabel')}. ${t(text)}`} />
       </p>
     </div>
   )
@@ -91,7 +91,7 @@ export function SelfStep({ step, value, onChange, onNext, onBack }) {
       {step.img && <img className="illustration illustration-small" src={step.img} alt="" />}
       <span className="label">{t('q.selfLabel')}</span>
       <h1 className="statement">
-        «{t(`${step.id}.q`)}» <Speak text={t(`${step.id}.q`)} />
+        «{t(`${step.id}.q`)}» <Speak text={`${t('q.selfLabel')} ${t(`${step.id}.q`)}`} />
       </h1>
       <AnswerButtons options={['yes', 'no', 'dontKnow']} value={value} onAnswer={onChange} />
       {value && (
@@ -113,7 +113,7 @@ export function MythStep({ step, value, onChange, onNext, onBack }) {
     <>
       <span className="label">{t('q.mythLabel')}</span>
       <h1 className="statement">
-        «{t(`${step.id}.q`)}» <Speak text={t(`${step.id}.q`)} />
+        «{t(`${step.id}.q`)}» <Speak text={`${t('q.mythLabel')} ${t(`${step.id}.q`)}`} />
       </h1>
       <AnswerButtons options={['true', 'false', 'dontKnow']} value={value} onAnswer={onChange} />
       {value && (
@@ -176,7 +176,7 @@ export function StoryChoiceStep({ step, value, onChange, onNext, onBack, onSkipT
   return (
     <>
       <p className="lead">
-        {t(step.text)} <Speak text={t(step.text)} />
+        {t(step.text)} <Speak text={[t(step.text), ...Object.values(STORIES).map((s) => t(s.title))].join(' ')} />
       </p>
       <div className="story-choices">
         {Object.entries(STORIES).map(([id, s]) => (
@@ -224,7 +224,7 @@ export function StoryStep({ step, answers, setAnswer, onNext, onBack, cameBack }
   return (
     <div className="story">
       <h1>
-        {t(story.title)} <span className="story-sub">{t(story.sub)}</span>
+        {t(story.title)} <span className="story-sub">{t(story.sub)}</span> <Speak text={`${t(story.title)}. ${t(story.sub)}`} />
       </h1>
       {/* keys restart the slow zoom and the text fade for each panel */}
       <div className="story-frame">
@@ -260,7 +260,11 @@ export function EmotionsStep({ step, answers, value, onChange, onNext, onBack })
           </button>
         ))}
       </div>
-      {picked.length > 0 && <p className="reassure">{t('story.emotions.after', { name })}</p>}
+      {picked.length > 0 && (
+        <p className="reassure">
+          {t('story.emotions.after', { name })} <Speak text={t('story.emotions.after', { name })} />
+        </p>
+      )}
       <StepNav onBack={onBack} onNext={onNext} nextLabel={picked.length ? undefined : t('common.skip')} />
     </>
   )
@@ -305,7 +309,9 @@ export function HelpersStep({ step, answers, value, onChange, onNext, onBack }) 
       <ActorGrid picked={picked} onPick={toggle} />
       {picked.length > 0 && (
         <div className="reasons">
-          <h2>{t('story.helpers.why')}</h2>
+          <h2>
+            {t('story.helpers.why')} <Speak text={[t('story.helpers.why'), ...picked.map((id) => `${t(`actor.${id}`)}. ${why(id)}`)].join(' ')} />
+          </h2>
           <ul>
             {picked.map((id) => {
               const actor = ACTORS.find((a) => a.id === id)
@@ -319,7 +325,9 @@ export function HelpersStep({ step, answers, value, onChange, onNext, onBack }) 
               )
             })}
           </ul>
-          <p className="reassure">{t(`${step.id}.after`)}</p>
+          <p className="reassure">
+            {t(`${step.id}.after`)} <Speak text={t(`${step.id}.after`)} />
+          </p>
         </div>
       )}
       <StepNav onBack={onBack} onNext={onNext} nextLabel={picked.length ? undefined : t('common.skip')} />
@@ -400,7 +408,7 @@ export function ActivitiesStep({ step, value, onChange, onNext, onBack }) {
   return (
     <>
       <h1>
-        {t(`${step.id}.title`)} <Speak text={`${t(`${step.id}.title`)} ${ACTIVITIES.map((a) => t(`activity.${a.id}`)).join(', ')}`} />
+        {t(`${step.id}.title`)} <Speak text={`${t(`${step.id}.title`)} ${t(`${step.id}.text`)} ${ACTIVITIES.map((a) => t(`activity.${a.id}`)).join(', ')}`} />
       </h1>
       <p className="lead">{t(`${step.id}.text`)}</p>
       <div className="activity-grid">
@@ -413,7 +421,11 @@ export function ActivitiesStep({ step, value, onChange, onNext, onBack }) {
           </button>
         ))}
       </div>
-      {picked.length > 0 && <p className="reassure">{t(`${step.id}.after`)}</p>}
+      {picked.length > 0 && (
+        <p className="reassure">
+          {t(`${step.id}.after`)} <Speak text={t(`${step.id}.after`)} />
+        </p>
+      )}
       <StepNav onBack={onBack} onNext={onNext} nextLabel={picked.length ? undefined : t('common.skip')} />
     </>
   )
@@ -450,7 +462,7 @@ export function RoutesStep({ step, onNext, onBack }) {
   return (
     <>
       <h1>
-        {t(step.title)} <Speak text={[t(step.title), ...step.routes.map((r) => t(`${r}.q`))].join('. ')} />
+        {t(step.title)} <Speak text={[t(step.title), t('step.routes.hint'), ...step.routes.map((r) => t(`${r}.q`))].join('. ')} />
       </h1>
       <p className="lead">{t('step.routes.hint')}</p>
       <ul className="routes">
@@ -485,7 +497,11 @@ export function SummaryStep({ step, onNext, onBack }) {
           <li key={k}>{t(k)}</li>
         ))}
       </ul>
-      {step.note && <p className="reassure">{t(step.note)}</p>}
+      {step.note && (
+        <p className="reassure">
+          {t(step.note)} <Speak text={t(step.note)} />
+        </p>
+      )}
       {step.staff && <StaffCard textKey={step.staff} />}
       <StepNav onBack={onBack} onNext={onNext} />
     </>
@@ -518,10 +534,12 @@ export function CardStep({ step, onComplete, onExit, onGame }) {
           </span>
         ))}
       </div>
-      <Speak text={t(card.text)} />
+      <Speak text={`${t('card.label')} ${t(card.text)}`} />
       {step.offerGame && onGame && (
         <div className="game-offer">
-          <p>{t('ch2.game.offer')}</p>
+          <p>
+            {t('ch2.game.offer')} <Speak text={t('ch2.game.offer')} />
+          </p>
           <button className="btn btn-staff" onClick={onGame}>
             {t('game.start')}
           </button>

@@ -44,7 +44,9 @@ export default function HelperGame({ onBack }) {
         {exitBar}
         <div className="screen-center">
           <img className="illustration" src={img('friends.png')} alt="" />
-          <h1>{t('game.done.title')}</h1>
+          <h1>
+            {t('game.done.title')} <Speak text={`${t('game.done.title')} ${t('game.done.text')}`} />
+          </h1>
           <p className="lead">{t('game.done.text')}</p>
         </div>
         <div className="actions">
@@ -70,7 +72,7 @@ export default function HelperGame({ onBack }) {
       <span className="label">{t('game.counter', { n: i + 1, total: SITUATIONS.length })}</span>
       <div className="situation" key={s.id}>
         <p>
-          «{t(`game.s.${s.id}`)}» <Speak text={t(`game.s.${s.id}`)} />
+          «{t(`game.s.${s.id}`)}» <Speak text={`${t('game.counter', { n: i + 1, total: SITUATIONS.length })}. ${t(`game.s.${s.id}`)} ${revealed ? '' : t('game.intro')}`} />
         </p>
       </div>
       {!revealed && <p className="muted">{t('game.intro')}</p>}
@@ -98,7 +100,12 @@ export default function HelperGame({ onBack }) {
 
       {revealed && (
         <div className="reasons">
-          <h2>{t('game.best')}</h2>
+          <h2>
+            {t('game.best')}{' '}
+            <Speak
+              text={[t('game.best'), ...s.best.map((id) => `${t(`actor.${id}`)}. ${t(`actor.${id}.when`)}`), also.length ? `${t('game.also')} ${also.map((id) => t(`actor.${id}`)).join(', ')}` : ''].join(' ')}
+            />
+          </h2>
           <ul>
             {s.best.map((id) => (
               <li key={id} className="reason">

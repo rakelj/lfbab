@@ -1,6 +1,7 @@
 import { useI18n } from '../i18n/I18n.jsx'
 import { RIGHTS_CARDS, cardOf, chaptersFor } from '../content.js'
 import { useFeatures } from '../features.jsx'
+import { Speak } from '../components/Sound.jsx'
 
 // The overview as a path: one station per chapter, with the next suggested
 // one gently highlighted, and a row of card slots that fill up as you go.
@@ -19,7 +20,9 @@ export default function Hub({ progress, onOpen, onCards, onHelpers, onFinish, on
 
   return (
     <section className="screen">
-      <h1>{t('hub.title')}</h1>
+      <h1>
+        {t('hub.title')} <Speak text={[t('hub.title'), t('hub.text'), ...chapters.map((ch, i) => `${i + 1}. ${t(ch.title)}. ${t(ch.subtitle)}.`), `${t('hub.cards')}: ${collected.length} / ${cardIds.length}.`].join(' ')} />
+      </h1>
       <p className="lead">{t('hub.text')}</p>
 
       <ol className="path">

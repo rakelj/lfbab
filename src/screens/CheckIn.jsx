@@ -19,7 +19,11 @@ export default function CheckIn({ kind, initial, onDone }) {
       </h1>
       <p className="lead">{t(`${kind}.text`)}</p>
       <WeatherPicker value={choice} onChange={setChoice} />
-      {choice && <p className="reassure">{t('checkin.thanks')}</p>}
+      {choice && (
+        <p className="reassure">
+          {t('checkin.thanks')} <Speak text={t('checkin.thanks')} />
+        </p>
+      )}
       <div className="actions">
         {!choice && (
           <button className="btn btn-secondary" onClick={() => onDone(null)}>

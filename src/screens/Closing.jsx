@@ -1,5 +1,5 @@
 import { useI18n } from '../i18n/I18n.jsx'
-import { WEATHER, img } from '../content.js'
+import { RIGHTS_CARDS, WEATHER, img } from '../content.js'
 import { CardList } from './Cards.jsx'
 import { useFeatures } from '../features.jsx'
 import { Speak } from '../components/Sound.jsx'
@@ -31,10 +31,14 @@ export default function Closing({ progress, onBack }) {
           <li key={n}>{t(`closing.${n}`)}</li>
         ))}
       </ul>
-      <h2>{t('cards.title')}</h2>
+      <h2>
+        {t('cards.title')} <Speak text={[t('cards.title'), ...progress.cards.map((id) => t(RIGHTS_CARDS[id].text))].join('. ')} />
+      </h2>
       <CardList cards={progress.cards} />
       <img className="illustration" src={img('friends.png')} alt="" />
-      <p>{t('closing.contact')}</p>
+      <p>
+        {t('closing.contact')} <Speak text={`${t('closing.contact')} ${t('closing.thanks')}`} />
+      </p>
       <p className="reassure">{t('closing.thanks')}</p>
       <div className="actions">
         <button className="btn btn-primary" onClick={onBack}>

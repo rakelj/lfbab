@@ -45,6 +45,13 @@ and re-run it.
   answers only live in memory while a chapter is open.
 - No external fonts, analytics or trackers. `no-referrer` is set in `index.html`.
 
+## Read-aloud
+
+Every text block should have a speaker button (`<Speak>`), including feedback
+that appears after answering. To check a screen, paste
+`scripts/audit-read-aloud.js` into the browser console; it lists text no button
+reads.
+
 ## Demo mode and changelog
 
 Add `?demo` to the URL for the restart button, the ⚙ settings and a version

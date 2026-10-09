@@ -3,6 +3,16 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.2.2',
+    date: '9.10.2026',
+    items: [
+      'Opplesning på all tekst: oversikten, «Hvem kan hjelpe meg?», rettighetskortene, avslutningen, spillet og Om appen har fått høyttalerknapp.',
+      'Tilbakemeldingene som dukker opp etter at du har svart (for eksempel «Takk for at du delte»), kan også leses opp.',
+      'Overskriftene over spørsmålene («Stemmer dette for deg?», «Dette har du rett på») leses opp sammen med spørsmålet.',
+      'Kortet «Vis til en ansatt» kan leses opp. Selve setningen til de ansatte leses bare opp når appen er på norsk.',
+    ],
+  },
+  {
     version: '0.2.1',
     date: '9.10.2026',
     items: [
