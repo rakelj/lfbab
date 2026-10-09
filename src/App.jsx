@@ -7,6 +7,7 @@ import { FeaturesProvider, useFeatures } from './features.jsx'
 import HelpButton from './components/Help.jsx'
 import LanguageScreen from './screens/LanguageScreen.jsx'
 import Intro from './screens/Intro.jsx'
+import IntroFilm from './screens/IntroFilm.jsx'
 import CheckIn from './screens/CheckIn.jsx'
 import Hub from './screens/Hub.jsx'
 import Chapter from './screens/Chapter.jsx'
@@ -82,10 +83,13 @@ function Screens({ demo }) {
         <LanguageScreen
           onPick={(lang) => {
             update({ lang })
-            go(progress.introDone ? 'hub' : 'intro')
+            go(progress.introDone ? 'hub' : on('introFilm') ? 'film' : 'intro')
           }}
         />
       )
+      break
+    case 'film':
+      content = <IntroFilm onDone={() => go('intro')} />
       break
     case 'intro':
       content = (

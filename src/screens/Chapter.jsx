@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
-import { recordAnswer } from '../answers.js'
 import Dots from '../components/Dots.jsx'
 import {
   InfoStep, SelfStep, MythStep, ChainStep, StoryChoiceStep, StoryStep, EmotionsStep, HelpersStep,
@@ -26,31 +25,15 @@ const STEPS = {
 }
 
 export default function Chapter({ chapter, onComplete, onExit, onGame }) {
-  const { t, lang } = useI18n()
+  const { t } = useI18n()
   // Visited step indexes, so Back returns to where you came from (also after a skip).
   const [history, setHistory] = useState([0])
   // Multi-part steps (story, chain) open at their end when you come back to them.
   const [cameBack, setCameBack] = useState(false)
   // Answers live in memory only while the chapter is open, so they can be
-  // changed when going back. Only the final answers are sent, when leaving.
-  // Keys starting with "_" are the chapter's own bookkeeping and are not sent.
+  // changed when going back. They are never stored or sent anywhere: LFB does
+  // not collect any data. Keys starting with "_" are the chapter's own bookkeeping.
   const [answers, setAnswers] = useState({})
-  const answersRef = useRef(answers)
-  answersRef.current = answers
-
-  useEffect(() => {
-    const flush = () => {
-      for (const [question, answer] of Object.entries(answersRef.current)) {
-        if (!question.startsWith('_') && answer !== null && answer !== '') recordAnswer(question, answer, lang)
-      }
-      answersRef.current = {}
-    }
-    window.addEventListener('pagehide', flush)
-    return () => {
-      window.removeEventListener('pagehide', flush)
-      flush()
-    }
-  }, [lang])
 
   const i = history[history.length - 1]
   const step = chapter.steps[i]

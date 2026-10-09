@@ -1,16 +1,14 @@
 import { useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
 import WeatherPicker from '../components/WeatherPicker.jsx'
-import { recordAnswer } from '../answers.js'
 import { Speak } from '../components/Sound.jsx'
 
 // Used at the start ("checkin") and at the end ("checkout").
 export default function CheckIn({ kind, initial, onDone }) {
-  const { t, lang } = useI18n()
+  const { t } = useI18n()
   const [choice, setChoice] = useState(initial)
 
   const finish = () => {
-    if (choice) recordAnswer(kind, choice, lang)
     onDone(choice)
   }
 

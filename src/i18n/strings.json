@@ -1948,5 +1948,40 @@
     "context": "DRAFT, needs LFB review. Validation after answering a myth question",
     "no": "Det er helt vanlig å ikke vite. Nå vet du det.",
     "ar": "من الطبيعي تمامًا ألا تعرف. الآن أصبحت تعرف."
+  },
+  "film.1": {
+    "context": "DRAFT, needs LFB review. Intro film scene 1 (stormy sky). Distant, not 'you'.",
+    "no": "Hvert år kommer mange unge alene til Norge.",
+    "ar": "كل عام يأتي كثير من الشباب وحدهم إلى النرويج."
+  },
+  "film.2": {
+    "context": "DRAFT, needs LFB review. Scene 2 (Hamlin at the table)",
+    "no": "Alt er nytt. Språket, reglene, menneskene.",
+    "ar": "كل شيء جديد. اللغة، والقواعد، والناس."
+  },
+  "film.3": {
+    "context": "DRAFT, needs LFB review. Scene 3 (Elias in bed at night)",
+    "no": "Mange synes det er vanskelig å sove. Tankene blir mange.",
+    "ar": "كثيرون يجدون صعوبة في النوم. تكثر الأفكار."
+  },
+  "film.4": {
+    "context": "DRAFT, needs LFB review. Scene 4 (light breaking through clouds)",
+    "no": "Det er vanlig å ha det sånn når man bor på mottak.",
+    "ar": "من الطبيعي أن يشعر المرء بذلك عندما يقيم في مركز استقبال."
+  },
+  "film.5": {
+    "context": "DRAFT, needs LFB review. Scene 5 (group of friends)",
+    "no": "Ingen er alene om å ha det sånn.",
+    "ar": "لا أحد وحيد في هذا الشعور."
+  },
+  "film.6": {
+    "context": "DRAFT, needs LFB review. Scene 6 (clear sky with sun). Leads into the app.",
+    "no": "Alle har rettigheter, og det finnes hjelp. Her kan du lære om dem.",
+    "ar": "لكل شخص حقوق، والمساعدة متوفرة. هنا يمكنك أن تتعرّف عليها."
+  },
+  "film.tap": {
+    "context": "Small hint at the bottom of the intro film",
+    "no": "Trykk for å gå videre",
+    "ar": "اضغط للمتابعة"
   }
 }

@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
 import { ACTORS, SITUATIONS, img } from '../content.js'
-import { recordAnswer } from '../answers.js'
 import Dots from '../components/Dots.jsx'
 import { Speak } from '../components/Sound.jsx'
 
@@ -11,7 +10,7 @@ const actor = (id) => ACTORS.find((a) => a.id === id)
 // can help most (with the "when to contact" text from the card back). Other
 // picks are shown as "also good to talk to", never as wrong. No points.
 export default function HelperGame({ onBack }) {
-  const { t, lang } = useI18n()
+  const { t } = useI18n()
   const [i, setI] = useState(0)
   const [picked, setPicked] = useState([])
   const [revealed, setRevealed] = useState(false)
@@ -20,7 +19,6 @@ export default function HelperGame({ onBack }) {
 
   const toggle = (id) => !revealed && setPicked((p) => (p.includes(id) ? p.filter((x) => x !== id) : [...p, id]))
   const reveal = () => {
-    recordAnswer(`game.${s.id}`, picked.join(','), lang)
     setRevealed(true)
   }
   const next = () => {

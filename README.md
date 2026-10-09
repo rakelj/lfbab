@@ -38,9 +38,8 @@ and re-run it.
 
 - Progress (language, finished chapters, rights cards, check-in weather) is
   kept in the browser's localStorage only. "Start på nytt" clears it.
-- Answers to personal questions are never stored on the device.
-- `src/answers.js` is where anonymous answers will be sent to LFB's sheet
-  (v0.2). Only question, answer, language and date. Never names, free text or IDs.
+- Answers are never stored or sent anywhere. LFB does not collect any data;
+  answers only live in memory while a chapter is open.
 - No external fonts, analytics or trackers. `no-referrer` is set in `index.html`.
 
 ## Deploy
