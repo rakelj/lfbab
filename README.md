@@ -67,3 +67,9 @@ Every push to `main` builds and publishes to GitHub Pages
 The build uses relative paths (`base: './'` in `vite.config.js`), so `dist/`
 can be moved to another static host (Cloudflare Pages, Netlify, LFB's own
 web hotel) without changes.
+
+## Working from a cloud session
+
+The repo also works from a Claude Code cloud session (claude.ai/code): Node 22
+and npm are preinstalled there, `npm ci && npm run build` runs as-is, and
+pushing needs the repo attached to the session with push access.
