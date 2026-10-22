@@ -53,22 +53,6 @@ function FlipCard({ actor, startFlipped = false }) {
   )
 }
 
-// On a rights card that shows a person card: opens it and turns it over.
-export function CardBackButton({ card }) {
-  const { t } = useI18n()
-  const [open, setOpen] = useState(false)
-  const actor = card.actor && ACTORS.find((a) => a.id === card.actor)
-  if (!actor) return null
-  return (
-    <>
-      <button className="btn btn-link card-back-button" onClick={() => setOpen(true)}>
-        <span aria-hidden="true">↻</span> {t('card.back')}
-      </button>
-      {open && <ActorInfoModal actor={actor} onClose={() => setOpen(false)} />}
-    </>
-  )
-}
-
 // `action` adds a main button under the card, e.g. {label, onClick} to choose this person.
 export function ActorInfoModal({ actor, onClose, action }) {
   return (

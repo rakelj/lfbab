@@ -6,11 +6,12 @@ import { Speak } from '../components/Sound.jsx'
 
 const actor = (id) => ACTORS.find((a) => a.id === id)
 
-// "Who can help?": one situation at a time, pick one or more cards, then see who
-// can help most (with the "when to contact" text from the card back). Other
-// picks are shown as "also good to talk to", never as wrong. No points.
+// "Who can help?" practice: one situation at a time, pick one or more cards,
+// then see who can help most (with the "when to contact" text from the card
+// back). Other picks are shown as "also good to talk to", never as wrong. No
+// points and nothing to win; it ends by pointing to all the cards.
 // Picks are kept per situation (in memory only) so Back shows them again.
-export default function HelperGame({ onBack }) {
+export default function HelperGame({ onBack, onHelpers }) {
   const { t } = useI18n()
   const [i, setI] = useState(0)
   const [rounds, setRounds] = useState({})
@@ -23,10 +24,6 @@ export default function HelperGame({ onBack }) {
   const goTo = (n) => {
     setI(n)
     window.scrollTo({ top: 0 })
-  }
-  const restart = () => {
-    setRounds({})
-    goTo(0)
   }
 
   const exitBar = (
@@ -49,14 +46,14 @@ export default function HelperGame({ onBack }) {
           </h1>
           <p className="lead">{t('game.done.text')}</p>
         </div>
+        <button className="btn btn-primary learn-more" onClick={onHelpers}>
+          {t('game.more')}
+        </button>
         <div className="actions">
           <button className="btn btn-secondary" onClick={() => goTo(i - 1)}>
             {t('common.back')}
           </button>
-          <button className="btn btn-secondary" onClick={restart}>
-            {t('game.again')}
-          </button>
-          <button className="btn btn-primary" onClick={onBack}>
+          <button className="btn btn-secondary" onClick={onBack}>
             {t('common.done')}
           </button>
         </div>

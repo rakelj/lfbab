@@ -8,14 +8,6 @@
 
 const img = (file) => `${import.meta.env.BASE_URL}img/${file}`
 
-export const EXTRA_CARDS = {
-  'x.safety': { text: 'x.safety.card', img: img('friends.png'), cutout: true },
-  'x.centre': { text: 'x.centre.card', img: img('actor-centre-staff.jpg'), actor: 'centreStaff' },
-  'x.cws': { text: 'x.cws.card', img: img('actor-family.jpg') },
-  'x.money': { text: 'x.money.card', img: img('activity-learn.jpg') },
-  'x.complain': { text: 'x.complain.card', img: img('thumbs-up.png'), cutout: true },
-}
-
 export const EXTRA_CHAPTERS = [
   {
     id: 'x.safety',
@@ -45,7 +37,6 @@ export const EXTRA_CHAPTERS = [
         items: ['x.safety.rights.1', 'x.safety.rights.2', 'x.safety.rights.3'],
         duties: { title: 'x.safety.duties.title', items: ['x.safety.duties.1', 'x.safety.duties.2', 'x.safety.duties.3'] },
       },
-      { type: 'card', card: 'x.safety' },
     ],
   },
   {
@@ -72,7 +63,6 @@ export const EXTRA_CHAPTERS = [
           items: ['x.centre.duties.1', 'x.centre.duties.2', 'x.centre.duties.3', 'x.centre.duties.4', 'x.centre.duties.5'],
         },
       },
-      { type: 'card', card: 'x.centre' },
     ],
   },
   {
@@ -92,7 +82,6 @@ export const EXTRA_CHAPTERS = [
         staff: 'x.cws.staff',
       },
       { type: 'rights', title: 'rights.title', items: ['x.cws.rights.1', 'x.cws.rights.2'] },
-      { type: 'card', card: 'x.cws' },
     ],
   },
   {
@@ -107,7 +96,6 @@ export const EXTRA_CHAPTERS = [
       { type: 'info', title: 'x.money.school.title', text: 'x.money.school.text', img: img('activity-learn.jpg') },
       { type: 'self', id: 'x.money.inschool' },
       { type: 'rights', title: 'rights.title', items: ['x.money.rights.1', 'x.money.rights.2', 'x.money.rights.3'] },
-      { type: 'card', card: 'x.money' },
     ],
   },
   {
@@ -121,7 +109,6 @@ export const EXTRA_CHAPTERS = [
       { type: 'info', title: 'x.complain.intro.title', text: 'x.complain.intro.text', img: img('thumbs-up.png') },
       { type: 'routes', title: 'x.complain.routes.title', routes: ['x.complain.r1', 'x.complain.r2', 'x.complain.r3', 'x.complain.r4'] },
       { type: 'rights', title: 'rights.title', items: ['x.complain.rights.1', 'x.complain.rights.2', 'x.complain.rights.3'] },
-      { type: 'card', card: 'x.complain' },
     ],
   },
 ]

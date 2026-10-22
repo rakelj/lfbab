@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
-import { ACTIVITIES, ACTORS, EMOTIONS, RIGHTS_CARDS, STORIES, img } from '../content.js'
+import { ACTIVITIES, ACTORS, EMOTIONS, STORIES, img } from '../content.js'
 import StaffCard from '../components/StaffCard.jsx'
 import { Speak } from '../components/Sound.jsx'
-import { ActorInfoModal, CardBackButton } from '../components/ActorCard.jsx'
+import { ActorInfoModal } from '../components/ActorCard.jsx'
 
 // Back (when there is somewhere to go back to) and Next.
 function StepNav({ onBack, onNext, nextLabel, nextDisabled }) {
@@ -537,9 +537,9 @@ export function SummaryStep({ step, onNext, onBack }) {
   )
 }
 
-// Last screen before the rights card in every chapter: what you have a right
-// to, and your duties where they apply. All chapters use the same picture.
-export function RightsStep({ step, onNext, onBack }) {
+// Last screen of every chapter: what you have a right to, and your duties
+// where they apply. All chapters use the same picture.
+export function RightsStep({ step, onNext, onBack, onGame, isLast }) {
   const { t } = useI18n()
   const { duties } = step
   return (
@@ -571,39 +571,6 @@ export function RightsStep({ step, onNext, onBack }) {
         </>
       )}
       {step.staff && <StaffCard textKey={step.staff} />}
-      <StepNav onBack={onBack} onNext={onNext} />
-    </>
-  )
-}
-
-export function CardStep({ step, onComplete, onExit, onGame }) {
-  const { t } = useI18n()
-  const card = RIGHTS_CARDS[step.card]
-
-  useEffect(() => {
-    onComplete()
-  }, [])
-
-  return (
-    <div className="screen-center">
-      <span className="label">{t('card.label')}</span>
-      {/* The card turns over from its back, with a few sparkles around it */}
-      <div className="reward">
-        <div className="reward-card">
-          <div className="rights-card reward-front">
-            <img src={card.img} alt="" />
-            <p>{t(card.text)}</p>
-          </div>
-          <div className="reward-back" aria-hidden="true" />
-        </div>
-        {[1, 2, 3, 4, 5].map((n) => (
-          <span key={n} className={`sparkle sparkle-${n}`} aria-hidden="true">
-            ✦
-          </span>
-        ))}
-      </div>
-      <Speak text={`${t('card.label')} ${t(card.text)}`} />
-      <CardBackButton card={card} />
       {step.offerGame && onGame && (
         <div className="game-offer">
           <p>
@@ -614,7 +581,8 @@ export function CardStep({ step, onComplete, onExit, onGame }) {
           </button>
         </div>
       )}
-      <StepNav onNext={onExit} nextLabel={t('common.toHub')} />
-    </div>
+      <StepNav onBack={onBack} onNext={onNext} nextLabel={isLast ? t('common.toHub') : undefined} />
+    </>
   )
 }
+

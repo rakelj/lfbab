@@ -1,4 +1,4 @@
-import { EXTRA_CARDS, EXTRA_CHAPTERS } from './content/extra.js'
+import { EXTRA_CHAPTERS } from './content/extra.js'
 
 // Structure of the app. All visible text is referenced by key from
 // src/i18n/strings.json (synced from the translation sheet).
@@ -26,14 +26,6 @@ export const ACTORS = [
   { id: 'family', img: img('actor-family.jpg') },
   { id: 'resident', img: img('actor-resident.jpg') },
 ]
-
-export const RIGHTS_CARDS = {
-  // `actor`: the card shows that person card, so its back text can be read (Snu kortet).
-  representative: { text: 'card.representative', img: img('actor-representative.jpg'), actor: 'representative' },
-  health: { text: 'card.health', img: img('actor-doctor.jpg'), actor: 'doctor' },
-  activities: { text: 'card.activities', img: img('activity-sport.jpg') },
-  ...EXTRA_CARDS,
-}
 
 export const ACTIVITIES = [
   { id: 'sport', img: img('activity-sport.jpg') },
@@ -83,7 +75,7 @@ export const SITUATIONS = [
 
 // Step types: info, self (true for you?), myth (did you know?), chain,
 // storyChoice, story, emotions, helpers, summary, activities, activitySummary,
-// rights (last screen before the card, same picture in every chapter), card.
+// rights (last screen of every chapter, same picture in all of them).
 // Steps with an `id` keep their answer while the chapter is open; later steps
 // can read earlier answers (e.g. which story was chosen).
 export const CHAPTERS = [
@@ -104,7 +96,6 @@ export const CHAPTERS = [
         items: ['ch1.summary.1', 'ch1.summary.2', 'ch1.summary.3', 'ch1.summary.4', 'ch1.summary.5', 'ch1.summary.6'],
         note: 'ch1.summary.note',
       },
-      { type: 'card', card: 'representative' },
     ],
   },
   {
@@ -129,8 +120,7 @@ export const CHAPTERS = [
         items: ['ch2.summary.1', 'ch2.summary.2', 'ch2.summary.3', 'ch2.summary.4'],
         staff: 'ch2.staff',
       },
-      { type: 'rights', title: 'rights.title', items: ['ch2.rights.1', 'ch2.rights.2', 'ch2.rights.3', 'ch2.rights.4'] },
-      { type: 'card', card: 'health', offerGame: true },
+      { type: 'rights', title: 'rights.title', items: ['ch2.rights.1', 'ch2.rights.2', 'ch2.rights.3', 'ch2.rights.4'], offerGame: true },
     ],
   },
   {
@@ -152,7 +142,6 @@ export const CHAPTERS = [
         items: ['ch3.summary.1', 'ch3.summary.2', 'ch3.summary.3', 'ch3.summary.4'],
       },
       { type: 'rights', title: 'rights.title', items: ['ch3.rights.1', 'ch3.rights.2', 'ch3.rights.3'] },
-      { type: 'card', card: 'activities' },
     ],
   },
 ]
@@ -172,7 +161,3 @@ export function findChapter(id) {
   return [...CHAPTERS, ...EXTRA_CHAPTERS].find((ch) => ch.id === id)
 }
 
-// The rights card each chapter gives (from its last "card" step).
-export function cardOf(chapter) {
-  return chapter.steps?.find((s) => s.type === 'card')?.card
-}

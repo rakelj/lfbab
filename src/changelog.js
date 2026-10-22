@@ -3,6 +3,15 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.3.0',
+    date: '22.10.2026',
+    items: [
+      'Rettighetskortene er fjernet: ingen kort etter hvert tema, ingen «Mine rettighetskort» på oversikten og ingen kort på avslutningen. Hvert tema slutter med «Du har rett til»-skjermen, og «Til oversikten» tar deg tilbake. Temaet er fortsatt merket «Ferdig».',
+      '«Hvem kan hjelpe?» er nå en øvelse, ikke et spill: «Øv på: Hvem kan hjelpe?», «Avslutt øvelsen», og ingen «Bra jobbet!» eller «Spill igjen».',
+      'Øvelsen slutter med «Vil du lære mer?» og en tydelig knapp, «Se alle kortene», som åpner «Hvem kan hjelpe meg?».',
+    ],
+  },
+  {
     version: '0.2.9',
     date: '22.10.2026',
     items: [

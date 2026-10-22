@@ -8,7 +8,6 @@ const EMPTY = {
   lang: null,
   introDone: false,
   done: [], // finished chapter ids
-  cards: [], // collected rights card ids
 }
 
 function load() {
@@ -40,10 +39,9 @@ export function useProgress() {
   }, [])
 
   const completeChapter = useCallback(
-    (chapterId, cardId) =>
+    (chapterId) =>
       update((prev) => ({
         done: prev.done.includes(chapterId) ? prev.done : [...prev.done, chapterId],
-        cards: !cardId || prev.cards.includes(cardId) ? prev.cards : [...prev.cards, cardId],
       })),
     [update],
   )

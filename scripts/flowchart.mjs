@@ -91,7 +91,7 @@ const ch1 = column(xs[0], top, colW, [
   { text: ['If No / Don\'t know:', '"Show to staff" card'], ...ch, marker: 4 },
   { text: '1 × "Did you know?" myth', ...ch },
   { text: 'Summary', ...ch },
-  { text: 'Rights card', fill: C.purple, stroke: C.purple, color: '#fff', bold: true },
+  { text: ['Your rights', 'Same picture in every chapter'], fill: C.purple, stroke: C.purple, color: '#fff', bold: true },
 ])
 const ch2 = column(xs[1], top, colW, [
   { text: ['Chapter 2', 'Body and mind'], fill: C.sage, stroke: C.sage, color: '#fff' },
@@ -105,7 +105,7 @@ const ch2 = column(xs[1], top, colW, [
   { text: ['Read the other story?', 'Yes / No'], ...ch },
   { text: 'Who would you talk to first?', ...ch },
   { text: ['Summary', '+ "Show to staff" card'], ...ch },
-  { text: ['Rights card', '+ "Try the game"'], fill: C.purple, stroke: C.purple, color: '#fff', bold: true },
+  { text: ['Your rights', '+ "Practise: who can help?"'], fill: C.purple, stroke: C.purple, color: '#fff', bold: true },
 ])
 // "Yes" loops back from "Read the other story?" to the story
 const loopFrom = ch2[8]
@@ -124,7 +124,7 @@ const ch3 = column(xs[2], top, colW, [
   { text: ['Pick activities', '6 painted cards'], ...ch },
   { text: '1 × "Did you know?" myth', ...ch },
   { text: ['Summary + "Show to staff"', 'card naming your activities'], ...ch },
-  { text: 'Rights card', fill: C.purple, stroke: C.purple, color: '#fff', bold: true },
+  { text: ['Your rights', 'Same picture in every chapter'], fill: C.purple, stroke: C.purple, color: '#fff', bold: true },
 ])
 // Extra chapters (not from the workshop) are listed on the overview after chapter 3.
 const extraY = ch3.at(-1).bottom + 56
@@ -132,23 +132,22 @@ parts.push(`<text x="${xs[2] + colW / 2}" y="${extraY - 12}" text-anchor="middle
 const extra = column(xs[2], extraY, colW, [
   { text: ['Extra chapters', 'Not from the workshop'], fill: C.sageLight, stroke: C.sage, dashed: true, h: 52 },
   { text: ['Safety · Your rights at the', 'centre · Child welfare ·', 'Money and school · Complaints'], fill: '#fff', stroke: C.sage, dashed: true, h: 70, bold: false },
-  { text: ['Same steps as chapters:', 'info, myths, "True for you?",', 'summary, rights card'], fill: '#fff', stroke: C.sage, dashed: true, h: 70 },
+  { text: ['Same steps as chapters:', 'info, myths, "True for you?",', 'summary, your rights (+ duties)'], fill: '#fff', stroke: C.sage, dashed: true, h: 70 },
 ])
 
-// Two separate screens from the overview: rights cards, and "Who can help me?" with the game.
-box(xs[3], top, colW, ['My rights cards', 'Slots fill up on the overview'], { fill: C.lavender, h: 52 })
-const gallery = box(xs[3], top + 52 + GAP, colW, ['Who can help me?', 'Cards that turn over'], { fill: C.lavender, h: 52 })
+// "Who can help me?" from the overview, with the practice.
+const gallery = box(xs[3], top, colW, ['Who can help me?', 'Cards that turn over'], { fill: C.lavender, h: 52 })
 const game = column(xs[3], gallery.bottom + GAP + 4, colW, [
-  { text: ['Game: Who can help?', 'Also from chapter 2 card'], fill: C.lavender, h: 52 },
+  { text: ['Practice: Who can help?', 'Also from chapter 2'], fill: C.lavender, h: 52 },
   { text: ['6 situations: pick cards,', '"See the answer", ★ best help'], ...ch, h: 52 },
   { text: ['Back: change picks or go to', 'the previous situation'], ...ch, h: 52 },
-  { text: ['"Well done!"', 'Back · Play again · Done'], ...ch, h: 52 },
+  { text: ['"Want to learn more?"', 'See all cards · Back · Done'], ...ch, h: 52 },
 ])
 arrow(gallery.cx, gallery.bottom, game[0].cx, game[0].y - 2)
-parts.push(`<text x="${game.at(-1).cx}" y="${game.at(-1).bottom + 22}" text-anchor="middle" font-family="${FONT}" font-size="12" fill="${C.muted}">"Exit the game" at the top, any time</text>`)
+parts.push(`<text x="${game.at(-1).cx}" y="${game.at(-1).bottom + 22}" text-anchor="middle" font-family="${FONT}" font-size="12" fill="${C.muted}">"Exit" at the top, any time</text>`)
 const end = column(xs[4], top, colW, [
   { text: ['"Finish for today"', 'button'], fill: C.lavender, marker: 2 },
-  { text: ['Closing', 'Key messages, cards,', 'contact'], fill: C.lavender, h: 64 },
+  { text: ['Closing', 'Key messages, contact'], fill: C.lavender, h: 52 },
 ])
 
 // Back to overview notes

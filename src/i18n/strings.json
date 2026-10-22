@@ -164,11 +164,6 @@
     "no": "Kommer snart",
     "ar": "قريبًا"
   },
-  "hub.cards": {
-    "context": "Button: see collected rights cards",
-    "no": "Mine rettighetskort",
-    "ar": "بطاقات حقوقي"
-  },
   "hub.finish": {
     "context": "Button: go to the closing part",
     "no": "Avslutt for i dag",
@@ -1024,11 +1019,6 @@
     "no": "Hjelp fra de ansatte til å finne ut hva som finnes der du bor",
     "ar": "مساعدة الموظفين في معرفة ما هو متاح في المكان الذي تقيم فيه"
   },
-  "card.activities": {
-    "context": "Rights card text",
-    "no": "Jeg har rett til fritidsaktiviteter",
-    "ar": "لديّ الحق في الأنشطة الترفيهية"
-  },
   "sound.on": {
     "context": "Top bar button: turn read-aloud on (screen reader label)",
     "no": "Slå på opplesning",
@@ -1113,36 +1103,6 @@
     "context": "PLACEHOLDER",
     "no": "Utvikling: [PLACEHOLDER navn]",
     "ar": "التطوير: [PLACEHOLDER]"
-  },
-  "card.label": {
-    "context": "Shown when a rights card is collected",
-    "no": "Du fikk et nytt rettighetskort!",
-    "ar": "حصلت على بطاقة حقوق جديدة!"
-  },
-  "card.back": {
-    "context": "Button under a rights card that shows a person card: turn it and read the back",
-    "no": "Snu kortet",
-    "ar": "اقلب البطاقة"
-  },
-  "card.representative": {
-    "context": "Rights card text",
-    "no": "Jeg har rett til en representant",
-    "ar": "لديّ الحق في ممثل"
-  },
-  "card.health": {
-    "context": "Rights card text",
-    "no": "Jeg har rett til helsehjelp, for kropp og hode",
-    "ar": "لديّ الحق في الرعاية الصحية، للجسد وللعقل"
-  },
-  "cards.title": {
-    "context": "Collected rights cards heading",
-    "no": "Mine rettighetskort",
-    "ar": "بطاقات حقوقي"
-  },
-  "cards.empty": {
-    "context": "",
-    "no": "Du har ingen kort ennå. Du får et kort for hvert tema du blir ferdig med.",
-    "ar": "ليست لديك بطاقات بعد. ستحصل على بطاقة عن كل موضوع تُنهيه."
   },
   "closing.title": {
     "context": "Closing screen heading",
@@ -1336,11 +1296,6 @@
   "x.safety.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
     "no": "Jeg trenger å snakke med noen om noe som har skjedd. Kan vi snakke et sted der andre ikke hører?"
-  },
-  "x.safety.card": {
-    "context": "Rights card text",
-    "no": "Jeg har rett til å være trygg",
-    "ar": "لديّ الحق في أن أكون آمنًا"
   },
   "x.centre.title": {
     "context": "EXTRA chapter title (from LFB's rights information)",
@@ -1549,11 +1504,6 @@
     "no": "Blir du frustrert? Snakk med en voksen du stoler på.",
     "ar": "هل تشعر بالإحباط؟ تحدّث مع شخص بالغ تثق به."
   },
-  "x.centre.card": {
-    "context": "Rights card text",
-    "no": "Jeg har rett til å bli hørt og respektert",
-    "ar": "لديّ الحق في أن يُستمع إليّ وأن أُحترم"
-  },
   "x.cws.title": {
     "context": "EXTRA chapter title (from LFB's rights information)",
     "no": "Barnevernet",
@@ -1627,11 +1577,6 @@
   "x.cws.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
     "no": "Jeg vil gjerne snakke med barnevernet. Kan du hjelpe meg å kontakte dem?"
-  },
-  "x.cws.card": {
-    "context": "Rights card text",
-    "no": "Barnevernet kan hjelpe meg hvis jeg ikke er trygg",
-    "ar": "يمكن لمؤسسة حماية الأطفال مساعدتي إذا لم أكن آمنًا"
   },
   "x.money.title": {
     "context": "EXTRA chapter title (from LFB's rights information)",
@@ -1717,11 +1662,6 @@
     "no": "Gratis skole, og ekstra språkopplæring hvis du trenger det",
     "ar": "مدرسة مجانية، وتعليم إضافي للغة إذا كنت تحتاج إليه"
   },
-  "x.money.card": {
-    "context": "Rights card text",
-    "no": "Jeg har rett til skole og penger til hverdagen",
-    "ar": "لديّ الحق في المدرسة وفي مال للحياة اليومية"
-  },
   "x.complain.title": {
     "context": "EXTRA chapter title (from LFB's rights information)",
     "no": "Hvordan klage",
@@ -1801,11 +1741,6 @@
     "context": "Rights screen at the end of the chapter",
     "no": "Hjelp til å klage fra de ansatte eller representanten din",
     "ar": "المساعدة في تقديم الشكوى من الموظفين أو من ممثّلك"
-  },
-  "x.complain.card": {
-    "context": "Rights card text",
-    "no": "Det er lov å klage",
-    "ar": "من المسموح أن أشتكي"
   },
   "settings.title": {
     "context": "Demo settings panel (demo mode only)",
@@ -2038,19 +1973,19 @@
     "ar": "هل تريد أن تتدرب أكثر على من يمكنه المساعدة؟"
   },
   "game.start": {
-    "context": "Button that opens the game",
-    "no": "Spill: Hvem kan hjelpe?",
-    "ar": "لعبة: من يمكنه المساعدة؟"
+    "context": "Button that opens the practice",
+    "no": "Øv på: Hvem kan hjelpe?",
+    "ar": "تدرّب: من يمكنه المساعدة؟"
   },
   "game.title": {
-    "context": "Game heading",
+    "context": "Heading of the practice",
     "no": "Hvem kan hjelpe?",
     "ar": "من يمكنه المساعدة؟"
   },
   "game.exit": {
-    "context": "Button at the top of the game: leave the game",
-    "no": "Avslutt spillet",
-    "ar": "إنهاء اللعبة"
+    "context": "Button at the top: leave the practice",
+    "no": "Avslutt øvelsen",
+    "ar": "إنهاء التدريب"
   },
   "game.intro": {
     "context": "",
@@ -2078,19 +2013,19 @@
     "ar": "من الجيد التحدث معهم أيضًا:"
   },
   "game.done.title": {
-    "context": "End of game",
-    "no": "Bra jobbet!",
-    "ar": "أحسنت!"
+    "context": "End of the practice. No winning; points to learning more",
+    "no": "Vil du lære mer?",
+    "ar": "هل تريد أن تعرف أكثر؟"
   },
   "game.done.text": {
     "context": "",
-    "no": "Nå vet du mer om hvem som kan hjelpe med hva. I «Hvem kan hjelpe meg?» kan du snu kortene og lese mer.",
-    "ar": "الآن تعرف أكثر عن من يستطيع المساعدة في ماذا. في «من يمكنه مساعدتي؟» يمكنك قلب البطاقات وقراءة المزيد."
+    "no": "Se alle som kan hjelpe deg. Trykk på et kort for å lese hvem de er, hva de kan hjelpe med og når du kan kontakte dem.",
+    "ar": "شاهد كل من يمكنهم مساعدتك. اضغط على بطاقة لتقرأ من هم، وفيم يمكنهم المساعدة، ومتى يمكنك التواصل معهم."
   },
-  "game.again": {
-    "context": "Button",
-    "no": "Spill igjen",
-    "ar": "العب مرة أخرى"
+  "game.more": {
+    "context": "Button at the end of the practice: opens 'Hvem kan hjelpe meg?'",
+    "no": "Se alle kortene",
+    "ar": "شاهد كل البطاقات"
   },
   "game.s.sleep": {
     "context": "Game situation",

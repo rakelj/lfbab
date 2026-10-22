@@ -26,9 +26,10 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       (v0.2.9).
 
 ### 4. Spillet «Hvem kan hjelpe?»
-- [ ] Behold spillet, men fjern at man tjener aktørkort. Tilbakemelding:
-      det føltes teit når man ikke kunne vinne noe.
-- [ ] Gjør «Vil du lære mer?»-delen tydeligere.
+- [x] Spillet er en øvelse uten konkurransepreg, og kortsamlingen
+      (rettighetskortene) er fjernet (v0.3.0).
+- [x] Øvelsen slutter med «Vil du lære mer?» og knappen «Se alle kortene»
+      (v0.3.0).
 
 ### 5. «Trenger du hjelp?»
 - [ ] Jobb med utheving, farger og skrift.
@@ -57,6 +58,8 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       (`public/img/rights-placeholder.svg`) (v0.2.7).
 - [ ] Illustratøren lager den felles illustrasjonen. Bytt ut
       `rights-placeholder.svg` i `RightsStep` (src/steps/Steps.jsx).
+- [ ] Bildene som bare ble brukt på rettighetskortene, kan slettes hvis de
+      ikke brukes andre steder.
 
 ### 9. Hele appen: alle situasjonene fra tekstene
 - [x] Alle situasjonene samlet i Google-dokumentet «Alle situasjoner fra

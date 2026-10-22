@@ -10,7 +10,6 @@ import Intro from './screens/Intro.jsx'
 import IntroFilm from './screens/IntroFilm.jsx'
 import Hub from './screens/Hub.jsx'
 import Chapter from './screens/Chapter.jsx'
-import Cards from './screens/Cards.jsx'
 import Closing from './screens/Closing.jsx'
 import Helpers from './screens/Helpers.jsx'
 import HelperGame from './screens/HelperGame.jsx'
@@ -104,9 +103,6 @@ function Screens({ demo }) {
     case 'chapter':
       content = <Chapter chapter={findChapter(chapterId)} onComplete={completeChapter} onExit={() => go('hub')} onGame={() => openGame('hub')} />
       break
-    case 'cards':
-      content = <Cards cards={progress.cards} onBack={() => go('hub')} />
-      break
     case 'about':
       content = <About onBack={() => go(aboutFrom)} />
       break
@@ -114,10 +110,10 @@ function Screens({ demo }) {
       content = <Helpers onBack={() => go('hub')} onGame={() => openGame('helpers')} />
       break
     case 'game':
-      content = <HelperGame onBack={() => go(gameFrom)} />
+      content = <HelperGame onBack={() => go(gameFrom)} onHelpers={() => go('helpers')} />
       break
     case 'closing':
-      content = <Closing progress={progress} onBack={() => go('hub')} />
+      content = <Closing onBack={() => go('hub')} />
       break
     default:
       content = (
@@ -127,7 +123,6 @@ function Screens({ demo }) {
             setChapterId(id)
             go('chapter')
           }}
-          onCards={() => go('cards')}
           onHelpers={() => go('helpers')}
           onFinish={() => go('closing')}
           onRestart={() => {

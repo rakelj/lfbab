@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
 import Dots from '../components/Dots.jsx'
 import {
   InfoStep, SelfStep, MythStep, ChainStep, StoryChoiceStep, StoryStep, EmotionsStep, HelpersStep,
-  ActivitiesStep, ActivitySummaryStep, RoutesStep, SummaryStep, RightsStep, CardStep, StoryAgainStep, FirstStep,
+  ActivitiesStep, ActivitySummaryStep, RoutesStep, SummaryStep, RightsStep, StoryAgainStep, FirstStep,
 } from '../steps/Steps.jsx'
 
 const STEPS = {
@@ -22,7 +22,6 @@ const STEPS = {
   helpers: HelpersStep,
   summary: SummaryStep,
   rights: RightsStep,
-  card: CardStep,
 }
 
 export default function Chapter({ chapter, onComplete, onExit, onGame }) {
@@ -47,8 +46,12 @@ export default function Chapter({ chapter, onComplete, onExit, onGame }) {
     window.scrollTo({ top: 0 })
   }
   const next = () => (isLast ? onExit() : goTo(i + 1))
+  // Reaching the last screen (the rights) marks the chapter as done.
+  useEffect(() => {
+    if (isLast) onComplete(chapter.id)
+  }, [isLast])
   const back =
-    history.length > 1 && step.type !== 'card'
+    history.length > 1
       ? () => {
           setHistory((h) => h.slice(0, -1))
           setCameBack(true)
@@ -85,7 +88,7 @@ export default function Chapter({ chapter, onComplete, onExit, onGame }) {
         onBack={back}
         cameBack={cameBack}
         onSkipTo={skipTo}
-        onComplete={() => onComplete(chapter.id, step.card)}
+        isLast={isLast}
         onExit={onExit}
       />
     </section>

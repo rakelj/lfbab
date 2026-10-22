@@ -1,9 +1,8 @@
 import { useI18n } from '../i18n/I18n.jsx'
-import { RIGHTS_CARDS, img } from '../content.js'
-import { CardList } from './Cards.jsx'
+import { img } from '../content.js'
 import { Speak } from '../components/Sound.jsx'
 
-export default function Closing({ progress, onBack }) {
+export default function Closing({ onBack }) {
   const { t } = useI18n()
 
   return (
@@ -16,10 +15,6 @@ export default function Closing({ progress, onBack }) {
           <li key={n}>{t(`closing.${n}`)}</li>
         ))}
       </ul>
-      <h2>
-        {t('cards.title')} <Speak text={[t('cards.title'), ...progress.cards.map((id) => t(RIGHTS_CARDS[id].text))].join('. ')} />
-      </h2>
-      <CardList cards={progress.cards} />
       <img className="illustration" src={img('friends.png')} alt="" />
       <p>
         {t('closing.contact')} <Speak text={`${t('closing.contact')} ${t('closing.thanks')}`} />

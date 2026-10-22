@@ -39,7 +39,7 @@ and re-run it.
 
 ## Privacy
 
-- Progress (language, finished chapters, rights cards) is
+- Progress (language, finished chapters) is
   kept in the browser's localStorage only. "Start på nytt" clears it.
 - Answers are never stored or sent anywhere. LFB does not collect any data;
   answers only live in memory while a chapter is open.
