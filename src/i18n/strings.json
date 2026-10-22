@@ -2018,14 +2018,19 @@
     "ar": "مع من كنت ستتحدث أولاً؟"
   },
   "ch2.first.text": {
-    "context": "",
-    "no": "Tenk på deg selv. Velg én.",
-    "ar": "فكّر في نفسك. اختر واحدًا."
+    "context": "Intro under the heading. Tapping a card opens its text",
+    "no": "Tenk på deg selv: hvis du hadde det vanskelig, hvem ville du gått til først? Trykk på et kort for å lese om personen, og velg den du ville snakket med.",
+    "ar": "فكّر في نفسك: إذا كنت تمر بوقت صعب، إلى من كنت ستذهب أولًا؟ اضغط على بطاقة لتقرأ عن الشخص، واختر من كنت ستتحدث معه."
   },
   "ch2.first.after": {
     "context": "After choosing",
     "no": "Godt valg. Det viktigste er at du snakker med noen. Du trenger ikke klare alt alene.",
     "ar": "اختيار جيد. الأهم أن تتحدث مع أحد. لست مضطرًا إلى تحمّل كل شيء وحدك."
+  },
+  "ch2.first.choose": {
+    "context": "Button in the card popup",
+    "no": "Velg denne",
+    "ar": "اختر هذا"
   },
   "ch2.game.offer": {
     "context": "On the rights card at the end of chapter 2",

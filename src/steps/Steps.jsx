@@ -3,7 +3,7 @@ import { useI18n } from '../i18n/I18n.jsx'
 import { ACTIVITIES, ACTORS, EMOTIONS, RIGHTS_CARDS, STORIES, img } from '../content.js'
 import StaffCard from '../components/StaffCard.jsx'
 import { Speak } from '../components/Sound.jsx'
-import { CardBackButton } from '../components/ActorCard.jsx'
+import { ActorInfoModal, CardBackButton } from '../components/ActorCard.jsx'
 
 // Back (when there is somewhere to go back to) and Next.
 function StepNav({ onBack, onNext, nextLabel, nextDisabled }) {
@@ -381,20 +381,36 @@ export function StoryAgainStep({ step, answers, setAnswer, onNext, onBack, onJum
   )
 }
 
-// "Who would you talk to first?": one personal choice.
+// "Who would you talk to first?": one personal choice. Tapping a card opens
+// its text (the back of LFB's card), with a button to choose that person.
 export function FirstStep({ step, value, onChange, onNext, onBack }) {
   const { t } = useI18n()
+  const [open, setOpen] = useState(null)
+  const actor = ACTORS.find((a) => a.id === open)
   return (
     <>
       <h1>
         {t(`${step.id}.title`)} <Speak text={`${t(`${step.id}.title`)} ${t(`${step.id}.text`)}`} />
       </h1>
       <p className="lead">{t(`${step.id}.text`)}</p>
-      <ActorGrid picked={value ? [value] : []} onPick={(id) => onChange(value === id ? null : id)} />
+      <ActorGrid picked={value ? [value] : []} onPick={setOpen} />
       {value && (
         <p className="reassure">
           {t(`${step.id}.after`)} <Speak text={t(`${step.id}.after`)} />
         </p>
+      )}
+      {actor && (
+        <ActorInfoModal
+          actor={actor}
+          onClose={() => setOpen(null)}
+          action={{
+            label: t(`${step.id}.choose`),
+            onClick: () => {
+              onChange(actor.id)
+              setOpen(null)
+            },
+          }}
+        />
       )}
       <StepNav onBack={onBack} onNext={onNext} nextLabel={value ? undefined : t('common.skip')} />
     </>

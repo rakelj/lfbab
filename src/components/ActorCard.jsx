@@ -69,10 +69,16 @@ export function CardBackButton({ card }) {
   )
 }
 
-export function ActorInfoModal({ actor, onClose }) {
+// `action` adds a main button under the card, e.g. {label, onClick} to choose this person.
+export function ActorInfoModal({ actor, onClose, action }) {
   return (
     <Modal onClose={onClose} className="modal-card">
       <FlipCard actor={actor} startFlipped />
+      {action && (
+        <button className="btn btn-primary" onClick={action.onClick}>
+          {action.label}
+        </button>
+      )}
     </Modal>
   )
 }

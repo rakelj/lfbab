@@ -3,6 +3,14 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.2.9',
+    date: '22.10.2026',
+    items: [
+      '«Hvem ville du snakket med først?»: trykk på et kort for å lese om personen (hvem de er, hva de kan hjelpe med og når du kan kontakte dem). I vinduet velger du med «Velg denne».',
+      'Ny introtekst som forklarer at du kan trykke på kortene.',
+    ],
+  },
+  {
     version: '0.2.8',
     date: '22.10.2026',
     items: [

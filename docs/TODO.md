@@ -21,8 +21,9 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       (v0.2.8). Introfilmen bruker fortsatt værbildene som bakgrunn.
 
 ### 3. Kropp og hode: «Hvem ville du snakket med først?»
-- [ ] Bedre introtekst, som sier at man kan trykke på kortet for å lese mer.
-- [ ] Trykk på et aktørkort viser teksten om personen igjen (popup).
+- [x] Bedre introtekst, som sier at man kan trykke på kortet (v0.2.9).
+- [x] Trykk på et aktørkort åpner teksten om personen, med «Velg denne»
+      (v0.2.9).
 
 ### 4. Spillet «Hvem kan hjelpe?»
 - [ ] Behold spillet, men fjern at man tjener aktørkort. Tilbakemelding:
