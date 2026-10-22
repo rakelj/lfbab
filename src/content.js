@@ -5,13 +5,6 @@ import { EXTRA_CARDS, EXTRA_CHAPTERS } from './content/extra.js'
 
 export const img = (file) => `${import.meta.env.BASE_URL}img/${file}`
 
-export const WEATHER = [
-  { id: 'clear', img: img('weather-clear.jpg'), label: 'weather.clear' },
-  { id: 'sunset', img: img('weather-sunset.jpg'), label: 'weather.sunset' },
-  { id: 'breaking', img: img('weather-breaking.jpg'), label: 'weather.breaking' },
-  { id: 'storm', img: img('weather-storm.jpg'), label: 'weather.storm' },
-]
-
 export const EMOTIONS = [
   { id: 'glad', img: img('emotion-glad.jpg') },
   { id: 'hopeful', img: img('emotion-hopeful.jpg') },
@@ -166,8 +159,13 @@ export const CHAPTERS = [
 
 // Chapters shown with the current feature switches: the workshop chapters plus
 // any extra chapters that are switched on.
+// Order of the topics in the overview: from who helps you and where you live,
+// through everyday life and health, to safety, and complaints last.
+const ORDER = ['ch1', 'x.centre', 'x.money', 'ch3', 'ch2', 'x.safety', 'x.cws', 'x.complain']
+const rank = (ch) => (ORDER.includes(ch.id) ? ORDER.indexOf(ch.id) : ORDER.length)
+
 export function chaptersFor(on) {
-  return [...CHAPTERS, ...EXTRA_CHAPTERS.filter((ch) => on(ch.id))]
+  return [...CHAPTERS, ...EXTRA_CHAPTERS.filter((ch) => on(ch.id))].sort((a, b) => rank(a) - rank(b))
 }
 
 export function findChapter(id) {

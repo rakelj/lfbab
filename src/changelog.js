@@ -3,6 +3,14 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.2.8',
+    date: '22.10.2026',
+    items: [
+      'Humørsjekken med værbilder er fjernet, både ved start og når du avslutter. Etter introen kommer du rett til oversikten, og avslutningen viser ikke lenger før- og etter-været.',
+      'Ny rekkefølge på temaene: Representanten din, Rettighetene dine på mottaket, Penger og skole, Hva liker du å gjøre?, Kropp og hode, Trygghet, Barnevernet, Hvordan klage.',
+    ],
+  },
+  {
     version: '0.2.7',
     date: '22.10.2026',
     items: [

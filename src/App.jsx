@@ -8,7 +8,6 @@ import HelpButton from './components/Help.jsx'
 import LanguageScreen from './screens/LanguageScreen.jsx'
 import Intro from './screens/Intro.jsx'
 import IntroFilm from './screens/IntroFilm.jsx'
-import CheckIn from './screens/CheckIn.jsx'
 import Hub from './screens/Hub.jsx'
 import Chapter from './screens/Chapter.jsx'
 import Cards from './screens/Cards.jsx'
@@ -97,18 +96,6 @@ function Screens({ demo }) {
         <Intro
           onDone={() => {
             update({ introDone: true })
-            go(on('checkin') ? 'checkin' : 'hub')
-          }}
-        />
-      )
-      break
-    case 'checkin':
-      content = (
-        <CheckIn
-          kind="checkin"
-          initial={progress.checkin}
-          onDone={(checkin) => {
-            update({ checkin })
             go('hub')
           }}
         />
@@ -129,18 +116,6 @@ function Screens({ demo }) {
     case 'game':
       content = <HelperGame onBack={() => go(gameFrom)} />
       break
-    case 'checkout':
-      content = (
-        <CheckIn
-          kind="checkout"
-          initial={null}
-          onDone={(checkout) => {
-            update({ checkout })
-            go('closing')
-          }}
-        />
-      )
-      break
     case 'closing':
       content = <Closing progress={progress} onBack={() => go('hub')} />
       break
@@ -154,7 +129,7 @@ function Screens({ demo }) {
           }}
           onCards={() => go('cards')}
           onHelpers={() => go('helpers')}
-          onFinish={() => go(on('checkout') ? 'checkout' : 'closing')}
+          onFinish={() => go('closing')}
           onRestart={() => {
             reset()
             go('lang')

@@ -144,51 +144,6 @@
     "no": "Ser du knappen «Trenger du hjelp?» øverst? Trykk på den når som helst, så ser du hvem du kan snakke med.",
     "ar": "هل ترى زر «هل تحتاج إلى مساعدة؟» في الأعلى؟ اضغط عليه في أي وقت لترى مع من يمكنك التحدث."
   },
-  "checkin.title": {
-    "context": "Mood check-in heading. The kid picks a weather picture.",
-    "no": "Hvordan har du det inni deg nå?",
-    "ar": "كيف تشعر في داخلك الآن؟"
-  },
-  "checkin.text": {
-    "context": "",
-    "no": "Ikke hvordan været er ute, men hvordan du har det inni deg. Velg bildet som passer best.",
-    "ar": "ليس كيف هو الطقس في الخارج، بل كيف تشعر في داخلك. اختر الصورة الأنسب."
-  },
-  "checkin.thanks": {
-    "context": "After picking a weather picture",
-    "no": "Takk for at du delte. Alle følelser er lov.",
-    "ar": "شكرًا لأنك شاركتنا. كل المشاعر مسموح بها."
-  },
-  "checkout.title": {
-    "context": "Closing mood check-in heading",
-    "no": "Hvordan har du det inni deg nå?",
-    "ar": "كيف تشعر في داخلك الآن؟"
-  },
-  "checkout.text": {
-    "context": "",
-    "no": "Velg bildet som passer best med hva du sitter igjen med.",
-    "ar": "اختر الصورة التي تناسب ما تشعر به بعد هذا."
-  },
-  "weather.clear": {
-    "context": "Image description: clear blue sky with sun",
-    "no": "Klar himmel med sol",
-    "ar": "سماء صافية مع شمس"
-  },
-  "weather.sunset": {
-    "context": "Image description: sunset above the clouds",
-    "no": "Solnedgang over skyene",
-    "ar": "غروب الشمس فوق الغيوم"
-  },
-  "weather.breaking": {
-    "context": "Image description: dark clouds with light breaking through",
-    "no": "Mørke skyer med lys som slipper gjennom",
-    "ar": "غيوم داكنة يتسلل منها الضوء"
-  },
-  "weather.storm": {
-    "context": "Image description: dark, stormy weather",
-    "no": "Mørkt uvær",
-    "ar": "عاصفة مظلمة"
-  },
   "hub.title": {
     "context": "Chapter overview heading",
     "no": "Velg et tema",

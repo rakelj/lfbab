@@ -64,18 +64,15 @@ const r1y = 110
 const lang = box(40, r1y, 210, ['Choose language', 'Norwegian · Arabic demo'], { fill: C.lavender, h: 56 })
 const film = box(290, r1y, 210, ['Intro film', '6 scenes · skippable'], { fill: C.lavender, dashed: true, h: 56 })
 const intro = box(540, r1y, 210, ['Intro', '4 short screens'], { fill: C.lavender, h: 56 })
-const checkin = box(790, r1y, 230, ['Mood check-in', 'Pick a weather picture'], { fill: C.lavender, dashed: true, h: 56 })
-marker(checkin.right - 4, checkin.y + 4, 1)
 arrow(lang.right, lang.cy, film.x - 2, film.cy)
 arrow(film.right, film.cy, intro.x - 2, intro.cy)
-arrow(intro.right, intro.cy, checkin.x - 2, checkin.cy)
-parts.push(`<text x="1060" y="${r1y + 22}" font-family="${FONT}" font-size="13" fill="${C.muted}">First visit only. Returning visitors</text>`)
-parts.push(`<text x="1060" y="${r1y + 40}" font-family="${FONT}" font-size="13" fill="${C.muted}">go straight to the overview.</text>`)
+parts.push(`<text x="790" y="${r1y + 22}" font-family="${FONT}" font-size="13" fill="${C.muted}">First visit only. Returning visitors</text>`)
+parts.push(`<text x="790" y="${r1y + 40}" font-family="${FONT}" font-size="13" fill="${C.muted}">go straight to the overview.</text>`)
 
 // Row 2: overview
 const hub = box(380, 220, 460, ['Chapter overview', 'Chapters in any order · progress saved on this device'], { fill: C.purple, stroke: C.purple, color: '#fff', h: 56 })
 marker(hub.right - 4, hub.y + 4, 7)
-path(`M ${checkin.cx} ${checkin.bottom} L ${checkin.cx} ${hub.cy} L ${hub.right + 2} ${hub.cy}`)
+arrow(intro.cx, intro.bottom, intro.cx, hub.y - 2)
 
 // Row 3: branches
 const top = 340
@@ -151,8 +148,7 @@ arrow(gallery.cx, gallery.bottom, game[0].cx, game[0].y - 2)
 parts.push(`<text x="${game.at(-1).cx}" y="${game.at(-1).bottom + 22}" text-anchor="middle" font-family="${FONT}" font-size="12" fill="${C.muted}">"Exit the game" at the top, any time</text>`)
 const end = column(xs[4], top, colW, [
   { text: ['"Finish for today"', 'button'], fill: C.lavender, marker: 2 },
-  { text: ['Mood check-in again', 'Weather picture'], fill: C.lavender, dashed: true, marker: 2 },
-  { text: ['Closing', 'Before/after weather, key', 'messages, cards, contact'], fill: C.lavender, h: 64 },
+  { text: ['Closing', 'Key messages, cards,', 'contact'], fill: C.lavender, h: 64 },
 ])
 
 // Back to overview notes

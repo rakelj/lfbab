@@ -10,8 +10,6 @@ import { createContext, useCallback, useContext, useMemo, useState } from 'react
 // import in content.js, these entries and the "x." strings.
 export const FEATURES = [
   { id: 'introFilm', group: 'flow', label: 'Introfilm (første besøk)', default: true },
-  { id: 'checkin', group: 'flow', label: 'Humørsjekk (vær) ved start', default: true },
-  { id: 'checkout', group: 'flow', label: 'Humørsjekk (vær) når man avslutter', default: true },
   { id: 'readAloud', group: 'flow', label: 'Opplesning (høyttalerknapp)', default: true },
   { id: 'x.safety', group: 'extra', label: 'Trygghet', default: true, extra: true },
   { id: 'x.centre', group: 'extra', label: 'Rettighetene dine på mottaket', default: true, extra: true },

@@ -7,8 +7,6 @@ const KEY = 'lfb-progress-v1'
 const EMPTY = {
   lang: null,
   introDone: false,
-  checkin: null, // weather id
-  checkout: null,
   done: [], // finished chapter ids
   cards: [], // collected rights card ids
 }

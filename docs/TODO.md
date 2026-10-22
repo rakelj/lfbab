@@ -17,8 +17,8 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       (`ch3.ask.title`, `ch3.ask.text` i arket, nå PLACEHOLDER).
 
 ### 2. Fjern humørsjekken (været)
-- [ ] Fjern værvalget ved start og ved avslutning, og alt som henger
-      sammen med det (avslutningsskjermen, værbildene i appen).
+- [x] Fjernet ved start og ved avslutning, med tekster og innstillinger
+      (v0.2.8). Introfilmen bruker fortsatt værbildene som bakgrunn.
 
 ### 3. Kropp og hode: «Hvem ville du snakket med først?»
 - [ ] Bedre introtekst, som sier at man kan trykke på kortet for å lese mer.
@@ -66,7 +66,9 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       og 8 bruker listen). LFB sjekker tekstene i tekstarket som vanlig.
 
 ### 10. Rekkefølgen på temaene i oversikten
-- [ ] Venter på tilbakemelding fra Bente.
+- [x] Ny rekkefølge (v0.2.8): Representanten, Mottaket, Penger og skole,
+      Fritid, Kropp og hode, Trygghet, Barnevernet, Klage. Styres av
+      `ORDER` i src/content.js. Bente kan fortsatt komme med endringer.
 
 ## Fra tidligere økter
 - [ ] Oversikten over UDI, Bufdir og aktørene (lysark 8, «Hvem er vi i

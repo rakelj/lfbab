@@ -174,19 +174,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
 .dots .active { background: var(--purple); width: 22px; border-radius: 4px; }
 
 /* Weather */
-.weather-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
-.weather-option {
-  padding: 0; border: 4px solid transparent; border-radius: var(--radius);
-  overflow: hidden; cursor: pointer; background: none; aspect-ratio: 4 / 3;
-}
-.weather-option img { width: 100%; height: 100%; object-fit: cover; animation: drift 16s ease-in-out infinite alternate; }
-.weather-option:nth-child(2) img { animation-delay: -4s; animation-duration: 19s; }
-.weather-option:nth-child(3) img { animation-delay: -9s; animation-duration: 17s; }
-.weather-option:nth-child(4) img { animation-delay: -2s; animation-duration: 21s; }
-.weather-option.selected { border-color: var(--purple); box-shadow: 0 0 0 3px var(--pink); }
-.weather-compare { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 8px; }
-.weather-compare img { width: 40%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; }
-.weather-compare span { font-size: 1.6rem; color: var(--lavender); }
 
 /* Hub: chapters as stations on a path */
 .path { list-style: none; padding: 0; margin: 20px 0 0; position: relative; display: grid; gap: 18px; }

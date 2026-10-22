@@ -13,22 +13,16 @@
 <rect x="540" y="110" width="210" height="56" rx="12" fill="#e9e5f1" stroke="#9489ac" stroke-width="2"/>
 <text x="645" y="134.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38" font-weight="700">Intro</text>
 <text x="645" y="151.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">4 short screens</text>
-<rect x="790" y="110" width="230" height="56" rx="12" fill="#e9e5f1" stroke="#9489ac" stroke-width="2" stroke-dasharray="7 5"/>
-<text x="905" y="134.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38" font-weight="700">Mood check-in</text>
-<text x="905" y="151.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">Pick a weather picture</text>
-<circle cx="1016" cy="114" r="13" fill="#ecb8c8" stroke="#d98aa3" stroke-width="1.5"/>
-<text x="1016" y="119" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#2e2a38">1</text>
 <line x1="250" y1="138" x2="288" y2="138" stroke="#9489ac" stroke-width="2" marker-end="url(#arrow)"/>
 <line x1="500" y1="138" x2="538" y2="138" stroke="#9489ac" stroke-width="2" marker-end="url(#arrow)"/>
-<line x1="750" y1="138" x2="788" y2="138" stroke="#9489ac" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="1060" y="132" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#6b6578">First visit only. Returning visitors</text>
-<text x="1060" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#6b6578">go straight to the overview.</text>
+<text x="790" y="132" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#6b6578">First visit only. Returning visitors</text>
+<text x="790" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#6b6578">go straight to the overview.</text>
 <rect x="380" y="220" width="460" height="56" rx="12" fill="#5b4e7c" stroke="#5b4e7c" stroke-width="2"/>
 <text x="610" y="244.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#fff" font-weight="700">Chapter overview</text>
 <text x="610" y="261.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#fff">Chapters in any order · progress saved on this device</text>
 <circle cx="836" cy="224" r="13" fill="#ecb8c8" stroke="#d98aa3" stroke-width="1.5"/>
 <text x="836" y="229" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#2e2a38">7</text>
-<path d="M 905 166 L 905 248 L 842 248" fill="none" stroke="#9489ac" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="645" y1="166" x2="645" y2="218" stroke="#9489ac" stroke-width="2" marker-end="url(#arrow)"/>
 <line x1="154" y1="314" x2="1174" y2="314" stroke="#9489ac" stroke-width="2"/>
 <line x1="610" y1="276" x2="610" y2="314" stroke="#9489ac" stroke-width="2"/>
 <line x1="154" y1="314" x2="154" y2="338" stroke="#9489ac" stroke-width="2" marker-end="url(#arrow)"/>
@@ -174,26 +168,20 @@
 <text x="1174" y="376.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">button</text>
 <circle cx="1284" cy="344" r="13" fill="#ecb8c8" stroke="#d98aa3" stroke-width="1.5"/>
 <text x="1284" y="349" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#2e2a38">2</text>
-<rect x="1060" y="402" width="228" height="46" rx="12" fill="#e9e5f1" stroke="#9489ac" stroke-width="2" stroke-dasharray="7 5"/>
-<text x="1174" y="421.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38" font-weight="700">Mood check-in again</text>
-<text x="1174" y="438.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">Weather picture</text>
-<circle cx="1284" cy="406" r="13" fill="#ecb8c8" stroke="#d98aa3" stroke-width="1.5"/>
-<text x="1284" y="411" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#2e2a38">2</text>
+<rect x="1060" y="402" width="228" height="64" rx="12" fill="#e9e5f1" stroke="#9489ac" stroke-width="2"/>
+<text x="1174" y="422" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38" font-weight="700">Closing</text>
+<text x="1174" y="439" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">Key messages, cards,</text>
+<text x="1174" y="456" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">contact</text>
 <line x1="1174" y1="386" x2="1174" y2="400" stroke="#9489ac" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="1060" y="464" width="228" height="64" rx="12" fill="#e9e5f1" stroke="#9489ac" stroke-width="2"/>
-<text x="1174" y="484" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38" font-weight="700">Closing</text>
-<text x="1174" y="501" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">Before/after weather, key</text>
-<text x="1174" y="518" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">messages, cards, contact</text>
-<line x1="1174" y1="448" x2="1174" y2="462" stroke="#9489ac" stroke-width="2" marker-end="url(#arrow)"/>
 <text x="154" y="780" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#6b6578">→ back to overview</text>
 <text x="404" y="1090" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#6b6578">→ back to overview</text>
 <text x="654" y="718" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#6b6578">→ back to overview</text>
 <text x="654" y="998" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#6b6578">→ back to overview</text>
-<text x="1174" y="550" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#6b6578">→ back to overview</text>
-<rect x="1060" y="598" width="228" height="54" rx="12" fill="#fff" stroke="#9489ac" stroke-width="2"/>
-<text x="1174" y="621.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#6b6578" font-weight="700">"Start over"</text>
-<text x="1174" y="638.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#6b6578">Clears progress → language</text>
-<text x="1174" y="588" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#6b6578">from the overview</text>
+<text x="1174" y="488" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#6b6578">→ back to overview</text>
+<rect x="1060" y="536" width="228" height="54" rx="12" fill="#fff" stroke="#9489ac" stroke-width="2"/>
+<text x="1174" y="559.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#6b6578" font-weight="700">"Start over"</text>
+<text x="1174" y="576.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#6b6578">Clears progress → language</text>
+<text x="1174" y="526" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#6b6578">from the overview</text>
 <rect x="40" y="1128" width="28" height="18" rx="5" fill="#e9e5f1" stroke="#9489ac" stroke-width="2"/>
 <text x="78" y="1142" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#2e2a38">Shared screens</text>
 <rect x="240" y="1128" width="28" height="18" rx="5" fill="#eef3e6" stroke="#96a87f" stroke-width="2"/>
