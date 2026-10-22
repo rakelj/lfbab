@@ -65,7 +65,9 @@ if (col.key === undefined || col.no === undefined) {
   console.error('The first row must have "key" and "no" columns.')
   process.exit(1)
 }
-const langCols = header.map((h) => h.trim()).filter((h) => h && h !== 'key' && h !== 'context')
+// Language columns have a language code as header (no, ar, prs, ...). Other
+// columns, such as LFB's status and comment columns, are left out.
+const langCols = header.map((h) => h.trim()).filter((h) => h !== 'key' && /^[a-z]{2,3}(-[A-Za-z]{2,4})?$/.test(h))
 
 const strings = {}
 for (const r of rows) {

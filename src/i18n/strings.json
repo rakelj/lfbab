@@ -890,6 +890,11 @@
     "no": "Være sammen med andre",
     "ar": "قضاء الوقت مع الآخرين"
   },
+  "activity.other": {
+    "context": "Activity card label, question-mark card (not decided yet)",
+    "no": "Vet ikke ennå",
+    "ar": "لا أعرف بعد"
+  },
   "activity.sport.staff": {
     "context": "Shown to staff in NORWEGIAN only. Completes 'Jeg har lyst til å ...'",
     "no": "drive med sport eller trening"
@@ -913,6 +918,10 @@
   "activity.social.staff": {
     "context": "Shown to staff in NORWEGIAN only",
     "no": "være mer sammen med andre"
+  },
+  "activity.other.staff": {
+    "context": "Shown to staff in NORWEGIAN only",
+    "no": "finne en aktivitet som passer for meg"
   },
   "ch3.staff.start": {
     "context": "Shown to staff in NORWEGIAN only. Start of sentence before the activities",
@@ -939,6 +948,61 @@
     "context": "",
     "no": "Du har rett til støtte til en fritidsaktivitet, også hvis den koster penger. Mottaket skal hjelpe deg å finne ut hva som finnes der du bor.",
     "ar": "من حقك الحصول على دعم لنشاط ترفيهي، حتى لو كان يكلّف مالاً. يجب أن يساعدك مركز الاستقبال على معرفة ما هو متاح في المكان الذي تقيم فيه."
+  },
+  "ch3.ask.title": {
+    "context": "PLACEHOLDER, Bente to write. Step before 'Veien videre'",
+    "no": "[PLACEHOLDER] Snakk med en ansatt",
+    "ar": "[PLACEHOLDER] تحدّث مع أحد الموظفين"
+  },
+  "ch3.ask.text": {
+    "context": "PLACEHOLDER, Bente to write",
+    "no": "[PLACEHOLDER] De ansatte på mottaket kan hjelpe deg å finne en fritidsaktivitet. På neste side får du et kort du kan vise til en ansatt du stoler på.",
+    "ar": "[PLACEHOLDER] يمكن لموظفي مركز الاستقبال مساعدتك في إيجاد نشاط ترفيهي. في الصفحة التالية ستجد بطاقة يمكنك عرضها على موظف تثق به."
+  },
+  "ch3.next.title": {
+    "context": "Heading of the last activities step",
+    "no": "Veien videre",
+    "ar": "الخطوة التالية"
+  },
+  "ch3.next.sport": {
+    "context": "Shown if the child picked this activity",
+    "no": "Så bra at du liker å trene! Spør om det finnes et lag eller en treningsgruppe i nærheten.",
+    "ar": "رائع أنك تحب التمارين! اسأل إن كان هناك فريق أو مجموعة تدريب قريبة منك."
+  },
+  "ch3.next.skate": {
+    "context": "Shown if the child picked this activity",
+    "no": "Så fint at du liker å være ute! Spør om det finnes en skatepark, turer eller andre steder å være ute der du bor.",
+    "ar": "جميل أنك تحب الخروج إلى الهواء الطلق! اسأل إن كانت هناك حديقة تزلج أو رحلات مشي أو أماكن أخرى للخروج في المكان الذي تقيم فيه."
+  },
+  "ch3.next.food": {
+    "context": "Shown if the child picked this activity",
+    "no": "Så fint at du liker å lage mat! Kanskje du kan lage mat sammen med andre på mottaket, eller være kjøkkensjef en dag?",
+    "ar": "جميل أنك تحب الطبخ! ربما يمكنك الطبخ مع الآخرين في مركز الاستقبال، أو أن تكون رئيس المطبخ ليوم واحد؟"
+  },
+  "ch3.next.games": {
+    "context": "Shown if the child picked this activity",
+    "no": "Spill og film kan være en god pause for hodet. Spør om det finnes spillkvelder, eller om fellesrommet kan være åpent oftere.",
+    "ar": "الألعاب والأفلام قد تكون استراحة جيدة للعقل. اسأل إن كانت هناك أمسيات ألعاب، أو إن كان يمكن فتح الغرفة المشتركة أكثر."
+  },
+  "ch3.next.learn": {
+    "context": "Shown if the child picked this activity",
+    "no": "Så bra at du vil lære noe nytt! Spør om kurs, leksehjelp eller biblioteket i nærheten.",
+    "ar": "رائع أنك تريد تعلّم شيء جديد! اسأل عن الدورات، أو المساعدة في الواجبات، أو المكتبة القريبة."
+  },
+  "ch3.next.social": {
+    "context": "Shown if the child picked this activity",
+    "no": "Det er godt å være sammen med andre. Spør om det finnes en ungdomsklubb eller fellesaktiviteter der du bor.",
+    "ar": "من الجميل قضاء الوقت مع الآخرين. اسأل إن كان هناك نادٍ للشباب أو أنشطة مشتركة في المكان الذي تقيم فيه."
+  },
+  "ch3.next.other": {
+    "context": "Shown for 'Vet ikke ennå', or if nothing was picked",
+    "no": "Det er helt greit å ikke vite ennå. En ansatt kan hjelpe deg å finne en aktivitet som passer for deg.",
+    "ar": "لا بأس أبدًا ألّا تعرف بعد. يمكن لأحد الموظفين مساعدتك في إيجاد نشاط يناسبك."
+  },
+  "ch3.next.disclaimer": {
+    "context": "Note under the encouraging lines",
+    "no": "Ikke alle aktiviteter finnes på alle mottak eller i alle kommuner. Men de ansatte skal hjelpe deg å finne ut hva som er mulig der du bor. Kanskje finnes det noe som ligner.",
+    "ar": "ليست كل الأنشطة متاحة في كل مراكز الاستقبال أو في كل البلديات. لكن يجب على الموظفين مساعدتك في معرفة ما هو ممكن في المكان الذي تقيم فيه. ربما يوجد شيء مشابه."
   },
   "ch3.summary.title": {
     "context": "Chapter 3 summary heading",
@@ -1626,7 +1690,7 @@
   },
   "story.shut.3": {
     "context": "Story page 3 (LFB's text, verbatim)",
-    "no": "Tusen tanker svirrer i hodet til Elias, og det begynner å bli tungt å puste. Han tenker på de der hjemme, han tenker på asylsøknaden sin, han tenker på avhøret han skal inn i, men som han ikke vet når skjer. Tenk om han sier feil ting.",
+    "no": "Tusen tanker svirrer i hodet til Elias, og det begynner å bli tungt å puste. Han tenker på de der hjemme, han tenker på asylsøknaden sin, han tenker på asylintervjuet han skal inn i, men som han ikke vet når skjer. Tenk om han sier feil ting.",
     "ar": "آلاف الخواطر تدور في رأس إلياس، وقد أصبح التنفس ثقيلاً. إنه يفكر في أهله وفي بلده، ويفكر في طلب لجوئه، ويفكر في الاستجواب الذي سيجريه، لكنه لا يعرف متى سيحصل. ماذا لو أخطأ في أقواله؟"
   },
   "story.shut.4": {

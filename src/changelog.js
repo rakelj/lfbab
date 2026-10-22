@@ -3,6 +3,16 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.2.4',
+    date: '22.10.2026',
+    items: [
+      'Aktiviteter: nytt valg «Vet ikke ennå» med spørsmålstegn, for deg som vil ha hjelp til å finne en aktivitet som passer.',
+      'Aktiviteter: nytt steg før oppsummeringen med tekst om å snakke med en ansatt (PLACEHOLDER til Bente har skrevet teksten).',
+      'Aktiviteter: oppsummeringen heter nå «Veien videre» og har en oppmuntrende setning for hver aktivitet du valgte, og en påminnelse om at ikke alle aktiviteter finnes alle steder, men at de ansatte kan hjelpe deg å finne ut hva som er mulig.',
+      'Elias-historien: «avhøret» er endret til «asylintervjuet».',
+    ],
+  },
+  {
     version: '0.2.3',
     date: '9.10.2026',
     items: [
