@@ -3,6 +3,16 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.2.6',
+    date: '22.10.2026',
+    items: [
+      'Rettighetene dine på mottaket: nytt steg om retten til å medvirke, og spørsmålet «Jeg får være med og bestemme i hverdagen min» med kort til en ansatt.',
+      'Nytt steg «Du skal bli behandlet med respekt» (personlig integritet: kultur, språk og religion).',
+      'Nytt steg «Har de ansatte lov til å holde meg fast?»: bare i en nødsituasjon.',
+      'Kapittelet slutter med «Dine plikter på mottaket» etter rettighetene.',
+    ],
+  },
+  {
     version: '0.2.5',
     date: '22.10.2026',
     items: [

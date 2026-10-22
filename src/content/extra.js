@@ -56,12 +56,21 @@ export const EXTRA_CHAPTERS = [
     steps: [
       { type: 'info', title: 'x.centre.intro.title', text: 'x.centre.intro.text', img: img('icon-handshake.png') },
       { type: 'self', id: 'x.centre.plan', img: img('icon-map.png') },
+      { type: 'info', title: 'x.centre.say.title', text: 'x.centre.say.text' },
+      { type: 'self', id: 'x.centre.say', img: img('thumbs-up.png') },
       { type: 'self', id: 'x.centre.info', img: img('icon-interpreter.png') },
+      { type: 'info', title: 'x.centre.respect.title', text: 'x.centre.respect.text' },
       { type: 'myth', id: 'x.centre.phone', correct: 'false' },
+      { type: 'info', title: 'x.centre.force.title', text: 'x.centre.force.text' },
       {
         type: 'summary',
         title: 'x.centre.summary.title',
         items: ['x.centre.summary.1', 'x.centre.summary.2', 'x.centre.summary.3', 'x.centre.summary.4', 'x.centre.summary.5'],
+      },
+      {
+        type: 'summary',
+        title: 'x.centre.duties.title',
+        items: ['x.centre.duties.1', 'x.centre.duties.2', 'x.centre.duties.3', 'x.centre.duties.4', 'x.centre.duties.5'],
       },
       { type: 'card', card: 'x.centre' },
     ],

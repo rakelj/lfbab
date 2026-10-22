@@ -1381,6 +1381,45 @@
     "no": "Det er helt vanlig å ikke vite det. Spør en ansatt du stoler på, så kan dere se på planen sammen.",
     "ar": "من الطبيعي تمامًا ألا تعرف. اسأل موظفًا تثق به، ويمكنكما الاطلاع على الخطة معًا."
   },
+  "x.centre.say.title": {
+    "context": "",
+    "no": "Du har rett til å medvirke",
+    "ar": "من حقك المشاركة"
+  },
+  "x.centre.say.text": {
+    "context": "From LFB's rights information",
+    "no": "Å medvirke betyr å være med og påvirke din egen hverdag. Mottaket skal sørge for at du blir hørt og får si din mening, for eksempel om leggetid, utetid, andre regler og aktivitetene du er med på.",
+    "ar": "المشاركة تعني أن تساهم في تشكيل حياتك اليومية. يجب على مركز الاستقبال أن يحرص على أن يُستمع إليك وأن تقول رأيك، مثلًا في موعد النوم، ووقت الخروج، والقواعد الأخرى، والأنشطة التي تشارك فيها."
+  },
+  "x.centre.say.q": {
+    "context": "Statement about own situation",
+    "no": "Jeg får være med og bestemme i hverdagen min.",
+    "ar": "أشارك في اتخاذ القرارات المتعلقة بحياتي اليومية."
+  },
+  "x.centre.say.right": {
+    "context": "From LFB's rights information",
+    "no": "Mottaket skal sørge for at du blir hørt, får si din mening og kan være med og påvirke det som skjer i hverdagen din.",
+    "ar": "يجب على مركز الاستقبال أن يحرص على أن يُستمع إليك، وأن تقول رأيك، وأن تشارك في التأثير على ما يحدث في حياتك اليومية."
+  },
+  "x.centre.say.staff": {
+    "context": "Shown to staff in NORWEGIAN only. Do not translate.",
+    "no": "Jeg vil gjerne si min mening om reglene og hverdagen her. Når kan vi snakke om det?"
+  },
+  "x.centre.say.validate.yes": {
+    "context": "Validation after answering",
+    "no": "Så bra! Fortsett å si hva du mener.",
+    "ar": "رائع! استمر في قول رأيك."
+  },
+  "x.centre.say.validate.no": {
+    "context": "Validation after answering",
+    "no": "Det er ikke din feil. Du har rett til å bli hørt, og det er lov å si fra om det.",
+    "ar": "هذا ليس ذنبك. من حقك أن يُستمع إليك، ويمكنك أن تقول ذلك."
+  },
+  "x.centre.say.validate.dontKnow": {
+    "context": "Validation after answering",
+    "no": "Det kan være vanskelig å vite. Du kan alltid spørre de ansatte om du kan være med og bestemme noe.",
+    "ar": "قد يكون من الصعب معرفة ذلك. يمكنك دائمًا أن تسأل الموظفين إن كان بإمكانك المشاركة في قرار ما."
+  },
   "x.centre.info.q": {
     "context": "Statement about own situation",
     "no": "Jeg får informasjon på et språk jeg forstår.",
@@ -1410,6 +1449,16 @@
     "no": "Det er mye ny informasjon å forstå. Det er lov å spørre igjen, og å be om tolk.",
     "ar": "هناك معلومات جديدة كثيرة يجب فهمها. من المسموح أن تسأل مرة أخرى، وأن تطلب مترجمًا."
   },
+  "x.centre.respect.title": {
+    "context": "",
+    "no": "Du skal bli behandlet med respekt",
+    "ar": "يجب أن تُعامَل باحترام"
+  },
+  "x.centre.respect.text": {
+    "context": "From LFB's rights information (personal integrity)",
+    "no": "De som jobber på mottaket skal være hyggelige, ta deg på alvor og passe på at du er trygg. De skal ta hensyn til hvor du kommer fra, språket ditt, religionen din og kulturen din. Det er lov å være den du er.",
+    "ar": "يجب على العاملين في مركز الاستقبال أن يكونوا لطفاء، وأن يأخذوك على محمل الجد، وأن يحرصوا على أن تكون آمنًا. ويجب أن يراعوا المكان الذي أتيت منه، ولغتك، ودينك، وثقافتك. من حقك أن تكون نفسك."
+  },
   "x.centre.phone.q": {
     "context": "Myth statement (correct answer: not true)",
     "no": "De ansatte har lov til å sjekke mobilen min når de vil.",
@@ -1419,6 +1468,16 @@
     "context": "From LFB's rights information",
     "no": "Du har rett til privatliv. De ansatte har vanligvis ikke lov til å lese dagboken din, åpne e-posten din, sjekke mobilen din eller gå gjennom tingene dine uten grunn.",
     "ar": "لديك الحق في الخصوصية. لا يُسمح للموظفين عادةً بقراءة مفكرتك، أو فتح بريدك الإلكتروني، أو تفتيش هاتفك المحمول، أو تصفح أشيائك دون سبب."
+  },
+  "x.centre.force.title": {
+    "context": "",
+    "no": "Har de ansatte lov til å holde meg fast?",
+    "ar": "هل يحق للموظفين أن يمسكوا بي بالقوة؟"
+  },
+  "x.centre.force.text": {
+    "context": "From LFB's rights information",
+    "no": "Nei, ikke som en vanlig del av hverdagen. Bare i en nødsituasjon kan de gripe inn for å hindre at du eller andre blir skadet. Hvis du mener de har brukt makt mot deg uten grunn, si fra til lederen på mottaket eller til representanten din.",
+    "ar": "لا، ليس كجزء عادي من الحياة اليومية. فقط في حالات الطوارئ يمكنهم التدخل لمنع تعرّضك أنت أو الآخرين للأذى. إذا كنت تعتقد أنهم استخدموا القوة ضدك دون سبب، فأخبر مدير مركز الاستقبال أو ممثّلك."
   },
   "x.centre.summary.title": {
     "context": "",
@@ -1449,6 +1508,36 @@
     "context": "",
     "no": "Privatliv. Tingene dine er dine.",
     "ar": "الخصوصية. أشياؤك ملكك."
+  },
+  "x.centre.duties.title": {
+    "context": "Heading of the duties list",
+    "no": "Dine plikter på mottaket:",
+    "ar": "واجباتك في مركز الاستقبال:"
+  },
+  "x.centre.duties.1": {
+    "context": "From LFB's rights information",
+    "no": "Følg reglene og rutinene på mottaket.",
+    "ar": "اتبع قواعد مركز الاستقبال ونظامه اليومي."
+  },
+  "x.centre.duties.2": {
+    "context": "From LFB's rights information (under 15 version)",
+    "no": "Ta hensyn til de du bor sammen med, så får alle det bedre.",
+    "ar": "راعِ من تعيش معهم، فيصبح الجميع في حال أفضل."
+  },
+  "x.centre.duties.3": {
+    "context": "From LFB's rights information (under 15 version)",
+    "no": "Gå på skolen og gjør det du blir bedt om, også når det er kjedelig.",
+    "ar": "اذهب إلى المدرسة وافعل ما يُطلب منك، حتى عندما يكون مملًّا."
+  },
+  "x.centre.duties.4": {
+    "context": "From LFB's rights information (under 15 version)",
+    "no": "Vær med på ting så mye du kan, selv om du ikke alltid har lyst.",
+    "ar": "شارِك في الأنشطة بقدر ما تستطيع، حتى لو لم تكن ترغب في ذلك دائمًا."
+  },
+  "x.centre.duties.5": {
+    "context": "From LFB's rights information (under 15 version)",
+    "no": "Blir du frustrert? Snakk med en voksen du stoler på.",
+    "ar": "هل تشعر بالإحباط؟ تحدّث مع شخص بالغ تثق به."
   },
   "x.centre.card": {
     "context": "Rights card text",

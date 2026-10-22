@@ -42,11 +42,12 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       (`x.safety.leave.text`, nå PLACEHOLDER).
 
 ### 7. Rettighetene dine på mottaket
-- [ ] Rett til medvirkning.
-- [ ] Rett til informasjon.
-- [ ] Personlig integritet.
-- [ ] Nytt punkt etterpå: «Dine plikter på mottaket». Hent tekst fra
-      dokumentene, og ta med mykere plikter som å vise respekt.
+- [x] Rett til medvirkning: infosteg og «Stemmer dette for deg?» (v0.2.6).
+- [x] Rett til informasjon: fantes fra før («Jeg får informasjon på et
+      språk jeg forstår»).
+- [x] Personlig integritet: «Du skal bli behandlet med respekt» og «Har de
+      ansatte lov til å holde meg fast?» (v0.2.6).
+- [x] «Dine plikter på mottaket» etter rettighetene (v0.2.6).
 
 ### 8. Rettigheter (og plikter) på slutten av hver del
 - [ ] Hver del slutter med rettighetene, og pliktene der det passer.
