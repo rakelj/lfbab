@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240">
+  <rect x="4" y="4" width="392" height="232" rx="24" fill="#e9e5f1" stroke="#9489ac" stroke-width="3" stroke-dasharray="12 8"/>
+  <text x="200" y="112" text-anchor="middle" font-family="system-ui, sans-serif" font-size="30" font-weight="700" fill="#5b4e7c">PLACEHOLDER</text>
+  <text x="200" y="150" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" fill="#5b4e7c">Felles illustrasjon for rettighetene</text>
+</svg>

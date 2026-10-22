@@ -521,6 +521,45 @@ export function SummaryStep({ step, onNext, onBack }) {
   )
 }
 
+// Last screen before the rights card in every chapter: what you have a right
+// to, and your duties where they apply. All chapters use the same picture.
+export function RightsStep({ step, onNext, onBack }) {
+  const { t } = useI18n()
+  const { duties } = step
+  return (
+    <>
+      <img className="illustration" src={img('rights-placeholder.svg')} alt="" />
+      <h1>
+        {t(step.title)} <Speak text={[t(step.title), ...step.items.map((k) => t(k))].join(' ')} />
+      </h1>
+      <ul className="summary">
+        {step.items.map((k) => (
+          <li key={k}>{t(k)}</li>
+        ))}
+      </ul>
+      {step.note && (
+        <p className="reassure">
+          {t(step.note)} <Speak text={t(step.note)} />
+        </p>
+      )}
+      {duties && (
+        <>
+          <h2>
+            {t(duties.title)} <Speak text={[t(duties.title), ...duties.items.map((k) => t(k))].join(' ')} />
+          </h2>
+          <ul className="summary">
+            {duties.items.map((k) => (
+              <li key={k}>{t(k)}</li>
+            ))}
+          </ul>
+        </>
+      )}
+      {step.staff && <StaffCard textKey={step.staff} />}
+      <StepNav onBack={onBack} onNext={onNext} />
+    </>
+  )
+}
+
 export function CardStep({ step, onComplete, onExit, onGame }) {
   const { t } = useI18n()
   const card = RIGHTS_CARDS[step.card]

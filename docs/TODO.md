@@ -50,9 +50,12 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
 - [x] «Dine plikter på mottaket» etter rettighetene (v0.2.6).
 
 ### 8. Rettigheter (og plikter) på slutten av hver del
-- [ ] Hver del slutter med rettighetene, og pliktene der det passer.
-- [ ] Samme illustrasjon på alle disse sluttskjermene. Legg inn en
-      PLACEHOLDER til illustratøren har laget den.
+- [x] Hver del slutter med skjermen «Du har rett til», og pliktene der det
+      passer (v0.2.7).
+- [x] Samme illustrasjon på alle sluttskjermene, nå PLACEHOLDER
+      (`public/img/rights-placeholder.svg`) (v0.2.7).
+- [ ] Illustratøren lager den felles illustrasjonen. Bytt ut
+      `rights-placeholder.svg` i `RightsStep` (src/steps/Steps.jsx).
 
 ### 9. Hele appen: alle situasjonene fra tekstene
 - [x] Alle situasjonene samlet i Google-dokumentet «Alle situasjoner fra

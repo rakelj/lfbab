@@ -40,9 +40,10 @@ export const EXTRA_CHAPTERS = [
       // a PLACEHOLDER until LFB has written what applies.
       { type: 'info', title: 'x.safety.leave.title', text: 'x.safety.leave.text', img: img('icon-map.png') },
       {
-        type: 'summary',
-        title: 'x.safety.duties.title',
-        items: ['x.safety.duties.1', 'x.safety.duties.2', 'x.safety.duties.3'],
+        type: 'rights',
+        title: 'rights.title',
+        items: ['x.safety.rights.1', 'x.safety.rights.2', 'x.safety.rights.3'],
+        duties: { title: 'x.safety.duties.title', items: ['x.safety.duties.1', 'x.safety.duties.2', 'x.safety.duties.3'] },
       },
       { type: 'card', card: 'x.safety' },
     ],
@@ -63,14 +64,13 @@ export const EXTRA_CHAPTERS = [
       { type: 'myth', id: 'x.centre.phone', correct: 'false' },
       { type: 'info', title: 'x.centre.force.title', text: 'x.centre.force.text' },
       {
-        type: 'summary',
+        type: 'rights',
         title: 'x.centre.summary.title',
         items: ['x.centre.summary.1', 'x.centre.summary.2', 'x.centre.summary.3', 'x.centre.summary.4', 'x.centre.summary.5'],
-      },
-      {
-        type: 'summary',
-        title: 'x.centre.duties.title',
-        items: ['x.centre.duties.1', 'x.centre.duties.2', 'x.centre.duties.3', 'x.centre.duties.4', 'x.centre.duties.5'],
+        duties: {
+          title: 'x.centre.duties.title',
+          items: ['x.centre.duties.1', 'x.centre.duties.2', 'x.centre.duties.3', 'x.centre.duties.4', 'x.centre.duties.5'],
+        },
       },
       { type: 'card', card: 'x.centre' },
     ],
@@ -91,6 +91,7 @@ export const EXTRA_CHAPTERS = [
         items: ['x.cws.summary.1', 'x.cws.summary.2', 'x.cws.summary.3'],
         staff: 'x.cws.staff',
       },
+      { type: 'rights', title: 'rights.title', items: ['x.cws.rights.1', 'x.cws.rights.2'] },
       { type: 'card', card: 'x.cws' },
     ],
   },
@@ -105,6 +106,7 @@ export const EXTRA_CHAPTERS = [
       { type: 'myth', id: 'x.money.rent', correct: 'false' },
       { type: 'info', title: 'x.money.school.title', text: 'x.money.school.text', img: img('activity-learn.jpg') },
       { type: 'self', id: 'x.money.inschool' },
+      { type: 'rights', title: 'rights.title', items: ['x.money.rights.1', 'x.money.rights.2', 'x.money.rights.3'] },
       { type: 'card', card: 'x.money' },
     ],
   },
@@ -118,6 +120,7 @@ export const EXTRA_CHAPTERS = [
     steps: [
       { type: 'info', title: 'x.complain.intro.title', text: 'x.complain.intro.text', img: img('thumbs-up.png') },
       { type: 'routes', title: 'x.complain.routes.title', routes: ['x.complain.r1', 'x.complain.r2', 'x.complain.r3', 'x.complain.r4'] },
+      { type: 'rights', title: 'rights.title', items: ['x.complain.rights.1', 'x.complain.rights.2', 'x.complain.rights.3'] },
       { type: 'card', card: 'x.complain' },
     ],
   },

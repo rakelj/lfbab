@@ -89,7 +89,8 @@ export const SITUATIONS = [
 ]
 
 // Step types: info, self (true for you?), myth (did you know?), chain,
-// storyChoice, story, emotions, helpers, summary, activities, activitySummary, card.
+// storyChoice, story, emotions, helpers, summary, activities, activitySummary,
+// rights (last screen before the card, same picture in every chapter), card.
 // Steps with an `id` keep their answer while the chapter is open; later steps
 // can read earlier answers (e.g. which story was chosen).
 export const CHAPTERS = [
@@ -105,7 +106,7 @@ export const CHAPTERS = [
       { type: 'self', id: 'ch1.interpreter', img: img('icon-interpreter.png') },
       { type: 'myth', id: 'ch1.complain', correct: 'false' },
       {
-        type: 'summary',
+        type: 'rights',
         title: 'ch1.summary.title',
         items: ['ch1.summary.1', 'ch1.summary.2', 'ch1.summary.3', 'ch1.summary.4', 'ch1.summary.5', 'ch1.summary.6'],
         note: 'ch1.summary.note',
@@ -135,6 +136,7 @@ export const CHAPTERS = [
         items: ['ch2.summary.1', 'ch2.summary.2', 'ch2.summary.3', 'ch2.summary.4'],
         staff: 'ch2.staff',
       },
+      { type: 'rights', title: 'rights.title', items: ['ch2.rights.1', 'ch2.rights.2', 'ch2.rights.3', 'ch2.rights.4'] },
       { type: 'card', card: 'health', offerGame: true },
     ],
   },
@@ -156,6 +158,7 @@ export const CHAPTERS = [
         title: 'ch3.summary.title',
         items: ['ch3.summary.1', 'ch3.summary.2', 'ch3.summary.3', 'ch3.summary.4'],
       },
+      { type: 'rights', title: 'rights.title', items: ['ch3.rights.1', 'ch3.rights.2', 'ch3.rights.3'] },
       { type: 'card', card: 'activities' },
     ],
   },

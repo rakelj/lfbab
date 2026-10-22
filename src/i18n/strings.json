@@ -436,6 +436,11 @@
     "no": "Får du ikke kontakt med representanten din? Si ifra til de ansatte på mottaket.",
     "ar": "لا تستطيع التواصل مع ممثلك؟ أخبر الموظفين في مركز الاستقبال."
   },
+  "rights.title": {
+    "context": "Heading of the rights screen at the end of a chapter",
+    "no": "Du har rett til:",
+    "ar": "لديك الحق في:"
+  },
   "ch2.intro.title": {
     "context": "",
     "no": "Du har rett til helsehjelp",
@@ -520,6 +525,26 @@
     "context": "",
     "no": "Du er ikke alene om hvordan du har det.",
     "ar": "لست وحدك في ما تشعر به."
+  },
+  "ch2.rights.1": {
+    "context": "Rights screen at the end of the chapter (from the workshop)",
+    "no": "Helsehjelp for både kropp og hode",
+    "ar": "الرعاية الصحية للجسد والعقل"
+  },
+  "ch2.rights.2": {
+    "context": "Rights screen at the end of the chapter (from the workshop)",
+    "no": "Gratis lege, psykolog, fysioterapeut og sykehus hvis du er under 16 år",
+    "ar": "طبيب وطبيب نفسي وعلاج طبيعي ومستشفى مجانًا إذا كان عمرك أقل من 16 عامًا"
+  },
+  "ch2.rights.3": {
+    "context": "Rights screen at the end of the chapter (from the workshop)",
+    "no": "Gratis tannlege til og med året du fyller 18, unntatt tannregulering",
+    "ar": "طبيب أسنان مجانًا حتى نهاية السنة التي تبلغ فيها 18 عامًا، باستثناء تقويم الأسنان"
+  },
+  "ch2.rights.4": {
+    "context": "Rights screen at the end of the chapter (from the workshop)",
+    "no": "Akutt hjelp, som legevakt og ambulanse",
+    "ar": "المساعدة العاجلة، مثل الطوارئ والإسعاف"
   },
   "ch2.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
@@ -1029,6 +1054,21 @@
     "no": "Mottaket kan hjelpe deg å få det til.",
     "ar": "يمكن لمركز الاستقبال أن يساعدك على تحقيق ذلك."
   },
+  "ch3.rights.1": {
+    "context": "Rights screen at the end of the chapter",
+    "no": "Fritid, lek og aktiviteter, også når du bor på mottak",
+    "ar": "وقت الفراغ واللعب والأنشطة، حتى عندما تقيم في مركز استقبال"
+  },
+  "ch3.rights.2": {
+    "context": "Rights screen at the end of the chapter",
+    "no": "Støtte til en fritidsaktivitet, både praktisk og med penger",
+    "ar": "الدعم لنشاط ترفيهي، عمليًا وماليًا"
+  },
+  "ch3.rights.3": {
+    "context": "Rights screen at the end of the chapter",
+    "no": "Hjelp fra de ansatte til å finne ut hva som finnes der du bor",
+    "ar": "مساعدة الموظفين في معرفة ما هو متاح في المكان الذي تقيم فيه"
+  },
   "card.activities": {
     "context": "Rights card text",
     "no": "Jeg har rett til fritidsaktiviteter",
@@ -1292,6 +1332,21 @@
     "context": "From LFB's rights information",
     "no": "Si fra når du trenger hjelp, eller når noe ikke er trygt.",
     "ar": "أخبر الآخرين عندما تحتاج إلى مساعدة، أو عندما يكون هناك شيء غير آمن."
+  },
+  "x.safety.rights.1": {
+    "context": "Rights screen at the end of the chapter",
+    "no": "Å være trygg",
+    "ar": "أن تكون آمنًا"
+  },
+  "x.safety.rights.2": {
+    "context": "Rights screen at the end of the chapter",
+    "no": "Å bestemme over din egen kropp, vennene dine og telefonen din",
+    "ar": "أن تقرر بنفسك بشأن جسدك وأصدقائك وهاتفك"
+  },
+  "x.safety.rights.3": {
+    "context": "Rights screen at the end of the chapter",
+    "no": "Hjelp med én gang hvis noe skjer",
+    "ar": "المساعدة فورًا إذا حدث شيء ما"
   },
   "x.safety.summary.title": {
     "context": "",
@@ -1604,6 +1659,16 @@
     "no": "Ring barnevernet i kommunen der du bor",
     "ar": "اتصل بمؤسسة حماية الأطفال في البلدية التي تقيم فيها"
   },
+  "x.cws.rights.1": {
+    "context": "Rights screen at the end of the chapter",
+    "no": "Hjelp fra barnevernet hvis du ikke er trygg eller ikke får den omsorgen du trenger",
+    "ar": "مساعدة مؤسسة حماية الأطفال إذا لم تكن آمنًا أو لم تحصل على الرعاية التي تحتاجها"
+  },
+  "x.cws.rights.2": {
+    "context": "Rights screen at the end of the chapter",
+    "no": "Å få hjelp uten at det påvirker asylsaken din",
+    "ar": "أن تحصل على المساعدة دون أن يؤثر ذلك على قضية لجوئك"
+  },
   "x.cws.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
     "no": "Jeg vil gjerne snakke med barnevernet. Kan du hjelpe meg å kontakte dem?"
@@ -1682,6 +1747,21 @@
     "no": "Det kan være vanskelig å vite hva som teller som opplæring. Spør en ansatt, så finner dere ut av det sammen.",
     "ar": "قد يكون من الصعب معرفة ما يُعدّ تعليمًا. اسأل أحد الموظفين، وستعرفان الجواب معًا."
   },
+  "x.money.rights.1": {
+    "context": "Rights screen at the end of the chapter",
+    "no": "Penger til mat, reiser, lege, telefon, klær og fritid",
+    "ar": "المال للطعام والتنقل والطبيب والهاتف والملابس ووقت الفراغ"
+  },
+  "x.money.rights.2": {
+    "context": "Rights screen at the end of the chapter",
+    "no": "Å bo på mottaket uten å betale for det",
+    "ar": "أن تقيم في مركز الاستقبال دون أن تدفع مقابل ذلك"
+  },
+  "x.money.rights.3": {
+    "context": "Rights screen at the end of the chapter",
+    "no": "Gratis skole, og ekstra språkopplæring hvis du trenger det",
+    "ar": "مدرسة مجانية، وتعليم إضافي للغة إذا كنت تحتاج إليه"
+  },
   "x.money.card": {
     "context": "Rights card text",
     "no": "Jeg har rett til skole og penger til hverdagen",
@@ -1751,6 +1831,21 @@
     "context": "From LFB's rights information",
     "no": "Ring Alarmtelefonen 116 111. Den er gratis, åpen hele døgnet og anonym. Hvis det haster: ring 113 for ambulanse eller 112 for politi.",
     "ar": "اتصل بهاتف الطوارئ للأطفال والشباب 116 111. الخدمة مجانية ومتاحة على مدار الساعة ومجهولة الهوية. في حالة الطوارئ: اتصل بالرقم 113 للإسعاف أو 112 للشرطة."
+  },
+  "x.complain.rights.1": {
+    "context": "Rights screen at the end of the chapter",
+    "no": "Å si fra når noe er feil",
+    "ar": "أن تقول إن هناك شيئًا خاطئًا"
+  },
+  "x.complain.rights.2": {
+    "context": "Rights screen at the end of the chapter",
+    "no": "Å klage hvis du ikke får det du har rett til",
+    "ar": "أن تقدّم شكوى إذا لم تحصل على ما هو من حقك"
+  },
+  "x.complain.rights.3": {
+    "context": "Rights screen at the end of the chapter",
+    "no": "Hjelp til å klage fra de ansatte eller representanten din",
+    "ar": "المساعدة في تقديم الشكوى من الموظفين أو من ممثّلك"
   },
   "x.complain.card": {
     "context": "Rights card text",

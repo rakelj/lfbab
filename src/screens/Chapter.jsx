@@ -3,7 +3,7 @@ import { useI18n } from '../i18n/I18n.jsx'
 import Dots from '../components/Dots.jsx'
 import {
   InfoStep, SelfStep, MythStep, ChainStep, StoryChoiceStep, StoryStep, EmotionsStep, HelpersStep,
-  ActivitiesStep, ActivitySummaryStep, RoutesStep, SummaryStep, CardStep, StoryAgainStep, FirstStep,
+  ActivitiesStep, ActivitySummaryStep, RoutesStep, SummaryStep, RightsStep, CardStep, StoryAgainStep, FirstStep,
 } from '../steps/Steps.jsx'
 
 const STEPS = {
@@ -21,6 +21,7 @@ const STEPS = {
   emotions: EmotionsStep,
   helpers: HelpersStep,
   summary: SummaryStep,
+  rights: RightsStep,
   card: CardStep,
 }
 

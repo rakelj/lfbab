@@ -3,6 +3,15 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.2.7',
+    date: '22.10.2026',
+    items: [
+      'Alle temaene slutter nå med en egen skjerm «Du har rett til» rett før rettighetskortet, med samme illustrasjon overalt (PLACEHOLDER til illustratøren har laget den).',
+      'Der det passer står pliktene på samme skjerm: Trygghet («Dine plikter») og Rettighetene dine på mottaket («Dine plikter på mottaket»).',
+      'Nye rettighetslister for Kropp og hode (blant annet gratis tannlege til 18 år og akutt hjelp), Hva liker du å gjøre?, Trygghet, Barnevernet, Penger og skole og Hvordan klage. Representanten bruker listen «Representanten skal».',
+    ],
+  },
+  {
     version: '0.2.6',
     date: '22.10.2026',
     items: [
