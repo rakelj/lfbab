@@ -51,9 +51,12 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       PLACEHOLDER til illustratøren har laget den.
 
 ### 9. Hele appen: alle situasjonene fra tekstene
-- [ ] Gå gjennom rettighetsdokumentene og workshopen, skriv ut alle
-      situasjonene som finnes, og gjør appen komplett. Vis listen til LFB
-      før vi bygger.
+- [x] Alle situasjonene samlet i Google-dokumentet «Alle situasjoner fra
+      tekstene» (LFB-mappen i Drive). Et oppslagsverk, ikke noe som må
+      godkjennes. Valg: appen er for enslige 15–18 på mottak; det som bare
+      gjelder omsorgssenter eller familie, venter.
+- [ ] Bygg inn situasjonene merket Nei/Delvis, tema for tema (punkt 6, 7
+      og 8 bruker listen). LFB sjekker tekstene i tekstarket som vanlig.
 
 ### 10. Rekkefølgen på temaene i oversikten
 - [ ] Venter på tilbakemelding fra Bente.
