@@ -264,6 +264,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
 .reassure { font-weight: 600; color: var(--purple); font-size: 1.05rem; }
 .right-box { background: var(--card); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); margin-top: 8px; }
 .right-box p { margin: 4px 0 0; font-size: 1.05rem; }
+.note { background: var(--lavender-light); border-radius: var(--radius); padding: 12px 16px; }
 .summary { padding-inline-start: 1.2em; font-size: 1.1rem; }
 .summary li { margin: 6px 0; }
 .summary li::marker { color: var(--sage); }
@@ -456,6 +457,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
 .activity-img.cutout { background: var(--pink); display: grid; place-items: center; }
 .activity-img.cutout img { height: auto; object-fit: contain; padding: 8px; }
 .activity-label { font-weight: 600; font-size: 0.95rem; line-height: 1.25; }
+.activity-img.question {
+  background: var(--lavender-light); display: grid; place-items: center;
+  color: var(--purple); font-size: 3.5rem; font-weight: 700;
+}
 .activity-card.selected .activity-img { border-color: var(--purple); transform: scale(1.04); box-shadow: 0 0 0 3px var(--pink); }
 
 /* Validation after a "true for you?" answer */

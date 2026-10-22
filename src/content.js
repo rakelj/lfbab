@@ -49,6 +49,8 @@ export const ACTIVITIES = [
   { id: 'games', img: img('activity-games.jpg') },
   { id: 'learn', img: img('activity-learn.jpg') },
   { id: 'social', img: img('friends.png'), cutout: true },
+  // Not decided yet: a question mark instead of a picture.
+  { id: 'other', question: true },
 ]
 
 // Stories from LFB's workshop, in LFB's own words (so their translations line
@@ -145,9 +147,12 @@ export const CHAPTERS = [
       { type: 'info', title: 'ch3.intro.title', text: 'ch3.intro.text', img: img('sunny-tree.png') },
       { type: 'activities', id: 'ch3.activities' },
       { type: 'myth', id: 'ch3.cost', correct: 'false' },
+      { type: 'info', title: 'ch3.ask.title', text: 'ch3.ask.text', img: img('icon-care.png') },
       {
         type: 'activitySummary',
         activitiesFrom: 'ch3.activities',
+        nextTitle: 'ch3.next.title',
+        disclaimer: 'ch3.next.disclaimer',
         title: 'ch3.summary.title',
         items: ['ch3.summary.1', 'ch3.summary.2', 'ch3.summary.3', 'ch3.summary.4'],
       },
