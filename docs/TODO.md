@@ -34,9 +34,12 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
 - [ ] Gjør tydelig at å be om hjelp ikke påvirker asylsaken.
 
 ### 6. Trygghet
-- [ ] Ta med plikter også, for eksempel «Kan jeg dra fra mottaket når jeg
-      vil og bli borte så lenge jeg vil?»
-- [ ] Ta inn alle situasjonene fra rettighetsdokumentene.
+- [x] Plikter: «Kan jeg dra fra mottaket når jeg vil?» og «Dine plikter»
+      (v0.2.5).
+- [x] Situasjonene fra dokumentene: negativ sosial kontroll i familien,
+      «Kroppen din er din», politiet 112 og anonym chat (v0.2.5).
+- [ ] LFB skriver svaret på «Kan jeg dra fra mottaket når jeg vil?»
+      (`x.safety.leave.text`, nå PLACEHOLDER).
 
 ### 7. Rettighetene dine på mottaket
 - [ ] Rett til medvirkning.

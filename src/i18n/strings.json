@@ -1243,6 +1243,56 @@
     "no": "Ingen har lov til å slå deg, true deg, skade deg eller gjøre noe annet med kroppen din som du ikke vil selv. Det gjelder alle.",
     "ar": "لا يُسمح لأحد بضربك، أو تهديدك، أو إيذائك، أو القيام بشيء آخر بجسمك لا تريده. وهذا ينطبق على الجميع."
   },
+  "x.safety.family.q": {
+    "context": "Myth statement (correct answer: not true)",
+    "no": "Familien min har lov til å bestemme hvem jeg er venner med, og til å sjekke telefonen min.",
+    "ar": "يحق لعائلتي أن تقرر من هم أصدقائي، وأن تفتّش هاتفي."
+  },
+  "x.safety.family.right": {
+    "context": "From LFB's rights information (family version)",
+    "no": "Ingen har lov til å nekte deg å ha venner, nekte deg å gå på skolen eller overvåke telefonen din. Det gjelder også familien din. Det kalles negativ sosial kontroll.",
+    "ar": "لا يحق لأحد أن يمنعك من الأصدقاء، أو يمنعك من الذهاب إلى المدرسة، أو يراقب هاتفك. وهذا ينطبق أيضًا على عائلتك. يُسمّى هذا السيطرة الاجتماعية السلبية."
+  },
+  "x.safety.body.title": {
+    "context": "",
+    "no": "Kroppen din er din",
+    "ar": "جسدك ملكك"
+  },
+  "x.safety.body.text": {
+    "context": "From LFB's rights information (family version)",
+    "no": "Ingen har lov til å ta på deg på en måte du ikke vil, vise deg nakenbilder eller porno, eller presse deg til noe seksuelt. Det gjelder både voksne og andre ungdommer. Hvis det skjer, er det aldri din skyld.",
+    "ar": "لا يحق لأحد أن يلمسك بطريقة لا تريدها، أو يريك صورًا عارية أو إباحية، أو يضغط عليك لفعل شيء جنسي. وهذا ينطبق على الكبار وعلى الشباب الآخرين. إذا حدث ذلك، فليس ذنبك أبدًا."
+  },
+  "x.safety.leave.title": {
+    "context": "",
+    "no": "Kan jeg dra fra mottaket når jeg vil?",
+    "ar": "هل يمكنني مغادرة مركز الاستقبال متى أردت؟"
+  },
+  "x.safety.leave.text": {
+    "context": "PLACEHOLDER, LFB to write what actually applies (from the workshop notes)",
+    "no": "[PLACEHOLDER] Mottaket skal vite hvor du er. Si fra til de ansatte når du drar, og når du kommer tilbake. Hvis ingen vet hvor du er, blir de bekymret og tar kontakt med representanten din.",
+    "ar": "[PLACEHOLDER] يجب أن يعرف مركز الاستقبال أين أنت. أخبر الموظفين عندما تغادر وعندما تعود. إذا لم يعرف أحد أين أنت، سيقلقون ويتصلون بممثّلك."
+  },
+  "x.safety.duties.title": {
+    "context": "Heading of the duties list",
+    "no": "Dine plikter:",
+    "ar": "واجباتك:"
+  },
+  "x.safety.duties.1": {
+    "context": "From LFB's rights information",
+    "no": "Følg reglene på mottaket og lovene i Norge.",
+    "ar": "اتبع قواعد مركز الاستقبال وقوانين النرويج."
+  },
+  "x.safety.duties.2": {
+    "context": "From the workshop notes (respect)",
+    "no": "Vis respekt for de du bor sammen med, både andre beboere og de ansatte.",
+    "ar": "احترم من تعيش معهم، سواء المقيمين الآخرين أو الموظفين."
+  },
+  "x.safety.duties.3": {
+    "context": "From LFB's rights information",
+    "no": "Si fra når du trenger hjelp, eller når noe ikke er trygt.",
+    "ar": "أخبر الآخرين عندما تحتاج إلى مساعدة، أو عندما يكون هناك شيء غير آمن."
+  },
   "x.safety.summary.title": {
     "context": "",
     "no": "Hvis noe skjer:",
@@ -1262,6 +1312,16 @@
     "context": "",
     "no": "Vil du ikke si fra til noen av dem? Ring Alarmtelefonen 116 111. Den er gratis, åpen hele døgnet og anonym.",
     "ar": "لا تريد إخبار أيٍّ منهم؟ اتصل بهاتف الطوارئ للأطفال والشباب 116 111. الخدمة مجانية ومتاحة على مدار الساعة ومجهولة الهوية."
+  },
+  "x.safety.summary.4": {
+    "context": "From LFB's rights information (family version)",
+    "no": "Er noen i fare akkurat nå? Ring politiet på 112.",
+    "ar": "هل هناك شخص في خطر الآن؟ اتصل بالشرطة على الرقم 112."
+  },
+  "x.safety.summary.5": {
+    "context": "From LFB's rights information (family version)",
+    "no": "Du kan også chatte anonymt med Alarmtelefonen på 116111.no.",
+    "ar": "يمكنك أيضًا الدردشة مع هاتف النجدة دون ذكر اسمك على 116111.no."
   },
   "x.safety.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
@@ -1977,6 +2037,21 @@
     "context": "DRAFT, needs LFB review. Validation after answering a myth question",
     "no": "Regler kan være forskjellige fra sted til sted, så det er lurt å spørre. Her er svaret.",
     "ar": "قد تختلف القواعد من مكان إلى آخر، لذا من الجيد أن تسأل. هذه هي الإجابة."
+  },
+  "x.safety.family.validate.true": {
+    "context": "Validation after answering a myth question",
+    "no": "Mange har lært at familien bestemmer over slike ting. Det er forståelig, men i Norge har du rett til å bestemme selv.",
+    "ar": "كثيرون تعلّموا أن العائلة تقرر مثل هذه الأمور. هذا مفهوم، لكن في النرويج لك الحق في أن تقرر بنفسك."
+  },
+  "x.safety.family.validate.false": {
+    "context": "Validation after answering a myth question",
+    "no": "Helt riktig! Ingen har lov til å kontrollere deg på den måten, heller ikke familien din.",
+    "ar": "صحيح تمامًا! لا يحق لأحد أن يسيطر عليك بهذه الطريقة، ولا حتى عائلتك."
+  },
+  "x.safety.family.validate.dontKnow": {
+    "context": "Validation after answering a myth question",
+    "no": "Det er vanlig å være usikker på dette. Nå får du vite det.",
+    "ar": "من الطبيعي ألّا تكون متأكدًا من هذا. الآن ستعرف."
   },
   "x.centre.phone.validate.true": {
     "context": "DRAFT, needs LFB review. Validation after answering a myth question",

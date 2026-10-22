@@ -3,6 +3,16 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.2.5',
+    date: '22.10.2026',
+    items: [
+      'Trygghet: ny påstand om at familien ikke har lov til å bestemme over venner og telefon (negativ sosial kontroll).',
+      'Trygghet: nytt steg «Kroppen din er din» om at ingen har lov til å ta på deg eller presse deg til noe seksuelt, og at det aldri er din skyld.',
+      '«Hvis noe skjer»: to nye punkter, politiet på 112 og anonym chat på 116111.no.',
+      'Plikter: nytt steg «Kan jeg dra fra mottaket når jeg vil?» (PLACEHOLDER til LFB har skrevet svaret) og listen «Dine plikter».',
+    ],
+  },
+  {
     version: '0.2.4',
     date: '22.10.2026',
     items: [

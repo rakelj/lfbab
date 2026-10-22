@@ -27,12 +27,22 @@ export const EXTRA_CHAPTERS = [
     steps: [
       { type: 'info', title: 'x.safety.intro.title', text: 'x.safety.intro.text', img: img('icon-care.png') },
       { type: 'info', title: 'x.safety.nsc.title', text: 'x.safety.nsc.text' },
+      { type: 'myth', id: 'x.safety.family', correct: 'false' },
       { type: 'myth', id: 'x.safety.hit', correct: 'false' },
+      { type: 'info', title: 'x.safety.body.title', text: 'x.safety.body.text' },
       {
         type: 'summary',
         title: 'x.safety.summary.title',
-        items: ['x.safety.summary.1', 'x.safety.summary.2', 'x.safety.summary.3'],
+        items: ['x.safety.summary.1', 'x.safety.summary.2', 'x.safety.summary.3', 'x.safety.summary.4', 'x.safety.summary.5'],
         staff: 'x.safety.staff',
+      },
+      // Duties, from the workshop notes. The answer about leaving the centre is
+      // a PLACEHOLDER until LFB has written what applies.
+      { type: 'info', title: 'x.safety.leave.title', text: 'x.safety.leave.text', img: img('icon-map.png') },
+      {
+        type: 'summary',
+        title: 'x.safety.duties.title',
+        items: ['x.safety.duties.1', 'x.safety.duties.2', 'x.safety.duties.3'],
       },
       { type: 'card', card: 'x.safety' },
     ],
