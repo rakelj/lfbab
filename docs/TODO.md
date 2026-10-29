@@ -89,8 +89,8 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       for hver: beholde eller endre.
 - [ ] Aktørkortene som snus: Ina lager forsider uten skrift, appen legger
       på navnet som tekst (alle språk).
-- [ ] Følelseskortene: brukes fortsatt i «Hva tror du {navn} føler?».
-      Skal steget fjernes?
+- [ ] Følelseskortene beholdes (steget «Hva tror du {navn} føler?»). Ina
+      lager versjoner uten skrift, appen legger på ordet som tekst.
 
 ## Fra tidligere økter
 - [ ] Oversikten over UDI, Bufdir og aktørene (lysark 8, «Hvem er vi i
