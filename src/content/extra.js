@@ -31,6 +31,7 @@ export const EXTRA_CHAPTERS = [
       // Duties, from the workshop notes. The answer about leaving the centre is
       // a PLACEHOLDER until LFB has written what applies.
       { type: 'info', title: 'x.safety.leave.title', text: 'x.safety.leave.text', img: img('icon-map.png') },
+      { type: 'info', title: 'x.safety.car.title', text: 'x.safety.car.text' },
       {
         type: 'rights',
         title: 'rights.title',
@@ -81,6 +82,7 @@ export const EXTRA_CHAPTERS = [
         items: ['x.cws.summary.1', 'x.cws.summary.2', 'x.cws.summary.3'],
         staff: 'x.cws.staff',
       },
+      { type: 'info', title: 'x.cws.what.title', text: 'x.cws.what.text' },
       { type: 'rights', title: 'rights.title', items: ['x.cws.rights.1', 'x.cws.rights.2'] },
     ],
   },

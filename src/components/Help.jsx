@@ -5,6 +5,7 @@ import { Speak } from './Sound.jsx'
 
 const OPTIONS = [
   { key: 'staff' },
+  { key: 'rep' },
   { key: 'alarm', href: 'tel:116111' },
   { key: 'emergency', href: 'tel:113' },
   { key: 'lfb', href: 'mailto:post@barnevernsbarna.no' },

@@ -69,6 +69,16 @@
     "no": "Snakk med en voksen du stoler på der du bor.",
     "ar": "تحدّث إلى شخص بالغ تثق به في المكان الذي تقيم فيه."
   },
+  "help.rep.title": {
+    "context": "Help button: option after the centre staff",
+    "no": "Representanten din",
+    "ar": "ممثّلك"
+  },
+  "help.rep.text": {
+    "context": "Help button",
+    "no": "Ring eller send sms til representanten din.",
+    "ar": "اتصل بممثّلك أو أرسل له رسالة نصية."
+  },
   "help.alarm.title": {
     "context": "Help option: national helpline for children (name of service)",
     "no": "Alarmtelefonen for barn og unge",
@@ -121,7 +131,7 @@
   },
   "intro.2.text": {
     "context": "",
-    "no": "LFB jobber for at barn og unge skal få rettighetene sine. Vi jobber ikke for UDI, og vi bestemmer ingenting i asylsaken din.",
+    "no": "LFB er en demokratisk medlemsorganisasjon som jobber for at barn og unge skal få rettighetene sine. Vi jobber ikke for UDI, og vi bestemmer ingenting i asylsaken din.",
     "ar": "تعمل LFB من أجل أن يحصل الأطفال والشباب على حقوقهم. نحن لا نعمل لصالح دائرة الأجانب (UDI)، ولا نقرر أي شيء في قضية لجوئك."
   },
   "intro.3.title": {
@@ -291,7 +301,7 @@
   },
   "ch1.intro.text": {
     "context": "",
-    "no": "Alle under 18 år som er i Norge uten foreldre, skal ha en representant. Statsforvalteren gir deg en representant når du kommer til Norge. Representanten skal passe på at rettighetene dine blir møtt.",
+    "no": "Alle under 18 år som er i Norge uten foreldre, skal ha en representant. Statsforvalteren gir deg en representant når du kommer til Norge. Representanten skal passe på at rettighetene dine blir møtt og at du får den hjelpen du har krav på.",
     "ar": "يجب أن يكون لكل من هو دون 18 عامًا وموجود في النرويج دون والديه ممثلٌ. يعيّن حاكم المقاطعة ممثلاً لك عندما تأتي إلى النرويج. مهمة الممثل هي التأكد من حصولك على حقوقك."
   },
   "ch1.met.q": {
@@ -447,9 +457,9 @@
     "ar": "يمكنك اختيار أكثر من شعور."
   },
   "ch2.helpers.after": {
-    "context": "After choosing helpers",
-    "no": "Det finnes mange veier til hjelp. En ansatt på mottaket eller representanten er et godt sted å starte. De kan hjelpe deg videre til lege eller psykolog.",
-    "ar": "هناك طرق كثيرة للحصول على المساعدة. الموظف في مركز الاستقبال أو الممثل مكان جيد للبدء، ويمكنهم أن يوصلوك إلى طبيب أو أخصائي نفسي."
+    "context": "After choosing helpers. About the story's main character, not the reader. {name} is the main character.",
+    "no": "Det finnes mange veier til hjelp. En ansatt på mottaket eller representanten er et godt sted for {name} å starte. De kan hjelpe {name} videre til lege eller psykolog.",
+    "ar": "هناك طرق كثيرة للحصول على المساعدة. الموظف في مركز الاستقبال أو الممثل مكان جيد ليبدأ منه {name}، ويمكنهم أن يوصلوا {name} إلى طبيب أو أخصائي نفسي."
   },
   "ch2.summary.title": {
     "context": "Chapter 2 summary heading",
@@ -812,7 +822,7 @@
   },
   "ch3.intro.title": {
     "context": "",
-    "no": "Du har rett til fritid",
+    "no": "Du har rett til en fritidsaktivitet",
     "ar": "لديك الحق في وقت الفراغ"
   },
   "ch3.intro.text": {
@@ -842,7 +852,7 @@
   },
   "activity.skate": {
     "context": "Activity card label",
-    "no": "Skate og være ute",
+    "no": "Friluftsliv/ være ute",
     "ar": "التزلج والخروج إلى الهواء الطلق"
   },
   "activity.food": {
@@ -876,7 +886,7 @@
   },
   "activity.skate.staff": {
     "context": "Shown to staff in NORWEGIAN only",
-    "no": "skate eller være mer ute"
+    "no": "å drive mer med frilutfsliv"
   },
   "activity.food.staff": {
     "context": "Shown to staff in NORWEGIAN only",
@@ -923,16 +933,6 @@
     "context": "",
     "no": "Du har rett til støtte til en fritidsaktivitet, også hvis den koster penger. Mottaket skal hjelpe deg å finne ut hva som finnes der du bor.",
     "ar": "من حقك الحصول على دعم لنشاط ترفيهي، حتى لو كان يكلّف مالاً. يجب أن يساعدك مركز الاستقبال على معرفة ما هو متاح في المكان الذي تقيم فيه."
-  },
-  "ch3.ask.title": {
-    "context": "PLACEHOLDER, Bente to write. Step before 'Veien videre'",
-    "no": "[PLACEHOLDER] Snakk med en ansatt",
-    "ar": "[PLACEHOLDER] تحدّث مع أحد الموظفين"
-  },
-  "ch3.ask.text": {
-    "context": "PLACEHOLDER, Bente to write",
-    "no": "[PLACEHOLDER] De ansatte på mottaket kan hjelpe deg å finne en fritidsaktivitet. På neste side får du et kort du kan vise til en ansatt du stoler på.",
-    "ar": "[PLACEHOLDER] يمكن لموظفي مركز الاستقبال مساعدتك في إيجاد نشاط ترفيهي. في الصفحة التالية ستجد بطاقة يمكنك عرضها على موظف تثق به."
   },
   "ch3.next.title": {
     "context": "Heading of the last activities step",
@@ -1003,21 +1003,6 @@
     "context": "",
     "no": "Mottaket kan hjelpe deg å få det til.",
     "ar": "يمكن لمركز الاستقبال أن يساعدك على تحقيق ذلك."
-  },
-  "ch3.rights.1": {
-    "context": "Rights screen at the end of the chapter",
-    "no": "Fritid, lek og aktiviteter, også når du bor på mottak",
-    "ar": "وقت الفراغ واللعب والأنشطة، حتى عندما تقيم في مركز استقبال"
-  },
-  "ch3.rights.2": {
-    "context": "Rights screen at the end of the chapter",
-    "no": "Støtte til en fritidsaktivitet, både praktisk og med penger",
-    "ar": "الدعم لنشاط ترفيهي، عمليًا وماليًا"
-  },
-  "ch3.rights.3": {
-    "context": "Rights screen at the end of the chapter",
-    "no": "Hjelp fra de ansatte til å finne ut hva som finnes der du bor",
-    "ar": "مساعدة الموظفين في معرفة ما هو متاح في المكان الذي تقيم فيه"
   },
   "sound.on": {
     "context": "Top bar button: turn read-aloud on (screen reader label)",
@@ -1227,6 +1212,16 @@
     "context": "PLACEHOLDER, LFB to write what actually applies (from the workshop notes)",
     "no": "[PLACEHOLDER] Mottaket skal vite hvor du er. Si fra til de ansatte når du drar, og når du kommer tilbake. Hvis ingen vet hvor du er, blir de bekymret og tar kontakt med representanten din.",
     "ar": "[PLACEHOLDER] يجب أن يعرف مركز الاستقبال أين أنت. أخبر الموظفين عندما تغادر وعندما تعود. إذا لم يعرف أحد أين أنت، سيقلقون ويتصلون بممثّلك."
+  },
+  "x.safety.car.title": {
+    "context": "From LFB (feedback, October 2026)",
+    "no": "Kan jeg kreve å bli kjørt med bil dit jeg vil?",
+    "ar": "هل يمكنني أن أطلب أن يوصلوني بالسيارة إلى أي مكان أريده؟"
+  },
+  "x.safety.car.text": {
+    "context": "From LFB (feedback, October 2026)",
+    "no": "Du kan spørre de på mottaket om de kan kjøre deg et sted hvis du ikke kan gå dit selv eller det ikke går buss. Hvis det for eksempel ikke er mer enn 30 minutter å gå til butikken, så bør du gå dit selv, med mindre det er storm ute. De på mottaket har liten tid og mange ting de skal gjøre i løpet av en dag, og frisk luft og en gåtur er bare bra for deg.",
+    "ar": "يمكنك أن تسأل العاملين في مركز الاستقبال إن كان بإمكانهم توصيلك إلى مكان ما إذا لم تستطع المشي إليه بنفسك أو لم تكن هناك حافلة. فمثلًا، إذا كان المشي إلى المتجر لا يستغرق أكثر من 30 دقيقة، فعليك أن تذهب بنفسك، إلا إذا كانت هناك عاصفة في الخارج. العاملون في مركز الاستقبال لديهم وقت قليل وأعمال كثيرة خلال اليوم، والهواء النقي والمشي مفيدان لك."
   },
   "x.safety.duties.title": {
     "context": "Heading of the duties list",
@@ -1563,6 +1558,16 @@
     "context": "",
     "no": "Ring barnevernet i kommunen der du bor",
     "ar": "اتصل بمؤسسة حماية الأطفال في البلدية التي تقيم فيها"
+  },
+  "x.cws.what.title": {
+    "context": "From LFB (feedback, October 2026)",
+    "no": "Hvis jeg kontakter barnevernet – hva skjer da?",
+    "ar": "إذا تواصلت مع مؤسسة حماية الأطفال – ماذا يحدث بعد ذلك؟"
+  },
+  "x.cws.what.text": {
+    "context": "From LFB (feedback, October 2026)",
+    "no": "Hvis barnevernet velger å undersøke hvordan du har det, så gjør de det i 3 måneder. Da snakker de med deg, de ansatte på mottaket, de på skolen og for eksempel lege hvis du har det. Barnevernet kan da tilby deg ulik hjelp hvis du ser at du trenger det, eller i alvorlige tilfeller flytte deg til et annet sted eller hjem. Barnevernet kan også bestemme at de synes du har det godt nok. Da henlegger de undersøkelsen. Hvis du er uenig i dette, kan du klage til Statsforvalteren. Be en ansatt eller representanten din om hjelp.",
+    "ar": "إذا قررت مؤسسة حماية الأطفال أن تتحقق من وضعك، فإنها تفعل ذلك خلال 3 أشهر. يتحدثون معك، ومع الموظفين في مركز الاستقبال، ومع العاملين في المدرسة، ومع الطبيب مثلًا إذا كان لديك طبيب. بعد ذلك يمكن لمؤسسة حماية الأطفال أن تقدم لك أنواعًا مختلفة من المساعدة إذا كنت تحتاج إليها، أو في الحالات الخطيرة أن تنقلك إلى مكان أو بيت آخر. ويمكن للمؤسسة أيضًا أن تقرر أن وضعك جيد بما فيه الكفاية، وعندها تُغلق التحقيق. إذا كنت لا توافق على ذلك، يمكنك تقديم شكوى إلى Statsforvalteren. اطلب المساعدة من أحد الموظفين أو من ممثّلك."
   },
   "x.cws.rights.1": {
     "context": "Rights screen at the end of the chapter",

@@ -327,7 +327,7 @@ export function HelpersStep({ step, answers, value, onChange, onNext, onBack }) 
             })}
           </ul>
           <p className="reassure">
-            {t(`${step.id}.after`)} <Speak text={t(`${step.id}.after`)} />
+            {t(`${step.id}.after`, { name })} <Speak text={t(`${step.id}.after`, { name })} />
           </p>
         </div>
       )}

@@ -3,6 +3,8 @@
     "allow": [
       "mcp__Google_Docs",
       "mcp__Google_Sheets",
+      "mcp__Google_Docs__*",
+      "mcp__Google_Sheets__*",
       "mcp__Google_Drive__search_files",
       "mcp__Google_Drive__read_file_content",
       "mcp__Google_Drive__download_file_content",

@@ -13,8 +13,11 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
 - [x] «Veien videre»: én oppmuntrende setning per valgt aktivitet, i
       tillegg til «Husk:» (v0.2.4).
 - [x] Forbehold om at ikke alle aktiviteter finnes alle steder (v0.2.4).
-- [ ] Bente skriver teksten til steget før «Veien videre»
-      (`ch3.ask.title`, `ch3.ask.text` i arket, nå PLACEHOLDER).
+- [x] Steget før «Veien videre» og «Du har rett til» på slutten er
+      fjernet etter tilbakemelding (v0.3.1). Påstanden om penger kommer
+      rett etter introen.
+- [ ] Ny aktivitet «Håndarbeid og kreativitet» (venter på
+      illustrasjonslisten).
 
 ### 2. Fjern humørsjekken (været)
 - [x] Fjernet ved start og ved avslutning, med tekster og innstillinger
@@ -73,6 +76,21 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
 - [x] Ny rekkefølge (v0.2.8): Representanten, Mottaket, Penger og skole,
       Fritid, Kropp og hode, Trygghet, Barnevernet, Klage. Styres av
       `ORDER` i src/content.js. Bente kan fortsatt komme med endringer.
+
+## Tilbakemelding 29. oktober
+- [x] «Trenger du hjelp?»: Representanten din (v0.3.1).
+- [x] Kropp og hode: teksten etter historiene handler om Hamlin/Elias
+      (v0.3.1).
+- [x] Trygghet: «Kan jeg kreve å bli kjørt med bil dit jeg vil?» (v0.3.1).
+- [x] Barnevernet: «Hvis jeg kontakter barnevernet – hva skjer da?»
+      (v0.3.1).
+- [x] Introfilmens tekst ligger allerede i arket (`film.1`–`film.6`).
+- [ ] Liste over alle eksisterende og planlagte illustrasjoner, med valg
+      for hver: beholde eller endre.
+- [ ] Aktørkortene som snus: Ina lager forsider uten skrift, appen legger
+      på navnet som tekst (alle språk).
+- [ ] Følelseskortene: brukes fortsatt i «Hva tror du {navn} føler?».
+      Skal steget fjernes?
 
 ## Fra tidligere økter
 - [ ] Oversikten over UDI, Bufdir og aktørene (lysark 8, «Hvem er vi i

@@ -130,9 +130,8 @@ export const CHAPTERS = [
     img: img('activity-sport.jpg'),
     steps: [
       { type: 'info', title: 'ch3.intro.title', text: 'ch3.intro.text', img: img('sunny-tree.png') },
-      { type: 'activities', id: 'ch3.activities' },
       { type: 'myth', id: 'ch3.cost', correct: 'false' },
-      { type: 'info', title: 'ch3.ask.title', text: 'ch3.ask.text', img: img('icon-care.png') },
+      { type: 'activities', id: 'ch3.activities' },
       {
         type: 'activitySummary',
         activitiesFrom: 'ch3.activities',
@@ -141,7 +140,6 @@ export const CHAPTERS = [
         title: 'ch3.summary.title',
         items: ['ch3.summary.1', 'ch3.summary.2', 'ch3.summary.3', 'ch3.summary.4'],
       },
-      { type: 'rights', title: 'rights.title', items: ['ch3.rights.1', 'ch3.rights.2', 'ch3.rights.3'] },
     ],
   },
 ]

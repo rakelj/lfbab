@@ -3,6 +3,17 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.3.1',
+    date: '29.10.2026',
+    items: [
+      '«Trenger du hjelp?»: nytt valg under de ansatte, «Representanten din: Ring eller send sms til representanten din».',
+      'Hva liker du å gjøre?: påstanden om at aktiviteter koster penger kommer nå rett etter introen. Steget «Snakk med en ansatt» og «Du har rett til» på slutten er fjernet, så temaet slutter med «Veien videre».',
+      'Kropp og hode: teksten etter «Hvem kan Hamlin/Elias snakke med?» handler nå om hovedpersonen i historien, ikke om deg.',
+      'Trygghet: ny side «Kan jeg kreve å bli kjørt med bil dit jeg vil?».',
+      'Barnevernet: ny side «Hvis jeg kontakter barnevernet – hva skjer da?».',
+    ],
+  },
+  {
     version: '0.3.0',
     date: '22.10.2026',
     items: [
