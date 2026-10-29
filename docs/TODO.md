@@ -35,8 +35,9 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       (v0.3.0).
 
 ### 5. «Trenger du hjelp?»
-- [ ] Jobb med utheving, farger og skrift.
-- [ ] Gjør tydelig at å be om hjelp ikke påvirker asylsaken.
+- [ ] LFB: Jobb med utheving, farger og skrift.
+- [ ] LFB: Gjør tydelig at å be om hjelp ikke påvirker asylsaken.
+      (Representanten din er lagt til som valg, v0.3.1.)
 
 ### 6. Trygghet
 - [x] Plikter: «Kan jeg dra fra mottaket når jeg vil?» og «Dine plikter»
@@ -95,11 +96,11 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       lager versjoner uten skrift, appen legger på ordet som tekst.
 
 ## Fra tidligere økter
-- [ ] Oversikten over UDI, Bufdir og aktørene (lysark 8, «Hvem er vi i
+- [ ] LFB: Oversikten over UDI, Bufdir og aktørene (lysark 8, «Hvem er vi i
       forhold til andre?»): bestem plassering før vi bygger.
 - [ ] Egen GitHub-organisasjon for LFB, så appen ikke ligger på en privat
       konto.
-- [ ] Arabisk i Elias-historien (`story.shut.3`) sier fortsatt «avhør»,
+- [x] Arabisk i Elias-historien (`story.shut.3`) sier fortsatt «avhør»,
       men den norske teksten er endret til «asylintervjuet».
 
 ## Om noen uker: oversettelse

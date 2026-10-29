@@ -3,6 +3,15 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.3.2',
+    date: '29.10.2026',
+    items: [
+      'Tekstene LFB har endret i arket er med: LFB som demokratisk medlemsorganisasjon (introen), representanten skal også passe på at du får den hjelpen du har krav på, «Du har rett til en fritidsaktivitet», og aktiviteten «Friluftsliv/ være ute».',
+      'Kortet til en ansatt for friluftsliv er rettet («Jeg har lyst til å drive mer med friluftsliv»), og «Veien videre» for friluftsliv nevner ikke lenger skatepark.',
+      'Arabisk er oppdatert for alle tekstene over, og «avhør» er byttet med «asylintervju» i Elias-historien.',
+    ],
+  },
+  {
     version: '0.3.1',
     date: '29.10.2026',
     items: [

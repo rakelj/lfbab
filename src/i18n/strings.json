@@ -132,7 +132,7 @@
   "intro.2.text": {
     "context": "",
     "no": "LFB er en demokratisk medlemsorganisasjon som jobber for at barn og unge skal få rettighetene sine. Vi jobber ikke for UDI, og vi bestemmer ingenting i asylsaken din.",
-    "ar": "تعمل LFB من أجل أن يحصل الأطفال والشباب على حقوقهم. نحن لا نعمل لصالح دائرة الأجانب (UDI)، ولا نقرر أي شيء في قضية لجوئك."
+    "ar": "LFB منظمة ديمقراطية للأعضاء تعمل من أجل أن يحصل الأطفال والشباب على حقوقهم. نحن لا نعمل لصالح دائرة الأجانب (UDI)، ولا نقرر أي شيء في قضية لجوئك."
   },
   "intro.3.title": {
     "context": "Privacy screen heading",
@@ -302,7 +302,7 @@
   "ch1.intro.text": {
     "context": "",
     "no": "Alle under 18 år som er i Norge uten foreldre, skal ha en representant. Statsforvalteren gir deg en representant når du kommer til Norge. Representanten skal passe på at rettighetene dine blir møtt og at du får den hjelpen du har krav på.",
-    "ar": "يجب أن يكون لكل من هو دون 18 عامًا وموجود في النرويج دون والديه ممثلٌ. يعيّن حاكم المقاطعة ممثلاً لك عندما تأتي إلى النرويج. مهمة الممثل هي التأكد من حصولك على حقوقك."
+    "ar": "يجب أن يكون لكل من هو دون 18 عامًا وموجود في النرويج دون والديه ممثلٌ. يعيّن حاكم المقاطعة ممثلاً لك عندما تأتي إلى النرويج. مهمة الممثل هي التأكد من حصولك على حقوقك وعلى المساعدة التي يحق لك الحصول عليها."
   },
   "ch1.met.q": {
     "context": "Statement about own situation",
@@ -823,7 +823,7 @@
   "ch3.intro.title": {
     "context": "",
     "no": "Du har rett til en fritidsaktivitet",
-    "ar": "لديك الحق في وقت الفراغ"
+    "ar": "لديك الحق في نشاط ترفيهي"
   },
   "ch3.intro.text": {
     "context": "",
@@ -853,7 +853,7 @@
   "activity.skate": {
     "context": "Activity card label",
     "no": "Friluftsliv/ være ute",
-    "ar": "التزلج والخروج إلى الهواء الطلق"
+    "ar": "الأنشطة في الطبيعة / الخروج إلى الهواء الطلق"
   },
   "activity.food": {
     "context": "Activity card label",
@@ -886,7 +886,7 @@
   },
   "activity.skate.staff": {
     "context": "Shown to staff in NORWEGIAN only",
-    "no": "å drive mer med frilutfsliv"
+    "no": "drive mer med friluftsliv"
   },
   "activity.food.staff": {
     "context": "Shown to staff in NORWEGIAN only",
@@ -946,8 +946,8 @@
   },
   "ch3.next.skate": {
     "context": "Shown if the child picked this activity",
-    "no": "Så fint at du liker å være ute! Spør om det finnes en skatepark, turer eller andre steder å være ute der du bor.",
-    "ar": "جميل أنك تحب الخروج إلى الهواء الطلق! اسأل إن كانت هناك حديقة تزلج أو رحلات مشي أو أماكن أخرى للخروج في المكان الذي تقيم فيه."
+    "no": "Så fint at du liker å være ute! Spør om det finnes turgrupper, friluftsliv eller andre steder å være ute der du bor.",
+    "ar": "جميل أنك تحب الخروج إلى الهواء الطلق! اسأل إن كانت هناك مجموعات للمشي، أو أنشطة في الطبيعة، أو أماكن أخرى للخروج في المكان الذي تقيم فيه."
   },
   "ch3.next.food": {
     "context": "Shown if the child picked this activity",
@@ -1830,7 +1830,7 @@
   "story.shut.3": {
     "context": "Story page 3 (LFB's text, verbatim)",
     "no": "Tusen tanker svirrer i hodet til Elias, og det begynner å bli tungt å puste. Han tenker på de der hjemme, han tenker på asylsøknaden sin, han tenker på asylintervjuet han skal inn i, men som han ikke vet når skjer. Tenk om han sier feil ting.",
-    "ar": "آلاف الخواطر تدور في رأس إلياس، وقد أصبح التنفس ثقيلاً. إنه يفكر في أهله وفي بلده، ويفكر في طلب لجوئه، ويفكر في الاستجواب الذي سيجريه، لكنه لا يعرف متى سيحصل. ماذا لو أخطأ في أقواله؟"
+    "ar": "آلاف الخواطر تدور في رأس إلياس، وقد أصبح التنفس ثقيلاً. إنه يفكر في أهله وفي بلده، ويفكر في طلب لجوئه، ويفكر في مقابلة اللجوء التي سيخضع لها، لكنه لا يعرف متى ستكون. ماذا لو أخطأ في أقواله؟"
   },
   "story.shut.4": {
     "context": "Story page 4 (LFB's text, verbatim)",
