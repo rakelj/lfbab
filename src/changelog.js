@@ -3,6 +3,14 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.3.3',
+    date: '29.10.2026',
+    items: [
+      '«Trenger du hjelp?»: «Å be om hjelp påvirker ikke asylsaken din» står nå øverst i en tydelig grønn boks. Hvert valg har et lite bilde, valgene du kan ringe eller sende e-post til har en pil, og «Hvis det haster» er rosa.',
+      'Aktørkortene og følelseskortene viser navnet som tekst under bildet på andre språk enn norsk, siden navnet på kortene er malt på norsk. Navnene leses også opp. Når Ina har laget kort uten skrift, vises navnet på alle språk.',
+    ],
+  },
+  {
     version: '0.3.2',
     date: '29.10.2026',
     items: [

@@ -4,8 +4,9 @@ A self-guided web app based on Landsforeningen for barnevernsbarn's workshop
 "Dine rettigheter på mottaket", for young people living at asylum reception
 centres. Plan: [Google Doc](https://docs.google.com/document/d/1BxxsbGTnTvzTGuPX8NlovQdgQHsoA275FKzPZaw2Vjo/edit).
 
-v0.1 scope: Norwegian only, chapter 1 (representative), chapter 2 (health,
-one story), check-in/closing, rights cards and the help button.
+Now (v0.3): eight topics, both stories, Norwegian and an Arabic demo. What
+changed in each version is in `src/changelog.js` (shown as "Hva er nytt" in
+demo mode), and what is left is in `docs/TODO.md`.
 
 ## Run locally
 

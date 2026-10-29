@@ -35,8 +35,8 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       (v0.3.0).
 
 ### 5. «Trenger du hjelp?»
-- [ ] Jobb med utheving, farger og skrift.
-- [ ] Gjør tydelig at å be om hjelp ikke påvirker asylsaken.
+- [x] Utheving, farger og skrift (v0.3.3).
+- [x] «Å be om hjelp påvirker ikke asylsaken din» står øverst (v0.3.3).
       (Representanten din er lagt til som valg, v0.3.1.)
 
 ### 6. Trygghet
@@ -90,6 +90,9 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       Google-arket «Illustrasjoner – valg» i LFB-mappen. LFB fyller inn Valg.
 - [ ] Introfilmen bruker tre AI-genererte værbilder (scene 1, 4 og 6).
       Bytt dem ut eller slå av filmen.
+- [x] Navnet vises som tekst under aktør- og følelseskortene på andre
+      språk enn norsk (v0.3.3). Når kortene uten skrift kommer: sett
+      `PAINTED_NAMES` til false i src/components/CardName.jsx.
 - [ ] Aktørkortene som snus: Ina lager forsider uten skrift, appen legger
       på navnet som tekst (alle språk).
 - [ ] Følelseskortene beholdes (steget «Hva tror du {navn} føler?»). Ina
@@ -106,9 +109,5 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
 ## Om noen uker: oversettelse
 - [ ] Byrået oversetter (først til engelsk, så videre). Spør om de vil ha
       én Excel-fil eller én per språk.
-- [ ] Skript som lager Excel-filen (bare godkjente norske tekster som
-      mangler eller er utdatert) og leser den inn igjen med sjekker.
-- [ ] Skjult fane som husker hvilken norsk tekst hver oversettelse er
-      laget fra, og en oversiktsfane per språk.
 - [ ] Avtal med byrået hva de gjør med LFBs historieoversettelser i 9
       språk.

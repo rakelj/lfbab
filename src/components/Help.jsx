@@ -2,13 +2,15 @@ import { useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
 import Modal from './Modal.jsx'
 import { Speak } from './Sound.jsx'
+import { img } from '../content.js'
 
+// Who to turn to. `href` makes the card call or e-mail; `urgent` sets it apart.
 const OPTIONS = [
-  { key: 'staff' },
-  { key: 'rep' },
-  { key: 'alarm', href: 'tel:116111' },
-  { key: 'emergency', href: 'tel:113' },
-  { key: 'lfb', href: 'mailto:post@barnevernsbarna.no' },
+  { key: 'staff', img: img('actor-centre-staff.jpg') },
+  { key: 'rep', img: img('actor-representative.jpg') },
+  { key: 'alarm', href: 'tel:116111', img: img('icon-phone.png') },
+  { key: 'emergency', href: 'tel:113', urgent: true },
+  { key: 'lfb', href: 'mailto:post@barnevernsbarna.no', img: img('logo.png'), contain: true },
 ]
 
 export default function HelpButton() {
@@ -22,22 +24,40 @@ export default function HelpButton() {
       </button>
       {open && (
         <Modal title={t('help.title')} onClose={() => setOpen(false)}>
+          {/* The most important message first: asking for help is safe */}
+          <p className="help-safe">
+            <span className="help-safe-mark" aria-hidden="true">
+              ✓
+            </span>
+            {t('help.note')}
+          </p>
           <p>
             {t('help.intro')}{' '}
-            <Speak text={[t('help.intro'), ...OPTIONS.map(({ key }) => `${t(`help.${key}.title`)}. ${t(`help.${key}.text`)}`), t('help.note')].join(' ')} />
+            <Speak text={[t('help.note'), t('help.intro'), ...OPTIONS.map(({ key }) => `${t(`help.${key}.title`)}. ${t(`help.${key}.text`)}`)].join(' ')} />
           </p>
           <ul className="help-list">
-            {OPTIONS.map(({ key, href }) => {
+            {OPTIONS.map(({ key, href, img: pic, urgent, contain }) => {
               const body = (
                 <>
-                  <strong>{t(`help.${key}.title`)}</strong>
-                  <span>{t(`help.${key}.text`)}</span>
+                  {pic ? <img className={`help-pic ${contain ? 'contain' : ''}`} src={pic} alt="" /> : <span className="help-pic help-pic-urgent" aria-hidden="true">!</span>}
+                  <span className="help-text">
+                    <strong>{t(`help.${key}.title`)}</strong>
+                    <span>{t(`help.${key}.text`)}</span>
+                  </span>
+                  {href && (
+                    <span className="help-go dir-arrow" aria-hidden="true">
+                      →
+                    </span>
+                  )}
                 </>
               )
-              return <li key={key}>{href ? <a href={href}>{body}</a> : <div>{body}</div>}</li>
+              return (
+                <li key={key} className={urgent ? 'urgent' : ''}>
+                  {href ? <a href={href}>{body}</a> : <div>{body}</div>}
+                </li>
+              )
             })}
           </ul>
-          <p className="reassure">{t('help.note')}</p>
         </Modal>
       )}
     </>

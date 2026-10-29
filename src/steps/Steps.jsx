@@ -4,6 +4,7 @@ import { ACTIVITIES, ACTORS, EMOTIONS, STORIES, img } from '../content.js'
 import StaffCard from '../components/StaffCard.jsx'
 import { Speak } from '../components/Sound.jsx'
 import { ActorInfoModal } from '../components/ActorCard.jsx'
+import CardName, { useCardNames } from '../components/CardName.jsx'
 
 // Back (when there is somewhere to go back to) and Next.
 function StepNav({ onBack, onNext, nextLabel, nextDisabled }) {
@@ -240,6 +241,7 @@ export function StoryStep({ step, answers, setAnswer, onNext, onBack, cameBack }
 }
 
 export function EmotionsStep({ step, answers, value, onChange, onNext, onBack }) {
+  const emotionNames = useCardNames(EMOTIONS.map((e) => `emotion.${e.id}`))
   const { t } = useI18n()
   const name = t(storyOf(step, answers).name)
   const picked = value ? value.split(',') : []
@@ -251,13 +253,14 @@ export function EmotionsStep({ step, answers, value, onChange, onNext, onBack })
   return (
     <>
       <h1>
-        {t('story.emotions.title', { name })} <Speak text={`${t('story.emotions.title', { name })} ${t(`${step.id}.text`)}`} />
+        {t('story.emotions.title', { name })} <Speak text={`${t('story.emotions.title', { name })} ${t(`${step.id}.text`)} ${emotionNames}`} />
       </h1>
       <p className="lead">{t(`${step.id}.text`)}</p>
       <div className="card-grid">
         {EMOTIONS.map((e) => (
           <button key={e.id} className={`pick-card ${picked.includes(e.id) ? 'selected' : ''}`} aria-pressed={picked.includes(e.id)} onClick={() => toggle(e.id)}>
             <img src={e.img} alt={t(`emotion.${e.id}`)} />
+            <CardName text={t(`emotion.${e.id}`)} />
           </button>
         ))}
       </div>
@@ -280,6 +283,7 @@ function ActorGrid({ picked, onPick }) {
       {ACTORS.map((a) => (
         <button key={a.id} className={`pick-card ${picked.includes(a.id) ? 'selected' : ''}`} aria-pressed={picked.includes(a.id)} onClick={() => onPick(a.id)}>
           <img src={a.img} alt={t(`actor.${a.id}`)} />
+          <CardName text={t(`actor.${a.id}`)} />
           {picked.includes(a.id) && (
             <span className="check-badge" aria-hidden="true">
               ✓
@@ -294,6 +298,7 @@ function ActorGrid({ picked, onPick }) {
 // "Who can {name} talk to?": pick as many as you like. Each pick shows how that
 // helper could help in this story (or the card back's text). No wrong answers.
 export function HelpersStep({ step, answers, value, onChange, onNext, onBack }) {
+  const actorNames = useCardNames(ACTORS.map((a) => `actor.${a.id}`))
   const { t, has } = useI18n()
   const storyId = answers[step.storyFrom] ?? 'quiet'
   const name = t(storyOf(step, answers).name)
@@ -304,7 +309,7 @@ export function HelpersStep({ step, answers, value, onChange, onNext, onBack }) 
   return (
     <>
       <h1>
-        {t('story.helpers.title', { name })} <Speak text={`${t('story.helpers.title', { name })} ${t('story.helpers.text')}`} />
+        {t('story.helpers.title', { name })} <Speak text={`${t('story.helpers.title', { name })} ${t('story.helpers.text')} ${actorNames}`} />
       </h1>
       <p className="lead">{t('story.helpers.text')}</p>
       <ActorGrid picked={picked} onPick={toggle} />
@@ -384,13 +389,14 @@ export function StoryAgainStep({ step, answers, setAnswer, onNext, onBack, onJum
 // "Who would you talk to first?": one personal choice. Tapping a card opens
 // its text (the back of LFB's card), with a button to choose that person.
 export function FirstStep({ step, value, onChange, onNext, onBack }) {
+  const actorNames = useCardNames(ACTORS.map((a) => `actor.${a.id}`))
   const { t } = useI18n()
   const [open, setOpen] = useState(null)
   const actor = ACTORS.find((a) => a.id === open)
   return (
     <>
       <h1>
-        {t(`${step.id}.title`)} <Speak text={`${t(`${step.id}.title`)} ${t(`${step.id}.text`)}`} />
+        {t(`${step.id}.title`)} <Speak text={`${t(`${step.id}.title`)} ${t(`${step.id}.text`)} ${actorNames}`} />
       </h1>
       <p className="lead">{t(`${step.id}.text`)}</p>
       <ActorGrid picked={value ? [value] : []} onPick={setOpen} />

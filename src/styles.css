@@ -265,6 +265,12 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
   border: 3px solid transparent; border-radius: 12px; overflow: hidden;
   transition: transform 0.15s ease;
 }
+/* Card name as text (until the cards come without painted Norwegian names) */
+.card-name {
+  display: block; padding: 4px 2px 5px; background: var(--card); color: var(--ink);
+  font-size: 0.8rem; font-weight: 700; line-height: 1.2; text-align: center; overflow-wrap: anywhere;
+}
+.flip-front .card-name { position: absolute; inset-inline: 0; bottom: 0; font-size: 1rem; padding: 6px; }
 .pick-card.selected { border-color: var(--purple); transform: scale(1.04); box-shadow: 0 0 0 3px var(--pink); }
 /* Check mark at the bottom corner, clear of the name painted at the top of the card */
 .check-badge {
@@ -321,13 +327,31 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
   .modal { border-radius: 24px; }
 }
 .modal h2 { margin-top: 0; }
+/* Help: "asking for help doesn't affect your case" first, then who to turn to */
+.help-safe {
+  display: flex; align-items: center; gap: 12px; margin: 0 0 4px;
+  background: var(--green-light); border-radius: var(--radius); padding: 14px 16px;
+  font-weight: 700; font-size: 1.1rem; line-height: 1.35;
+}
+.help-safe-mark {
+  flex: none; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%;
+  background: var(--sage-dark); color: #fff; font-size: 1.1rem;
+}
 .help-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
 .help-list a, .help-list div {
-  display: flex; flex-direction: column; padding: 12px 16px;
+  display: flex; align-items: center; gap: 12px; padding: 10px 14px;
   background: var(--card); border-radius: var(--radius); color: inherit; text-decoration: none;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow); border: 2px solid transparent;
 }
-.help-list a strong { color: var(--purple); }
+.help-list a:hover { border-color: var(--lavender); }
+.help-pic { flex: none; width: 48px; height: 48px; border-radius: 12px; object-fit: cover; object-position: 50% 62%; background: var(--lavender-light); }
+.help-pic.contain { object-fit: contain; object-position: center; background: #fff; padding: 4px; }
+.help-pic-urgent { display: grid; place-items: center; background: #fff; color: #b03a5b; font-weight: 800; font-size: 1.5rem; }
+.help-text { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+.help-text strong { font-size: 1.05rem; color: var(--purple-dark); }
+.help-go { flex: none; font-size: 1.4rem; font-weight: 700; color: var(--purple); }
+.help-list li.urgent a { background: var(--pink); }
+.help-list li.urgent strong { color: var(--ink); }
 .modal-staff .staff-text {
   font-size: 1.5rem; font-weight: 700; line-height: 1.35;
   background: var(--card); padding: 20px; border-radius: var(--radius);

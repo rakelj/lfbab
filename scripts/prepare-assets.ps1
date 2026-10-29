@@ -16,7 +16,6 @@ New-Item -ItemType Directory -Force $out | Out-Null
 $assets = @(
   # Weather check-in
   @{ name = "weather-clear";    src = "slide illustrasjoner\Untitled_Artwork 147 2.png"; w = 1000 },
-  @{ name = "weather-sunset";   src = "slide illustrasjoner\Untitled_Artwork 146 2.png"; w = 1000 },
   @{ name = "weather-breaking"; src = "slide illustrasjoner\Untitled_Artwork 148.png";   w = 1000 },
   @{ name = "weather-storm";    src = "slide illustrasjoner\Untitled_Artwork 149.png";   w = 1000 },
   # Emotion cards

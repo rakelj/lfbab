@@ -3,6 +3,7 @@ import { useI18n } from '../i18n/I18n.jsx'
 import { ACTORS, SITUATIONS, img } from '../content.js'
 import Dots from '../components/Dots.jsx'
 import { Speak } from '../components/Sound.jsx'
+import CardName, { useCardNames } from '../components/CardName.jsx'
 
 const actor = (id) => ACTORS.find((a) => a.id === id)
 
@@ -18,6 +19,7 @@ export default function HelperGame({ onBack, onHelpers }) {
   const done = i >= SITUATIONS.length
   const s = SITUATIONS[i]
   const { picked = [], revealed = false } = rounds[i] ?? {}
+  const optionNames = useCardNames((s?.options ?? []).map((id) => `actor.${id}`))
 
   const update = (patch) => setRounds((r) => ({ ...r, [i]: { picked, revealed, ...patch } }))
   const toggle = (id) => !revealed && update({ picked: picked.includes(id) ? picked.filter((x) => x !== id) : [...picked, id] })
@@ -69,7 +71,7 @@ export default function HelperGame({ onBack, onHelpers }) {
       <span className="label">{t('game.counter', { n: i + 1, total: SITUATIONS.length })}</span>
       <div className="situation" key={s.id}>
         <p>
-          «{t(`game.s.${s.id}`)}» <Speak text={`${t('game.counter', { n: i + 1, total: SITUATIONS.length })}. ${t(`game.s.${s.id}`)} ${revealed ? '' : t('game.intro')}`} />
+          «{t(`game.s.${s.id}`)}» <Speak text={`${t('game.counter', { n: i + 1, total: SITUATIONS.length })}. ${t(`game.s.${s.id}`)} ${revealed ? '' : t('game.intro')} ${optionNames}`} />
         </p>
       </div>
       {!revealed && <p className="muted">{t('game.intro')}</p>}
@@ -85,6 +87,7 @@ export default function HelperGame({ onBack, onHelpers }) {
               onClick={() => toggle(id)}
             >
               <img src={actor(id).img} alt={t(`actor.${id}`)} />
+              <CardName text={t(`actor.${id}`)} />
               {best && (
                 <span className="check-badge best-badge" aria-hidden="true">
                   ★

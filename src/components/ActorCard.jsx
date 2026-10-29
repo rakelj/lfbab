@@ -3,6 +3,7 @@ import { useI18n } from '../i18n/I18n.jsx'
 import { ACTORS } from '../content.js'
 import Modal from './Modal.jsx'
 import { Speak } from './Sound.jsx'
+import CardName from './CardName.jsx'
 
 // The back of LFB's printed actor cards: who they are, what they help with, when to contact them.
 function CardBack({ actor }) {
@@ -44,6 +45,7 @@ function FlipCard({ actor, startFlipped = false }) {
       <span className="flip-inner">
         <span className="flip-front">
           <img src={actor.img} alt={t(`actor.${actor.id}`)} />
+          <CardName text={t(`actor.${actor.id}`)} />
         </span>
         <span className="flip-back">
           <CardBack actor={actor} />
