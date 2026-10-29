@@ -35,8 +35,8 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       (v0.3.0).
 
 ### 5. «Trenger du hjelp?»
-- [ ] LFB: Jobb med utheving, farger og skrift.
-- [ ] LFB: Gjør tydelig at å be om hjelp ikke påvirker asylsaken.
+- [ ] Jobb med utheving, farger og skrift.
+- [ ] Gjør tydelig at å be om hjelp ikke påvirker asylsaken.
       (Representanten din er lagt til som valg, v0.3.1.)
 
 ### 6. Trygghet
