@@ -85,8 +85,10 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
 - [x] Barnevernet: «Hvis jeg kontakter barnevernet – hva skjer da?»
       (v0.3.1).
 - [x] Introfilmens tekst ligger allerede i arket (`film.1`–`film.6`).
-- [ ] Liste over alle eksisterende og planlagte illustrasjoner, med valg
-      for hver: beholde eller endre.
+- [x] Liste over alle eksisterende og planlagte illustrasjoner:
+      Google-arket «Illustrasjoner – valg» i LFB-mappen. LFB fyller inn Valg.
+- [ ] Introfilmen bruker tre AI-genererte værbilder (scene 1, 4 og 6).
+      Bytt dem ut eller slå av filmen.
 - [ ] Aktørkortene som snus: Ina lager forsider uten skrift, appen legger
       på navnet som tekst (alle språk).
 - [ ] Følelseskortene beholdes (steget «Hva tror du {navn} føler?»). Ina
