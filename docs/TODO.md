@@ -94,6 +94,9 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
 - [x] Navnet vises som tekst under aktør- og følelseskortene på andre
       språk enn norsk (v0.3.3). Når kortene uten skrift kommer: sett
       `PAINTED_NAMES` til false i src/components/CardName.jsx.
+- [x] Navnet på aktørkortene står på et mørkt panel over det malte navnet,
+      på alle språk (v0.3.5).
+- [ ] Ina: bakgrunnsillustrasjon til baksiden av aktørkortene.
 - [ ] Aktørkortene som snus: Ina lager forsider uten skrift, appen legger
       på navnet som tekst (alle språk).
 - [ ] Følelseskortene beholdes (steget «Hva tror du {navn} føler?»). Ina

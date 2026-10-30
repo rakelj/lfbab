@@ -283,7 +283,7 @@ function ActorGrid({ picked, onPick }) {
       {ACTORS.map((a) => (
         <button key={a.id} className={`pick-card ${picked.includes(a.id) ? 'selected' : ''}`} aria-pressed={picked.includes(a.id)} onClick={() => onPick(a.id)}>
           <img src={a.img} alt={t(`actor.${a.id}`)} />
-          <CardName text={t(`actor.${a.id}`)} />
+          <CardName text={t(`actor.${a.id}`)} overlay />
           {picked.includes(a.id) && (
             <span className="check-badge" aria-hidden="true">
               ✓
@@ -298,7 +298,7 @@ function ActorGrid({ picked, onPick }) {
 // "Who can {name} talk to?": pick as many as you like. Each pick shows how that
 // helper could help in this story (or the card back's text). No wrong answers.
 export function HelpersStep({ step, answers, value, onChange, onNext, onBack }) {
-  const actorNames = useCardNames(ACTORS.map((a) => `actor.${a.id}`))
+  const actorNames = useCardNames(ACTORS.map((a) => `actor.${a.id}`), { overlay: true })
   const { t, has } = useI18n()
   const storyId = answers[step.storyFrom] ?? 'quiet'
   const name = t(storyOf(step, answers).name)
@@ -389,7 +389,7 @@ export function StoryAgainStep({ step, answers, setAnswer, onNext, onBack, onJum
 // "Who would you talk to first?": one personal choice. Tapping a card opens
 // its text (the back of LFB's card), with a button to choose that person.
 export function FirstStep({ step, value, onChange, onNext, onBack }) {
-  const actorNames = useCardNames(ACTORS.map((a) => `actor.${a.id}`))
+  const actorNames = useCardNames(ACTORS.map((a) => `actor.${a.id}`), { overlay: true })
   const { t } = useI18n()
   const [open, setOpen] = useState(null)
   const actor = ACTORS.find((a) => a.id === open)

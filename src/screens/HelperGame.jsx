@@ -19,7 +19,7 @@ export default function HelperGame({ onBack, onHelpers }) {
   const done = i >= SITUATIONS.length
   const s = SITUATIONS[i]
   const { picked = [], revealed = false } = rounds[i] ?? {}
-  const optionNames = useCardNames((s?.options ?? []).map((id) => `actor.${id}`))
+  const optionNames = useCardNames((s?.options ?? []).map((id) => `actor.${id}`), { overlay: true })
 
   const update = (patch) => setRounds((r) => ({ ...r, [i]: { picked, revealed, ...patch } }))
   const toggle = (id) => !revealed && update({ picked: picked.includes(id) ? picked.filter((x) => x !== id) : [...picked, id] })
@@ -87,7 +87,7 @@ export default function HelperGame({ onBack, onHelpers }) {
               onClick={() => toggle(id)}
             >
               <img src={actor(id).img} alt={t(`actor.${id}`)} />
-              <CardName text={t(`actor.${id}`)} />
+              <CardName text={t(`actor.${id}`)} overlay />
               {best && (
                 <span className="check-badge best-badge" aria-hidden="true">
                   ★

@@ -45,7 +45,7 @@ function FlipCard({ actor, startFlipped = false }) {
       <span className="flip-inner">
         <span className="flip-front">
           <img src={actor.img} alt={t(`actor.${actor.id}`)} />
-          <CardName text={t(`actor.${actor.id}`)} />
+          <CardName text={t(`actor.${actor.id}`)} overlay />
         </span>
         <span className="flip-back">
           <CardBack actor={actor} />

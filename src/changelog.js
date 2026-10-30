@@ -3,6 +3,13 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.3.5',
+    date: '30.10.2026',
+    items: [
+      'Aktørkortene viser navnet som hvit tekst på et mørkt panel over det malte navnet, på alle språk. Teksten er den samme som tittelen på baksiden av kortet, så den oversettes bare én gang. Dette viser hvordan kortene blir når illustratøren har laget dem uten skrift.',
+    ],
+  },
+  {
     version: '0.3.4',
     date: '30.10.2026',
     items: [

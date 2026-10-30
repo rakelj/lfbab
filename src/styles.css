@@ -271,6 +271,15 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
   font-size: 0.8rem; font-weight: 700; line-height: 1.2; text-align: center; overflow-wrap: anywhere;
 }
 .flip-front .card-name { position: absolute; inset-inline: 0; bottom: 0; font-size: 1rem; padding: 6px; }
+/* Actor card name over the painted one: white on a dark see-through panel */
+.card-name.card-name-overlay {
+  position: absolute; top: 2%; inset-inline: 3%; z-index: 1; min-height: 34%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(46, 42, 56, 0.82); color: #fff; border-radius: 8px;
+  padding: 3px 3px; font-size: 0.7rem; line-height: 1.15;
+  overflow-wrap: normal; hyphens: auto; -webkit-hyphens: auto;
+}
+.flip-front .card-name.card-name-overlay { top: 4%; bottom: auto; inset-inline: 5%; min-height: 25%; font-size: 1.35rem; padding: 8px 10px; border-radius: 12px; }
 .pick-card.selected { border-color: var(--purple); transform: scale(1.04); box-shadow: 0 0 0 3px var(--pink); }
 /* Check mark at the bottom corner, clear of the name painted at the top of the card */
 .check-badge {

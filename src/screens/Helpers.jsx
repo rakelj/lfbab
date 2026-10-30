@@ -9,7 +9,7 @@ import CardName, { useCardNames } from '../components/CardName.jsx'
 export default function Helpers({ onBack, onGame }) {
   const { t } = useI18n()
   const [open, setOpen] = useState(null)
-  const actorNames = useCardNames(ACTORS.map((a) => `actor.${a.id}`))
+  const actorNames = useCardNames(ACTORS.map((a) => `actor.${a.id}`), { overlay: true })
 
   return (
     <section className="screen">
@@ -24,7 +24,7 @@ export default function Helpers({ onBack, onGame }) {
         {ACTORS.map((a) => (
           <button key={a.id} className="pick-card" onClick={() => setOpen(a)}>
             <img src={a.img} alt={t(`actor.${a.id}`)} />
-            <CardName text={t(`actor.${a.id}`)} />
+            <CardName text={t(`actor.${a.id}`)} overlay />
           </button>
         ))}
       </div>
