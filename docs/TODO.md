@@ -96,6 +96,7 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       `PAINTED_NAMES` til false i src/components/CardName.jsx.
 - [x] Navnet på aktørkortene står på et mørkt panel over det malte navnet,
       på alle språk (v0.3.5).
+- [x] Det samme på følelseskortene, med panelet nederst (v0.3.6).
 - [ ] Ina: bakgrunnsillustrasjon til baksiden av aktørkortene.
 - [ ] Aktørkortene som snus: Ina lager forsider uten skrift, appen legger
       på navnet som tekst (alle språk).

@@ -3,6 +3,13 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.3.6',
+    date: '30.10.2026',
+    items: [
+      'Følelseskortene viser også navnet som hvit tekst på et mørkt panel, nederst over det malte ordet, på alle språk.',
+    ],
+  },
+  {
     version: '0.3.5',
     date: '30.10.2026',
     items: [

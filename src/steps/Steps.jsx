@@ -241,7 +241,7 @@ export function StoryStep({ step, answers, setAnswer, onNext, onBack, cameBack }
 }
 
 export function EmotionsStep({ step, answers, value, onChange, onNext, onBack }) {
-  const emotionNames = useCardNames(EMOTIONS.map((e) => `emotion.${e.id}`))
+  const emotionNames = useCardNames(EMOTIONS.map((e) => `emotion.${e.id}`), { overlay: true })
   const { t } = useI18n()
   const name = t(storyOf(step, answers).name)
   const picked = value ? value.split(',') : []
@@ -260,7 +260,7 @@ export function EmotionsStep({ step, answers, value, onChange, onNext, onBack })
         {EMOTIONS.map((e) => (
           <button key={e.id} className={`pick-card ${picked.includes(e.id) ? 'selected' : ''}`} aria-pressed={picked.includes(e.id)} onClick={() => toggle(e.id)}>
             <img src={e.img} alt={t(`emotion.${e.id}`)} />
-            <CardName text={t(`emotion.${e.id}`)} />
+            <CardName text={t(`emotion.${e.id}`)} overlay bottom />
           </button>
         ))}
       </div>

@@ -6,9 +6,11 @@ import { useI18n } from '../i18n/I18n.jsx'
 // of the picture, in every language. It uses the same text as the title on the
 // back of the card (actor.<id>), so it is only translated once.
 //
-// Emotion cards still have their names painted on in Norwegian. Until the
-// textless versions arrive, other languages show the name under the picture.
-// With textless art, set PAINTED_NAMES to false so it shows in every language.
+// Emotion cards work the same way, with the panel at the bottom, where their
+// name is painted (`bottom`).
+//
+// Without `overlay`, the name shows under the picture in languages other than
+// Norwegian only (PAINTED_NAMES), for cards whose name is painted in Norwegian.
 export const PAINTED_NAMES = true
 
 const shown = (overlay, lang) => overlay || !(PAINTED_NAMES && lang === 'no')
@@ -19,8 +21,8 @@ export function useCardNames(keys, { overlay = false } = {}) {
   return shown(overlay, lang) ? keys.map((k) => t(k)).join(', ') : ''
 }
 
-export default function CardName({ text, overlay = false }) {
+export default function CardName({ text, overlay = false, bottom = false }) {
   const { lang } = useI18n()
   if (!shown(overlay, lang)) return null
-  return <span className={`card-name ${overlay ? 'card-name-overlay' : ''}`}>{text}</span>
+  return <span className={`card-name ${overlay ? 'card-name-overlay' : ''} ${bottom ? 'bottom' : ''}`}>{text}</span>
 }

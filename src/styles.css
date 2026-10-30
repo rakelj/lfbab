@@ -279,6 +279,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
   padding: 3px 3px; font-size: 0.7rem; line-height: 1.15;
   overflow-wrap: normal; hyphens: auto; -webkit-hyphens: auto;
 }
+.card-name.card-name-overlay.bottom { top: auto; bottom: 3%; min-height: 24%; }
 .flip-front .card-name.card-name-overlay { top: 4%; bottom: auto; inset-inline: 5%; min-height: 25%; font-size: 1.35rem; padding: 8px 10px; border-radius: 12px; }
 .pick-card.selected { border-color: var(--purple); transform: scale(1.04); box-shadow: 0 0 0 3px var(--pink); }
 /* Check mark at the bottom corner, clear of the name painted at the top of the card */
