@@ -16,8 +16,9 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
 - [x] Steget før «Veien videre» og «Du har rett til» på slutten er
       fjernet etter tilbakemelding (v0.3.1). Påstanden om penger kommer
       rett etter introen.
-- [ ] Ny aktivitet «Håndarbeid og kreativitet» (venter på
-      illustrasjonslisten).
+- [x] Ny aktivitet «Håndarbeid og kreativitet» (v0.3.4). Bildet er
+      PLACEHOLDER (`public/img/activity-crafts-placeholder.svg`) til Ina har
+      tegnet det.
 
 ### 2. Fjern humørsjekken (været)
 - [x] Fjernet ved start og ved avslutning, med tekster og innstillinger

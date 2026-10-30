@@ -875,6 +875,11 @@
     "no": "Være sammen med andre",
     "ar": "قضاء الوقت مع الآخرين"
   },
+  "activity.crafts": {
+    "context": "Activity card label (from LFB's feedback: knitting, crocheting, painting, beads, drawing, web design)",
+    "no": "Håndarbeid og kreativitet",
+    "ar": "الأشغال اليدوية والإبداع"
+  },
   "activity.other": {
     "context": "Activity card label, question-mark card (not decided yet)",
     "no": "Vet ikke ennå",
@@ -903,6 +908,10 @@
   "activity.social.staff": {
     "context": "Shown to staff in NORWEGIAN only",
     "no": "være mer sammen med andre"
+  },
+  "activity.crafts.staff": {
+    "context": "Shown to staff in NORWEGIAN only. Completes 'Jeg har lyst til å ...'",
+    "no": "drive med håndarbeid eller noe kreativt"
   },
   "activity.other.staff": {
     "context": "Shown to staff in NORWEGIAN only",
@@ -968,6 +977,11 @@
     "context": "Shown if the child picked this activity",
     "no": "Det er godt å være sammen med andre. Spør om det finnes en ungdomsklubb eller fellesaktiviteter der du bor.",
     "ar": "من الجميل قضاء الوقت مع الآخرين. اسأل إن كان هناك نادٍ للشباب أو أنشطة مشتركة في المكان الذي تقيم فيه."
+  },
+  "ch3.next.crafts": {
+    "context": "Shown if the child picked this activity",
+    "no": "Så fint at du liker å lage ting! Spør om mottaket har garn, maling, perler eller annet utstyr, eller om det finnes kurs der du bor.",
+    "ar": "جميل أنك تحب صنع الأشياء! اسأل إن كان لدى مركز الاستقبال خيوط أو ألوان أو خرز أو أدوات أخرى، أو إن كانت هناك دورات في المكان الذي تقيم فيه."
   },
   "ch3.next.other": {
     "context": "Shown for 'Vet ikke ennå', or if nothing was picked",

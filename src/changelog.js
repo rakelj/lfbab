@@ -3,6 +3,13 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.3.4',
+    date: '30.10.2026',
+    items: [
+      'Hva liker du å gjøre?: ny aktivitet «Håndarbeid og kreativitet», med egen tekst i «Veien videre» og på kortet til en ansatt. Bildet er en PLACEHOLDER til illustratøren har tegnet det.',
+    ],
+  },
+  {
     version: '0.3.3',
     date: '29.10.2026',
     items: [

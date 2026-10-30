@@ -34,6 +34,8 @@ export const ACTIVITIES = [
   { id: 'games', img: img('activity-games.jpg') },
   { id: 'learn', img: img('activity-learn.jpg') },
   { id: 'social', img: img('friends.png'), cutout: true },
+  // PLACEHOLDER picture until the illustrator has drawn this one.
+  { id: 'crafts', img: img('activity-crafts-placeholder.svg') },
   // Not decided yet: a question mark instead of a picture.
   { id: 'other', question: true },
 ]
