@@ -28,10 +28,6 @@ export const EXTRA_CHAPTERS = [
         items: ['x.safety.summary.1', 'x.safety.summary.2', 'x.safety.summary.3', 'x.safety.summary.4', 'x.safety.summary.5'],
         staff: 'x.safety.staff',
       },
-      // Duties, from the workshop notes. The answer about leaving the centre is
-      // a PLACEHOLDER until LFB has written what applies.
-      { type: 'info', title: 'x.safety.leave.title', text: 'x.safety.leave.text', img: img('icon-map.png') },
-      { type: 'info', title: 'x.safety.car.title', text: 'x.safety.car.text' },
       {
         type: 'rights',
         title: 'rights.title',
@@ -55,6 +51,11 @@ export const EXTRA_CHAPTERS = [
       { type: 'info', title: 'x.centre.respect.title', text: 'x.centre.respect.text' },
       { type: 'myth', id: 'x.centre.phone', correct: 'false' },
       { type: 'info', title: 'x.centre.force.title', text: 'x.centre.force.text' },
+      // Leaving the centre and getting a lift (moved here from Safety at LFB's
+      // request). The answer about leaving is a PLACEHOLDER until LFB has
+      // checked the rules for leave.
+      { type: 'info', title: 'x.centre.leave.title', text: 'x.centre.leave.text', img: img('icon-map.png') },
+      { type: 'info', title: 'x.centre.car.title', text: 'x.centre.car.text' },
       {
         type: 'rights',
         title: 'x.centre.summary.title',

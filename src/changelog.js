@@ -3,6 +3,14 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.3.7',
+    date: '04.11.2026',
+    items: [
+      '«Kan jeg dra fra mottaket når jeg vil?» og «Kan jeg kreve å bli kjørt med bil dit jeg vil?» er flyttet fra Trygghet til Rettighetene dine på mottaket, rett etter «Har de ansatte lov til å holde meg fast?».',
+      'Introen sier nå at appen er for deg mellom 15 og 18 år som bor på mottak (LFBs tekst). Arabisk er oppdatert.',
+    ],
+  },
+  {
     version: '0.3.6',
     date: '30.10.2026',
     items: [

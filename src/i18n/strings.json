@@ -121,8 +121,8 @@
   },
   "intro.1.text": {
     "context": "",
-    "no": "Denne appen handler om rettighetene dine mens du bor på mottak. Den er laget av Landsforeningen for barnevernsbarn (LFB).",
-    "ar": "هذا التطبيق يتحدث عن حقوقك أثناء إقامتك في مركز الاستقبال. أعدّته الجمعية الوطنية لأطفال رعاية الطفولة (LFB)."
+    "no": "Denne appen er for deg mellom 15-18 år som bor på mottak og handler om rettighetene dine mens du bor der. Den er laget av Landsforeningen for barnevernsbarn (LFB).",
+    "ar": "هذا التطبيق موجّه إليك إذا كان عمرك بين 15 و18 عامًا وتقيم في مركز استقبال، ويتحدث عن حقوقك أثناء إقامتك هناك. أعدّته الجمعية الوطنية لأطفال رعاية الطفولة (LFB)."
   },
   "intro.2.title": {
     "context": "Who we are",
@@ -1217,26 +1217,6 @@
     "no": "Ingen har lov til å ta på deg på en måte du ikke vil, vise deg nakenbilder eller porno, eller presse deg til noe seksuelt. Det gjelder både voksne og andre ungdommer. Hvis det skjer, er det aldri din skyld.",
     "ar": "لا يحق لأحد أن يلمسك بطريقة لا تريدها، أو يريك صورًا عارية أو إباحية، أو يضغط عليك لفعل شيء جنسي. وهذا ينطبق على الكبار وعلى الشباب الآخرين. إذا حدث ذلك، فليس ذنبك أبدًا."
   },
-  "x.safety.leave.title": {
-    "context": "",
-    "no": "Kan jeg dra fra mottaket når jeg vil?",
-    "ar": "هل يمكنني مغادرة مركز الاستقبال متى أردت؟"
-  },
-  "x.safety.leave.text": {
-    "context": "PLACEHOLDER, LFB to write what actually applies (from the workshop notes)",
-    "no": "[PLACEHOLDER] Mottaket skal vite hvor du er. Si fra til de ansatte når du drar, og når du kommer tilbake. Hvis ingen vet hvor du er, blir de bekymret og tar kontakt med representanten din.",
-    "ar": "[PLACEHOLDER] يجب أن يعرف مركز الاستقبال أين أنت. أخبر الموظفين عندما تغادر وعندما تعود. إذا لم يعرف أحد أين أنت، سيقلقون ويتصلون بممثّلك."
-  },
-  "x.safety.car.title": {
-    "context": "From LFB (feedback, October 2026)",
-    "no": "Kan jeg kreve å bli kjørt med bil dit jeg vil?",
-    "ar": "هل يمكنني أن أطلب أن يوصلوني بالسيارة إلى أي مكان أريده؟"
-  },
-  "x.safety.car.text": {
-    "context": "From LFB (feedback, October 2026)",
-    "no": "Du kan spørre de på mottaket om de kan kjøre deg et sted hvis du ikke kan gå dit selv eller det ikke går buss. Hvis det for eksempel ikke er mer enn 30 minutter å gå til butikken, så bør du gå dit selv, med mindre det er storm ute. De på mottaket har liten tid og mange ting de skal gjøre i løpet av en dag, og frisk luft og en gåtur er bare bra for deg.",
-    "ar": "يمكنك أن تسأل العاملين في مركز الاستقبال إن كان بإمكانهم توصيلك إلى مكان ما إذا لم تستطع المشي إليه بنفسك أو لم تكن هناك حافلة. فمثلًا، إذا كان المشي إلى المتجر لا يستغرق أكثر من 30 دقيقة، فعليك أن تذهب بنفسك، إلا إذا كانت هناك عاصفة في الخارج. العاملون في مركز الاستقبال لديهم وقت قليل وأعمال كثيرة خلال اليوم، والهواء النقي والمشي مفيدان لك."
-  },
   "x.safety.duties.title": {
     "context": "Heading of the duties list",
     "no": "Dine plikter:",
@@ -1452,6 +1432,26 @@
     "context": "From LFB's rights information",
     "no": "Nei, ikke som en vanlig del av hverdagen. Bare i en nødsituasjon kan de gripe inn for å hindre at du eller andre blir skadet. Hvis du mener de har brukt makt mot deg uten grunn, si fra til lederen på mottaket eller til representanten din.",
     "ar": "لا، ليس كجزء عادي من الحياة اليومية. فقط في حالات الطوارئ يمكنهم التدخل لمنع تعرّضك أنت أو الآخرين للأذى. إذا كنت تعتقد أنهم استخدموا القوة ضدك دون سبب، فأخبر مدير مركز الاستقبال أو ممثّلك."
+  },
+  "x.centre.leave.title": {
+    "context": "",
+    "no": "Kan jeg dra fra mottaket når jeg vil?",
+    "ar": "هل يمكنني مغادرة مركز الاستقبال متى أردت؟"
+  },
+  "x.centre.leave.text": {
+    "context": "PLACEHOLDER, LFB to write what actually applies (from the workshop notes)",
+    "no": "[PLACEHOLDER] Mottaket skal vite hvor du er. Si fra til de ansatte når du drar, og når du kommer tilbake. Hvis ingen vet hvor du er, blir de bekymret og tar kontakt med representanten din.",
+    "ar": "[PLACEHOLDER] يجب أن يعرف مركز الاستقبال أين أنت. أخبر الموظفين عندما تغادر وعندما تعود. إذا لم يعرف أحد أين أنت، سيقلقون ويتصلون بممثّلك."
+  },
+  "x.centre.car.title": {
+    "context": "From LFB (feedback, October 2026)",
+    "no": "Kan jeg kreve å bli kjørt med bil dit jeg vil?",
+    "ar": "هل يمكنني أن أطلب أن يوصلوني بالسيارة إلى أي مكان أريده؟"
+  },
+  "x.centre.car.text": {
+    "context": "From LFB (feedback, October 2026)",
+    "no": "Du kan spørre de på mottaket om de kan kjøre deg et sted hvis du ikke kan gå dit selv eller det ikke går buss. Hvis det for eksempel ikke er mer enn 30 minutter å gå til butikken, så bør du gå dit selv, med mindre det er storm ute. De på mottaket har liten tid og mange ting de skal gjøre i løpet av en dag, og frisk luft og en gåtur er bare bra for deg.",
+    "ar": "يمكنك أن تسأل العاملين في مركز الاستقبال إن كان بإمكانهم توصيلك إلى مكان ما إذا لم تستطع المشي إليه بنفسك أو لم تكن هناك حافلة. فمثلًا، إذا كان المشي إلى المتجر لا يستغرق أكثر من 30 دقيقة، فعليك أن تذهب بنفسك، إلا إذا كانت هناك عاصفة في الخارج. العاملون في مركز الاستقبال لديهم وقت قليل وأعمال كثيرة خلال اليوم، والهواء النقي والمشي مفيدان لك."
   },
   "x.centre.summary.title": {
     "context": "",

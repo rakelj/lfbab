@@ -46,7 +46,7 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
 - [x] Situasjonene fra dokumentene: negativ sosial kontroll i familien,
       «Kroppen din er din», politiet 112 og anonym chat (v0.2.5).
 - [ ] LFB skriver svaret på «Kan jeg dra fra mottaket når jeg vil?»
-      (`x.safety.leave.text`, nå PLACEHOLDER).
+      (`x.centre.leave.text`, nå PLACEHOLDER; flyttet til Mottaket i v0.3.7).
 
 ### 7. Rettighetene dine på mottaket
 - [x] Rett til medvirkning: infosteg og «Stemmer dette for deg?» (v0.2.6).
