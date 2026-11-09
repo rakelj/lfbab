@@ -6,6 +6,10 @@
 //
 //   node scripts/sync-strings.mjs --export   writes strings.csv from the JSON,
 //                                            for seeding a new sheet.
+//   node scripts/sync-strings.mjs --from-file sheet.json
+//       reads a saved copy of the sheet instead of downloading it: the JSON
+//       that Google's Sheets API (values.get) returns, {"values": [[...]]}.
+//       For environments that can't reach docs.google.com.
 import { readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 
@@ -53,13 +57,19 @@ if (!SHEET_ID) {
   process.exit(1)
 }
 
-const res = await fetch(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv`)
-if (!res.ok || !res.headers.get('content-type')?.includes('text/csv')) {
-  console.error(`Could not download the sheet (HTTP ${res.status}). Is it shared as "Anyone with the link can view"?`)
-  process.exit(1)
+const fromFile = process.argv.indexOf('--from-file')
+let table
+if (fromFile !== -1) {
+  table = JSON.parse(readFileSync(process.argv[fromFile + 1], 'utf8')).values
+} else {
+  const res = await fetch(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv`)
+  if (!res.ok || !res.headers.get('content-type')?.includes('text/csv')) {
+    console.error(`Could not download the sheet (HTTP ${res.status}). Is it shared as "Anyone with the link can view"?`)
+    process.exit(1)
+  }
+  table = parseCsv((await res.text()).replace(/^﻿/, ''))
 }
-
-const [header, ...rows] = parseCsv((await res.text()).replace(/^﻿/, ''))
+const [header, ...rows] = table
 const col = Object.fromEntries(header.map((h, i) => [h.trim(), i]))
 if (col.key === undefined || col.no === undefined) {
   console.error('The first row must have "key" and "no" columns.')

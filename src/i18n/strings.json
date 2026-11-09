@@ -131,8 +131,8 @@
   },
   "intro.2.text": {
     "context": "",
-    "no": "LFB er en demokratisk medlemsorganisasjon som jobber for at barn og unge skal få rettighetene sine. Vi jobber ikke for UDI, og vi bestemmer ingenting i asylsaken din.",
-    "ar": "LFB منظمة ديمقراطية للأعضاء تعمل من أجل أن يحصل الأطفال والشباب على حقوقهم. نحن لا نعمل لصالح دائرة الأجانب (UDI)، ولا نقرر أي شيء في قضية لجوئك."
+    "no": "LFB er en demokratisk medlemsorganisasjon som jobber for at barn og unge skal få rettighetene sine. Målet vårt er å gi deg god informasjon om rettighetene dine, og at du skal bli behandlet på en fin måte på mottak.",
+    "ar": "LFB منظمة ديمقراطية للأعضاء تعمل من أجل أن يحصل الأطفال والشباب على حقوقهم. هدفنا أن نقدم لك معلومات جيدة عن حقوقك، وأن تُعامَل معاملة حسنة في مركز الاستقبال."
   },
   "intro.3.title": {
     "context": "Privacy screen heading",
@@ -236,13 +236,13 @@
   },
   "q.true": {
     "context": "Answer button for a statement",
-    "no": "Stemmer",
-    "ar": "صحيح"
+    "no": "Ja",
+    "ar": "نعم"
   },
   "q.false": {
     "context": "Answer button for a statement",
-    "no": "Stemmer ikke",
-    "ar": "غير صحيح"
+    "no": "Nei",
+    "ar": "لا"
   },
   "q.selfLabel": {
     "context": "Small label above a question about the kid's own situation",
@@ -325,8 +325,8 @@
   },
   "ch1.interview.right": {
     "context": "",
-    "no": "Representanten skal forberede deg på asylintervjuet og være med på samtaler med utlendingsmyndighetene.",
-    "ar": "يجب على الممثل أن يساعدك على الاستعداد لمقابلة اللجوء، وأن يحضر المحادثات مع سلطات الأجانب."
+    "no": "Representanten skal forberede deg på asylintervjuet og være med på samtaler med UDI og politi.",
+    "ar": "يجب على الممثل أن يساعدك على الاستعداد لمقابلة اللجوء، وأن يحضر المحادثات مع دائرة الأجانب (UDI) والشرطة."
   },
   "ch1.interview.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
@@ -344,7 +344,7 @@
   },
   "ch1.interpreter.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
-    "no": "Jeg trenger tolk til en viktig samtale. Kan du hjelpe meg?"
+    "no": "Jeg trenger tolk til viktige samtaler. Kan du hjelpe meg?"
   },
   "ch1.complain.q": {
     "context": "Myth statement (the correct answer is 'not true')",
@@ -493,8 +493,8 @@
   },
   "ch2.rights.2": {
     "context": "Rights screen at the end of the chapter (from the workshop)",
-    "no": "Gratis lege, psykolog, fysioterapeut og sykehus hvis du er under 16 år",
-    "ar": "طبيب وطبيب نفسي وعلاج طبيعي ومستشفى مجانًا إذا كان عمرك أقل من 16 عامًا"
+    "no": "Gratis lege, psykolog, fysioterapeut og sykehus hvis du er under 18 år",
+    "ar": "طبيب وطبيب نفسي وعلاج طبيعي ومستشفى مجانًا إذا كان عمرك أقل من 18 عامًا"
   },
   "ch2.rights.3": {
     "context": "Rights screen at the end of the chapter (from the workshop)",
@@ -642,7 +642,7 @@
   },
   "actor.friends.who": {
     "context": "Actor card back, from LFB print file",
-    "no": "Jevnaldrende du kjenner fra mottaket, skolen, fritidsaktiviteter eller nabolaget.",
+    "no": "Andre på din alder du kjenner fra mottaket, skolen, fritidsaktiviteter eller nabolaget.",
     "ar": "أشخاص في مثل عمرك تعرفهم من مركز الاستقبال أو المدرسة أو الأنشطة الترفيهية أو الحي."
   },
   "actor.friends.what": {
@@ -722,8 +722,8 @@
   },
   "actor.representative.what": {
     "context": "",
-    "no": "Følger deg, tar viktige avgjørelser på dine vegne og sørger for at rettighetene dine blir fulgt.",
-    "ar": "يتابعك، ويتخذ قرارات مهمة نيابة عنك، ويتأكد من احترام حقوقك."
+    "no": "Følger deg, tar viktige valg på dine vegne og sørger for at rettighetene dine blir fulgt.",
+    "ar": "يتابعك، ويتخذ خيارات مهمة نيابة عنك، ويتأكد من احترام حقوقك."
   },
   "actor.representative.when": {
     "context": "",
@@ -762,8 +762,8 @@
   },
   "ch1.met.validate.dontKnow": {
     "context": "DRAFT, needs LFB review. Validation after answering Don't know",
-    "no": "Det er helt vanlig å ikke vite det. Det er mye nytt å holde styr på når man kommer til Norge. Spør en ansatt på mottaket, så finner dere ut av det sammen.",
-    "ar": "من الطبيعي تمامًا ألا تعرف. هناك أشياء جديدة كثيرة عليك متابعتها عندما تصل إلى النرويج. اسأل أحد الموظفين في مركز الاستقبال، وستعرفان الجواب معًا."
+    "no": "Det er helt vanlig å ikke vite det. Det er mye nytt når man kommer til Norge. Spør en ansatt på mottaket, så finner dere ut av det sammen.",
+    "ar": "من الطبيعي تمامًا ألا تعرف. هناك أشياء جديدة كثيرة عندما تصل إلى النرويج. اسأل أحد الموظفين في مركز الاستقبال، وستعرفان الجواب معًا."
   },
   "ch1.interview.validate.yes": {
     "context": "DRAFT, needs LFB review",
@@ -1020,13 +1020,13 @@
   },
   "sound.on": {
     "context": "Top bar button: turn read-aloud on (screen reader label)",
-    "no": "Slå på opplesning",
-    "ar": "تشغيل القراءة بصوت عالٍ"
+    "no": "Slå på lyd",
+    "ar": "تشغيل الصوت"
   },
   "sound.off": {
     "context": "Top bar button: turn read-aloud off (screen reader label)",
-    "no": "Slå av opplesning",
-    "ar": "إيقاف القراءة بصوت عالٍ"
+    "no": "Slå av lyd",
+    "ar": "إيقاف الصوت"
   },
   "sound.read": {
     "context": "Small speaker button next to a text (screen reader label)",
@@ -1035,8 +1035,8 @@
   },
   "sound.hint": {
     "context": "Shown once when read-aloud is turned on",
-    "no": "Opplesning er på. Trykk på høyttaleren ved en tekst for å høre den. Bruk gjerne hodetelefoner, så andre ikke hører.",
-    "ar": "القراءة بصوت عالٍ مفعّلة. اضغط على مكبّر الصوت بجانب النص لتسمعه. يُفضّل استخدام سماعات الأذن حتى لا يسمع الآخرون."
+    "no": "Lyd er på. Trykk på høyttaleren ved en tekst for å høre den. Bruk gjerne hodetelefoner, så andre ikke hører.",
+    "ar": "الصوت مفعّل. اضغط على مكبّر الصوت بجانب النص لتسمعه. يُفضّل استخدام سماعات الأذن حتى لا يسمع الآخرون."
   },
   "footer.madeBy": {
     "context": "Footer on every screen",
@@ -1184,7 +1184,7 @@
   },
   "x.safety.nsc.text": {
     "context": "From LFB's rights information",
-    "no": "Negativ sosial kontroll er press, oppsyn, trusler eller tvang som kan begrense din rett til å bestemme over egen kropp, venner, fritidsaktiviteter, påkledning og kjæreste.",
+    "no": "Negativ sosial kontroll er press, overvåking, trusler eller tvang som kan begrense din rett til å bestemme over egen kropp, venner, fritidsaktiviteter, påkledning og kjæreste.",
     "ar": "الرقابة الاجتماعية السلبية هي الضغط أو المراقبة أو التهديدات أو الإكراه الذي قد يحدّ من حقك في أن تقرر بنفسك بشأن جسمك وأصدقائك وأنشطتك الترفيهية وملابسك وشريك حياتك."
   },
   "x.safety.hit.q": {
@@ -1303,37 +1303,37 @@
   },
   "x.centre.intro.text": {
     "context": "From LFB's rights information",
-    "no": "De voksne som jobber på mottaket skal alltid tenke på hva som er best for deg. De skal snakke med deg alene for å finne ut hva du trenger, og lage en plan sammen med deg for hvordan de kan hjelpe deg.",
-    "ar": "يجب على البالغين الذين يعملون في مركز الاستقبال التفكير دائمًا فيما هو الأفضل بالنسبة لك. يجب أن يتحدثوا معك على انفراد لمعرفة ما تحتاجه، وأن يضعوا معك خطة لكيفية مساعدتك."
+    "no": "De voksne som jobber på mottaket skal alltid tenke på hva som er best for deg. De skal snakke med deg alene for å finne ut hva du trenger, og lage en omsorgsplan sammen med deg for hvordan de kan hjelpe deg.",
+    "ar": "يجب على البالغين الذين يعملون في مركز الاستقبال التفكير دائمًا فيما هو الأفضل بالنسبة لك. يجب أن يتحدثوا معك على انفراد لمعرفة ما تحتاجه، وأن يضعوا معك خطة رعاية لكيفية مساعدتك."
   },
   "x.centre.plan.q": {
     "context": "Statement about own situation",
-    "no": "De ansatte har laget en plan sammen med meg.",
-    "ar": "وضع الموظفون خطة معي."
+    "no": "De ansatte har laget en omsorgsplan sammen med meg.",
+    "ar": "وضع الموظفون خطة رعاية معي."
   },
   "x.centre.plan.right": {
     "context": "From LFB's rights information",
-    "no": "Planen skal lages så snart som mulig etter at du kommer til mottaket, og brukes hele tiden du bor der. Du og representanten din skal få si hva dere mener om den.",
-    "ar": "يجب وضع الخطة في أقرب وقت ممكن بعد وصولك إلى مركز الاستقبال، واستخدامها طوال فترة إقامتك فيه. يجب أن تُتاح لك ولممثلك الفرصة لقول رأيكما فيها."
+    "no": "Omsorgsplanen skal lages så snart som mulig etter at du kommer til mottaket, og brukes hele tiden du bor der. Du og representanten din skal få si hva dere mener om den.",
+    "ar": "يجب وضع خطة الرعاية في أقرب وقت ممكن بعد وصولك إلى مركز الاستقبال، واستخدامها طوال فترة إقامتك فيه. يجب أن تُتاح لك ولممثلك الفرصة لقول رأيكما فيها."
   },
   "x.centre.plan.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
-    "no": "Jeg vet ikke om jeg har en plan. Kan vi snakke om den sammen?"
+    "no": "Jeg vet ikke om jeg har en omsorgsplan. Kan vi snakke om den sammen?"
   },
   "x.centre.plan.validate.yes": {
     "context": "DRAFT, needs LFB review",
-    "no": "Så bra! Planen er din, og du kan be om å endre den hvis behovene dine endrer seg.",
-    "ar": "رائع! الخطة خاصة بك، ويمكنك أن تطلب تعديلها إذا تغيرت احتياجاتك."
+    "no": "Så bra! Omsorgsplanen er din, og du kan be om å endre den hvis behovene dine endrer seg.",
+    "ar": "رائع! خطة الرعاية خاصة بك، ويمكنك أن تطلب تعديلها إذا تغيرت احتياجاتك."
   },
   "x.centre.plan.validate.no": {
     "context": "DRAFT, needs LFB review",
-    "no": "Det er ikke din feil. Du har rett til en plan, og det er lov å spørre de ansatte om den.",
-    "ar": "هذا ليس ذنبك. من حقك أن تكون لديك خطة، ومن المسموح أن تسأل الموظفين عنها."
+    "no": "Det er ikke din feil. Du har rett til en omsorgsplan, og det er lov å spørre de ansatte om den.",
+    "ar": "هذا ليس ذنبك. من حقك أن تكون لديك خطة رعاية، ومن المسموح أن تسأل الموظفين عنها."
   },
   "x.centre.plan.validate.dontKnow": {
     "context": "DRAFT, needs LFB review",
-    "no": "Det er helt vanlig å ikke vite det. Spør en ansatt du stoler på, så kan dere se på planen sammen.",
-    "ar": "من الطبيعي تمامًا ألا تعرف. اسأل موظفًا تثق به، ويمكنكما الاطلاع على الخطة معًا."
+    "no": "Det er helt vanlig å ikke vite det. Spør en ansatt du stoler på, så kan dere se på omsorgsplanen sammen.",
+    "ar": "من الطبيعي تمامًا ألا تعرف. اسأل موظفًا تثق به، ويمكنكما الاطلاع على خطة الرعاية معًا."
   },
   "x.centre.say.title": {
     "context": "",
@@ -1357,7 +1357,7 @@
   },
   "x.centre.say.staff": {
     "context": "Shown to staff in NORWEGIAN only. Do not translate.",
-    "no": "Jeg vil gjerne si min mening om reglene og hverdagen her. Når kan vi snakke om det?"
+    "no": "Kan jeg være med å planlegge hverdagen min for å gjøre det jeg liker? Når kan vi snakke om det?"
   },
   "x.centre.say.validate.yes": {
     "context": "Validation after answering",
@@ -1410,7 +1410,7 @@
   },
   "x.centre.respect.text": {
     "context": "From LFB's rights information (personal integrity)",
-    "no": "De som jobber på mottaket skal være hyggelige, ta deg på alvor og passe på at du er trygg. De skal ta hensyn til hvor du kommer fra, språket ditt, religionen din og kulturen din. Det er lov å være den du er.",
+    "no": "De som jobber på mottaket skal være hyggelige, ta deg seriøst og passe på at du er trygg. De skal ta hensyn til hvor du kommer fra, språket ditt, religionen din og kulturen din. Det er lov å være den du er.",
     "ar": "يجب على العاملين في مركز الاستقبال أن يكونوا لطفاء، وأن يأخذوك على محمل الجد، وأن يحرصوا على أن تكون آمنًا. ويجب أن يراعوا المكان الذي أتيت منه، ولغتك، ودينك، وثقافتك. من حقك أن تكون نفسك."
   },
   "x.centre.phone.q": {
@@ -1430,7 +1430,7 @@
   },
   "x.centre.force.text": {
     "context": "From LFB's rights information",
-    "no": "Nei, ikke som en vanlig del av hverdagen. Bare i en nødsituasjon kan de gripe inn for å hindre at du eller andre blir skadet. Hvis du mener de har brukt makt mot deg uten grunn, si fra til lederen på mottaket eller til representanten din.",
+    "no": "Nei, ikke som en vanlig del av hverdagen. Bare i en nødsituasjon kan de gjøre dette for å hindre at du eller andre blir skadet. Hvis du mener de har brukt makt mot deg uten grunn, si fra til lederen på mottaket eller til representanten din.",
     "ar": "لا، ليس كجزء عادي من الحياة اليومية. فقط في حالات الطوارئ يمكنهم التدخل لمنع تعرّضك أنت أو الآخرين للأذى. إذا كنت تعتقد أنهم استخدموا القوة ضدك دون سبب، فأخبر مدير مركز الاستقبال أو ممثّلك."
   },
   "x.centre.leave.title": {
@@ -1460,8 +1460,8 @@
   },
   "x.centre.summary.1": {
     "context": "From LFB's rights information",
-    "no": "En plan, og voksne som følger deg opp",
-    "ar": "خطة، وأشخاص بالغين يتابعونك"
+    "no": "En omsorgsplan, og voksne som følger deg opp",
+    "ar": "خطة رعاية، وأشخاص بالغين يتابعونك"
   },
   "x.centre.summary.2": {
     "context": "",
@@ -1530,8 +1530,8 @@
   },
   "x.cws.intro.text": {
     "context": "From LFB's rights information",
-    "no": "Barnevernet er en offentlig tjeneste. De hjelper barn som ikke har det trygt, og hjelper barn og familier til å ha det bra. Barnevernet jobber ikke for UDI, og bestemmer ikke noe i asylsaken din.",
-    "ar": "مؤسسة حماية الأطفال (Barnevernet) خدمة حكومية. تساعد الأطفال الذين لا يشعرون بالأمان، وتساعد الأطفال والأسر على الشعور بالرضا معًا. لا تعمل لصالح دائرة الأجانب (UDI)، ولا تقرر أي شيء في قضية لجوئك."
+    "no": "Barnevernet er en offentlig tjeneste. De hjelper barn som ikke har det trygt, og hjelper barn og familier til å ha det bra. Barnevernet kan hjelpe alle frem til de er 18 år, og gi ettervern til du er 25 år. Barnevernet jobber ikke for UDI, og bestemmer ikke noe i asylsaken din.",
+    "ar": "مؤسسة حماية الأطفال (Barnevernet) خدمة حكومية. تساعد الأطفال الذين لا يشعرون بالأمان، وتساعد الأطفال والأسر على الشعور بالرضا معًا. يمكن لمؤسسة حماية الأطفال مساعدة الجميع حتى سن 18 عامًا، وتقديم الرعاية اللاحقة حتى سن 25 عامًا. لا تعمل لصالح دائرة الأجانب (UDI)، ولا تقرر أي شيء في قضية لجوئك."
   },
   "x.cws.asylum.q": {
     "context": "Myth statement (correct answer: not true)",
@@ -1580,8 +1580,8 @@
   },
   "x.cws.what.text": {
     "context": "From LFB (feedback, October 2026)",
-    "no": "Hvis barnevernet velger å undersøke hvordan du har det, så gjør de det i 3 måneder. Da snakker de med deg, de ansatte på mottaket, de på skolen og for eksempel lege hvis du har det. Barnevernet kan da tilby deg ulik hjelp hvis du ser at du trenger det, eller i alvorlige tilfeller flytte deg til et annet sted eller hjem. Barnevernet kan også bestemme at de synes du har det godt nok. Da henlegger de undersøkelsen. Hvis du er uenig i dette, kan du klage til Statsforvalteren. Be en ansatt eller representanten din om hjelp.",
-    "ar": "إذا قررت مؤسسة حماية الأطفال أن تتحقق من وضعك، فإنها تفعل ذلك خلال 3 أشهر. يتحدثون معك، ومع الموظفين في مركز الاستقبال، ومع العاملين في المدرسة، ومع الطبيب مثلًا إذا كان لديك طبيب. بعد ذلك يمكن لمؤسسة حماية الأطفال أن تقدم لك أنواعًا مختلفة من المساعدة إذا كنت تحتاج إليها، أو في الحالات الخطيرة أن تنقلك إلى مكان أو بيت آخر. ويمكن للمؤسسة أيضًا أن تقرر أن وضعك جيد بما فيه الكفاية، وعندها تُغلق التحقيق. إذا كنت لا توافق على ذلك، يمكنك تقديم شكوى إلى Statsforvalteren. اطلب المساعدة من أحد الموظفين أو من ممثّلك."
+    "no": "Hvis barnevernet velger å undersøke hvordan du har det, så gjør de det i 3 måneder. Da snakker de med deg, de ansatte på mottaket, de på skolen og for eksempel lege hvis du har det. Barnevernet kan da tilby deg ulik hjelp hvis du ser at du trenger det, eller i alvorlige tilfeller flytte deg til et annet sted eller hjem. Barnevernet kan også bestemme at de synes du har det godt nok. Da avslutter de saken din. Hvis du er uenig i dette, kan du klage til Statsforvalteren. Be en ansatt eller representanten din om hjelp.",
+    "ar": "إذا قررت مؤسسة حماية الأطفال أن تتحقق من وضعك، فإنها تفعل ذلك خلال 3 أشهر. يتحدثون معك، ومع الموظفين في مركز الاستقبال، ومع العاملين في المدرسة، ومع الطبيب مثلًا إذا كان لديك طبيب. بعد ذلك يمكن لمؤسسة حماية الأطفال أن تقدم لك أنواعًا مختلفة من المساعدة إذا كنت تحتاج إليها، أو في الحالات الخطيرة أن تنقلك إلى مكان أو بيت آخر. ويمكن للمؤسسة أيضًا أن تقرر أن وضعك جيد بما فيه الكفاية، وعندها تُغلق قضيتك. إذا كنت لا توافق على ذلك، يمكنك تقديم شكوى إلى Statsforvalteren. اطلب المساعدة من أحد الموظفين أو من ممثّلك."
   },
   "x.cws.rights.1": {
     "context": "Rights screen at the end of the chapter",
@@ -1634,7 +1634,7 @@
   },
   "x.money.school.text": {
     "context": "From LFB's rights information",
-    "no": "Du har rett til opplæring, og opplæringen er gratis. Trenger du det, har du rett til ekstra språkopplæring og annen tilrettelegging. Er du under 18 år, kan du ha rett til videregående skole.",
+    "no": "Du har rett til opplæring, og opplæringen er gratis. Trenger du det, har du rett til ekstra språkopplæring og annen støtte. Er du under 18 år, kan du ha rett til videregående skole.",
     "ar": "يحق لك الحصول على التعليم، والتعليم مجاني. إذا كنت بحاجة إليه، يحق لك الحصول على تعليم لغوي خاص ودعم آخر. وإذا كان عمرك أقل من 18 عامًا، فقد يحق لك الالتحاق بالمدرسة الثانوية."
   },
   "x.money.inschool.q": {
@@ -1793,7 +1793,7 @@
   },
   "story.quiet.1": {
     "context": "Story page 1 (LFB's text, verbatim)",
-    "no": "Ovenfor Hamlin sitter en mann som jobber på mottaket. Hamlin har ingen venner her, og kan ikke nok norsk til å snakke godt med de som jobber her. Hamlin holder seg derfor mest for seg selv.",
+    "no": "Overfor Hamlin sitter en mann som jobber på mottaket. Hamlin har ingen venner her, og kan ikke nok norsk til å snakke godt med de som jobber her. Hamlin holder seg derfor mest for seg selv.",
     "ar": "يوجد أمام هاملين رجل يجلس في مركز الاستقبال. ليس لدى هاملين أصدقاء هنا، ويتعذّر عليه التحدث جيدًا مع الأشخاص الذين يعملون هنا. ولذلك يبقى هاملين وحيدًا أغلب الأوقات."
   },
   "story.quiet.2": {
@@ -1818,8 +1818,8 @@
   },
   "story.quiet.6": {
     "context": "Story page 6 (LFB's text, verbatim)",
-    "no": "Når samtalen er over spør Hamlin om han kan få lese i rapporten. Rapporten er skrevet på norsk, så Hamlin får ikke lest den. Noen måneder senere går en ansatt igjennom rapporten: «Hamlin 15 år. Lite sosial og svært stille gutt. Pliktoppfyllende. Han har det bra».",
-    "ar": "عندما تنتهي المحادثة، يسأل هاملين عما إذا كان يستطيع قراءة التقرير. التقرير مكتوب باللغة النرويجية، لذا لا يستطيع هاملين قراءته. بعد عدة أشهر يراجع الموظف التقرير: \"هاملين 15 عامًا. صبي اجتماعي قليلاً وهادئ جدًا. منضبط. إنه على ما يرام.\""
+    "no": "Når samtalen er over spør Hamlin om han kan få lese i rapporten. Rapporten er skrevet på norsk, så Hamlin får ikke lest den. Noen måneder senere går en ansatt igjennom rapporten: «Hamlin 15 år. Lite sosial og svært stille gutt. Følger regler greit. Han har det bra».",
+    "ar": "عندما تنتهي المحادثة، يسأل هاملين عما إذا كان يستطيع قراءة التقرير. التقرير مكتوب باللغة النرويجية، لذا لا يستطيع هاملين قراءته. بعد عدة أشهر يراجع الموظف التقرير: \"هاملين 15 عامًا. صبي اجتماعي قليلاً وهادئ جدًا. يلتزم بالقواعد. إنه على ما يرام.\""
   },
   "story.shut.name": {
     "context": "Main character's name, used in questions",
@@ -2078,8 +2078,8 @@
   },
   "ch1.complain.validate.true": {
     "context": "DRAFT, needs LFB review. Validation after answering a myth question",
-    "no": "Det er helt forståelig å være redd for det. Mange tror det samme, og mange tør derfor ikke klage. Men det stemmer ikke.",
-    "ar": "من المفهوم تمامًا أن تخاف من ذلك. كثيرون يظنون الشيء نفسه، ولذلك لا يجرؤ كثيرون على الشكوى. لكن هذا غير صحيح."
+    "no": "Det er helt forståelig å være redd for det. Mange tror det samme, og mange tør derfor ikke klage. Men sånn er det ikke.",
+    "ar": "من المفهوم تمامًا أن تخاف من ذلك. كثيرون يظنون الشيء نفسه، ولذلك لا يجرؤ كثيرون على الشكوى. لكن الأمر ليس كذلك."
   },
   "ch1.complain.validate.false": {
     "context": "DRAFT, needs LFB review. Validation after answering a myth question",
@@ -2093,8 +2093,8 @@
   },
   "ch2.doctor.validate.true": {
     "context": "DRAFT, needs LFB review. Validation after answering a myth question",
-    "no": "Det er helt forståelig å være bekymret for det. Mange tror det samme, og venter derfor med å be om hjelp. Men det stemmer ikke.",
-    "ar": "من المفهوم تمامًا أن تقلق من ذلك. كثيرون يظنون الشيء نفسه، ولذلك يؤجلون طلب المساعدة. لكن هذا غير صحيح."
+    "no": "Det er helt forståelig å være bekymret for det. Mange tror det samme, og venter derfor med å be om hjelp. Men sånn er det ikke.",
+    "ar": "من المفهوم تمامًا أن تقلق من ذلك. كثيرون يظنون الشيء نفسه، ولذلك يؤجلون طلب المساعدة. لكن الأمر ليس كذلك."
   },
   "ch2.doctor.validate.false": {
     "context": "DRAFT, needs LFB review. Validation after answering a myth question",
@@ -2108,8 +2108,8 @@
   },
   "ch3.cost.validate.true": {
     "context": "DRAFT, needs LFB review. Validation after answering a myth question",
-    "no": "Mange tror det, og lar derfor være å spørre. Det er forståelig, men det stemmer ikke.",
-    "ar": "كثيرون يظنون ذلك، ولذلك لا يسألون. هذا مفهوم، لكنه غير صحيح."
+    "no": "Mange tror det, og lar derfor være å spørre. Det er forståelig, men sånn er det ikke.",
+    "ar": "كثيرون يظنون ذلك، ولذلك لا يسألون. هذا مفهوم، لكن الأمر ليس كذلك."
   },
   "ch3.cost.validate.false": {
     "context": "DRAFT, needs LFB review. Validation after answering a myth question",
@@ -2213,8 +2213,8 @@
   },
   "film.4": {
     "context": "DRAFT, needs LFB review. Scene 4 (light breaking through clouds)",
-    "no": "Det er vanlig å ha det sånn når man bor på mottak.",
-    "ar": "من الطبيعي أن يشعر المرء بذلك عندما يقيم في مركز استقبال."
+    "no": "Det er forståelig at du kan ha det sånn når du bor på mottak.",
+    "ar": "من المفهوم أن تشعر بذلك عندما تقيم في مركز استقبال."
   },
   "film.5": {
     "context": "DRAFT, needs LFB review. Scene 5 (group of friends)",

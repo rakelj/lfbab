@@ -1,28 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
 import Dots from '../components/Dots.jsx'
-import {
-  InfoStep, SelfStep, MythStep, ChainStep, StoryChoiceStep, StoryStep, EmotionsStep, HelpersStep,
-  ActivitiesStep, ActivitySummaryStep, RoutesStep, SummaryStep, RightsStep, StoryAgainStep, FirstStep,
-} from '../steps/Steps.jsx'
-
-const STEPS = {
-  info: InfoStep,
-  self: SelfStep,
-  myth: MythStep,
-  chain: ChainStep,
-  storyChoice: StoryChoiceStep,
-  activities: ActivitiesStep,
-  activitySummary: ActivitySummaryStep,
-  routes: RoutesStep,
-  storyAgain: StoryAgainStep,
-  first: FirstStep,
-  story: StoryStep,
-  emotions: EmotionsStep,
-  helpers: HelpersStep,
-  summary: SummaryStep,
-  rights: RightsStep,
-}
+import { STEPS } from '../steps/index.js'
 
 export default function Chapter({ chapter, onComplete, onExit, onGame }) {
   const { t } = useI18n()

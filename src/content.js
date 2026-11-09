@@ -1,4 +1,3 @@
-import { EXTRA_CHAPTERS } from './content/extra.js'
 
 // Structure of the app. All visible text is referenced by key from
 // src/i18n/strings.json (synced from the translation sheet).
@@ -80,6 +79,10 @@ export const SITUATIONS = [
 // rights (last screen of every chapter, same picture in all of them).
 // Steps with an `id` keep their answer while the chapter is open; later steps
 // can read earlier answers (e.g. which story was chosen).
+// The topics, in the order the overview shows them: from who helps you and
+// where you live, through everyday life and health, to safety, and how to
+// complain last. Texts starting with "x." come from LFB's rights information
+// documents (not the workshop); the prefix is kept so the sheet's keys stay.
 export const CHAPTERS = [
   {
     id: 'ch1',
@@ -97,6 +100,68 @@ export const CHAPTERS = [
         title: 'ch1.summary.title',
         items: ['ch1.summary.1', 'ch1.summary.2', 'ch1.summary.3', 'ch1.summary.4', 'ch1.summary.5', 'ch1.summary.6'],
         note: 'ch1.summary.note',
+      },
+    ],
+  },
+  {
+    id: 'x.centre',
+    title: 'x.centre.title',
+    subtitle: 'x.centre.subtitle',
+    img: img('actor-centre-staff.jpg'),
+    steps: [
+      { type: 'info', title: 'x.centre.intro.title', text: 'x.centre.intro.text', img: img('icon-handshake.png') },
+      { type: 'self', id: 'x.centre.plan', img: img('icon-map.png') },
+      { type: 'info', title: 'x.centre.say.title', text: 'x.centre.say.text' },
+      { type: 'self', id: 'x.centre.say', img: img('thumbs-up.png') },
+      { type: 'self', id: 'x.centre.info', img: img('icon-interpreter.png') },
+      { type: 'info', title: 'x.centre.respect.title', text: 'x.centre.respect.text' },
+      { type: 'myth', id: 'x.centre.phone', correct: 'false' },
+      { type: 'info', title: 'x.centre.force.title', text: 'x.centre.force.text' },
+      // Leaving the centre and getting a lift (moved here from Safety at LFB's
+      // request). The answer about leaving is a PLACEHOLDER until LFB has
+      // checked the rules for leave.
+      { type: 'info', title: 'x.centre.leave.title', text: 'x.centre.leave.text', img: img('icon-map.png') },
+      { type: 'info', title: 'x.centre.car.title', text: 'x.centre.car.text' },
+      {
+        type: 'rights',
+        title: 'x.centre.summary.title',
+        items: ['x.centre.summary.1', 'x.centre.summary.2', 'x.centre.summary.3', 'x.centre.summary.4', 'x.centre.summary.5'],
+        duties: {
+          title: 'x.centre.duties.title',
+          items: ['x.centre.duties.1', 'x.centre.duties.2', 'x.centre.duties.3', 'x.centre.duties.4', 'x.centre.duties.5'],
+        },
+      },
+    ],
+  },
+  {
+    id: 'x.money',
+    title: 'x.money.title',
+    subtitle: 'x.money.subtitle',
+    img: img('activity-learn.jpg'),
+    steps: [
+      { type: 'info', title: 'x.money.intro.title', text: 'x.money.intro.text', img: img('activity-food.jpg') },
+      { type: 'myth', id: 'x.money.rent', correct: 'false' },
+      { type: 'info', title: 'x.money.school.title', text: 'x.money.school.text', img: img('activity-learn.jpg') },
+      { type: 'self', id: 'x.money.inschool' },
+      { type: 'rights', title: 'rights.title', items: ['x.money.rights.1', 'x.money.rights.2', 'x.money.rights.3'] },
+    ],
+  },
+  {
+    id: 'ch3',
+    title: 'ch3.title',
+    subtitle: 'ch3.subtitle',
+    img: img('activity-sport.jpg'),
+    steps: [
+      { type: 'info', title: 'ch3.intro.title', text: 'ch3.intro.text', img: img('sunny-tree.png') },
+      { type: 'myth', id: 'ch3.cost', correct: 'false' },
+      { type: 'activities', id: 'ch3.activities' },
+      {
+        type: 'activitySummary',
+        activitiesFrom: 'ch3.activities',
+        nextTitle: 'ch3.next.title',
+        disclaimer: 'ch3.next.disclaimer',
+        title: 'ch3.summary.title',
+        items: ['ch3.summary.1', 'ch3.summary.2', 'ch3.summary.3', 'ch3.summary.4'],
       },
     ],
   },
@@ -126,38 +191,65 @@ export const CHAPTERS = [
     ],
   },
   {
-    id: 'ch3',
-    title: 'ch3.title',
-    subtitle: 'ch3.subtitle',
-    img: img('activity-sport.jpg'),
+    id: 'x.safety',
+    title: 'x.safety.title',
+    subtitle: 'x.safety.subtitle',
+    img: img('friends.png'),
+    imgContain: true,
     steps: [
-      { type: 'info', title: 'ch3.intro.title', text: 'ch3.intro.text', img: img('sunny-tree.png') },
-      { type: 'myth', id: 'ch3.cost', correct: 'false' },
-      { type: 'activities', id: 'ch3.activities' },
+      { type: 'info', title: 'x.safety.intro.title', text: 'x.safety.intro.text', img: img('icon-care.png') },
+      { type: 'info', title: 'x.safety.nsc.title', text: 'x.safety.nsc.text' },
+      { type: 'myth', id: 'x.safety.family', correct: 'false' },
+      { type: 'myth', id: 'x.safety.hit', correct: 'false' },
+      { type: 'info', title: 'x.safety.body.title', text: 'x.safety.body.text' },
       {
-        type: 'activitySummary',
-        activitiesFrom: 'ch3.activities',
-        nextTitle: 'ch3.next.title',
-        disclaimer: 'ch3.next.disclaimer',
-        title: 'ch3.summary.title',
-        items: ['ch3.summary.1', 'ch3.summary.2', 'ch3.summary.3', 'ch3.summary.4'],
+        type: 'summary',
+        title: 'x.safety.summary.title',
+        items: ['x.safety.summary.1', 'x.safety.summary.2', 'x.safety.summary.3', 'x.safety.summary.4', 'x.safety.summary.5'],
+        staff: 'x.safety.staff',
       },
+      {
+        type: 'rights',
+        title: 'rights.title',
+        items: ['x.safety.rights.1', 'x.safety.rights.2', 'x.safety.rights.3'],
+        duties: { title: 'x.safety.duties.title', items: ['x.safety.duties.1', 'x.safety.duties.2', 'x.safety.duties.3'] },
+      },
+    ],
+  },
+  {
+    id: 'x.cws',
+    title: 'x.cws.title',
+    subtitle: 'x.cws.subtitle',
+    img: img('actor-family.jpg'),
+    steps: [
+      { type: 'info', title: 'x.cws.intro.title', text: 'x.cws.intro.text', img: img('icon-care.png') },
+      { type: 'myth', id: 'x.cws.asylum', correct: 'false' },
+      { type: 'info', title: 'x.cws.when.title', text: 'x.cws.when.text' },
+      {
+        type: 'summary',
+        title: 'x.cws.summary.title',
+        items: ['x.cws.summary.1', 'x.cws.summary.2', 'x.cws.summary.3'],
+        staff: 'x.cws.staff',
+      },
+      { type: 'info', title: 'x.cws.what.title', text: 'x.cws.what.text' },
+      { type: 'rights', title: 'rights.title', items: ['x.cws.rights.1', 'x.cws.rights.2'] },
+    ],
+  },
+  {
+    id: 'x.complain',
+    title: 'x.complain.title',
+    subtitle: 'x.complain.subtitle',
+    img: img('thumbs-up.png'),
+    imgContain: true,
+    steps: [
+      { type: 'info', title: 'x.complain.intro.title', text: 'x.complain.intro.text', img: img('thumbs-up.png') },
+      { type: 'routes', title: 'x.complain.routes.title', routes: ['x.complain.r1', 'x.complain.r2', 'x.complain.r3', 'x.complain.r4'] },
+      { type: 'rights', title: 'rights.title', items: ['x.complain.rights.1', 'x.complain.rights.2', 'x.complain.rights.3'] },
     ],
   },
 ]
 
-// Chapters shown with the current feature switches: the workshop chapters plus
-// any extra chapters that are switched on.
-// Order of the topics in the overview: from who helps you and where you live,
-// through everyday life and health, to safety, and complaints last.
-const ORDER = ['ch1', 'x.centre', 'x.money', 'ch3', 'ch2', 'x.safety', 'x.cws', 'x.complain']
-const rank = (ch) => (ORDER.includes(ch.id) ? ORDER.indexOf(ch.id) : ORDER.length)
-
-export function chaptersFor(on) {
-  return [...CHAPTERS, ...EXTRA_CHAPTERS.filter((ch) => on(ch.id))].sort((a, b) => rank(a) - rank(b))
-}
-
 export function findChapter(id) {
-  return [...CHAPTERS, ...EXTRA_CHAPTERS].find((ch) => ch.id === id)
+  return CHAPTERS.find((ch) => ch.id === id)
 }
 

@@ -29,7 +29,6 @@ export default function DemoSettings() {
       {open && (
         <Modal title={t('settings.title')} onClose={() => setOpen(false)}>
           {group('flow')}
-          {group('extra')}
           <p className="muted">{t('settings.note')}</p>
           <button className="btn btn-link" onClick={reset}>
             {t('settings.reset')}

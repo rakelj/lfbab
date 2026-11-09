@@ -3,6 +3,15 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.3.8',
+    date: '09.11.2026',
+    items: [
+      'Tekstene LFB har endret i arket er med, blant annet «omsorgsplan», «Ja/Nei» på påstandene, «Lyd» i stedet for «Opplesning», gratis helsehjelp under 18 år og ettervern til 25 år i Barnevernet. Arabisk er oppdatert.',
+      'To små rettelser i arket, med kommentar: «Omsorgsplanen» med stor forbokstav, og «ha det sånn» i introfilmen.',
+      'Demo-innstillingene har ikke lenger egne brytere for de fem temaene som kom fra rettighetsdokumentene. De er nå en vanlig del av appen.',
+    ],
+  },
+  {
     version: '0.3.7',
     date: '04.11.2026',
     items: [

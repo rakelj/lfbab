@@ -74,3 +74,16 @@ web hotel) without changes.
 The repo also works from a Claude Code cloud session (claude.ai/code): Node 22
 and npm are preinstalled there, `npm ci && npm run build` runs as-is, and
 pushing needs the repo attached to the session with push access.
+
+## Testing
+
+`npm run test:app` clicks through the whole app in Chromium (every topic, the
+help window, "Hvem kan hjelpe meg?" and the practice) in Norwegian and Arabic,
+and checks that every text on every screen can be read aloud. It needs
+Playwright and a running preview: `npm run build && npx vite preview --port 4173`.
+
+## Text sync without access to docs.google.com
+
+`node scripts/sync-strings.mjs --from-file sheet.json` reads a saved copy of
+the sheet (the JSON from the Sheets API's values.get) instead of downloading it.
+

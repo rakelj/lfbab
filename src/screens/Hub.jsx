@@ -1,14 +1,12 @@
 import { useI18n } from '../i18n/I18n.jsx'
-import { chaptersFor } from '../content.js'
-import { useFeatures } from '../features.jsx'
+import { CHAPTERS } from '../content.js'
 import { Speak } from '../components/Sound.jsx'
 
 // The overview as a path: one station per chapter, with the next suggested
 // one gently highlighted.
 export default function Hub({ progress, onOpen, onHelpers, onFinish, onRestart }) {
   const { t } = useI18n()
-  const { on, demo } = useFeatures()
-  const chapters = chaptersFor(on)
+  const chapters = CHAPTERS
   const nextId = chapters.find((ch) => !ch.comingSoon && !progress.done.includes(ch.id))?.id
 
   const restart = () => {
@@ -39,7 +37,6 @@ export default function Hub({ progress, onOpen, onHelpers, onFinish, onRestart }
                   <span>{t(ch.subtitle)}</span>
                   {done && <span className="badge badge-done">{t('hub.done')}</span>}
                   {ch.comingSoon && <span className="badge">{t('hub.soon')}</span>}
-                  {demo && ch.extra && <span className="badge badge-extra">{t('x.badge')}</span>}
                 </span>
               </button>
             </li>
