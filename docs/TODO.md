@@ -129,6 +129,10 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       Cloudflare/Netlify (v0.4.0).
 - [x] PWA: manifest, ikon fra LFB-logoen, virker uten nett, oppdaterer seg
       selv (v0.4.0).
+- [ ] App-ikon: Ina lager et eget ikon (står i «Illustrasjoner – valg»,
+      rad 63). Til da brukes LFB-logoen. Når det kommer: lag
+      `public/icon-192.png`, `icon-512.png`, `icon-maskable-512.png` og
+      `apple-touch-icon.png` på nytt.
 - [ ] Organisasjonskart etter «Hvem er vi?» med LFBs tekst. Venter på
       skjermbilde av lysark 8.
 - [ ] Bedre stemme (ferdig innspilt lyd fra en betalt tjeneste). Venter på
