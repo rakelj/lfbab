@@ -32,7 +32,7 @@ export const ACTIVITIES = [
   { id: 'food', img: img('activity-food.jpg') },
   { id: 'games', img: img('activity-games.jpg') },
   { id: 'learn', img: img('activity-learn.jpg') },
-  { id: 'social', img: img('friends.png'), cutout: true },
+  { id: 'social', img: img('friends.webp'), cutout: true },
   // PLACEHOLDER picture until the illustrator has drawn this one.
   { id: 'crafts', img: img('activity-crafts-placeholder.svg') },
   // Not decided yet: a question mark instead of a picture.
@@ -112,7 +112,7 @@ export const CHAPTERS = [
       { type: 'info', title: 'x.centre.intro.title', text: 'x.centre.intro.text', img: img('icon-handshake.png') },
       { type: 'self', id: 'x.centre.plan', img: img('icon-map.png') },
       { type: 'info', title: 'x.centre.say.title', text: 'x.centre.say.text' },
-      { type: 'self', id: 'x.centre.say', img: img('thumbs-up.png') },
+      { type: 'self', id: 'x.centre.say', img: img('thumbs-up.webp') },
       { type: 'self', id: 'x.centre.info', img: img('icon-interpreter.png') },
       { type: 'info', title: 'x.centre.respect.title', text: 'x.centre.respect.text' },
       { type: 'myth', id: 'x.centre.phone', correct: 'false' },
@@ -152,7 +152,7 @@ export const CHAPTERS = [
     subtitle: 'ch3.subtitle',
     img: img('activity-sport.jpg'),
     steps: [
-      { type: 'info', title: 'ch3.intro.title', text: 'ch3.intro.text', img: img('sunny-tree.png') },
+      { type: 'info', title: 'ch3.intro.title', text: 'ch3.intro.text', img: img('sunny-tree.webp') },
       { type: 'myth', id: 'ch3.cost', correct: 'false' },
       { type: 'activities', id: 'ch3.activities' },
       {
@@ -194,7 +194,7 @@ export const CHAPTERS = [
     id: 'x.safety',
     title: 'x.safety.title',
     subtitle: 'x.safety.subtitle',
-    img: img('friends.png'),
+    img: img('friends.webp'),
     imgContain: true,
     steps: [
       { type: 'info', title: 'x.safety.intro.title', text: 'x.safety.intro.text', img: img('icon-care.png') },
@@ -239,10 +239,10 @@ export const CHAPTERS = [
     id: 'x.complain',
     title: 'x.complain.title',
     subtitle: 'x.complain.subtitle',
-    img: img('thumbs-up.png'),
+    img: img('thumbs-up.webp'),
     imgContain: true,
     steps: [
-      { type: 'info', title: 'x.complain.intro.title', text: 'x.complain.intro.text', img: img('thumbs-up.png') },
+      { type: 'info', title: 'x.complain.intro.title', text: 'x.complain.intro.text', img: img('thumbs-up.webp') },
       { type: 'routes', title: 'x.complain.routes.title', routes: ['x.complain.r1', 'x.complain.r2', 'x.complain.r3', 'x.complain.r4'] },
       { type: 'rights', title: 'rights.title', items: ['x.complain.rights.1', 'x.complain.rights.2', 'x.complain.rights.3'] },
     ],

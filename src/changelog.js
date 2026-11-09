@@ -3,6 +3,22 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.4.0',
+    date: '09.11.2026',
+    items: [
+      'Opplesningen stopper når du går til en annen side.',
+      '«Trenger du hjelp?»: pilene er byttet ut med knapper: «Ring 116 111», «Ring 113», «Ring 112» og «Send e-post». Numrene står fortsatt synlig. Under Alarmtelefonen står det at du kan si «TOLK» og få tolk.',
+      'Tilbake-knappen på Android og i nettleseren går ett steg tilbake i appen i stedet for å lukke den.',
+      'Introfilmen går ikke videre av seg selv. Den har knappene Tilbake og Neste.',
+      'Prikkene øverst i hvert tema kan trykkes på for å hoppe til et steg.',
+      '«Vet ikke» på «Stemmer dette for deg?» gir en egen tekst å vise til en ansatt (7 nye tekster i arket, til godkjenning).',
+      'Appen glemmer språket og temaene du har gjort ferdig etter en time uten bruk, så neste person på et delt nettbrett starter på nytt. Tekstene om personvern er oppdatert (til godkjenning).',
+      'Bildene lastes raskere: de store tegningene er gjort om til WebP (fra 1,1 MB til 0,2 MB).',
+      'Sikkerhet: appen har nå en Content Security Policy, og en fil med sikkerhetsoverskrifter til en senere vertstjeneste.',
+      'Appen kan legges på hjemskjermen med LFB-logoen, og virker uten nett etter første besøk. Nye versjoner kommer av seg selv.',
+    ],
+  },
+  {
     version: '0.3.8',
     date: '09.11.2026',
     items: [

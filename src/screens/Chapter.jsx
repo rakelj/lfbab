@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
 import Dots from '../components/Dots.jsx'
 import { STEPS } from '../steps/index.js'
+import { useBack, STEP } from '../nav.js'
 
 export default function Chapter({ chapter, onComplete, onExit, onGame }) {
   const { t } = useI18n()
@@ -37,6 +38,7 @@ export default function Chapter({ chapter, onComplete, onExit, onGame }) {
           window.scrollTo({ top: 0 })
         }
       : null
+  useBack(STEP, () => ((back ? back() : onExit()), true))
   const skipTo = (type) => goTo(chapter.steps.findIndex((s, j) => j > i && s.type === type))
   // Jump to the first step of a type, e.g. back to the story to read the other one.
   const jumpTo = (type) => goTo(chapter.steps.findIndex((s) => s.type === type))
@@ -52,7 +54,7 @@ export default function Chapter({ chapter, onComplete, onExit, onGame }) {
         </button>
         <span className="chapter-name">{t(chapter.title)}</span>
       </div>
-      <Dots count={chapter.steps.length} current={i} />
+      <Dots count={chapter.steps.length} current={i} onSelect={goTo} />
       {/* key resets the step's own UI state (e.g. story panel) when moving between steps */}
       <Step
         key={i}

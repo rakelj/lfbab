@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { I18nProvider } from './i18n/I18n.jsx'
 import { DEFAULT_LANG, getLanguage, isSelectable } from './i18n/languages.js'
 import { useProgress } from './progress.js'
@@ -19,6 +19,7 @@ import Footer from './components/Footer.jsx'
 import LanguageButton from './components/LanguageButton.jsx'
 import DemoSettings from './components/DemoSettings.jsx'
 import { SoundProvider, SoundToggle } from './components/Sound.jsx'
+import { initBackButton, useBack, SCREEN } from './nav.js'
 
 // Demo mode: open the app with ?demo to get a restart button, demo settings
 // and a version stamp. Remembered for the browser tab.
@@ -74,6 +75,25 @@ function Screens({ demo }) {
     setScreen(s)
     window.scrollTo({ top: 0 })
   }
+
+  // Back between screens (Android's back button, the browser's Back). Topics,
+  // the intro, the film and the practice handle their own steps first.
+  useEffect(initBackButton, [])
+  useBack(SCREEN, () => {
+    const to = {
+      chapter: 'hub',
+      helpers: 'hub',
+      closing: 'hub',
+      game: gameFrom,
+      about: aboutFrom,
+      film: 'lang',
+      intro: on('introFilm') ? 'film' : 'lang',
+      lang: progress.introDone ? 'hub' : null,
+    }[screen]
+    if (!to) return false // the overview or the very first screen: leave the app
+    go(to)
+    return true
+  })
 
   let content
   switch (screen) {

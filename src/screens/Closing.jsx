@@ -15,7 +15,7 @@ export default function Closing({ onBack }) {
           <li key={n}>{t(`closing.${n}`)}</li>
         ))}
       </ul>
-      <img className="illustration" src={img('friends.png')} alt="" />
+      <img className="illustration" src={img('friends.webp')} alt="" />
       <p>
         {t('closing.contact')} <Speak text={`${t('closing.contact')} ${t('closing.thanks')}`} />
       </p>

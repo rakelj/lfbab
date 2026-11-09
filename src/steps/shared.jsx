@@ -61,7 +61,7 @@ export function Validation({ id, value, ok, fallback }) {
   const text = has(key) ? t(key) : t(fallback)
   return (
     <div className={`validation ${ok ? 'validation-ok' : ''}`}>
-      {!ok && <img src={img('friends.png')} alt="" />}
+      {!ok && <img src={img('friends.webp')} alt="" />}
       <p>
         {text} <Speak text={text} />
       </p>

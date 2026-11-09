@@ -111,6 +111,29 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
 - [x] Arabisk i Elias-historien (`story.shut.3`) sier fortsatt «avhør»,
       men den norske teksten er endret til «asylintervjuet».
 
+## Workshop 5. november (BR 05.11.26) og teknisk gjennomgang
+- [x] Opplesningen stopper ved sidebytte (v0.4.0).
+- [x] «Trenger du hjelp?»: knapper «Ring …» / «Send e-post» i stedet for
+      piler, og TOLK-teksten under Alarmtelefonen (v0.4.0).
+- [x] Tilbake-knappen på Android/nettleser blir i appen (v0.4.0).
+- [x] Introfilmen: Tilbake/Neste, ingen automatisk bytte (v0.4.0).
+- [x] Klikkbare prikker i temaene (v0.4.0).
+- [x] Egne «Vet ikke»-kort til ansatte for de 7 «Stemmer dette for deg?»
+      (v0.4.0). LFB godkjenner tekstene.
+- [x] Appen glemmer alt etter en time uten bruk; personverntekstene er
+      endret (v0.4.0). LFB godkjenner tekstene.
+- [x] WebP for de store tegningene, `health-figures.png` slettet (v0.4.0).
+      Nye tegninger: kjør `scripts/prepare-assets.ps1`, så
+      `python3 scripts/to-webp.py`.
+- [x] Content Security Policy (meta) og `public/_headers` til
+      Cloudflare/Netlify (v0.4.0).
+- [x] PWA: manifest, ikon fra LFB-logoen, virker uten nett, oppdaterer seg
+      selv (v0.4.0).
+- [ ] Organisasjonskart etter «Hvem er vi?» med LFBs tekst. Venter på
+      skjermbilde av lysark 8.
+- [ ] Bedre stemme (ferdig innspilt lyd fra en betalt tjeneste). Venter på
+      Sviatoslav. Sjekk om «KI oversettelse» betyr stemmen.
+
 ## Om noen uker: oversettelse
 - [ ] Byrået oversetter (først til engelsk, så videre). Spør om de vil ha
       én Excel-fil eller én per språk.

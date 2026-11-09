@@ -3,12 +3,13 @@ import { useI18n } from '../i18n/I18n.jsx'
 import Dots from '../components/Dots.jsx'
 import { img } from '../content.js'
 import { Speak } from '../components/Sound.jsx'
+import { useBack, STEP } from '../nav.js'
 
 const PAGES = [
-  { n: 1, img: img('sunny-tree.png') },
+  { n: 1, img: img('sunny-tree.webp') },
   { n: 2, img: img('logo.png') },
   { n: 3, img: img('icon-care.png') },
-  { n: 4, img: img('thumbs-up.png') },
+  { n: 4, img: img('thumbs-up.webp') },
 ]
 
 export default function Intro({ onDone }) {
@@ -16,6 +17,7 @@ export default function Intro({ onDone }) {
   const [i, setI] = useState(0)
   const page = PAGES[i]
   const last = i === PAGES.length - 1
+  useBack(STEP, () => (setI(i - 1), true), i > 0)
 
   return (
     <section className="screen">

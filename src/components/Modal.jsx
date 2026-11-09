@@ -1,9 +1,11 @@
 import { useEffect, useRef } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
+import { useBack, WINDOW } from '../nav.js'
 
 export default function Modal({ title, onClose, className = '', children }) {
   const { t } = useI18n()
   const closeRef = useRef(null)
+  useBack(WINDOW, () => (onClose(), true))
 
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && onClose()

@@ -33,6 +33,7 @@ async function open(browser, lang) {
   page.on('pageerror', (e) => problems.push(`${lang}: page error: ${e.message}`))
   page.on('console', (m) => {
     const text = m.text()
+    if (/Content Security Policy|Refused to/.test(text)) problems.push(`${lang}: ${page.__where}: ${text}`)
     if (text.startsWith('0 speaker') || /speaker buttons/.test(text)) {
       if (!/Not read aloud: nothing/.test(text)) problems.push(`${lang}: ${page.__where}: ${text}`)
     }

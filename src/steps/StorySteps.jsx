@@ -3,6 +3,7 @@ import { useI18n } from '../i18n/I18n.jsx'
 import { Speak } from '../components/Sound.jsx'
 import { ACTORS, EMOTIONS, STORIES, img } from '../content.js'
 import CardName, { useCardNames } from '../components/CardName.jsx'
+import { useBack, PAGE } from '../nav.js'
 import { StepNav, ActorGrid, storyOf } from './shared.jsx'
 
 // The stories about Hamlin and Elias, and the questions after them.
@@ -56,6 +57,7 @@ export function StoryStep({ step, answers, setAnswer, onNext, onBack, cameBack }
   }
   const [i, setI] = useState(cameBack ? story.panels.length - 1 : 0)
   const panel = story.panels[i]
+  useBack(PAGE, () => (setI(i - 1), true), i > 0)
   const last = i === story.panels.length - 1
 
   return (

@@ -4,6 +4,7 @@ import { Speak } from '../components/Sound.jsx'
 import { ActorInfoModal } from '../components/ActorCard.jsx'
 import { ACTORS, img } from '../content.js'
 import { useCardNames } from '../components/CardName.jsx'
+import { useBack, PAGE } from '../nav.js'
 import { StepNav, ActorGrid } from './shared.jsx'
 
 // Body and mind: the sleep, body and mind chain, and "Who would you talk to first?".
@@ -14,6 +15,7 @@ export function ChainStep({ onNext, onBack, cameBack }) {
   const links = ['ch2.chain.1', 'ch2.chain.2', 'ch2.chain.3']
   const [shown, setShown] = useState(cameBack ? links.length + 1 : 1)
   const complete = shown > links.length
+  useBack(PAGE, () => (setShown(shown - 1), true), shown > 1)
 
   return (
     <>
@@ -31,7 +33,7 @@ export function ChainStep({ onNext, onBack, cameBack }) {
               </span>
             )}
             <span className="chain-row">
-              <img src={img(`health-figure-${i + 1}.png`)} alt="" />
+              <img src={img(`health-figure-${i + 1}.webp`)} alt="" />
               <span>{t(k)}</span>
             </span>
           </li>
@@ -39,7 +41,7 @@ export function ChainStep({ onNext, onBack, cameBack }) {
       </ol>
       {complete && (
         <>
-          <img className="illustration" src={img('health-cycle.png')} alt="" />
+          <img className="illustration" src={img('health-cycle.webp')} alt="" />
           <p className="lead">{t('ch2.chain.text')}</p>
         </>
       )}

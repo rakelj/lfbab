@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react'
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { useI18n } from '../i18n/I18n.jsx'
 import { getLanguage } from '../i18n/languages.js'
 
@@ -119,8 +119,13 @@ export function SoundToggle() {
 export function Speak({ text, className = '' }) {
   const { t } = useI18n()
   const { on, speak, stop, speaking } = useSound()
+  const active = on && !!text && speaking === text
+  // Stop reading when this text leaves the screen (next page, back, closing a
+  // window), so the voice never carries on over a new page.
+  const activeRef = useRef(active)
+  activeRef.current = active
+  useEffect(() => () => activeRef.current && stop(), [stop])
   if (!on || !text) return null
-  const active = speaking === text
   return (
     <button
       type="button"

@@ -36,12 +36,15 @@ Languages listed on the first screen are configured in `src/i18n/languages.js`.
 
 Source illustrations are in `D:\LFB Asylbarna`. `scripts/prepare-assets.ps1`
 resizes the ones the app uses into `public/img`. Add new images to its list
-and re-run it.
+and re-run it, then `python3 scripts/to-webp.py` to turn the large
+transparent drawings into WebP.
 
 ## Privacy
 
 - Progress (language, finished chapters) is
-  kept in the browser's localStorage only. "Start på nytt" clears it.
+  kept in the browser's localStorage only. "Start på nytt" clears it, and it
+  is forgotten after an hour without use (`FORGET_AFTER` in `src/progress.js`),
+  since tablets at the centres are shared.
 - Answers are never stored or sent anywhere. LFB does not collect any data;
   answers only live in memory while a chapter is open.
 - No external fonts, analytics or trackers. `no-referrer` is set in `index.html`.
@@ -68,6 +71,16 @@ Every push to `main` builds and publishes to GitHub Pages
 The build uses relative paths (`base: './'` in `vite.config.js`), so `dist/`
 can be moved to another static host (Cloudflare Pages, Netlify, LFB's own
 web hotel) without changes.
+
+Security and offline:
+- The build adds a Content Security Policy meta tag (`vite.config.js`).
+  `public/_headers` sets the same policy plus `frame-ancestors`,
+  `X-Frame-Options`, `X-Content-Type-Options` and `Permissions-Policy` as real
+  headers on hosts that read it (Cloudflare Pages, Netlify; not GitHub Pages).
+- The build writes `dist/sw.js` from `src/sw-template.js` with every built file
+  in it, so the app works offline and can be added to the home screen
+  (`public/manifest.webmanifest`). Each build gets a new cache, so new
+  versions replace old ones by themselves.
 
 ## Working from a cloud session
 

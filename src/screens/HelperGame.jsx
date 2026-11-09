@@ -3,6 +3,7 @@ import { useI18n } from '../i18n/I18n.jsx'
 import { ACTORS, SITUATIONS, img } from '../content.js'
 import Dots from '../components/Dots.jsx'
 import { Speak } from '../components/Sound.jsx'
+import { useBack, STEP } from '../nav.js'
 import CardName, { useCardNames } from '../components/CardName.jsx'
 
 const actor = (id) => ACTORS.find((a) => a.id === id)
@@ -28,6 +29,10 @@ export default function HelperGame({ onBack, onHelpers }) {
     window.scrollTo({ top: 0 })
   }
 
+  // Back: un-reveal to change the picks, then the previous situation, then out.
+  const back = done ? () => goTo(i - 1) : revealed ? () => update({ revealed: false }) : i > 0 ? () => goTo(i - 1) : onBack
+  useBack(STEP, () => (back(), true))
+
   const exitBar = (
     <div className="chapter-bar">
       <button className="btn btn-link" onClick={onBack}>
@@ -42,7 +47,7 @@ export default function HelperGame({ onBack, onHelpers }) {
       <section className="screen">
         {exitBar}
         <div className="screen-center">
-          <img className="illustration" src={img('friends.png')} alt="" />
+          <img className="illustration" src={img('friends.webp')} alt="" />
           <h1>
             {t('game.done.title')} <Speak text={`${t('game.done.title')} ${t('game.done.text')}`} />
           </h1>
@@ -126,7 +131,7 @@ export default function HelperGame({ onBack, onHelpers }) {
 
       <div className="actions">
         {/* Back: un-reveal to change the picks, then to the previous situation, then out of the game */}
-        <button className="btn btn-secondary" onClick={revealed ? () => update({ revealed: false }) : i > 0 ? () => goTo(i - 1) : onBack}>
+        <button className="btn btn-secondary" onClick={back}>
           {t('common.back')}
         </button>
         {revealed ? (

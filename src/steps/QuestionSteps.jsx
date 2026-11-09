@@ -9,7 +9,9 @@ import { StepNav, AnswerButtons, RightBox, Validation } from './shared.jsx'
 // "True for you?": no right answer. Yes gets a nod; No / Don't know gets
 // validation and a card to show staff.
 export function SelfStep({ step, value, onChange, onNext, onBack }) {
-  const { t } = useI18n()
+  const { t, has } = useI18n()
+  // "Don't know" has its own staff card where LFB has written one.
+  const staff = value === 'dontKnow' && has(`${step.id}.staffDontKnow`) ? `${step.id}.staffDontKnow` : `${step.id}.staff`
   return (
     <>
       {step.img && <img className="illustration illustration-small" src={step.img} alt="" />}
@@ -22,7 +24,7 @@ export function SelfStep({ step, value, onChange, onNext, onBack }) {
         <div className="feedback" key={value}>
           <Validation id={step.id} value={value} ok={value === 'yes'} fallback={value === 'yes' ? 'q.thanks' : 'q.notAlone'} />
           <RightBox text={`${step.id}.right`} />
-          {value !== 'yes' && <StaffCard textKey={`${step.id}.staff`} />}
+          {value !== 'yes' && <StaffCard key={staff} textKey={staff} />}
         </div>
       )}
       <StepNav onBack={onBack} onNext={onNext} nextLabel={value ? undefined : t('common.skip')} />

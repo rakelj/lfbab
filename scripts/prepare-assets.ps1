@@ -8,6 +8,7 @@ $out = Join-Path $PSScriptRoot "..\public\img"
 New-Item -ItemType Directory -Force $out | Out-Null
 
 # name = output file (without extension), src = path in source folder, w = max width.
+# The large drawings are converted to WebP afterwards: python3 scripts/to-webp.py
 # split = $true cuts a transparent drawing into its separate figures (found by
 # empty columns between them) and saves them as name-1, name-2, ...
 # Images with transparency are cropped to their content and saved as PNG; the rest as JPG.
@@ -59,7 +60,6 @@ $assets = @(
   @{ name = "icon-care";        src = "slide illustrasjoner\Untitled_Artwork 106.png";        w = 400 },
   @{ name = "icon-handshake";   src = "slide illustrasjoner\Untitled_Artwork 118.png";        w = 500 },
   @{ name = "health-cycle";     src = "slide illustrasjoner\fysisk og psykisk helse g*r sammen.png"; w = 900 },
-  @{ name = "health-figures";   src = "slide illustrasjoner\Untitled_Artwork 146.png";        w = 900 },
   @{ name = "health-figure";    src = "slide illustrasjoner\Untitled_Artwork 146.png";        w = 320; split = $true },
   @{ name = "friends";          src = "slide illustrasjoner\Untitled_Artwork 542.png";        w = 700 },
   @{ name = "sunny-tree";       src = "slide illustrasjoner\Untitled_Artwork 545.png";        w = 500 },
