@@ -143,8 +143,11 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       gratis 10.11: arabisk gikk, norsk ble dansk med Multilingual v2; v2.5
       med language_code 'no' gir norsk. Rakel fant en stemme som fungerte
       godt på norsk: «Sander – Casual Young Male» (stemmebiblioteket) med
-      modellen Eleven v4. Venter: avklar kostnad og hvem som eier kontoen,
-      og sammenlign gjerne med Microsoft/Google.
+      modellen Eleven v4. Kostnad første runde (~25 000 tegn per språk,
+      ~10 språk, pluss omgjøringer): ElevenLabs ca. 1 000 kr (én måned Pro
+      eller 3–4 måneder Creator; gratisplanen tillater ikke bruk i appen).
+      Microsoft/Google tar betalt per tegn: noen titalls kroner eller gratis.
+      Venter: sammenlign stemmene, avklar hvem som eier kontoen.
 
 ## Oversettelse (LFB og byrået tar dette)
 - [ ] Byrået oversetter (først til engelsk, så videre). Spør om de vil ha
