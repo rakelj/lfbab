@@ -154,6 +154,91 @@
     "no": "LFB er en demokratisk medlemsorganisasjon som jobber for at barn og unge skal få rettighetene sine. Målet vårt er å gi deg god informasjon om rettighetene dine, og at du skal bli behandlet på en fin måte på mottak.",
     "ar": "LFB منظمة ديمقراطية للأعضاء تعمل من أجل أن يحصل الأطفال والشباب على حقوقهم. هدفنا أن نقدم لك معلومات جيدة عن حقوقك، وأن تُعامَل معاملة حسنة في مركز الاستقبال."
   },
+  "intro.map.title": {
+    "context": "Intro page after «Hvem er vi?»: heading over the drawing of who is responsible (from slide 8)",
+    "no": "Hvem har ansvar for deg?",
+    "ar": "من المسؤول عنك؟"
+  },
+  "intro.map.text": {
+    "context": "Caption under the drawing (LFB's text)",
+    "no": "Her ser du en tegning som viser at LFB ikke jobber for noen andre enn barns og unges rettigheter, og er en organisasjon som prøver å påvirke de som har ansvar for deg.",
+    "ar": "هنا ترى رسمًا يبيّن أن LFB لا تعمل لصالح أي جهة أخرى، بل من أجل حقوق الأطفال والشباب فقط، وأنها منظمة تحاول التأثير على الجهات المسؤولة عنك."
+  },
+  "orgchart.udi.name": {
+    "context": "Drawing (from slide 8): box name",
+    "no": "UDI",
+    "ar": "UDI"
+  },
+  "orgchart.udi.text": {
+    "context": "Drawing: under UDI",
+    "no": "Behandler søknader",
+    "ar": "تعالج الطلبات"
+  },
+  "orgchart.centre.name": {
+    "context": "Drawing: box name",
+    "no": "Asylmottak",
+    "ar": "مركز استقبال اللاجئين"
+  },
+  "orgchart.centre.text": {
+    "context": "Drawing: under Asylmottak",
+    "no": "Drives av eksterne, men på oppdrag fra UDI",
+    "ar": "تديره جهات أخرى، ولكن بتكليف من UDI"
+  },
+  "orgchart.you.name": {
+    "context": "Drawing: box name",
+    "no": "Asylsøker",
+    "ar": "طالب اللجوء"
+  },
+  "orgchart.you.text": {
+    "context": "Drawing: under Asylsøker",
+    "no": "Mennesker som søker opphold",
+    "ar": "أشخاص يطلبون الإقامة"
+  },
+  "orgchart.bufdir.name": {
+    "context": "Drawing: box name",
+    "no": "Bufdir",
+    "ar": "Bufdir"
+  },
+  "orgchart.bufdir.text": {
+    "context": "Drawing: under Bufdir",
+    "no": "Ansvar for statlig barne- og familievernet",
+    "ar": "مسؤولة عن خدمات حماية الأطفال والأسرة التابعة للدولة"
+  },
+  "orgchart.cws.name": {
+    "context": "Drawing: box name",
+    "no": "Barnevern",
+    "ar": "حماية الأطفال"
+  },
+  "orgchart.cws.text": {
+    "context": "Drawing: under Barnevern",
+    "no": "Fremmer trygg barndom og gode oppvekstsvilkår",
+    "ar": "تعمل من أجل طفولة آمنة وظروف نشأة جيدة"
+  },
+  "orgchart.lfb.name": {
+    "context": "Drawing: box name",
+    "no": "LFB",
+    "ar": "LFB"
+  },
+  "orgchart.lfb.text": {
+    "context": "Drawing: under LFB",
+    "no": "Frivillig organisasjon",
+    "ar": "منظمة تطوعية"
+  },
+  "orgchart.udiCentre": {
+    "context": "Drawing: arrow from UDI to Asylmottak",
+    "no": "Ansvar for mottak",
+    "ar": "مسؤولة عن مراكز الاستقبال"
+  },
+  "orgchart.centreYou": {
+    "context": "Drawing: arrow from Asylmottak to Asylsøker",
+    "no": "Hjelper i hverdagen",
+    "ar": "يساعد في الحياة اليومية"
+  },
+  "orgchart.lfbYou": {
+    "context": "Drawing: arrow from LFB to Asylsøker",
+    "no": "Jobber for rettigheter",
+    "ar": "تعمل من أجل الحقوق"
+  },
   "intro.3.title": {
     "context": "Privacy screen heading",
     "no": "Du er anonym",
@@ -387,6 +472,10 @@
     "context": "",
     "no": "Å klage på representanten påvirker ikke asylsaken din. Si ifra til de ansatte på mottaket. De kan hjelpe deg å klage til statsforvalteren.",
     "ar": "الشكوى من الممثل لا تؤثر على قضية لجوئك. أخبر الموظفين في مركز الاستقبال، فهم يستطيعون مساعدتك في تقديم شكوى إلى حاكم المقاطعة."
+  },
+  "ch1.complain.staff": {
+    "context": "Shown to staff in NORWEGIAN only, after answering the statement about complaining",
+    "no": "Jeg vil klage på representanten min. Kan du hjelpe meg med det?"
   },
   "ch1.summary.title": {
     "context": "Chapter 1 summary heading",
@@ -1479,9 +1568,9 @@
     "ar": "هل يمكنني مغادرة مركز الاستقبال متى أردت؟"
   },
   "x.centre.leave.text": {
-    "context": "PLACEHOLDER, LFB to write what actually applies (from the workshop notes)",
-    "no": "[PLACEHOLDER] Mottaket skal vite hvor du er. Si fra til de ansatte når du drar, og når du kommer tilbake. Hvis ingen vet hvor du er, blir de bekymret og tar kontakt med representanten din.",
-    "ar": "[PLACEHOLDER] يجب أن يعرف مركز الاستقبال أين أنت. أخبر الموظفين عندما تغادر وعندما تعود. إذا لم يعرف أحد أين أنت، سيقلقون ويتصلون بممثّلك."
+    "context": "From LFB (November 2026)",
+    "no": "Mottaket skal vite hvor du er. Si fra til de ansatte når du drar, og når du kommer tilbake. Hvis du skal være borte i en periode, så må du søke om permisjon. Da snakker du med de ansatte som hjelper deg. Hvis ingen vet hvor du er over tid, så kan du bli meldt savnet til politiet.",
+    "ar": "يجب أن يعرف مركز الاستقبال أين أنت. أخبر الموظفين عندما تغادر وعندما تعود. إذا كنت ستغيب لفترة، فعليك أن تطلب إذنًا بالغياب. تحدّث عن ذلك مع الموظفين الذين يساعدونك. إذا لم يعرف أحد أين أنت لفترة طويلة، فقد يتم الإبلاغ عن فقدانك للشرطة."
   },
   "x.centre.car.title": {
     "context": "From LFB (feedback, October 2026)",
@@ -1620,8 +1709,8 @@
   },
   "x.cws.what.text": {
     "context": "From LFB (feedback, October 2026)",
-    "no": "Hvis barnevernet velger å undersøke hvordan du har det, så gjør de det i 3 måneder. Da snakker de med deg, de ansatte på mottaket, de på skolen og for eksempel lege hvis du har det. Barnevernet kan da tilby deg ulik hjelp hvis du ser at du trenger det, eller i alvorlige tilfeller flytte deg til et annet sted eller hjem. Barnevernet kan også bestemme at de synes du har det godt nok. Da avslutter de saken din. Hvis du er uenig i dette, kan du klage til Statsforvalteren. Be en ansatt eller representanten din om hjelp.",
-    "ar": "إذا قررت مؤسسة حماية الأطفال أن تتحقق من وضعك، فإنها تفعل ذلك خلال 3 أشهر. يتحدثون معك، ومع الموظفين في مركز الاستقبال، ومع العاملين في المدرسة، ومع الطبيب مثلًا إذا كان لديك طبيب. بعد ذلك يمكن لمؤسسة حماية الأطفال أن تقدم لك أنواعًا مختلفة من المساعدة إذا كنت تحتاج إليها، أو في الحالات الخطيرة أن تنقلك إلى مكان أو بيت آخر. ويمكن للمؤسسة أيضًا أن تقرر أن وضعك جيد بما فيه الكفاية، وعندها تُغلق قضيتك. إذا كنت لا توافق على ذلك، يمكنك تقديم شكوى إلى Statsforvalteren. اطلب المساعدة من أحد الموظفين أو من ممثّلك."
+    "no": "Hvis barnevernet velger å undersøke hvordan du har det, så gjør de det i 3 måneder. Da snakker de med deg, de ansatte på mottaket, de på skolen og for eksempel lege hvis du har det. Barnevernet kan da tilby deg ulik hjelp hvis du ser at du trenger det, eller i alvorlige tilfeller flytte deg til en annen institusjon eller i fosterhjem. Barnevernet kan også bestemme at de synes du har det godt nok. Da avslutter de saken din. Hvis du er uenig i dette, kan du klage til Statsforvalteren. Be en ansatt eller representanten din om hjelp.",
+    "ar": "إذا قررت مؤسسة حماية الأطفال أن تتحقق من وضعك، فإنها تفعل ذلك خلال 3 أشهر. يتحدثون معك، ومع الموظفين في مركز الاستقبال، ومع العاملين في المدرسة، ومع الطبيب مثلًا إذا كان لديك طبيب. بعد ذلك يمكن لمؤسسة حماية الأطفال أن تقدم لك أنواعًا مختلفة من المساعدة إذا كنت تحتاج إليها، أو في الحالات الخطيرة أن تنقلك إلى مؤسسة أخرى أو إلى أسرة حاضنة. ويمكن للمؤسسة أيضًا أن تقرر أن وضعك جيد بما فيه الكفاية، وعندها تُغلق قضيتك. إذا كنت لا توافق على ذلك، يمكنك تقديم شكوى إلى Statsforvalteren. اطلب المساعدة من أحد الموظفين أو من ممثّلك."
   },
   "x.cws.rights.1": {
     "context": "Rights screen at the end of the chapter",

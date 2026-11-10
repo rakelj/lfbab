@@ -4,10 +4,12 @@ import Dots from '../components/Dots.jsx'
 import { img } from '../content.js'
 import { Speak } from '../components/Sound.jsx'
 import { useBack, STEP } from '../nav.js'
+import OrgChart, { orgChartText } from '../components/OrgChart.jsx'
 
 const PAGES = [
   { n: 1, img: img('sunny-tree.webp') },
   { n: 2, img: img('logo.png') },
+  { n: 'map', chart: true },
   { n: 3, img: img('icon-care.png') },
   { n: 4, img: img('thumbs-up.webp') },
 ]
@@ -21,10 +23,12 @@ export default function Intro({ onDone }) {
 
   return (
     <section className="screen">
-      <img className="illustration" src={page.img} alt="" />
+      {page.img && <img className="illustration" src={page.img} alt="" />}
       <h1>
-        {t(`intro.${page.n}.title`)} <Speak text={`${t(`intro.${page.n}.title`)} ${t(`intro.${page.n}.text`)}`} />
+        {t(`intro.${page.n}.title`)}{' '}
+        <Speak text={[t(`intro.${page.n}.title`), page.chart && orgChartText(t), t(`intro.${page.n}.text`)].filter(Boolean).join(' ')} />
       </h1>
+      {page.chart && <OrgChart />}
       <p className="lead">{t(`intro.${page.n}.text`)}</p>
       <Dots count={PAGES.length} current={i} />
       <div className="actions">

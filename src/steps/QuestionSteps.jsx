@@ -34,7 +34,7 @@ export function SelfStep({ step, value, onChange, onNext, onBack }) {
 
 // "Did you know?": has a correct answer, but the feedback never says "wrong".
 export function MythStep({ step, value, onChange, onNext, onBack }) {
-  const { t } = useI18n()
+  const { t, has } = useI18n()
   return (
     <>
       <span className="label">{t('q.mythLabel')}</span>
@@ -46,6 +46,8 @@ export function MythStep({ step, value, onChange, onNext, onBack }) {
         <div className="feedback" key={value}>
           <Validation id={step.id} value={value} ok={value === step.correct} fallback={value === step.correct ? 'q.mythGotIt' : 'q.mythCommon'} />
           <RightBox text={`${step.id}.right`} />
+          {/* Some statements also have a card to show staff, whatever the answer */}
+          {has(`${step.id}.staff`) && <StaffCard textKey={`${step.id}.staff`} />}
         </div>
       )}
       <StepNav onBack={onBack} onNext={onNext} nextLabel={value ? undefined : t('common.skip')} />

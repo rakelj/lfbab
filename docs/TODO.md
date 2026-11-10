@@ -45,8 +45,9 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       (v0.2.5).
 - [x] Situasjonene fra dokumentene: negativ sosial kontroll i familien,
       «Kroppen din er din», politiet 112 og anonym chat (v0.2.5).
-- [ ] LFB skriver svaret på «Kan jeg dra fra mottaket når jeg vil?»
-      (`x.centre.leave.text`, nå PLACEHOLDER; flyttet til Mottaket i v0.3.7).
+- [x] LFB skriver svaret på «Kan jeg dra fra mottaket når jeg vil?»
+      (`x.centre.leave.text`; flyttet til Mottaket i v0.3.7, LFBs tekst i
+      v0.4.1).
 
 ### 7. Rettighetene dine på mottaket
 - [x] Rett til medvirkning: infosteg og «Stemmer dette for deg?» (v0.2.6).
@@ -104,8 +105,8 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       lager versjoner uten skrift, appen legger på ordet som tekst.
 
 ## Fra tidligere økter
-- [ ] LFB: Oversikten over UDI, Bufdir og aktørene (lysark 8, «Hvem er vi i
-      forhold til andre?»): bestem plassering før vi bygger.
+- [x] LFB: Oversikten over UDI, Bufdir og aktørene (lysark 8): skal ligge
+      etter «Hvem er vi?» i introen. Samme sak som organisasjonskartet under.
 - [ ] Egen GitHub-organisasjon for LFB, så appen ikke ligger på en privat
       konto.
 - [x] Arabisk i Elias-historien (`story.shut.3`) sier fortsatt «avhør»,
@@ -133,10 +134,14 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       rad 63). Til da brukes LFB-logoen. Når det kommer: lag
       `public/icon-192.png`, `icon-512.png`, `icon-maskable-512.png` og
       `apple-touch-icon.png` på nytt.
-- [ ] Organisasjonskart etter «Hvem er vi?» med LFBs tekst. Venter på
-      skjermbilde av lysark 8.
-- [ ] Bedre stemme (ferdig innspilt lyd fra en betalt tjeneste). Venter på
-      Sviatoslav. Sjekk om «KI oversettelse» betyr stemmen.
+- [x] «Vis til en ansatt» på «Hvis jeg klager på representanten min …»
+      (`ch1.complain.staff`, v0.4.1).
+- [x] Organisasjonskart etter «Hvem er vi?» med LFBs tekst (v0.4.1,
+      `src/components/OrgChart.jsx`, tekster `orgchart.*` og `intro.map.*`).
+- [ ] Bedre stemme («KI oversettelse» betyr stemmen). Testet ElevenLabs
+      gratis 10.11: arabisk gikk, norsk ble dansk med Multilingual v2; v2.5
+      med language_code 'no' gir norsk. Venter: sammenlign Microsoft/Google
+      (egne norske stemmer), og avklar kostnad og hvem som eier kontoen.
 
 ## Om noen uker: oversettelse
 - [ ] Byrået oversetter (først til engelsk, så videre). Spør om de vil ha

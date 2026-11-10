@@ -3,6 +3,15 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.4.1',
+    date: '10.11.2026',
+    items: [
+      'Introen har en ny side etter «Hvem er vi?»: «Hvem har ansvar for deg?», med tegningen fra lysark 8 (UDI, mottaket, Bufdir, barnevernet og LFB) og LFBs tekst under. Tegningen er laget med tekst, så den kan oversettes. Overskriften er et forslag (til godkjenning).',
+      '«Hvis jeg klager på representanten min, kan det skade asylsaken min.» har fått «Vis til en ansatt», som de andre (ny tekst i arket, til godkjenning).',
+      'LFBs svar på «Kan jeg dra fra mottaket når jeg vil?» (permisjon, meldt savnet) er med, og «institusjon eller fosterhjem» i Barnevernet. Arabisk er oppdatert.',
+    ],
+  },
+  {
     version: '0.4.0',
     date: '09.11.2026',
     items: [
