@@ -107,8 +107,9 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
 ## Fra tidligere økter
 - [x] LFB: Oversikten over UDI, Bufdir og aktørene (lysark 8): skal ligge
       etter «Hvem er vi?» i introen. Samme sak som organisasjonskartet under.
-- [ ] Egen GitHub-organisasjon for LFB, så appen ikke ligger på en privat
-      konto.
+- [ ] Senere: hvor appen skal ligge ved lansering (GitHub Pages,
+      Cloudflare Pages, Netlify eller LFBs eget domene) og hvem som eier
+      kontoen. Ikke bestemt, ikke nå.
 - [x] Arabisk i Elias-historien (`story.shut.3`) sier fortsatt «avhør»,
       men den norske teksten er endret til «asylintervjuet».
 
@@ -140,10 +141,12 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       `src/components/OrgChart.jsx`, tekster `orgchart.*` og `intro.map.*`).
 - [ ] Bedre stemme («KI oversettelse» betyr stemmen). Testet ElevenLabs
       gratis 10.11: arabisk gikk, norsk ble dansk med Multilingual v2; v2.5
-      med language_code 'no' gir norsk. Venter: sammenlign Microsoft/Google
-      (egne norske stemmer), og avklar kostnad og hvem som eier kontoen.
+      med language_code 'no' gir norsk. Rakel fant en stemme som fungerte
+      godt på norsk: «Sander – Casual Young Male» (stemmebiblioteket) med
+      modellen Eleven v4. Venter: avklar kostnad og hvem som eier kontoen,
+      og sammenlign gjerne med Microsoft/Google.
 
-## Om noen uker: oversettelse
+## Oversettelse (LFB og byrået tar dette)
 - [ ] Byrået oversetter (først til engelsk, så videre). Spør om de vil ha
       én Excel-fil eller én per språk.
 - [ ] Avtal med byrået hva de gjør med LFBs historieoversettelser i 9

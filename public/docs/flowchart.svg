@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1178" viewBox="0 0 1320 1178">
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#9489ac"/></marker></defs>
 <rect width="100%" height="100%" fill="#fff"/>
-<text x="40" y="44" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#2e2a38">User flow, prototype v0.2</text>
+<text x="40" y="44" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#2e2a38">User flow, prototype v0.4</text>
 <text x="40" y="68" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#6b6578">Every screen has help, language and read-aloud buttons. Every chapter step has Back. Pink numbers = points to discuss.</text>
 <text x="40" y="88" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#6b6578">Dashed boxes can be switched on and off in the demo settings (⚙).</text>
 <rect x="40" y="110" width="210" height="56" rx="12" fill="#e9e5f1" stroke="#9489ac" stroke-width="2"/>
@@ -9,10 +9,10 @@
 <text x="145" y="151.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">Norwegian · Arabic demo</text>
 <rect x="290" y="110" width="210" height="56" rx="12" fill="#e9e5f1" stroke="#9489ac" stroke-width="2" stroke-dasharray="7 5"/>
 <text x="395" y="134.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38" font-weight="700">Intro film</text>
-<text x="395" y="151.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">6 scenes · skippable</text>
+<text x="395" y="151.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">6 scenes · Back/Next · skippable</text>
 <rect x="540" y="110" width="210" height="56" rx="12" fill="#e9e5f1" stroke="#9489ac" stroke-width="2"/>
 <text x="645" y="134.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38" font-weight="700">Intro</text>
-<text x="645" y="151.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">4 short screens</text>
+<text x="645" y="151.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">5 screens · who is who</text>
 <line x1="250" y1="138" x2="288" y2="138" stroke="#9489ac" stroke-width="2" marker-end="url(#arrow)"/>
 <line x1="500" y1="138" x2="538" y2="138" stroke="#9489ac" stroke-width="2" marker-end="url(#arrow)"/>
 <text x="790" y="132" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#6b6578">First visit only. Returning visitors</text>
@@ -129,15 +129,15 @@
 <text x="654" y="686.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#fff" font-weight="700">Same picture in every chapter</text>
 <line x1="654" y1="634" x2="654" y2="648" stroke="#9489ac" stroke-width="2" marker-end="url(#arrow)"/>
 <text x="654" y="740" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#6b6578">also on the overview:</text>
-<rect x="540" y="752" width="228" height="52" rx="12" fill="#eef3e6" stroke="#96a87f" stroke-width="2" stroke-dasharray="7 5"/>
-<text x="654" y="774.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38" font-weight="700">Extra chapters</text>
-<text x="654" y="791.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">Not from the workshop</text>
-<rect x="540" y="820" width="228" height="70" rx="12" fill="#fff" stroke="#96a87f" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="540" y="752" width="228" height="52" rx="12" fill="#eef3e6" stroke="#96a87f" stroke-width="2"/>
+<text x="654" y="774.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38" font-weight="700">Five more chapters</text>
+<text x="654" y="791.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">From LFB's rights texts</text>
+<rect x="540" y="820" width="228" height="70" rx="12" fill="#fff" stroke="#96a87f" stroke-width="2"/>
 <text x="654" y="843" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38" font-weight="700">Safety · Your rights at the</text>
 <text x="654" y="860" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">centre · Child welfare ·</text>
 <text x="654" y="877" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">Money and school · Complaints</text>
 <line x1="654" y1="804" x2="654" y2="818" stroke="#9489ac" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="540" y="906" width="228" height="70" rx="12" fill="#fff" stroke="#96a87f" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="540" y="906" width="228" height="70" rx="12" fill="#fff" stroke="#96a87f" stroke-width="2"/>
 <text x="654" y="929" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38" font-weight="700">Same steps as chapters:</text>
 <text x="654" y="946" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">info, myths, "True for you?",</text>
 <text x="654" y="963" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#2e2a38">summary, your rights (+ duties)</text>

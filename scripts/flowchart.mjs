@@ -55,15 +55,15 @@ function column(x, y, w, steps) {
 }
 
 // Title
-parts.push(`<text x="40" y="44" font-family="${FONT}" font-size="24" font-weight="700" fill="${C.ink}">User flow, prototype v0.2</text>`)
+parts.push(`<text x="40" y="44" font-family="${FONT}" font-size="24" font-weight="700" fill="${C.ink}">User flow, prototype v0.4</text>`)
 parts.push(`<text x="40" y="68" font-family="${FONT}" font-size="14" fill="${C.muted}">Every screen has help, language and read-aloud buttons. Every chapter step has Back. Pink numbers = points to discuss.</text>`)
 parts.push(`<text x="40" y="88" font-family="${FONT}" font-size="14" fill="${C.muted}">Dashed boxes can be switched on and off in the demo settings (⚙).</text>`)
 
 // Row 1: first visit
 const r1y = 110
 const lang = box(40, r1y, 210, ['Choose language', 'Norwegian · Arabic demo'], { fill: C.lavender, h: 56 })
-const film = box(290, r1y, 210, ['Intro film', '6 scenes · skippable'], { fill: C.lavender, dashed: true, h: 56 })
-const intro = box(540, r1y, 210, ['Intro', '4 short screens'], { fill: C.lavender, h: 56 })
+const film = box(290, r1y, 210, ['Intro film', '6 scenes · Back/Next · skippable'], { fill: C.lavender, dashed: true, h: 56 })
+const intro = box(540, r1y, 210, ['Intro', '5 screens · who is who'], { fill: C.lavender, h: 56 })
 arrow(lang.right, lang.cy, film.x - 2, film.cy)
 arrow(film.right, film.cy, intro.x - 2, intro.cy)
 parts.push(`<text x="790" y="${r1y + 22}" font-family="${FONT}" font-size="13" fill="${C.muted}">First visit only. Returning visitors</text>`)
@@ -130,9 +130,9 @@ const ch3 = column(xs[2], top, colW, [
 const extraY = ch3.at(-1).bottom + 56
 parts.push(`<text x="${xs[2] + colW / 2}" y="${extraY - 12}" text-anchor="middle" font-family="${FONT}" font-size="12" fill="${C.muted}">also on the overview:</text>`)
 const extra = column(xs[2], extraY, colW, [
-  { text: ['Extra chapters', 'Not from the workshop'], fill: C.sageLight, stroke: C.sage, dashed: true, h: 52 },
-  { text: ['Safety · Your rights at the', 'centre · Child welfare ·', 'Money and school · Complaints'], fill: '#fff', stroke: C.sage, dashed: true, h: 70, bold: false },
-  { text: ['Same steps as chapters:', 'info, myths, "True for you?",', 'summary, your rights (+ duties)'], fill: '#fff', stroke: C.sage, dashed: true, h: 70 },
+  { text: ['Five more chapters', "From LFB's rights texts"], fill: C.sageLight, stroke: C.sage, h: 52 },
+  { text: ['Safety · Your rights at the', 'centre · Child welfare ·', 'Money and school · Complaints'], fill: '#fff', stroke: C.sage, h: 70, bold: false },
+  { text: ['Same steps as chapters:', 'info, myths, "True for you?",', 'summary, your rights (+ duties)'], fill: '#fff', stroke: C.sage, h: 70 },
 ])
 
 // "Who can help me?" from the overview, with the practice.
