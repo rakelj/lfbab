@@ -149,6 +149,13 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       tillater ikke bruk i appen. Spar: test på korte setninger, utkast med
       v4 Turbo, directions bare i historiene, lag lyd først når et språk er
       godkjent.
+- [ ] Før vi lager lyd for alvor: vær 100 % sikker på at stemmene kan brukes
+      kommersielt. Lyd laget på gratisplanen kan ikke brukes (også prøvene).
+      Stemmer fra biblioteket (som Sander) eies av andre brukere og kan
+      fjernes, noen med oppsigelsestid. Sjekk vilkårene og hver stemmes side,
+      få skriftlig svar fra ElevenLabs, og noter stemmenavn og ID.
+- [ ] Rakel foreslår stemmene (legger dem til i «My voices»), så lager
+      Claude prøver av samme korte tekst.
       Microsoft/Google tar betalt per tegn: noen titalls kroner eller gratis.
       Venter: sammenlign stemmene, avklar hvem som eier kontoen.
 
