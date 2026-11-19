@@ -46,15 +46,6 @@ export default function About({ onBack }) {
         ))}
       </ul>
 
-      <h2>
-        {t('about.credits')} <Speak text={`${t('about.credits')}. ${t('about.illustrations')}. ${t('about.development')}`} />
-      </h2>
-      <p className="muted">
-        {t('about.illustrations')}
-        <br />
-        {t('about.development')}
-      </p>
-
       <div className="actions">
         <button className="btn btn-primary" onClick={onBack}>
           {t('common.back')}

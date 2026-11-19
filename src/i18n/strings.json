@@ -1213,21 +1213,6 @@
     "context": "Contact: the name of the Facebook page as in its address (facebook.com/NAME). Do not translate. The link is made from it",
     "no": "@lfb [PLACEHOLDER]"
   },
-  "about.credits": {
-    "context": "Heading above credits",
-    "no": "Takk til",
-    "ar": "شكر إلى"
-  },
-  "about.illustrations": {
-    "context": "PLACEHOLDER, name of the illustrator",
-    "no": "Illustrasjoner: [PLACEHOLDER navn på illustratør]",
-    "ar": "الرسوم: [PLACEHOLDER]"
-  },
-  "about.development": {
-    "context": "PLACEHOLDER",
-    "no": "Utvikling: [PLACEHOLDER navn]",
-    "ar": "التطوير: [PLACEHOLDER]"
-  },
   "closing.title": {
     "context": "Closing screen heading",
     "no": "Dette er viktig å huske",

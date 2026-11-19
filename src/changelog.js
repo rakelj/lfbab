@@ -8,7 +8,7 @@ export const CHANGELOG = [
     items: [
       'LFBs nye tekster fra arket er med: «Hvem er vi?», hvem som driver mottakene (private selskaper, kommuner eller ideelle organisasjoner), asylintervjuet «når det er avtalt med UDI», hva representanten gjør, psykolog for tunge tanker, og «stress, uro og tunge tanker» i stedet for angst og depresjon. Arabisk er oppdatert.',
       'Familiekortet er tatt ut av appen, etter råd fra Vergeforeningen via LFB: i «Hvem ville du snakket med først?», «Hvem kan hjelpe meg?», historiene og øvelsen. I øvelsen er det erstattet med Ansatte på mottaket og Venner.',
-      '«Om appen»: nettside, e-post, Instagram og Facebook (i stedet for TikTok) ligger nå i tekstarket, så LFB kan endre dem selv. En lenke med tomt felt vises ikke.',
+      '«Om appen»: nettside, e-post, Instagram og Facebook (i stedet for TikTok) ligger nå i tekstarket, så LFB kan endre dem selv. En lenke med tomt felt vises ikke. «Takk til» er fjernet.',
       'To små språklige rettelser i arket, med kommentar (til godkjenning): psykolog-setningen i Kropp og hode, og representanten i Elias-historien.',
     ],
   },
