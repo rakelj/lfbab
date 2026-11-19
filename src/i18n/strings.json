@@ -1211,7 +1211,7 @@
   },
   "about.facebook.value": {
     "context": "Contact: the name of the Facebook page as in its address (facebook.com/NAME). Do not translate. The link is made from it",
-    "no": "@lfb [PLACEHOLDER]"
+    "no": "facebook.com/barnevernsbarna"
   },
   "closing.title": {
     "context": "Closing screen heading",
@@ -1375,8 +1375,8 @@
   },
   "x.safety.summary.3": {
     "context": "",
-    "no": "Vil du ikke si fra til noen av dem? Ring Alarmtelefonen 116 111. Den er gratis, åpen hele døgnet og anonym.",
-    "ar": "لا تريد إخبار أيٍّ منهم؟ اتصل بهاتف الطوارئ للأطفال والشباب 116 111. الخدمة مجانية ومتاحة على مدار الساعة ومجهولة الهوية."
+    "no": "Vil du ikke si fra til noen av dem? Ring Alarmtelefonen 116 111. Den er gratis, åpen hele døgnet og anonym. Snakker du ikke norsk? Si «TOLK» og språket ditt, så ringer de deg opp igjen med tolk på telefon.",
+    "ar": "لا تريد إخبار أيٍّ منهم؟ اتصل بهاتف الطوارئ للأطفال والشباب 116 111. الخدمة مجانية ومتاحة على مدار الساعة ومجهولة الهوية. هل لا تتحدث النرويجية؟ قل «TOLK» واذكر لغتك، وسيعاودون الاتصال بك مع مترجم على الهاتف."
   },
   "x.safety.summary.4": {
     "context": "From LFB's rights information (family version)",

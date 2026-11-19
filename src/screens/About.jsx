@@ -5,11 +5,14 @@ import { Speak } from '../components/Sound.jsx'
 // The addresses live in the text sheet (about.*.value), so LFB can change
 // them. A link whose value is left empty is not shown. The first word is used
 // for the link, so a note such as "[PLACEHOLDER]" after it does no harm.
+// Social links accept "@name", "name" or a full address such as
+// "facebook.com/name".
+const handle = (v, site) => v.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(`${site}/`, '').replace(/^@/, '').replace(/\/$/, '')
 const LINKS = [
-  { label: 'about.website', value: 'about.website.value', href: (v) => `https://${v}` },
+  { label: 'about.website', value: 'about.website.value', href: (v) => `https://${v.replace(/^https?:\/\//, '')}` },
   { label: 'about.email', value: 'about.email.value', href: (v) => `mailto:${v}` },
-  { label: 'about.instagram', value: 'about.instagram.value', href: (v) => `https://www.instagram.com/${v.replace(/^@/, '')}/` },
-  { label: 'about.facebook', value: 'about.facebook.value', href: (v) => `https://www.facebook.com/${v.replace(/^@/, '')}` },
+  { label: 'about.instagram', value: 'about.instagram.value', href: (v) => `https://www.instagram.com/${handle(v, 'instagram.com')}/` },
+  { label: 'about.facebook', value: 'about.facebook.value', href: (v) => `https://www.facebook.com/${handle(v, 'facebook.com')}` },
 ]
 
 export default function About({ onBack }) {

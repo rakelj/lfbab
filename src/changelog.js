@@ -3,6 +3,14 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.4.3',
+    date: '19.11.2026',
+    items: [
+      'Facebook-siden til LFB er lagt inn i «Om appen». Lenkene godtar nå både «@navn» og hele adresser som «facebook.com/navn».',
+      'Trygghet: TOLK-teksten står også i sammendraget, under Alarmtelefonen. Arabisk er oppdatert.',
+    ],
+  },
+  {
     version: '0.4.2',
     date: '19.11.2026',
     items: [
