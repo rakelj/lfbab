@@ -22,8 +22,9 @@ export const ACTORS = [
   { id: 'psychologist', img: img('actor-psychologist.jpg') },
   { id: 'schoolStaff', img: img('actor-school-staff.jpg') },
   { id: 'friends', img: img('actor-friends.jpg') },
-  { id: 'family', img: img('actor-family.jpg') },
   { id: 'resident', img: img('actor-resident.jpg') },
+  // The family card was removed in November 2026 (LFB, after advice from
+  // Vergeforeningen: family at home often adds worry rather than comfort).
 ]
 
 export const ACTIVITIES = [
@@ -69,9 +70,9 @@ export const SITUATIONS = [
   { id: 'sleep', options: ['psychologist', 'doctor', 'centreStaff', 'schoolStaff'], best: ['psychologist', 'doctor'] },
   { id: 'letter', options: ['representative', 'centreStaff', 'doctor', 'friends'], best: ['representative', 'centreStaff'] },
   { id: 'lonely', options: ['friends', 'resident', 'doctor', 'representative'], best: ['friends', 'resident'] },
-  { id: 'stomach', options: ['doctor', 'schoolStaff', 'family', 'representative'], best: ['doctor'] },
+  { id: 'stomach', options: ['doctor', 'schoolStaff', 'centreStaff', 'representative'], best: ['doctor'] },
   { id: 'interview', options: ['representative', 'friends', 'psychologist', 'resident'], best: ['representative'] },
-  { id: 'school', options: ['schoolStaff', 'family', 'doctor', 'resident'], best: ['schoolStaff'] },
+  { id: 'school', options: ['schoolStaff', 'friends', 'doctor', 'resident'], best: ['schoolStaff'] },
 ]
 
 // Step types: info, self (true for you?), myth (did you know?), chain,

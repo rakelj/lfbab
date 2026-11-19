@@ -95,6 +95,12 @@ help window, "Hvem kan hjelpe meg?" and the practice) in Norwegian and Arabic,
 and checks that every text on every screen can be read aloud. It needs
 Playwright and a running preview: `npm run build && npx vite preview --port 4173`.
 
+## Retired texts
+
+A row whose context starts with `IKKE I BRUK` is kept in the sheet (struck
+through) but skipped by the sync, so it does not reach the app. Used for the
+family card, removed in November 2026.
+
 ## Text sync without access to docs.google.com
 
 `node scripts/sync-strings.mjs --from-file sheet.json` reads a saved copy of

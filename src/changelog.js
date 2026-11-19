@@ -7,6 +7,7 @@ export const CHANGELOG = [
     date: '19.11.2026',
     items: [
       'LFBs nye tekster fra arket er med: «Hvem er vi?», mottakene drives av private firma, asylintervjuet «når det er avtalt», hva representanten gjør, psykolog for tunge tanker, og «stress, uro og tunge tanker» i stedet for angst og depresjon. Arabisk er oppdatert.',
+      'Familiekortet er tatt ut av appen, etter råd fra Vergeforeningen via LFB: i «Hvem ville du snakket med først?», «Hvem kan hjelpe meg?», historiene og øvelsen. I øvelsen er det erstattet med Ansatte på mottaket og Venner.',
       'To små språklige rettelser i arket, med kommentar (til godkjenning): psykolog-setningen i Kropp og hode, og representanten i Elias-historien.',
     ],
   },

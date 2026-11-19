@@ -83,6 +83,8 @@ const strings = {}
 for (const r of rows) {
   const key = r[col.key]?.trim()
   if (!key) continue
+  // Rows LFB has retired stay in the sheet (struck through) but not in the app.
+  if (/^IKKE I BRUK/i.test(r[col.context] ?? '')) continue
   const entry = { context: r[col.context] ?? '' }
   for (const l of langCols) if (r[col[l]]?.trim()) entry[l] = r[col[l]].trim()
   strings[key] = entry

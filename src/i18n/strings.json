@@ -676,11 +676,6 @@
     "no": "Medbeboer",
     "ar": "زميل في السكن"
   },
-  "actor.family": {
-    "context": "Actor card",
-    "no": "Familie",
-    "ar": "العائلة"
-  },
   "actor.friends": {
     "context": "Actor card",
     "no": "Venner",
@@ -745,21 +740,6 @@
     "context": "",
     "no": "Når du ønsker selskap i hverdagen eller trenger praktisk hjelp fra noen som bor nær deg.",
     "ar": "عندما تريد رفقة في حياتك اليومية، أو تحتاج إلى مساعدة عملية من شخص يسكن بقربك."
-  },
-  "actor.family.who": {
-    "context": "Actor card back, from LFB print file",
-    "no": "Foreldre, søsken eller andre slektninger.",
-    "ar": "الوالدان أو الإخوة أو أقارب آخرون."
-  },
-  "actor.family.what": {
-    "context": "",
-    "no": "Trygghet, tilhørighet og støtte. De kan gi deg råd og trøst, og hjelpe deg å holde kontakt med hvem du er og hvor du kommer fra.",
-    "ar": "الأمان والانتماء والدعم. يمكنهم أن يقدّموا لك النصيحة والمواساة، وأن يساعدوك على البقاء على صلة بمن أنت ومن أين أتيت."
-  },
-  "actor.family.when": {
-    "context": "",
-    "no": "Når du savner noen som kjenner deg godt og ønsker å dele noe viktig som skjer i livet ditt.",
-    "ar": "عندما تشتاق إلى شخص يعرفك جيدًا، وتريد أن تشاركه شيئًا مهمًا يحدث في حياتك."
   },
   "actor.friends.who": {
     "context": "Actor card back, from LFB print file",
@@ -2025,11 +2005,6 @@
     "no": "Kan hjelpe Hamlin å snakke om savnet og ensomheten.",
     "ar": "يمكنه مساعدة هاملين على الحديث عن الشوق والوحدة."
   },
-  "story.quiet.why.family": {
-    "context": "DRAFT, needs LFB review",
-    "no": "Hvis Hamlin kan ha kontakt med dem, kan det gi trøst og trygghet.",
-    "ar": "إذا استطاع هاملين التواصل معهم، فقد يمنحه ذلك المواساة والأمان."
-  },
   "story.quiet.why.doctor": {
     "context": "DRAFT, needs LFB review",
     "no": "Kan sende Hamlin videre til en psykolog hvis han trenger det.",
@@ -2064,11 +2039,6 @@
     "context": "DRAFT, needs LFB review",
     "no": "Kan hjelpe Elias med tankene som ikke vil stoppe, og med søvnen.",
     "ar": "يمكنه مساعدة إلياس في الأفكار التي لا تتوقف، وفي النوم."
-  },
-  "story.shut.why.family": {
-    "context": "DRAFT, needs LFB review",
-    "no": "Å snakke med de hjemme, hvis det er mulig, kan gi trøst.",
-    "ar": "التحدث مع أهله في الوطن، إن أمكن، قد يمنحه المواساة."
   },
   "story.shut.why.doctor": {
     "context": "DRAFT, needs LFB review",
