@@ -3,6 +3,14 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.4.2',
+    date: '19.11.2026',
+    items: [
+      'LFBs nye tekster fra arket er med: «Hvem er vi?», mottakene drives av private firma, asylintervjuet «når det er avtalt», hva representanten gjør, psykolog for tunge tanker, og «stress, uro og tunge tanker» i stedet for angst og depresjon. Arabisk er oppdatert.',
+      'To små språklige rettelser i arket, med kommentar (til godkjenning): psykolog-setningen i Kropp og hode, og representanten i Elias-historien.',
+    ],
+  },
+  {
     version: '0.4.1',
     date: '10.11.2026',
     items: [

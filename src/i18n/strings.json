@@ -151,8 +151,8 @@
   },
   "intro.2.text": {
     "context": "",
-    "no": "LFB er en demokratisk medlemsorganisasjon som jobber for at barn og unge skal få rettighetene sine. Målet vårt er å gi deg god informasjon om rettighetene dine, og at du skal bli behandlet på en fin måte på mottak.",
-    "ar": "LFB منظمة ديمقراطية للأعضاء تعمل من أجل أن يحصل الأطفال والشباب على حقوقهم. هدفنا أن نقدم لك معلومات جيدة عن حقوقك، وأن تُعامَل معاملة حسنة في مركز الاستقبال."
+    "no": "LFB er en medlemsorganisasjon som jobber for at barn og unge skal få rettighetene sine. Målet vårt er å gi deg god informasjon om rettighetene dine, og at du skal bli behandlet på en god måte på mottak.",
+    "ar": "LFB منظمة أعضاء تعمل من أجل أن يحصل الأطفال والشباب على حقوقهم. هدفنا أن نقدم لك معلومات جيدة عن حقوقك، وأن تُعامَل بطريقة جيدة في مركز الاستقبال."
   },
   "intro.map.title": {
     "context": "Intro page after «Hvem er vi?»: heading over the drawing of who is responsible (from slide 8)",
@@ -181,8 +181,8 @@
   },
   "orgchart.centre.text": {
     "context": "Drawing: under Asylmottak",
-    "no": "Drives av eksterne, men på oppdrag fra UDI",
-    "ar": "تديره جهات أخرى، ولكن بتكليف من UDI"
+    "no": "Drives av private firma, men på oppdrag fra UDI",
+    "ar": "تديره شركات خاصة، ولكن بتكليف من UDI"
   },
   "orgchart.you.name": {
     "context": "Drawing: box name",
@@ -429,8 +429,8 @@
   },
   "ch1.interview.q": {
     "context": "Statement about own situation",
-    "no": "Representanten min hjelper meg å forberede meg til asylintervjuet.",
-    "ar": "ممثلي يساعدني على الاستعداد لمقابلة اللجوء."
+    "no": "Representanten min hjelper meg å forberede meg til asylintervjuet når det er avtalt.",
+    "ar": "ممثلي يساعدني على الاستعداد لمقابلة اللجوء عندما يكون ذلك متفقًا عليه."
   },
   "ch1.interview.right": {
     "context": "",
@@ -484,8 +484,8 @@
   },
   "ch1.summary.1": {
     "context": "",
-    "no": "Forberede deg på asylintervjuet",
-    "ar": "أن يساعدك على الاستعداد لمقابلة اللجوء"
+    "no": "Forberede deg på asylintervjuet når det er avtalt",
+    "ar": "أن يساعدك على الاستعداد لمقابلة اللجوء عندما يكون ذلك متفقًا عليه"
   },
   "ch1.summary.2": {
     "context": "",
@@ -509,8 +509,8 @@
   },
   "ch1.summary.6": {
     "context": "",
-    "no": "Passe på at du har det bra og får rettighetene dine",
-    "ar": "أن يتأكد من أنك بخير وأنك تحصل على حقوقك"
+    "no": "Passe på at du har det bra, støtte deg, høre hvordan du har det og sikre at du får rettighetene dine",
+    "ar": "أن يتأكد من أنك بخير، وأن يدعمك، ويسمع كيف حالك، ويضمن حصولك على حقوقك"
   },
   "ch1.summary.note": {
     "context": "",
@@ -529,8 +529,8 @@
   },
   "ch2.intro.text": {
     "context": "",
-    "no": "Alle under 18 år har rett til helsehjelp, både for kroppen og for hodet. Det gjelder lege, psykolog, fysioterapeut og sykehus.",
-    "ar": "يحق لكل من هو دون 18 عامًا الحصول على الرعاية الصحية، للجسد وللعقل. يشمل ذلك الطبيب والأخصائي النفسي وأخصائي العلاج الطبيعي والمستشفى."
+    "no": "Alle under 18 år har rett til helsehjelp, både for kroppen og for hodet. Det gjelder lege, psykolog (for eksempel hvis du har tunge tanker), fysioterapeut og sykehus.",
+    "ar": "يحق لكل من هو دون 18 عامًا الحصول على الرعاية الصحية، للجسد وللعقل. يشمل ذلك الطبيب، والأخصائي النفسي (مثلًا إذا كانت لديك أفكار ثقيلة)، وأخصائي العلاج الطبيعي، والمستشفى."
   },
   "ch2.doctor.q": {
     "context": "Myth statement (the correct answer is 'not true')",
@@ -564,8 +564,8 @@
   },
   "ch2.chain.text": {
     "context": "",
-    "no": "Over lang tid kan det gjøre det vanskelig å konsentrere seg og lære, og gi større risiko for angst og depresjon. Men det finnes hjelp!",
-    "ar": "مع مرور الوقت قد يصعب عليك التركيز والتعلم، ويزيد خطر القلق والاكتئاب. لكن المساعدة متوفرة!"
+    "no": "Over lang tid kan det gjøre det vanskelig å konsentrere seg og lære, og gi større risiko for stress, uro og tunge tanker. Men det finnes hjelp!",
+    "ar": "مع مرور الوقت قد يصعب عليك التركيز والتعلم، ويزيد خطر التوتر والقلق والأفكار الثقيلة. لكن المساعدة متوفرة!"
   },
   "story.quiet.title": {
     "context": "Story title (LFB's text)",
@@ -2002,8 +2002,8 @@
   },
   "story.quiet.why.representative": {
     "context": "DRAFT, needs LFB review",
-    "no": "Kan forklare hva samtalene betyr for asylsaken, og passe på at Hamlin får tolk.",
-    "ar": "يمكنه أن يشرح ما تعنيه المحادثات بالنسبة لقضية اللجوء، وأن يتأكد من حصول هاملين على مترجم."
+    "no": "Kan forklare hva samtalene betyr for asylsaken, høre hvordan han har det og passe på at Hamlin får tolk.",
+    "ar": "يمكنه أن يشرح ما تعنيه المحادثات بالنسبة لقضية اللجوء، وأن يسمع كيف حاله، وأن يتأكد من حصول هاملين على مترجم."
   },
   "story.quiet.why.friends": {
     "context": "DRAFT, needs LFB review",
@@ -2042,8 +2042,8 @@
   },
   "story.shut.why.representative": {
     "context": "DRAFT, needs LFB review",
-    "no": "Kan forklare hva som skjer i asylintervjuet, så Elias blir mindre redd for å si feil ting.",
-    "ar": "يمكنه أن يشرح ما يحدث في مقابلة اللجوء، فيقلّ خوف إلياس من أن يقول شيئًا خاطئًا."
+    "no": "Kan forklare hva som skjer i asylintervjuet, så Elias blir mindre redd for å si feil ting. Kan også snakke ordentlig med Elias om hvordan han har det, og hvor han kan få hjelp.",
+    "ar": "يمكنه أن يشرح ما يحدث في مقابلة اللجوء، فيقلّ خوف إلياس من أن يقول شيئًا خاطئًا. ويمكنه أيضًا أن يتحدث مع إلياس بجدية عن حاله وأين يمكنه الحصول على المساعدة."
   },
   "story.shut.why.friends": {
     "context": "DRAFT, needs LFB review",
