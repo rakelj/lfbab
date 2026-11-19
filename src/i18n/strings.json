@@ -181,8 +181,8 @@
   },
   "orgchart.centre.text": {
     "context": "Drawing: under Asylmottak",
-    "no": "Drives av private firma, men på oppdrag fra UDI",
-    "ar": "تديره شركات خاصة، ولكن بتكليف من UDI"
+    "no": "Asylmottak drives av private selskaper, kommuner eller ideelle organisasjoner på oppdrag fra staten (UDI)",
+    "ar": "تدير مراكزَ الاستقبال شركاتٌ خاصة أو بلديات أو منظمات غير ربحية بتكليف من الدولة (UDI)"
   },
   "orgchart.you.name": {
     "context": "Drawing: box name",
@@ -429,8 +429,8 @@
   },
   "ch1.interview.q": {
     "context": "Statement about own situation",
-    "no": "Representanten min hjelper meg å forberede meg til asylintervjuet når det er avtalt.",
-    "ar": "ممثلي يساعدني على الاستعداد لمقابلة اللجوء عندما يكون ذلك متفقًا عليه."
+    "no": "Representanten min hjelper meg å forberede meg til asylintervjuet når det er avtalt med UDI.",
+    "ar": "ممثلي يساعدني على الاستعداد لمقابلة اللجوء عندما يتم تحديد موعدها مع UDI."
   },
   "ch1.interview.right": {
     "context": "",
@@ -1188,6 +1188,30 @@
     "context": "Link label",
     "no": "E-post",
     "ar": "البريد الإلكتروني"
+  },
+  "about.website.value": {
+    "context": "Contact: the web address, without https://. Do not translate (only the no column is used)",
+    "no": "barnevernsbarna.no"
+  },
+  "about.email.value": {
+    "context": "Contact: the e-mail address. Do not translate",
+    "no": "post@barnevernsbarna.no"
+  },
+  "about.instagram": {
+    "context": "Link label. Brand name, same in all languages",
+    "no": "Instagram"
+  },
+  "about.instagram.value": {
+    "context": "Contact: the Instagram handle, starting with @. Do not translate. The link is made from it",
+    "no": "@barnevernsbarna"
+  },
+  "about.facebook": {
+    "context": "Link label. Brand name, same in all languages",
+    "no": "Facebook"
+  },
+  "about.facebook.value": {
+    "context": "Contact: the name of the Facebook page as in its address (facebook.com/NAME). Do not translate. The link is made from it",
+    "no": "@lfb [PLACEHOLDER]"
   },
   "about.credits": {
     "context": "Heading above credits",

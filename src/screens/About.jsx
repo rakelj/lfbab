@@ -2,17 +2,21 @@ import { useI18n } from '../i18n/I18n.jsx'
 import { img } from '../content.js'
 import { Speak } from '../components/Sound.jsx'
 
-// PLACEHOLDER: LFB to confirm the social media handles. "@lfb" comes from the
-// workshop deck and may be a placeholder.
+// The addresses live in the text sheet (about.*.value), so LFB can change
+// them. A link whose value is left empty is not shown. The first word is used
+// for the link, so a note such as "[PLACEHOLDER]" after it does no harm.
 const LINKS = [
-  { label: 'about.website', text: 'barnevernsbarna.no', href: 'https://barnevernsbarna.no' },
-  { label: 'about.email', text: 'post@barnevernsbarna.no', href: 'mailto:post@barnevernsbarna.no' },
-  { label: null, name: 'Instagram', text: '@lfb [PLACEHOLDER]', href: 'https://www.instagram.com/lfb/' },
-  { label: null, name: 'TikTok', text: '@lfb [PLACEHOLDER]', href: 'https://www.tiktok.com/@lfb' },
+  { label: 'about.website', value: 'about.website.value', href: (v) => `https://${v}` },
+  { label: 'about.email', value: 'about.email.value', href: (v) => `mailto:${v}` },
+  { label: 'about.instagram', value: 'about.instagram.value', href: (v) => `https://www.instagram.com/${v.replace(/^@/, '')}/` },
+  { label: 'about.facebook', value: 'about.facebook.value', href: (v) => `https://www.facebook.com/${v.replace(/^@/, '')}` },
 ]
 
 export default function About({ onBack }) {
   const { t } = useI18n()
+  const links = LINKS.map((l) => ({ label: t(l.label), text: t(l.value), make: l.href, key: l.value }))
+    .filter((l) => l.text && l.text !== l.key)
+    .map((l) => ({ ...l, href: l.make(l.text.split(/\s/)[0]) }))
   return (
     <section className="screen">
       <img className="logo-about" src={img('logo.png')} alt="Landsforeningen for barnevernsbarn" />
@@ -27,15 +31,16 @@ export default function About({ onBack }) {
       <p className="reassure">{t('about.privacy')}</p>
 
       <h2>
-        {t('about.contact')} <Speak text={[t('about.contact'), ...LINKS.map((l) => `${l.label ? t(l.label) : l.name}: ${l.text}`)].join('. ')} />
+        {t('about.contact')} <Speak text={[t('about.contact'), ...links.map((l) => `${l.label}: ${l.text}`)].join('. ')} />
       </h2>
       <ul className="about-links">
-        {LINKS.map((l) => (
-          <li key={l.href}>
+        {links.map((l) => (
+          <li key={l.key}>
             {/* External links open outside the app and send no referrer */}
             <a href={l.href} target={l.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">
-              <span className="about-link-label">{l.label ? t(l.label) : l.name}</span>
-              <span>{l.text}</span>
+              <span className="about-link-label">{l.label}</span>
+              {/* addresses read left to right, also in Arabic */}
+              <bdi dir="ltr">{l.text}</bdi>
             </a>
           </li>
         ))}
