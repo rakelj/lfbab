@@ -3,6 +3,13 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.4.4',
+    date: '20.11.2026',
+    items: [
+      'Etter tilbakemelding fra Mari (mottak): UDI bestemmer hvor mye penger du får, mottaket betaler ut. Videregående skole forutsetter fullført grunnskole, ellers annen opplæring. Fritid: mottaket skal legge til rette, men du har ikke krav på en bestemt aktivitet. «Hvordan klage»: du kan også si fra til UDI. Alt til godkjenning i arket, arabisk oppdatert.',
+    ],
+  },
+  {
     version: '0.4.3',
     date: '19.11.2026',
     items: [

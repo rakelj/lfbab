@@ -321,8 +321,8 @@
   },
   "ch3.subtitle": {
     "context": "",
-    "no": "Du har rett til fritidsaktiviteter",
-    "ar": "لديك الحق في الأنشطة الترفيهية"
+    "no": "Du har rett til fritid og aktiviteter",
+    "ar": "لديك الحق في وقت الفراغ والأنشطة"
   },
   "q.yes": {
     "context": "Answer button",
@@ -923,13 +923,13 @@
   },
   "ch3.intro.title": {
     "context": "",
-    "no": "Du har rett til en fritidsaktivitet",
-    "ar": "لديك الحق في نشاط ترفيهي"
+    "no": "Du har rett til fritid og aktiviteter",
+    "ar": "لديك الحق في وقت الفراغ والأنشطة"
   },
   "ch3.intro.text": {
     "context": "",
-    "no": "Alle barn har rett til lek, fritid og aktiviteter. Det gjelder også deg som bor på mottak. Du har rett til hjelp til en fritidsaktivitet, både praktisk hjelp og hjelp med penger.",
-    "ar": "لكل الأطفال الحق في اللعب ووقت الفراغ والأنشطة. وهذا ينطبق عليك أيضًا وأنت تقيم في مركز الاستقبال. من حقك الحصول على مساعدة في نشاط ترفيهي، مساعدة عملية ومساعدة مالية."
+    "no": "Alle barn har rett til lek, fritid og aktiviteter. Det gjelder også deg som bor på mottak. Mottaket skal legge til rette for at du kan delta i ulike fritidsaktiviteter, både på og utenfor mottaket. Du skal også få være med på å si hvilke aktiviteter du ønsker deg. Snakk med de ansatte på mottaket om hvilke muligheter som finnes.",
+    "ar": "لكل الأطفال الحق في اللعب ووقت الفراغ والأنشطة. وهذا ينطبق عليك أيضًا إذا كنت تسكن في مركز استقبال. يجب على مركز الاستقبال أن يهيّئ لك المشاركة في أنشطة ترفيهية مختلفة، داخل المركز وخارجه. ويحق لك أيضًا أن تشارك في اختيار الأنشطة التي ترغب فيها. تحدّث مع الموظفين في مركز الاستقبال عن الإمكانيات المتوفرة."
   },
   "ch3.activities.title": {
     "context": "Question: what do you like doing",
@@ -1041,8 +1041,8 @@
   },
   "ch3.cost.right": {
     "context": "",
-    "no": "Du har rett til støtte til en fritidsaktivitet, også hvis den koster penger. Mottaket skal hjelpe deg å finne ut hva som finnes der du bor.",
-    "ar": "من حقك الحصول على دعم لنشاط ترفيهي، حتى لو كان يكلّف مالاً. يجب أن يساعدك مركز الاستقبال على معرفة ما هو متاح في المكان الذي تقيم فيه."
+    "no": "Mottaket skal legge til rette for at du kan være med på fritidsaktiviteter, også utenfor mottaket. Ikke alt er gratis, men spør de ansatte om hvilke muligheter som finnes der du bor.",
+    "ar": "يجب على مركز الاستقبال أن يهيّئ لك المشاركة في الأنشطة الترفيهية، داخل المركز وخارجه أيضًا. ليس كل شيء مجانيًا، لكن اسأل الموظفين عن الإمكانيات المتوفرة حيث تسكن."
   },
   "ch3.next.title": {
     "context": "Heading of the last activities step",
@@ -1101,8 +1101,8 @@
   },
   "ch3.summary.1": {
     "context": "",
-    "no": "Du har rett til støtte til en fritidsaktivitet.",
-    "ar": "من حقك الحصول على دعم لنشاط ترفيهي."
+    "no": "Mottaket skal legge til rette for fritidsaktiviteter, og du skal få si hva du ønsker deg.",
+    "ar": "يجب على مركز الاستقبال أن يهيّئ الأنشطة الترفيهية، ويحق لك أن تقول ما ترغب فيه."
   },
   "ch3.summary.2": {
     "context": "",
@@ -1732,8 +1732,8 @@
   },
   "x.money.intro.text": {
     "context": "From LFB's rights information",
-    "no": "Du har rett til penger til livsopphold. Mottaket betaler dem direkte til deg. Pengene skal dekke mat, reiser, lege, telefon, klær og fritid.",
-    "ar": "لديك الحق في الحصول على نفقات للمعيشة، ويدفعها لك مركز الاستقبال مباشرة. يجب أن تغطي النفقة تكاليف الطعام والسفر والطبيب والهاتف والملابس والأنشطة الترفيهية."
+    "no": "Du har rett til penger til livsopphold. Det er UDI som bestemmer hvor mye penger du kan få. Pengene kommer fra UDI, men det er mottaket som sørger for at du får dem utbetalt. Pengene skal dekke mat, reiser, lege, telefon, klær og fritid.",
+    "ar": "لديك الحق في الحصول على نفقات للمعيشة. إن UDI هي التي تحدد مقدار المال الذي يمكنك الحصول عليه. المال يأتي من UDI، لكن مركز الاستقبال هو الذي يتولى صرفه لك. يجب أن يغطي المال الطعام والمواصلات والطبيب والهاتف والملابس ووقت الفراغ."
   },
   "x.money.rent.q": {
     "context": "Myth statement (correct answer: not true)",
@@ -1752,8 +1752,8 @@
   },
   "x.money.school.text": {
     "context": "From LFB's rights information",
-    "no": "Du har rett til opplæring, og opplæringen er gratis. Trenger du det, har du rett til ekstra språkopplæring og annen støtte. Er du under 18 år, kan du ha rett til videregående skole.",
-    "ar": "يحق لك الحصول على التعليم، والتعليم مجاني. إذا كنت بحاجة إليه، يحق لك الحصول على تعليم لغوي خاص ودعم آخر. وإذا كان عمرك أقل من 18 عامًا، فقد يحق لك الالتحاق بالمدرسة الثانوية."
+    "no": "Du har rett til opplæring, og opplæringen er gratis. Trenger du det, har du rett til ekstra språkopplæring og annen støtte. Er du mellom 16 og 18 år, kan du ha rett til videregående skole hvis du har fullført grunnskolen eller tilsvarende opplæring. Hvis du ikke har det, har du rett til annen opplæring som kan hjelpe deg videre i utdanningen. De ansatte på mottaket kan hjelpe deg med å finne ut hvilket skoletilbud du har rett til.",
+    "ar": "يحق لك الحصول على التعليم، والتعليم مجاني. إذا كنت بحاجة إلى ذلك، يحق لك الحصول على تعليم إضافي للغة ودعم آخر. إذا كان عمرك بين 16 و18 عامًا، فقد يحق لك الالتحاق بالمدرسة الثانوية إذا كنت قد أنهيت المدرسة الأساسية أو تعليمًا مماثلًا. وإذا لم تكن قد أنهيتها، فيحق لك الحصول على تعليم آخر يساعدك على مواصلة دراستك. يمكن للموظفين في مركز الاستقبال مساعدتك في معرفة العرض الدراسي الذي يحق لك."
   },
   "x.money.inschool.q": {
     "context": "Statement about own situation",
@@ -1800,8 +1800,8 @@
   },
   "x.money.rights.3": {
     "context": "Rights screen at the end of the chapter",
-    "no": "Gratis skole, og ekstra språkopplæring hvis du trenger det",
-    "ar": "مدرسة مجانية، وتعليم إضافي للغة إذا كنت تحتاج إليه"
+    "no": "Gratis opplæring, og ekstra språkopplæring hvis du trenger det",
+    "ar": "تعليم مجاني، وتعليم إضافي للغة إذا كنت تحتاج إليه"
   },
   "x.complain.title": {
     "context": "EXTRA chapter title (from LFB's rights information)",
@@ -1835,8 +1835,8 @@
   },
   "x.complain.r1.a": {
     "context": "From LFB's rights information",
-    "no": "Si fra til en ansatt du stoler på, eller til lederen. Hvis du ikke stoler på dem, si fra til representanten din.",
-    "ar": "أخبر موظفًا تثق به أو المدير. إذا كنت لا تثق بهم، فأخبر ممثلك."
+    "no": "Si fra til en ansatt du stoler på, eller til lederen. Hvis du ikke stoler på dem, si fra til representanten din. Du kan også si fra direkte til UDI, som har ansvaret for mottakene. [PLACEHOLDER: hvordan du kontakter UDI]",
+    "ar": "أخبر موظفًا تثق به أو المدير. إذا كنت لا تثق بهم، فأخبر ممثلك. يمكنك أيضًا أن تُبلغ UDI مباشرة، فهي المسؤولة عن مراكز الاستقبال. [PLACEHOLDER]"
   },
   "x.complain.r2.q": {
     "context": "Situation",
@@ -2221,8 +2221,8 @@
   },
   "ch3.cost.validate.false": {
     "context": "DRAFT, needs LFB review. Validation after answering a myth question",
-    "no": "Helt riktig! Penger skal ikke stoppe deg fra å ha en fritidsaktivitet.",
-    "ar": "صحيح تمامًا! لا ينبغي أن يمنعك المال من ممارسة نشاط ترفيهي."
+    "no": "Helt riktig! Selv om en aktivitet koster penger, kan det finnes muligheter. Spør de ansatte.",
+    "ar": "صحيح تمامًا! حتى لو كان النشاط يكلّف مالًا، فقد توجد إمكانيات. اسأل الموظفين."
   },
   "ch3.cost.validate.dontKnow": {
     "context": "DRAFT, needs LFB review. Validation after answering a myth question",
