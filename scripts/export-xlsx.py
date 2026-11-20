@@ -42,7 +42,7 @@ def clean(ctx):
 INSTRUCTIONS = [
     ('About the app', 'A free, anonymous web app for young people aged 15–18 who live alone at asylum reception centres in Norway, made by Landsforeningen for barnevernsbarn (LFB). It explains their rights and who can help them.'),
     ('What to translate', 'Translate the Norwegian text in column D into the language column (yellow). Everything has been approved by LFB in Norwegian.'),
-    ('Do not change', 'Do not change the Key column or the order of the rows. The key is how the translation is put back into the app.'),
+    ('Do not change', 'Do not change the Key column. The key is how each translation finds its way back into the app. You may sort and filter the rows as you like; they start in the order they appear in the app.'),
     ('Placeholders', 'Keep words in curly brackets exactly as they are, for example {name}, {number}, {n}, {title}, {total}. The app fills them in (for example {name} becomes Hamlin or Elias, {number} a phone number).'),
     ('Names and numbers', 'Keep phone numbers (116 111, 113, 112), e-mail and web addresses, and the names UDI, Bufdir, LFB, Statsforvalteren, Alarmtelefonen and TOLK as they are. Hamlin and Elias are names: write them in your alphabet if needed.'),
     ('Tone', 'Simple, warm, everyday language for teenagers who may read poorly. Short sentences. Speak to the reader as "you" (informal). Many texts are also read aloud, so they should sound natural when spoken.'),
