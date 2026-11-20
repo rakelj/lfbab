@@ -95,6 +95,14 @@ help window, "Hvem kan hjelpe meg?" and the practice) in Norwegian and Arabic,
 and checks that every text on every screen can be read aloud. It needs
 Playwright and a running preview: `npm run build && npx vite preview --port 4173`.
 
+## Files for the translation agency
+
+`python3 scripts/export-xlsx.py <sheet.json> oversettelse` makes one Excel file
+per language (key, section, context, Norwegian, English reference, a yellow
+column to translate, and an instructions tab). It leaves out retired rows,
+texts shown to staff in Norwegian only, addresses and demo-only texts. Run it
+again once the English is back, so the other files get English as a reference.
+
 ## Retired texts
 
 A row whose context starts with `IKKE I BRUK` is kept in the sheet (struck
