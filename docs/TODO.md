@@ -161,8 +161,17 @@ gangen. Kryss av og skriv versjonsnummer når noe er publisert.
       Microsoft/Google tar betalt per tegn: noen titalls kroner eller gratis.
       Venter: sammenlign stemmene, avklar hvem som eier kontoen.
 
+## Tilbakemelding fra Mari (mottak), 20.11
+- [x] Penger (UDI bestemmer, mottaket betaler ut), videregående/annen
+      opplæring, fritid (mottaket legger til rette), UDI i «Hvordan klage»
+      (v0.4.4). 13 tekster står «Til godkjenning» med kommentar.
+- [ ] Bente går gjennom mandag. Deretter: synk arket, bytt ut
+      PLACEHOLDER for hvordan man kontakter UDI (x.complain.r1.a), og lag
+      Excel-filene på nytt (scripts/export-xlsx.py) og bytt dem i Drive
+      (mappen «Oversettelse») før de sendes til byrået.
+
 ## Oversettelse (LFB og byrået tar dette)
-- [ ] Byrået oversetter (først til engelsk, så videre). Spør om de vil ha
-      én Excel-fil eller én per språk.
+- [ ] Byrået oversetter (først til engelsk, så videre). Én Excel-fil per
+      språk er laget (20.11); prisforespørsel er sendt.
 - [ ] Avtal med byrået hva de gjør med LFBs historieoversettelser i 9
       språk.
