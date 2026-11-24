@@ -3,6 +3,14 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.4.6',
+    date: '24.11.2026',
+    items: [
+      'LFBs nye tekst om tiltaksplanen på «Du har rett til»-skjermen i Rettighetene dine på mottaket.',
+      'Alle punkter i sammendragene og på «Du har rett til»-skjermene slutter nå med punktum (26 punkter).',
+    ],
+  },
+  {
     version: '0.4.5',
     date: '24.11.2026',
     items: [
