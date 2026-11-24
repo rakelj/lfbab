@@ -3,6 +3,15 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.4.5',
+    date: '24.11.2026',
+    items: [
+      'Nye norske tekster fra LFB: «tiltaksplan» i stedet for «omsorgsplan» i Rettighetene dine på mottaket, og ny tekst om oppfølging i sammendraget (LFB skal skrive den om). Arabisk er ikke oppdatert for disse ennå.',
+      'Påstanden «Hvis en aktivitet koster penger, kan jeg ikke være med» er tatt ut, etter LFBs ønske.',
+      'Linjeskift som skrives i arket, vises nå som linjeskift i sammendragene.',
+    ],
+  },
+  {
     version: '0.4.4',
     date: '20.11.2026',
     items: [

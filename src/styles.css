@@ -590,3 +590,5 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--purple); outlin
 .org-arrow.side .org-line::after { bottom: auto; top: -6px; left: -2px; transform: rotate(135deg); }
 [dir='rtl'] .org-arrow.side .org-line::after { left: auto; right: -2px; transform: rotate(-45deg); }
 .org-arrow.side .org-label { font-size: 0.7rem; padding: 2px 0; margin-bottom: 30px; line-height: 1.2; }
+/* Line breaks typed in the sheet show as line breaks in lists */
+.summary li { white-space: pre-line; }

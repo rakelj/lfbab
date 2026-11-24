@@ -1034,16 +1034,6 @@
     "context": "Shown to staff in NORWEGIAN only. When no activity was chosen",
     "no": "Jeg har lyst til å finne en fritidsaktivitet. Kan du hjelpe meg?"
   },
-  "ch3.cost.q": {
-    "context": "Myth statement (the correct answer is 'not true')",
-    "no": "Hvis en aktivitet koster penger, kan jeg ikke være med.",
-    "ar": "إذا كان النشاط يكلّف مالاً، فلا يمكنني المشاركة فيه."
-  },
-  "ch3.cost.right": {
-    "context": "",
-    "no": "Mottaket skal legge til rette for at du kan være med på fritidsaktiviteter, også utenfor mottaket. Ikke alt er gratis, men spør de ansatte om hvilke muligheter som finnes der du bor.",
-    "ar": "يجب على مركز الاستقبال أن يهيّئ لك المشاركة في الأنشطة الترفيهية، داخل المركز وخارجه أيضًا. ليس كل شيء مجانيًا، لكن اسأل الموظفين عن الإمكانيات المتوفرة حيث تسكن."
-  },
   "ch3.next.title": {
     "context": "Heading of the last activities step",
     "no": "Veien videre",
@@ -1409,40 +1399,40 @@
   },
   "x.centre.intro.text": {
     "context": "From LFB's rights information",
-    "no": "De voksne som jobber på mottaket skal alltid tenke på hva som er best for deg. De skal snakke med deg alene for å finne ut hva du trenger, og lage en omsorgsplan sammen med deg for hvordan de kan hjelpe deg.",
+    "no": "De voksne som jobber på mottaket skal alltid tenke på hva som er best for deg. De skal snakke med deg alene for å finne ut hva du trenger, og lage en tiltaksplan sammen med deg for hvordan de kan hjelpe deg.",
     "ar": "يجب على البالغين الذين يعملون في مركز الاستقبال التفكير دائمًا فيما هو الأفضل بالنسبة لك. يجب أن يتحدثوا معك على انفراد لمعرفة ما تحتاجه، وأن يضعوا معك خطة رعاية لكيفية مساعدتك."
   },
   "x.centre.plan.q": {
     "context": "Statement about own situation",
-    "no": "De ansatte har laget en omsorgsplan sammen med meg.",
+    "no": "De ansatte har laget en tiltaksplan sammen med meg.",
     "ar": "وضع الموظفون خطة رعاية معي."
   },
   "x.centre.plan.right": {
     "context": "From LFB's rights information",
-    "no": "Omsorgsplanen skal lages så snart som mulig etter at du kommer til mottaket, og brukes hele tiden du bor der. Du og representanten din skal få si hva dere mener om den.",
+    "no": "Tiltaksplanen skal lages så snart som mulig etter at du kommer til mottaket, og brukes hele tiden du bor der. Du og representanten din skal få si hva dere mener om den.",
     "ar": "يجب وضع خطة الرعاية في أقرب وقت ممكن بعد وصولك إلى مركز الاستقبال، واستخدامها طوال فترة إقامتك فيه. يجب أن تُتاح لك ولممثلك الفرصة لقول رأيكما فيها."
   },
   "x.centre.plan.staff": {
     "context": "Shown to staff in NORWEGIAN only, after «Nei»",
-    "no": "Jeg har ikke en omsorgsplan. Kan vi lage en sammen?"
+    "no": "Jeg har ikke en tiltaksplan. Kan vi lage en sammen?"
   },
   "x.centre.plan.staffDontKnow": {
     "context": "Shown to staff in NORWEGIAN only, after «Vet ikke»",
-    "no": "Jeg vet ikke om jeg har en omsorgsplan. Kan vi snakke om den sammen?"
+    "no": "Jeg vet ikke om jeg har en tiltaksplan. Kan vi snakke om den sammen?"
   },
   "x.centre.plan.validate.yes": {
     "context": "Validation after answering «Yes» to the question",
-    "no": "Så bra! Omsorgsplanen er din, og du kan be om å endre den hvis behovene dine endrer seg.",
+    "no": "Så bra! Tiltaksplanen er din, og du kan be om å endre den hvis behovene dine endrer seg.",
     "ar": "رائع! خطة الرعاية خاصة بك، ويمكنك أن تطلب تعديلها إذا تغيرت احتياجاتك."
   },
   "x.centre.plan.validate.no": {
     "context": "Validation after answering «No» to the question",
-    "no": "Det er ikke din feil. Du har rett til en omsorgsplan, og det er lov å spørre de ansatte om den.",
+    "no": "Det er ikke din feil. Du har rett til en tiltaksplan, og det er lov å spørre de ansatte om den.",
     "ar": "هذا ليس ذنبك. من حقك أن تكون لديك خطة رعاية، ومن المسموح أن تسأل الموظفين عنها."
   },
   "x.centre.plan.validate.dontKnow": {
     "context": "Validation after answering «Don't know» to the question",
-    "no": "Det er helt vanlig å ikke vite det. Spør en ansatt du stoler på, så kan dere se på omsorgsplanen sammen.",
+    "no": "Det er helt vanlig å ikke vite det. Spør en ansatt du stoler på, så kan dere se på tiltaksplanen sammen.",
     "ar": "من الطبيعي تمامًا ألا تعرف. اسأل موظفًا تثق به، ويمكنكما الاطلاع على خطة الرعاية معًا."
   },
   "x.centre.say.title": {
@@ -1578,7 +1568,7 @@
   },
   "x.centre.summary.1": {
     "context": "From LFB's rights information",
-    "no": "En omsorgsplan, og voksne som følger deg opp",
+    "no": "De ansatte skal snakke med deg for å bli kjent med deg og finne ut hva du trenger hjelp til.\nDere skal ha samtaler jevnlig, minst én gang hver fjerde uke.\nSammen skal dere lage en tiltaksplan som beskriver målene dine og hva du trenger støtte til.\nPlanen skal følges opp under oppholdet ditt, og kan endres hvis behovene dine endrer seg.",
     "ar": "خطة رعاية، وأشخاص بالغين يتابعونك"
   },
   "x.centre.summary.2": {
@@ -1698,7 +1688,7 @@
   },
   "x.cws.what.text": {
     "context": "From LFB (feedback, October 2026)",
-    "no": "Hvis barnevernet velger å undersøke hvordan du har det, så gjør de det i 3 måneder. Da snakker de med deg, de ansatte på mottaket, de på skolen og for eksempel lege hvis du har det. Barnevernet kan da tilby deg ulik hjelp hvis du ser at du trenger det, eller i alvorlige tilfeller flytte deg til en annen institusjon eller i fosterhjem. Barnevernet kan også bestemme at de synes du har det godt nok. Da avslutter de saken din. Hvis du er uenig i dette, kan du klage til Statsforvalteren. Be en ansatt eller representanten din om hjelp.",
+    "no": "Hvis barnevernet velger å undersøke hvordan du har det, så gjør de det i 3 måneder. Da snakker de med deg, de ansatte på mottaket, de på skolen og for eksempel lege hvis du har det. Barnevernet kan da tilby deg ulik hjelp hvis de ser at du trenger det, eller i alvorlige tilfeller flytte deg til en annen institusjon eller i fosterhjem. Barnevernet kan også bestemme at de synes du har det godt nok. Da avslutter de saken din. Hvis du er uenig i dette, kan du klage til Statsforvalteren. Be en ansatt eller representanten din om hjelp.",
     "ar": "إذا قررت مؤسسة حماية الأطفال أن تتحقق من وضعك، فإنها تفعل ذلك خلال 3 أشهر. يتحدثون معك، ومع الموظفين في مركز الاستقبال، ومع العاملين في المدرسة، ومع الطبيب مثلًا إذا كان لديك طبيب. بعد ذلك يمكن لمؤسسة حماية الأطفال أن تقدم لك أنواعًا مختلفة من المساعدة إذا كنت تحتاج إليها، أو في الحالات الخطيرة أن تنقلك إلى مؤسسة أخرى أو إلى أسرة حاضنة. ويمكن للمؤسسة أيضًا أن تقرر أن وضعك جيد بما فيه الكفاية، وعندها تُغلق قضيتك. إذا كنت لا توافق على ذلك، يمكنك تقديم شكوى إلى Statsforvalteren. اطلب المساعدة من أحد الموظفين أو من ممثّلك."
   },
   "x.cws.rights.1": {
@@ -2213,21 +2203,6 @@
     "context": "Validation after answering «Don't know» to the statement",
     "no": "Det er helt vanlig å være usikker på dette. Mange lurer på det samme.",
     "ar": "من الطبيعي تمامًا أن تكون غير متأكد من هذا. كثيرون يتساءلون عن الشيء نفسه."
-  },
-  "ch3.cost.validate.true": {
-    "context": "Validation after answering «True» to the statement",
-    "no": "Mange tror det, og lar derfor være å spørre. Det er forståelig, men sånn er det ikke.",
-    "ar": "كثيرون يظنون ذلك، ولذلك لا يسألون. هذا مفهوم، لكن الأمر ليس كذلك."
-  },
-  "ch3.cost.validate.false": {
-    "context": "Validation after answering «Not true» to the statement",
-    "no": "Helt riktig! Selv om en aktivitet koster penger, kan det finnes muligheter. Spør de ansatte.",
-    "ar": "صحيح تمامًا! حتى لو كان النشاط يكلّف مالًا، فقد توجد إمكانيات. اسأل الموظفين."
-  },
-  "ch3.cost.validate.dontKnow": {
-    "context": "Validation after answering «Don't know» to the statement",
-    "no": "Det er helt vanlig å ikke vite. Nå får du vite det.",
-    "ar": "من الطبيعي تمامًا ألا تعرف. الآن ستعرف."
   },
   "x.safety.hit.validate.true": {
     "context": "Validation after answering «True» to the statement",

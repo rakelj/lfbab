@@ -154,7 +154,6 @@ export const CHAPTERS = [
     img: img('activity-sport.jpg'),
     steps: [
       { type: 'info', title: 'ch3.intro.title', text: 'ch3.intro.text', img: img('sunny-tree.webp') },
-      { type: 'myth', id: 'ch3.cost', correct: 'false' },
       { type: 'activities', id: 'ch3.activities' },
       {
         type: 'activitySummary',
