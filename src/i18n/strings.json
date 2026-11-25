@@ -1150,13 +1150,13 @@
     "ar": "من تطوير الجمعية الوطنية لأطفال رعاية الطفولة (LFB)"
   },
   "about.text": {
-    "context": "PLACEHOLDER, LFB to write",
-    "no": "[PLACEHOLDER] Denne appen er laget for barn og unge som bor på mottak i Norge. Den bygger på LFBs workshop «Dine rettigheter på mottaket», og skal hjelpe deg å vite hvilke rettigheter du har og hvordan du kan be om hjelp.",
+    "context": "About screen: what the app is",
+    "no": "Denne appen er laget for barn og unge som bor på mottak i Norge. Den bygger på LFBs workshop «Dine rettigheter på mottaket», og skal hjelpe deg å vite hvilke rettigheter du har og hvordan du kan be om hjelp.",
     "ar": "[PLACEHOLDER] هذا التطبيق مخصص للأطفال والشباب الذين يقيمون في مراكز الاستقبال في النرويج."
   },
   "about.lfb": {
-    "context": "PLACEHOLDER, LFB to write. Short description of LFB",
-    "no": "[PLACEHOLDER] LFB er en medlems- og interesseorganisasjon som jobber for å bedre barn og unges rettigheter i møte med barnevernet.",
+    "context": "About screen: short description of LFB",
+    "no": "LFB er en medlems- og interesseorganisasjon som jobber for å bedre barn og unges rettigheter i møte med barnevernet.",
     "ar": "[PLACEHOLDER] LFB جمعية للأعضاء ومنظمة مصالح تعمل على تحسين حقوق الأطفال والشباب في تعاملهم مع مؤسسة حماية الأطفال."
   },
   "about.privacy": {
@@ -1825,7 +1825,7 @@
   },
   "x.complain.r1.a": {
     "context": "From LFB's rights information",
-    "no": "Si fra til en ansatt du stoler på, eller til lederen. Hvis du ikke stoler på dem, si fra til representanten din. Du kan også si fra direkte til UDI, som har ansvaret for mottakene. [PLACEHOLDER: hvordan du kontakter UDI]",
+    "no": "Si fra til en ansatt du stoler på, eller til lederen. Hvis du ikke stoler på dem, si fra til representanten din. Du kan også si fra direkte til UDI, som har ansvaret for mottakene.",
     "ar": "أخبر موظفًا تثق به أو المدير. إذا كنت لا تثق بهم، فأخبر ممثلك. يمكنك أيضًا أن تُبلغ UDI مباشرة، فهي المسؤولة عن مراكز الاستقبال. [PLACEHOLDER]"
   },
   "x.complain.r2.q": {

@@ -3,6 +3,13 @@
 // Add an entry and bump "version" in package.json for each demo you send.
 export const CHANGELOG = [
   {
+    version: '0.4.7',
+    date: '25.11.2026',
+    items: [
+      'LFBs endelige tekster i «Om appen» og i «Hvordan klage» (UDI). Ingen PLACEHOLDER-tekster igjen på norsk.',
+    ],
+  },
+  {
     version: '0.4.6',
     date: '24.11.2026',
     items: [
